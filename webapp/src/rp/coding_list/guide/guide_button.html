@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Button Guide</title>
+	
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/modules.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+	
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Button Guide</h1>
+	<h2 class="h2_guide">01. Large</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div style="padding:20px;background-color:#000000;">
+			<a href="#" class="btn-common is-outline is-white">바로가기</a>
+			<a href="#" class="btn-common is-outline is-white">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-outline is-white">바로가기</button>
+			<button type="button" class="btn-common is-outline is-white" disabled>바로가기</button>
+			<button type="button" class="btn-common is-outline is-white" disabled>바로가기<span class="arrow"></span></button>
+		</div>
+		<div style="padding:20px;">
+			<a href="#" class="btn-common is-outline">바로가기</a>
+			<a href="#" class="btn-common is-outline">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-outline">바로가기</button>
+			<button type="button" class="btn-common is-outline" disabled>바로가기</button>
+			<button type="button" class="btn-common is-outline" disabled>바로가기<span class="arrow"></span></button>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<h2 class="h2_guide">02. Medium</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div style="padding:20px;background-color:#000000;">
+			<a href="#" class="btn-common is-outline is-white is-medium">바로가기</a>
+			<a href="#" class="btn-common is-outline is-white is-medium">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-outline is-white is-medium">바로가기</button>
+			<button type="button" class="btn-common is-outline is-white is-medium" disabled>바로가기</button>
+			<button type="button" class="btn-common is-outline is-white is-medium" disabled>바로가기<span class="arrow"></span></button>
+		</div>
+		<div style="padding:20px;">
+			<a href="#" class="btn-common is-outline is-medium">바로가기</a>
+			<a href="#" class="btn-common is-outline is-medium">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-outline is-medium">바로가기</button>
+			<button type="button" class="btn-common is-outline is-medium" disabled>바로가기</button>
+			<button type="button" class="btn-common is-outline is-medium" disabled>바로가기<span class="arrow"></span></button>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<h2 class="h2_guide">03. small</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div style="padding:20px;background-color:#000000;">
+			<a href="#" class="btn-common is-outline is-white is-small">바로가기</a>
+			<a href="#" class="btn-common is-outline is-white is-small">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-outline is-white is-small">바로가기</button>
+			<button type="button" class="btn-common is-outline is-white is-small" disabled>바로가기</button>
+			<button type="button" class="btn-common is-outline is-white is-small" disabled>바로가기<span class="arrow"></span></button>
+		</div>
+		<div style="padding:20px;">
+			<a href="#" class="btn-common is-outline is-small">바로가기</a>
+			<a href="#" class="btn-common is-outline is-small">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-outline is-small">바로가기</button>
+			<button type="button" class="btn-common is-outline is-small" disabled>바로가기</button>
+			<button type="button" class="btn-common is-outline is-small" disabled>바로가기<span class="arrow"></span></button>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<h2 class="h2_guide">04. transparent</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div style="padding:20px 0;background-color:rgba(0, 19, 55, 0.9);">
+			<a href="#" class="btn-common is-small is-white">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-small is-white">바로가기<span class="arrow"></span></button>
+		</div>
+		<div>
+			<a href="#" class="btn-common is-small">바로가기<span class="arrow"></span></a>
+			<button type="button" class="btn-common is-small">바로가기<span class="arrow"></span></button>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기능에 따라 button태그 or a태그 사용
+ * 기본 class="btn-common"
+ * 아웃라인 class="is-outline"
+ * 색상 class="is-white"
+ * 사이즈 class="is-medium" / class="is-small"
+ */
+<div>
+	<button type="button" class="btn-common is-outline is-white">바로가기<span class="arrow"></span></button>
+	<button type="button" class="btn-common is-outline">바로가기<span class="arrow"></span></button>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+
+
+	
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

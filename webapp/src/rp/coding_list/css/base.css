@@ -1,0 +1,47 @@
+@charset "utf-8";
+/************************************************************************
+ * filename : base.css
+ * description : 기본공통 CSS
+ * date :
+************************************************************************/
+
+xmp {margin:0; padding:0; white-space:pre-wrap;font-family:inherit}
+h1.c_left {margin-bottom:10px; padding:7px; border-bottom:1px solid #e9e9e9; color:#999; font-size:15px; line-height:normal}
+h2.c_left {padding:2px; line-height:normal}
+.dtree {margin-top:10px; padding-bottom:50px; color:#999; white-space:nowrap}
+.dtree p {text-align:right}
+.dtree a {color:#999; text-decoration:none;}
+.dtree a.node, .dtree a.nodeSel {padding: 1px 2px 1px 2px; white-space:nowrap}
+.dtree a.nodeSel {background-color: #f0ff00}
+.dtree .clip {overflow: hidden;}
+.t_ing {color:#999}
+.t_app {color:#0042ff}
+.t_confirm {color:#000}
+.t_modify {color:#ff0000}
+
+.coding_guide {position:static !important;}
+.coding_guide h1.h1_guide {margin-bottom:15px; padding:7px 0 12px 10px; background:#58626F; color:white; font-size:18px; line-height:normal}
+.coding_guide h2.h2_guide {margin:20px 0 10px 20px; color:#000; font-size:16px; line-height:normal}
+.coding_guide h3.h3_guide {margin:20px 0 10px 10px; color:#000; font-size:14px; line-height:normal}
+.coding_guide dl.notice {padding-left:20px}
+.coding_guide dl.notice ol	{list-style-type:decimal; list-style-position:inside}
+.coding_guide dl.notice li {padding:2px;;list-style-type:decimal; list-style-position:inside}
+.coding_guide dl.notice ul li {margin-left:10px}
+.coding_guide .guide_wrap {width:100%;padding:0 20px 10px 20px;box-sizing:border-box}
+.coding_guide .d_desc {margin:0 20px 20px 20px; padding:9px; border:1px dashed #bdbfc2; background:#f5f5f5; font-size:12px; line-height:15px}
+.coding_guide .d_desc.code {padding:0;}
+.coding_guide .d_desc .num_list {padding-left:20px; list-style-type:decimal;}
+.coding_guide .d_desc .num_list li {padding:0 0 5px 0;}
+.coding_guide .t_point {margin:0 0 7px; padding-bottom:5px; border-bottom:1px solid #E5E5E5}
+
+.guide_table {width:100%; border:0 none; border-collapse:collapse;}
+.guide_table th,
+.guide_table td {padding:5px 10px; border:1px solid #ccc;}
+.guide_table th {color:#000;}
+.guide_table thead th {background-color:#ddd; border-bottom:0 none;}
+
+.guideTitle { font-size: 18px; font-weight: 700; margin: 50px 0 20px; background: #eee; height: 30px; line-height: 30px; }
+
+.guideTitleSmall { font-size: 14px; margin: 30px 0 20px; }
+.field{margin-bottom:20px;}
+.field.inline{display:inline-block;}

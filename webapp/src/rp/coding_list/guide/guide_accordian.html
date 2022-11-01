@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Accordian Guide</title>
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/modules.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+	
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Accordian Guide</h1>
+
+	<h2 class="h2_guide">01. Default</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="accordian-box">
+			<div class="item">
+			  <div class="top">
+				<div class="box">
+				  <strong class="title"><a href="http://www.yppc.co.kr" title="새 창" target="_blank">영풍정밀 주식회사</a></strong>
+				</div>
+				<button type="button" class="btn-toggle" data-target="view_01" data-on="1">자세히 보기</button>
+			  </div>
+			  <div class="pane view_01">
+				상세 내용
+			  </div>
+			</div>
+  
+			<div class="item">
+			  <div class="top">
+				<div class="box">
+				  <strong class="title"><a href="http://www.sorincorporation.com" title="새 창" target="_blank">서린상사 주식회사</a></strong>
+				</div>
+				<button type="button" class="btn-toggle" data-target="view_02" data-on="1">자세히 보기</button>
+			  </div>
+			  <div class="pane view_02">
+				상세 내용
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="accordian-box">
+	<div class="item">
+		<div class="top">
+		<div class="box">
+			<strong class="title"><a href="http://www.yppc.co.kr" title="새 창" target="_blank">영풍정밀 주식회사</a></strong>
+		</div>
+		<button type="button" class="btn-toggle" data-target="view_01" data-on="1">자세히 보기</button>
+		</div>
+		<div class="pane view_01">
+		상세 내용
+		</div>
+	</div>
+
+	<div class="item">
+		<div class="top">
+		<div class="box">
+			<strong class="title"><a href="http://www.sorincorporation.com" title="새 창" target="_blank">서린상사 주식회사</a></strong>
+		</div>
+		<button type="button" class="btn-toggle" data-target="view_02" data-on="1">자세히 보기</button>
+		</div>
+		<div class="pane view_02">
+		상세 내용
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+
+</div>
+</body>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

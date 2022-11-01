@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Form Guide</title>
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/modules.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+
+
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Form Guide</h1>
+	<h2 class="h2_guide">01. Input text</h2>
+	
+	<!-- View -->
+	<div class="guide_wrap">
+		<input type="text" class="input" placeholder="이메일을 입력하세요."/>
+		<input type="text" class="input" placeholder="이메일을 입력하세요." disabled/>
+		<input type="text" class="input validation" placeholder="이메일을 입력하세요."/>
+		<div class="error-msg"><em>이름을 입력하세요</em></div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<input type="text" class="input" placeholder="이메일을 입력하세요."/>
+<input type="text" class="input" placeholder="이메일을 입력하세요." disabled/>
+<input type="text" class="input validation" placeholder="이메일을 입력하세요."/>
+<div class="error-msg"><em>이름을 입력하세요.</em></div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">02. Textarea</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<textarea class="textarea" rows="10" placeholder="내용을 입력하세요."></textarea>
+		<textarea class="textarea" rows="10" placeholder="내용을 입력하세요." disabled></textarea>
+		<textarea class="textarea validation" rows="10" placeholder="내용을 입력하세요."></textarea>
+		<div class="error-msg"><em>내용을 입력하세요.</em></div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<textarea class="textarea" rows="10" placeholder="내용을 입력하세요."></textarea>
+<textarea class="textarea" rows="10" placeholder="내용을 입력하세요." disabled></textarea>
+<textarea class="textarea validation" rows="10" placeholder="내용을 입력하세요."></textarea>
+<div class="error-msg"><em>내용을 입력하세요.</em></div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+
+	<h2 class="h2_guide">03. Select</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<select class="select">
+			<option>이메일 선택</option>
+			<option>naver.com</option>
+			<option>daum.net</option>
+		</select>
+		<select class="select" disabled>
+			<option>이메일 선택</option>
+			<option>naver.com</option>
+			<option>daum.net</option>
+		</select>
+		<select class="select validation">
+			<option>이메일 선택</option>
+			<option>naver.com</option>
+			<option>daum.net</option>
+		</select>
+		<div class="error-msg"><em>이메일을 선택하세요.</em></div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<select class="select">
+	<option>이메일 선택</option>
+	<option>naver.com</option>
+	<option>daum.net</option>
+</select>
+<select class="select" disabled>
+	<option>이메일 선택</option>
+	<option>naver.com</option>
+	<option>daum.net</option>
+</select>
+<select class="select validation">
+	<option>이메일 선택</option>
+	<option>naver.com</option>
+	<option>daum.net</option>
+</select>
+<div class="error-msg"><em>이메일을 선택하세요.</em></div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">04. Radio Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<input type="radio" class="radio"/>
+		<input type="radio" class="radio" disabled/>
+		<input type="radio" class="radio" checked/>
+		<input type="radio" class="radio" checked disabled/>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<input type="radio" class="radio"/>
+<input type="radio" class="radio" disabled/>
+<input type="radio" class="radio" checked/>
+<input type="radio" class="radio" checked disabled/>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05. Checkbox</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<input type="checkbox" class="checkbox"/>
+		<input type="checkbox" class="checkbox" disabled/>
+		<input type="checkbox" class="checkbox" checked/>
+		<input type="checkbox" class="checkbox" checked disabled/>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<input type="checkbox" class="checkbox"/>
+<input type="checkbox" class="checkbox" disabled/>
+<input type="checkbox" class="checkbox" checked/>
+<input type="checkbox" class="checkbox" checked disabled/>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">06. ui-datepicker</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+
+		<div class="input-T">
+			<input type="text" value="" placeholder="YYYY.MM.DD" class="datepicker" id="dp1632377658141"/>
+		</div>
+
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="input-T">
+	<input type="text" value="" placeholder="YYYY.MM.DD" class="datepicker" id="dp1632377658141"/>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+
+	
+
+
+</div>
+<script type="text/javascript" src="/coding_list/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+<script type="text/javascript" src="/coding_list/js/icheck.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.checkbox').iCheck();
+    $('.radio').iCheck();
+	});
+</script>
+
+</body>
+</html>

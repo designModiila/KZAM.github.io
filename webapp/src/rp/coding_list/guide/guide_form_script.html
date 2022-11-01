@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="./img/liferay.ico" type="image/x-icon" />
+	<title>Form 스크립트 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+<h1 class="h1_guide">Form Guide</h1>
+	<h2 class="h2_guide">01. Select Box</h2>
+	<div class="guide_wrap">
+		<div class="selectBox" data-form="selectBox">
+			<select title="검색어 분류" id="select0">
+				<option>전체</option>
+				<option>제목</option>
+				<option>내용</option>
+			</select>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+	<div class="selectBox" data-form="selectBox"> // class="selectBox" / data-form="selectBox" 필요
+		<select title="검색어 분류" id="select0">
+			<option>전체</option>
+			<option>제목</option>
+			<option>내용</option>
+		</select>
+	</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">02. Select Box Index 확인</h2>
+	<div class="guide_wrap">
+		<div class="selectBox" data-form="selectBox">
+			<select title="검색어 분류" id="select1">
+				<option>전체</option>
+				<option>제목</option>
+				<option>내용</option>
+			</select>
+		</div>
+	</div>
+	<script>
+		$("#select1").change(function(){
+			var idx = $(this).find("option:selected").index();
+			alert("select Index: " + idx);
+		});
+	</script>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+	<div class="selectBox" data-form="selectBox">
+		<select title="검색어 분류" id="select1">
+			<option>전체</option>
+			<option>제목</option>
+			<option>내용</option>
+		</select>
+	</div>
+	<script>
+		$("#select1").change(function(){
+			var idx = $(this).find("option:selected").index();
+			alert("select Index: " + idx);
+		});
+	</script>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">03. Select Box 동적생성</h2>
+	<div class="guide_wrap">
+		<button class="btn btnBlue" id="add">select박스 동적 생성</button>
+		<div class="grid"></div>
+	</div>
+	<script>
+		$("#add").click(function(){
+			var html = "";
+				html += "<div class='selectBox' data-form='selectBox'>"
+				html += "<select id='test2'>"
+				html += "	<option>추가1</option>";
+				html += "	<option>추가2</option>";
+				html += "	<option>추가3</option>";
+				html += "</select>"
+				html += "</div>"
+			$(".grid").append(html);
+			$("#test2").update();
+		})
+	</script>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+	<button class="btn btnBlue" id="add">select박스 동적 생성</button>
+	<div class="grid"></div> <!-- 동적으로 생성된 select박스 추가할 위치 -->
+	<script>
+		$("#add").click(function(){
+			var html = "";
+				html += "<div class='selectBox' data-form='selectBox'>"
+				html += "<select id='select2'>" // 동적 생성 후 사용 할 id="select2"
+				html += "	<option>추가1</option>";
+				html += "	<option>추가2</option>";
+				html += "	<option>추가3</option>";
+				html += "</select>"
+				html += "</div>"
+			$(".grid").append(html);
+			$("#select2").update(); // 동적 생성 후 select박스 update
+		})
+	</script>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">04. Select Box 옵션변경</h2>
+	<div class="guide_wrap">
+		<div class="selectBox" data-form="selectBox">
+			<select id="select3">
+				<option>서울</option>
+				<option>경기도</option>
+				<option>강원도</option>
+				<option>경상북도</option>
+			</select>
+		</div>
+		<div class="selectBox" data-form="selectBox">
+			<select id="select4">
+				<option>강남구</option>
+				<option>서대문구</option>
+				<option>마포구</option>
+				<option>동대문구</option>
+				<option>관악구</option>
+			</select>
+		</div>
+	</div>
+	<script>
+		$(document).on("change", "#select3", function(){
+			var idx = $(this).find("option:selected").index();
+			$("#select4").find("option").remove();
+			if(idx == 0){
+				var html = "";
+				html += "<option>강남구</option>"
+				html += "<option>서대문구</option>"
+				html += "<option>마포구</option>"
+				$("#select4").append(html);
+			}
+			if(idx == 1){
+				var html = "";
+				html += "<option>일산</option>"
+				html += "<option>남양주</option>"
+				html += "<option>가평</option>"
+				$("#select4").append(html);
+			}
+			$("#select4").update();
+		});
+	</script>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+	<div class="selectBox" data-form="selectBox">
+		<select id="select3">
+			<option>서울</option>
+			<option>경기도</option>
+			<option>강원도</option>
+			<option>경상북도</option>
+		</select>
+	</div>
+	<div class="selectBox" data-form="selectBox">
+		<select id="select4">
+			<option>강남구</option>
+			<option>서대문구</option>
+			<option>마포구</option>
+			<option>동대문구</option>
+			<option>관악구</option>
+		</select>
+	</div>
+	<script>
+		$(document).on("change", "#select3", function(){
+			var idx = $(this).find("option:selected").index();
+			$("#select4").find("option").remove();
+			if(idx == 0){
+				var html = "";
+				html += "<option>강남구</option>"
+				html += "<option>서대문구</option>"
+				html += "<option>마포구</option>"
+				$("#select4").append(html);
+			}
+			if(idx == 1){
+				var html = "";
+				html += "<option>일산</option>"
+				html += "<option>남양주</option>"
+				html += "<option>가평</option>"
+				$("#select4").append(html);
+			}
+			$("#select4").update();
+		});
+	</script>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">05. Select Box 비활성화</h2>
+	<div class="guide_wrap">
+		<div class="selectBox" data-form="selectBox">
+			<select title="검색어 분류" id="select0" disabled="disabled">
+				<option>전체</option>
+				<option>제목</option>
+				<option>내용</option>
+			</select>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+	<div class="selectBox" data-form="selectBox"> // class="selectBox" / data-form="selectBox" 필요
+		<select title="검색어 분류" id="select0" disabled="disabled">
+			<option>전체</option>
+			<option>제목</option>
+			<option>내용</option>
+		</select>
+	</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">06. 기간 선택</h2>
+	<div class="guide_wrap">
+		<div class="dateArea" data-term="1w" data-date="setting">
+			<div class="dateWrap">
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" data-date-type="startDate" /></span>
+				~
+				<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" data-date-type="endDate" /></span>
+			</div>
+			<div class="dateBtn">
+				<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+				<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+				<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+				<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+			</div>
+		</div>
+	</div>
+	<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<!--
+	data-term : date기간 선택
+	ex) 3주 : 3w
+	d : 일, w : 주, m : 월, y : 년
+-->
+<div class="dateArea" data-term="1w" data-date="setting">
+	<div class="dateWrap">
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" data-date-type="startDate" /></span>
+		~
+		<span class="dateBox"><input type="text" class="datePicker" title="날짜선택" data-date-type="endDate" /></span>
+	</div>
+	<div class="dateBtn">
+		<button type="button" class="btn btnWhite" data-term="1w">1주일</button>
+		<button type="button" class="btn btnWhite" data-term="1m">1개월</button>
+		<button type="button" class="btn btnWhite" data-term="3m">3개월</button>
+		<button type="button" class="btn btnWhite" data-term="1y">1년</button>
+	</div>
+</div>
+</xmp>
+<!-- // code -->
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+<script>
+	ui.init();
+</script>
+</body>
+</html>

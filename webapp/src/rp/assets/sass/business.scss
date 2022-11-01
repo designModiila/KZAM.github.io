@@ -1,0 +1,2468 @@
+.full-width-img{
+  width:100%;
+}
+.title-article{
+  font-size:32px;
+  line-height: 1.13;
+  letter-spacing:-1.28px;
+  font-family: 'NotoB';
+  margin-bottom: 25px;
+}
+.section-society-issue{
+  padding-top: 120px;
+}
+.desc-article{
+  font-size: 18px;
+  color: #666;
+  letter-spacing: -.72px;
+  line-height: 1.5;
+}
+.battery-graph{
+  padding-top: 80px;
+}
+// 미래산업 공통 인트로 타이틀 2021.01.03
+.businsess-intro-wrap{
+  margin-bottom: 80px;
+  .intro-title{
+    font-size: 48px;
+    font-family: 'NotoB';
+    letter-spacing: -0.96px;
+    line-height: 1.29;
+    margin-bottom: 15px;
+  }
+  .intro-desc{
+    font-size: 18px;
+    color: #666;
+    letter-spacing: -.72px;
+    line-height: 1.5;
+  }
+}
+.page_solar-energy{
+  background-color: #fff;
+}
+// 2022.01.18 개요페이지 추가
+.section-business-index-content{
+  &:last-of-type{
+    padding-bottom: 120px;
+  }
+}
+.visual-business-index{
+  background-image: url(../../assets/images/sub/visual_sub_business_index.png);
+}
+.section-business-index{
+  background-image: url(../../assets/images/business/business-index-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 750px 0;
+  width: 100%;
+  .title{
+    color:#fff;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    .eng-title{
+      font-family: 'MadetommyB';
+      font-size: 68px;;
+    }
+  }
+  .business-index-list{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // padding-top: 100px;
+    &::before,&::after{
+      display: block;
+      content: '';
+      width: 840px;
+      height: 840px;
+      position: absolute;
+      left: 50%;
+      top: -150px;
+      margin-left:-420px;
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:100%;
+      z-index: 0;
+    }
+    &::before{
+      background-image: url(../../assets/images/business/circle-line-01.png);
+      animation: rotate-circle 5s linear infinite;
+    }
+    &::after{
+      background-image: url(../../assets/images/business/circle-line-02.png);
+      animation: rotate-circle2 5s linear infinite;
+    }
+    li{
+      width: 240px;
+      height: 240px;
+      border-radius:100%;
+      background-color: #fff;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      a{
+        width: 100%;
+        height:100%;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center 40px;
+        padding-top: 130px;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: 'NotoB';
+        font-size: 18px;
+        letter-spacing: -.72px;
+        // &:hover{
+        //   background-color: #0056ff;
+        //   color: #fff;
+        //   li.energy-circle{
+        //     a{
+        //       background-image: url(../../assets/images/business/business-index-icon_01_hov.png);
+        //     }
+        //   }
+        //   li.secondary-circle{
+        //     a{
+        //       background-image: url(../../assets/images/business/business-index-icon_01_hov.png);
+        //     }
+        //   }
+        //   li.recylce-circle{
+        //     a{
+        //       background-image: url(../../assets/images/business/business-index-icon_01_hov.png);
+        //     }
+        //   }
+        // }
+      }
+      &:hover{
+        background-color: #0056ff;
+        a{
+          color: #fff;
+        }
+        &.energy-cirlce{
+          a{
+            background-image: url(../../assets/images/business/business-index-icon_01_hov.png);
+          }
+        }
+        &.secondary-circle{
+          a{
+            background-image: url(../../assets/images/business/business-index-icon_02_hov.png);
+          }
+        }
+        &.recylce-circle{
+          a{
+            background-image: url(../../assets/images/business/business-index-icon_03_hov.png);
+          }
+        }
+        .arrow{
+          background-color: #fff !important;
+          &::before{
+            border-color: #fff;
+          }
+        }
+      }
+      &.energy-cirlce{
+        top: 0px;
+        left: 50%;
+        margin-left:-420px;
+        a{
+          background-image: url(../../assets/images/business/business-index-icon_01.png);
+        }
+      }
+      &.blue-circle{
+        top: 137px;
+        left:50%;
+        margin-left:-120px;
+        background-color: #0056ff;
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
+        font-family: 'NotoB';
+        letter-spacing: -1.28px;
+      }
+      &.secondary-circle{
+        top: 0px;
+        right: 50%;
+        margin-right:-420px;
+        a{
+          background-image: url(../../assets/images/business/business-index-icon_02.png);
+        }
+      }
+      &.recylce-circle{
+        top:470px;
+        left: 50%;
+        margin-left:-120px;
+        a{
+          background-image: url(../../assets/images/business/business-index-icon_03.png);
+        }
+      }
+    }
+  }
+  .arrow-box{position:absolute;}
+  .arrow-box:nth-of-type(1){top:80px;left:-90px;transform:rotate(30deg);}
+  .arrow-box:nth-of-type(2){top:53px;right:-75px;transform:rotate(150deg);}
+  .arrow-box:nth-of-type(3){top:227px;left:63px;transform:rotate(270deg);}
+  .arrow-set{display:inline-block;position:relative;width:70px;vertical-align:top;}
+  .arrow-set:nth-child(2){transform:rotate(180deg) translateY(35px) translateX(5px);transform-origin:0 50%;}
+  .arrow-set .mask{display:inline-block;width:70px;border:1px dashed transparent;
+  background-image: linear-gradient(#3758ff, #e5fdff), linear-gradient(to right, #3758ff, #e5fdff, #3758ff);background-size:200% 100%;vertical-align:top;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;  
+  -webkit-mask-image: url(../../assets/images/svg/arrow.svg);
+  mask-image: url(../../assets/images/svg/arrow.svg);
+  animation: gradient 3s linear infinite;}
+  .arrow-set .triangle{display:block;content:"";position:absolute;right:-7px;top:-4px;border:5px solid;border-color:transparent transparent transparent #3758ff;animation: gradient-border 3s linear infinite;}
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient-border {
+    0% {
+      border-color:transparent transparent transparent #e5fdff;
+    }
+    50% {
+      border-color:transparent transparent transparent #3758ff;
+    }
+    100% {
+      border-color:transparent transparent transparent #e5fdff;
+    }
+  }
+}
+.section-troika{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  &:not(:last-of-type){
+    margin-bottom:160px;
+  }
+  .troika-tit{
+    color: #000;
+    font-size: 48px;
+    font-family: 'NotoB';
+    line-height: 1.29;
+    .troika-subtit{
+      color: #999;
+      font-size: 32px;
+      letter-spacing: -1.28px;
+      display: block;
+      font-family: 'NotoB';
+    }
+  }
+  .figure{
+    // width: 47%;
+    // img{
+    //   width: 100%;
+    // }
+  }
+  .troika-right-text{
+    width: 54%; 
+    .pgrph{
+      font-size: 18px;
+      color: #666;;
+      line-height: 1.5;
+      .bold-gray{
+        font-size: 24px;
+        display: block;
+        color: #666;
+        font-family: 'NotoB';
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.troika-figure{
+  img{
+    width: 100% !important;
+  }
+}
+
+// 수소
+.new-green-hydrogen{
+  .green-hydrogen-desc{
+    width:65%;
+    float: left;
+  }
+  .new-inner-article{
+    .title-article{
+      font-size: 48px;
+      letter-spacing: -0.96px;
+      font-family: 'NotoB', serif;
+      line-height: 1.29;
+    }
+  }
+  .green-hydrogen-desc-list{
+    li{
+      margin-top: 15px;
+    }
+    font-size:18px;
+    letter-spacing: -.72px;
+    strong{
+      font-size: 18px;
+      font-family: 'NotoB';
+    }
+    span{
+      color:#666;
+    }
+  }
+  .process-pc{
+    width:25%;
+    float: right;
+  }
+}
+
+// 제강분진 2021.12.31
+.visual-business-steel{
+  background-image: url(../images/sub/visual_sub_business_steel.png);
+}
+.page_steel{
+  .page_e-scrap{
+    padding-top:160px;
+  }
+  .section-world-wide-map{
+    padding-bottom:160px;
+    .process-pc{
+      margin-top: 40px;
+    }
+  }
+}
+
+// E-scrap 2021.12.31
+.page-sns-section{
+  text-align: right;
+  padding-top:80px;
+}
+.page_e-scrap{
+  padding-bottom: 120px;
+  .title-definition-wrap{
+    padding-top:0 !important;
+  }
+  figure{
+    padding-top: 25px;
+  }
+}
+.visual-business-e-scrap{
+  background-image: url(../images/sub/visual_sub_business_e-scrap.png);
+}
+.title-definition-wrap{
+  h3{
+    span{
+      font-size:32px;
+      font-family: 'NotoM';
+    }
+  }
+}
+// 풍력에너지 2022.02.10
+.visual-business-wind {
+	background-image: url(../images/sub/visual_sub_business_wind.png);
+}
+.section-wind-energy {
+	padding-top: 80px;
+}
+.section-wind-desc {
+	padding-top: 120px;
+	padding-bottom: 160px;
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		.document-title.type-2 {
+			width: 45%;
+			.desc {
+				padding-right: 46px;
+			}
+		}
+		figure {
+			width: 45%;
+		}
+	}
+	&.wind-graph {
+		padding-bottom: 0;
+		.inner {
+			align-items: center;
+		}
+	}
+}
+// 태양광 에너지 2022.02.11
+.visual-business-solar {
+	background-image: url(../images/sub/visual_sub_business_solar.png);
+}
+.section-solar-energy {
+	padding: 80px 0;
+}
+.graph-box {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 64px;
+	figure {
+		width: 47%;
+	}
+}
+.section-solar-dream {
+	padding-top: 120px;
+	padding-bottom: 160px;
+	.article-box {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 40px;
+		figure {
+			width: 47%;
+		}
+		.document-title {
+			width: 45%;
+		}
+	}
+}
+
+
+//****2차전지 소재****//
+//**** 공통으로 쓸 STYLES ****//
+.second-battery-purpose {
+  // padding-bottom: 120px;
+  margin-top: 48px;
+  h4 {
+    margin-bottom: 24px;
+  }
+  .purpose-list {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    li {
+      width: 25.5%;
+      padding: 49px 0;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      margin-right: 10px;
+      &:not(:first-child) {
+        &::before {
+          display: block;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 16px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+        line-height: 27px;
+        text-align: center;
+        z-index: 10;
+      }
+      &:first-child {
+        background-image: url(../images/business/purpose_list_01.png);
+      }
+      &:nth-child(2) {
+        background-image: url(../images/business/purpose_list_02.png);
+      }
+      &:nth-child(3) {
+        background-image: url(../images/business/purpose_list_03.png);
+      }
+      &:last-child {
+        background-image: url(../images/business/purpose_list_04.png);
+      }
+    }
+  }
+}
+//**** ///공통으로 쓸 STYLES ****//
+.page_secondary_battery {
+  .ie-inner{
+    background-color: #fff;
+  }
+  background-color: #fff;
+  .pic_bg{
+    img{
+      width: 100%;
+    }
+  }
+  .inner {
+    .desc-article {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+  .section-copper-order {
+    margin-top: 0;
+  }
+  .section-battery {
+    padding-bottom: 64px;
+  }
+  .tab_cont {
+    overflow: hidden;
+  }
+  .figure {
+    width: 100%;
+  }
+  .section-customer{
+    margin-bottom: 120px;
+  }
+
+  // 수소__황산니켈
+  .section-global-battery {
+    overflow: hidden;
+    .inner {
+      overflow: hidden;
+      h4 {
+        @include Bold;
+        font-size: 32px;
+        letter-spacing: -1.28px;
+      }
+      .title-definition-wrap {
+        width: 47%;
+        float: left;
+        margin-bottom: 48px;
+        .sup {
+          font-size: 32px;
+          letter-spacing: -0.64px;
+          color: #999;
+          @include Bold;
+        }
+      }
+      .global-contents-definition {
+        width: 47%;
+        float: left;
+        p {
+          line-height: 1.5;
+          font-size: 24px;
+          letter-spacing: -0.96px;
+          &:first-of-type {
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .contents-figure {
+        width: 47%;
+        float: right;
+        padding-top: 160px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .second-battry-more-definition {
+      padding-top: 48px;
+      clear: both;
+      width: 100%;
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.72px;
+        &:not(:nth-of-type(2)) {
+          color: #666;
+        }
+        &:nth-of-type(2) {
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+  // 수소___전지박 
+  .sec-copper-foil {
+    .inner {
+      .contents-figure {
+        padding-top: 0;
+      }
+      .purpose-list {
+        li {
+          &:first-child {
+            background-image: url(../images/business/coil-purpose-list_01.png);
+          }
+          &:nth-child(2) {
+            background-image: url(../images/business/coil-purpose-list_02.png);
+          }
+          &:nth-child(3) {
+            background-image: url(../images/business/coil-purpose-list_03.png);
+          }
+          &:last-child {
+            background-image: url(../images/business/coil-purpose-list_04.png);
+          }
+        }
+      }
+      .second-battry-more-definition{
+        padding-top: 0;
+      }
+    }
+    .section-copper-order {
+      margin:120px 0;
+    }
+  }
+  // 수소__전구체
+  .sec-precursor {
+    .inner {
+      figure {
+        padding-top: 160px;
+      }
+    }
+  }
+
+  //  TABLES
+.section-customer{
+  .table{
+    &.type-mo {
+      td {
+        color: #000;
+        &:not(:first-child) {
+          color: #666;
+          letter-spacing: -0.64px;
+        }
+      }
+      .caption {
+        padding-top: 0;
+      }
+    }
+  }
+}
+}
+//****//2차전지 소재****//
+
+
+
+
+
+
+
+// 페 배터리
+.section-waste-battery {
+  margin-top: 120px;
+  .article-box {
+    .figure {
+      width: 44.38%;
+    }
+    .inner-article {
+      width: 49.38%;
+    }
+  }
+}
+.visual-business-wastebattery {
+  background-image: url(../images/sub/visual_sub_business_waste-battery.png);
+}
+.full-width-battery-bg {
+  background-image: url(../images/business/battery_second-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  margin-top: 64px;
+}
+.page_waste-battery {
+  background-color: #fff;
+  .business-title {
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: -1.92px;
+    color: #000;
+    @include Bold;
+  }
+  .business-article {
+    letter-spacing: -0.72px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 16px;
+  }
+  .section-recylce {
+    padding:120px 0;
+    background-color: #e6ebf5;
+    margin-top: 160px;
+    .document-title{
+      margin-bottom: 80px;
+    }
+    .inner-article {
+      width: 100%;
+    }
+    .title-article {
+      font-size: 32px;
+      line-height: 1.13;
+      letter-spacing: -1.28px;
+      font-family: 'NotoB';
+      margin-bottom: 40px;
+    }
+    .reuse-process{
+      padding-bottom: 80px;
+    }
+    .reuse-process-list{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width:11.953125%;
+        position: relative;
+        &:not(:last-child){
+          margin-right:0.625%;
+          .reuse-img{
+            &::after{
+              display: block;
+              content: '';
+              background-image: url(../images/business/reuse-arrow.png);
+              width:19px;
+              height:22px;
+              position: absolute;
+              top:50%;
+              right:-15px;
+              transform: translateY(-50%);
+              z-index: 1;
+            }
+          }
+        }
+        .reuse-img{
+          width:100%;
+          position: relative;
+          // height: 100%;
+          // display: flex;
+          // align-items: center;
+          // background-color: #fff;
+          &::before{
+            display: block;
+            content: '';
+            width:100%;
+            // height:80px;
+            background-repeat: no-repeat;
+            background-position:50% 50%;
+            margin: 0 auto ;
+            padding-top:100%;
+            background-color: #fff;;
+          }
+         
+          &.reuse-first{
+            &::before{
+              background-image:url(../images/business/reuse-img01.png);
+            }
+          }
+          &.reuse-second{
+            &::before{
+              background-image:url(../images/business/reuse-img02.png);
+            }
+          }
+          &.reuse-third{
+            &::before{
+              background-image:url(../images/business/reuse-img03.png);
+            }
+          }
+          &.reuse-fourth{
+            &::before{
+              background-image:url(../images/business/reuse-img04.png);
+            }
+          }
+          &.reuse-fifth{
+            &::before{
+              background-image:url(../images/business/reuse-img05.png);
+            }
+          }
+          &.reuse-sixth{
+            &::before{
+              background-image:url(../images/business/reuse-img06.png);
+            }
+          }
+          &.reuse-seven{
+            &::before{
+              background-image:url(../images/business/reuse-img07.png);
+            }
+          }
+          &.reuse-eight{
+            &::before{
+              background-image:url(../images/business/reuse-img08.png);
+            }
+          }
+        }
+        
+        span{
+          display: block;
+          text-align: center;
+          margin-top: 10.45751633986928%;
+          font-size: 18px;
+          font-family: 'NotoB';
+        }
+      }
+    }
+    .desc-article{
+      margin: 80px 0 40px 0;
+    }
+  }
+  // figure {
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
+}
+.section-waste-battery {
+  &:last-of-type {
+    padding-bottom: 164px;
+  }
+}
+.page_waste-battery {
+  .section-green-hydrogen {
+    overflow: hidden;
+    clear: both;
+    padding: 120px 0;
+  }
+
+  .section-global-battery {
+    clear: both;
+    overflow: hidden;
+    padding-top: 160px;
+    figure {
+      width: 47%;
+      float: right;
+    }
+    .inner {
+      .title-definition-wrap {
+        width: 47%;
+        float: left;
+        margin-bottom: 16px;
+        padding-top: 165px;
+        // h3 {
+        //   line-height: 64px;
+        // }
+      }
+      .global-contents-definition {
+        width: 47%;
+        float: left;
+        p {
+          color: #666;
+          font-size: 18px;
+          line-height: 27px;
+          letter-spacing: -0.72px;
+          &:first-child {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-forward-busniess {
+    .inner {
+      figure {
+        width: 47%;
+        float: right;
+      }
+    }
+  }
+  .three-p {
+    p {
+      &:nth-child(2) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+// 수소
+.contents-padding {
+  padding-top: 30px;
+}
+.title-definition-wrap {
+  h3 {
+    font-size: 48px;
+    line-height: 1.29;
+    letter-spacing: -1.92px;
+    color: #000;
+    @include Bold;
+  }
+}
+.contents-definition {
+  width: 45%;
+  float: left;
+  p {
+    color: #666;
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    line-height: 27px;
+  }
+}
+.section-green-hydrogen {
+  padding-bottom: 64px;
+}
+.green-main-contents-wrap {
+  width: 47%;
+  float: right;
+  margin-bottom: 16px;
+  h3 {
+    // line-height: 62px;
+    letter-spacing: -0.96px;
+  }
+}
+
+.green-contents-definition {
+  width: 47%;
+  float: right;
+  p {
+    line-height: 27px;
+    font-size: 18px;
+    color: #666;
+    letter-spacing: -0.72px;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+.green-figure {
+  width: 47%;
+  float: left;
+}
+.more-definition-wrap {
+  clear: both;
+  padding-top: 40px;
+  p {
+    font-size: 18px;
+    color: #666;
+    line-height: 27px;
+    letter-spacing: -0.72px;
+
+    &:first-child {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+
+.visual-business-hydrogen {
+  background-image: url(../images/sub/visual_sub_business_hydrogen.png);
+}
+
+.section-battery {
+  .inner {
+    .article-box {
+      &:last-of-type {
+        margin-top: 24px;
+        margin-bottom: 64px;
+      }
+    }
+  }
+
+  .inner-article {
+    width: 100%;
+  }
+}
+
+.page_hydrogen {
+  background-color: #fff;
+  .section-waste-battery {
+    padding-bottom: 65px;
+  }
+  .business-title {
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: -1.92px;
+    color: #000;
+    @include Bold;
+  }
+  .business-article {
+    letter-spacing: -0.72px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 16px;
+  }
+  .section-recylce {
+    margin: 53px 0 129px 0;
+    background-color: blue;
+    .inner-article {
+      width: 100%;
+    }
+    .title-article {
+      font-size: 32px;
+      line-height: 1.13;
+      letter-spacing: -1.28px;
+      font-family: 'NotoB';
+      margin-bottom: 40px;
+    }
+  }
+  .desc-article {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.72px;
+    color: #666;
+  }
+}
+.section-hydrogen-graph {
+  padding-bottom: 120px;
+  .inner-article {
+    width: 100%;
+    .title-article {
+      font-size: 48px;
+      letter-spacing: -0.96px;
+      @include Bold;
+    }
+  }
+}
+
+.process-mo {
+  display: none;
+}
+
+.hydrogen-graph {
+  margin-top: 64px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 48%;
+      p {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #666;
+        letter-spacing: -0.28px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.section-world-wide-map {
+  background-color: #e6ebf5;
+  padding: 120px 0 64px 0;
+  .title-order {
+    margin-bottom: 16px;
+    font-size: 48px;
+    letter-spacing: -1.92px;
+  }
+  .title-article {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    margin-bottom: 8px;
+  }
+  .figure {
+    display: flex;
+    justify-content: center;
+    margin-top: 48.5px;
+  }
+}
+
+.section-hydrogen-color-list {
+  padding-bottom: 80px;
+  .hydrogen-list {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 32.5%;
+      padding: 48px 40px 290px 40px;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      &:first-child {
+        background-image: url(../images/business/hydrogen_list_img01.png);
+        background-color: #e0e0e0;
+      }
+      &:nth-child(2) {
+        background-image: url(../images/business/hydrogen_list_img02.png);
+        background-color: #d0e0f4;
+      }
+      &:last-child {
+        background-image: url(../images/business/hydrogen_list_img03.png);
+        background-color: #c8ece4;
+      }
+      dl {
+        dt {
+          font-size: 24px;
+          letter-spacing: -0.96px;
+          @include Bold;
+          margin-bottom: 8px;
+        }
+        dd {
+          color: #666;
+          font-size: 16px;
+          letter-spacing: -0.64px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+
+.section-forward-busniess {
+  padding-bottom: 160px;
+  padding-top:135px;
+  overflow: hidden;
+  .image-inner {
+    width: 47%;
+    float: right;
+    padding-top: 35px;
+  }
+  .inner {
+    .title-definition-wrap {
+      float: left;
+      margin-bottom: 16px;
+      h3 {
+        font-size: 48px;
+        line-height: 1.29;
+        letter-spacing: -1.92px;
+        color: #000;
+        @include Bold;
+      }
+      sup {
+        color: #999;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -1.28px;
+        @include Bold;
+      }
+    }
+  }
+
+  .contents-definition {
+    p {
+      color: #666;
+      font-size: 18px;
+      letter-spacing: -0.72px;
+      line-height: 27px;
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+// For Ipad size (세로 )
+@media(min-width:790px) and (max-width:821px){
+  // 신사업
+  .section-hydrogen-color-list{
+    .hydrogen-list{
+      li{
+        padding-bottom:160px;
+        dl{
+          dd{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .page_secondary_battery{
+    .section-global-battery{
+      .inner{
+        .contents-figure{
+          padding-top: 100px !important;
+        }
+      }
+    }
+  }
+  .new-green-hydrogen{
+    .new-inner-article{
+      .title-article{
+        font-size: 43px;
+      }
+    }
+  }
+  .section-hydrogen-graph{
+    .inner-article{
+      .title-article{
+        font-size: 43px;
+      }
+    }
+  }
+  .section-world-wide-map{
+    .title-order{
+      font-size: 36px;
+    }
+  }
+  .document-title{
+    &.type-2{
+      .title{
+        font-size: 34px;
+      }
+    }
+  }
+  .page_waste-battery{
+    .section-green-hydrogen{
+      padding: 90px 0;
+    }
+    .section-recylce{
+      .reuse-process{
+        padding-bottom: 0;
+      }
+      .desc-article{
+        margin:0;
+        margin-bottom: 40px;
+      }
+    }
+    .section-global-battery{
+      padding: 90px 0;
+      .inner{
+        .title-definition-wrap{
+          padding-top: 0;
+        }
+        .global-contents-definition{
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .title-definition-wrap{
+    h3{
+      font-size:30px;
+    }
+  }
+  .footer-top-menu{
+    ul{
+      li{
+        &:not(:last-child){
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .section-business-index{
+    // .arrow-box{
+    //   &:nth-of-type(1){
+    //     top: 80px;
+    //     left: -68px;
+    //   }
+    // }
+    .business-index-list{
+      li{
+        &.secondary-circle{
+          right: 55%;
+        }
+        &.energy-cirlce{
+          left: 55%;
+        }
+      }
+    }
+  }
+  // 해외네트워크
+  .section-oversea-inner{
+    .wrap-layer{
+      .title{
+        font-size: 25px;
+      }
+      .desc{
+        font-size: 16px;
+      }
+    }
+  }
+}
+// For Ipad size (세로 , 가로 )
+@media(min-width:819px) and (max-width:1181px){
+  .list-order{
+    li{
+      .figure{
+        height: 150px;
+      }
+    }
+  }
+  .title-definition-wrap{
+    h3{
+      // font-size: 42px;
+    }
+  }
+
+  .section-troika{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    .troika-tit{
+      font-size: 42px;
+      .troika-subtit{
+        font-size: 28px;
+      }
+    }
+    .troika-right-text{
+      .pgrph{
+        .bold-gray{
+          font-size: 22px;
+        }
+      }
+      .pgrph{
+        font-size: 16px;
+      }
+    }
+  }
+}
+// 일반 pc 
+// 2021.11.22 add
+// 수소 , 폐배터리 레이아웃 깨짐방지
+@media(min-width:790px) and (max-width:1115px){
+  .green-contents-definition{
+    p{
+      font-size: 16px;
+    }
+  }
+  .new-green-hydrogen{
+    .process-pc{
+      width: 45%;
+      img{
+        height: 60%;
+      }
+    }
+  }
+}
+@media(min-width:769px) and (max-width:800px){
+  .page_waste-battery{
+    .section-global-battery{
+      .inner{
+        .global-contents-definition{
+          width: 54%;
+        }
+        .title-definition-wrap{
+          h3{
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  .title-definition-wrap{
+    h3{
+      font-size: 40px;
+    }
+  }
+  .green-contents-definition{
+    width: 53%;
+  }
+
+}
+
+
+@media(max-width:1285px) {
+  .section-relation{
+    .inner{
+      padding:120px 5vw;
+    }
+  }
+  .list-product-use {
+    >li {
+      .txt {
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: -0.56px;
+      }
+    }
+  }
+  
+  .green-figure {
+    // width: 100%;
+    // float: none;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .inner {
+    padding: 0 5vw;
+  }
+  .section-forward-busniess {
+    .inner {
+      .title-definition-wrap {
+        width: 100%;
+        float: none;
+      }
+    }
+    .image-inner {
+      width: 100%;
+      float: none;
+      padding: 0 5vw;
+    }
+    .contents-definition {
+      width: 100%;
+      float: none;
+    }
+  }
+  .section-green-hydrogen {
+    .inner {
+      // .green-main-contents-wrap {
+      //   width: 100%;
+      //   float: none;
+      // }
+      // .green-contents-definition {
+      //   width: 100%;
+      //   float: none;
+      // }
+    }
+  }
+  .section-hydrogen-color-list {
+    .hydrogen-list {
+      li {
+        background-size: 80%;
+      }
+    }
+  }
+  .page_secondary_battery {
+    .section-global-battery {
+      .inner {
+        padding-top: 0px;
+        h4 {
+          margin: 16px 0 8px 0;
+          font-size: 26px;
+          line-height: 1.29;
+        }
+        .title-definition-wrap {
+          // width: 100%;
+          // float: none;
+          margin-bottom: 16px;
+          h3 {
+            font-size: 30px;
+            letter-spacing: -2.24px;
+          }
+          .sup {
+            font-size: 18px;
+            letter-spacing: -1.44px;
+          }
+        }
+        .global-contents-definition {
+          // width: 100%;
+          // float: none;
+          margin-bottom: 48px;
+          p {
+            font-size: 18px;
+            letter-spacing: -1.44px;
+          }
+        }
+        .contents-figure {
+          // width: 100%;
+          // float: none;
+          padding-top: 50px;
+          margin-bottom: 16px;
+        }
+        .purpose-list {
+          width: 100%;
+          li {
+            padding: 67px 0;
+          }
+        }
+      }
+      .global-contents-definition {
+        p {
+          font-size: 18px;
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+        }
+      }
+      .second-battry-more-definition {
+        padding-top: 40px;
+        p {
+          font-size: 18px;
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .list-relation {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+        .title {
+          font-size: 18px;
+          letter-spacing: -1.44px;
+          margin-top: 16px;
+        }
+        .desc {
+          font-size: 16px;
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:1024px) {
+  // 1024px
+  
+	.section-wind-intro {
+		.inner {
+			padding: 0;
+			.article-box {
+				padding: 0 5vw;
+			}
+		}
+
+	}
+	.section-wind-desc {
+		padding-top: 60px;
+		padding-bottom: 80px;
+		.inner {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			position: relative;
+			.document-title.type-2 {
+				width: 100%;
+				.tit-mobile {
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 0 5vw;
+				}
+				.desc {
+					padding-right: 0;
+				}
+			}
+			figure {
+				width: auto;
+				padding-top: 30vw;
+				text-align: center;
+			}
+		}
+		&.wind-graph {
+			padding-bottom: 0;
+			.inner {
+				align-items: center;
+				flex-direction: column;
+				figure {
+					padding-top: 64px;
+				}
+			}
+		}
+	}
+	//태양광에너지
+	.section-solar-dream {
+		.inner {
+			.article-box {
+				position: relative;
+				flex-direction: column;
+				padding-bottom: 20px;
+				figure {
+					padding-top: 30vw;
+					width: 100%;
+					text-align: center;
+				}
+				.document-title {
+					width: 100%;
+					.tit-mobile {
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .page_waste-battery{
+    .section-recylce{
+      .reuse-process-list{
+        li{
+          width:31%;
+          &:not(:last-child){
+            margin-right: 1.805% !important;
+            .reuse-img{
+              &:after{ background-image: url(../images/business/reuse-arrow_mo.png);width:25px;height:29px;background-size:25px auto}
+
+            }
+          }
+          &:nth-child(3n){
+            margin-right:0;
+          }
+          margin-bottom:50px;
+          span{
+            margin-top: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:767px) {
+	//풍력에너지
+	.visual-business-wind {
+		background-image: url(../images/sub/visual_sub_business_wind_mo.png);
+	}
+	//태양광에너지
+	.visual-business-solar {
+		background-image: url(../images/sub/visual_sub_business_solar_mo.png);
+	}
+	.section-solar-intro {
+		.inner {
+			padding: 0;
+			.article-box {
+				padding: 0 5vw;
+			}
+		}
+	}
+	.section-solar-energy {
+		padding: 60px 0;
+	}
+	.graph-box {
+		flex-direction: column;
+		padding-top: 0;
+		figure {
+			width: 100%;
+			padding-top: 40px;
+		}
+	}
+	.section-solar-dream {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+  //개요
+  .section-business-index-content{
+    &:last-of-type{
+      padding-bottom: 60px;
+    }
+    .inner{
+      background-color: #fff;
+    }
+  }
+  .visual-business-index{
+    background-image: url(../images/sub/visual_sub_business_index_mo.png);
+  }
+  .page-company-index{
+    .process-mo{
+      width:calc( 100% + 10vw );
+      margin: 0 -5vw;
+    }
+  }
+  .section-business-index{
+    padding:60px 0 450px 0;
+    .title{
+      padding-bottom:20px;
+      font-size: 20px;
+      .eng-title{
+        font-family: 'MadetommyB';
+        font-size: 40px;;
+      }
+    }
+    .business-index-list{
+      &::before,&::after{
+        width: 440px;
+        height: 440px;
+        top: -40px;
+        margin-left:-220px;
+      }
+      li{
+        width: 120px;
+        height: 120px;
+        a{
+          background-position: center 30%;
+          background-size:50px;
+          padding-top: 78px;
+          font-size: 14px;
+          .arrow{margin-top:8px;vertical-align:top;}
+        }
+        &.energy-cirlce{
+          top: 40px;
+          left: 50%;
+          margin-left:-170px;
+        }
+        &.blue-circle{
+          top: 137px;
+          width:90px;
+          height:90px;
+          margin-left:-45px;
+          font-size: 14px;
+        }
+        &.secondary-circle{
+          top:40px;
+          margin-right:-170px;
+        }
+        &.recylce-circle{
+          top:263px;
+          margin-left:-60px;
+        }
+      }
+    }
+    .arrow-box{position:absolute;}
+    .arrow-box:nth-of-type(1){top:25px;left:-33px;transform:rotate(30deg);}
+    .arrow-box:nth-of-type(2){top:0px;right:-20px;transform:rotate(150deg);}
+    .arrow-box:nth-of-type(3){top:89px;left:33px;transform:rotate(270deg);}
+    .arrow-box:nth-of-type(3) .arrow-set:nth-child(2){transform-origin:50% 50%;}
+    .arrow-set{width:30px;}
+    .arrow-set:nth-child(2){transform:rotate(180deg) translateY(28px) translateX(0px);}
+    .arrow-set .mask{width:30px;-webkit-mask-size: 70px;}
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes gradient-border {
+      0% {
+        border-color:transparent transparent transparent #e5fdff;
+      }
+      50% {
+        border-color:transparent transparent transparent #3758ff;
+      }
+      100% {
+        border-color:transparent transparent transparent #e5fdff;
+      }
+    }
+  }
+  .section-troika{
+    flex-direction: column;
+    padding-top: 60px;
+    .troika-right-text{
+      width: 100%;
+      .pgrph{
+        margin-top: 16px;
+        .bold-gray{
+          font-size: inherit;
+          font-family: inherit;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .troika-tit{
+      margin-bottom: 16px;
+      font-size: 28px;
+      .troika-subtit{
+        font-size: 18px;
+        color: #000;
+        font-family: 'NotoM';
+      }
+    }
+    &.troika02{
+      padding: 0 !important;
+    }
+  }
+  // 2차 배터리 11.18
+  // 탭 메뉴 반응형 공통 수정
+  .page_waste-battery{
+    .title-definition-wrap{
+      margin-bottom: 5.55%;
+    }
+  }
+  .page-sns-section{
+    padding-top:60px;
+  }
+  .mo-full-bg{
+    width:100%;
+    box-sizing: border-box;
+  }
+  .process-mo {
+    width: 100%;
+    height: 100%;  // IE 깨짐방지 height값 적용 
+  }
+  .onlyMobile {
+    margin-top: 20px !important;
+  }
+  .hashtag-box .tag {
+    padding: 8px 10px;
+  }
+  .tab_inner {
+    padding: 0 !important;
+  }
+  .tab_nav {
+    &.type-1 {
+      a {
+        text-align: center;
+        font-size: 16px;
+        padding: 12px 0px;
+      }
+      li {
+        &:not(:first-of-type) {
+          margin-left: 0;
+        }
+      }
+    }
+    &.tab_nav_overflow{
+      overflow-x:scroll;
+      flex: none;
+      li{
+        flex: none;
+        a{
+          padding:12px 30px;
+        }
+      }
+    }
+  }
+  .second-battery-purpose {
+    padding: 40px 0;
+    margin: 0;
+
+    .purpose-list {
+      width: 100%;
+      flex-wrap: wrap;
+
+      li {
+        width: 29.5%;
+      }
+    }
+  }
+  .list-relation {
+    flex-direction: column;
+    margin-top: 12px;
+    li {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+      .title {
+        font-size: 18px;
+        letter-spacing: -1.44px;
+        margin-top: 16px;
+      }
+      .desc {
+        font-size: 16px;
+        letter-spacing: -1.28px;
+        line-height: 1.5;
+        margin-top: 4px;
+      }
+      a {
+        .figure {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .section-relation {
+    .inner {
+      padding: 40px 5vw;
+      .title-relation {
+        @include Bold;
+        letter-spacing: -1.92px;
+        font-size: 24px;
+      }
+    }
+  }
+  .section-copper-order {
+    display: none;
+  }
+  .green-contents-definition{
+    p{
+      &:first-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  // ****// 공통  끝 ******//
+  .page_secondary_battery {
+    .section-battery{
+      padding-bottom: 0;
+    }
+    .section-global-battery {
+      .inner {
+        padding-top:0px;
+        h4 {
+          margin: 16px 0 8px 0;
+          font-size: 22px;
+          line-height: 1.29;
+        }
+        .title-definition-wrap {
+          width: 100%;
+          float: none;
+          margin-bottom: 16px;
+          h3 {
+            font-size: 28px;
+            letter-spacing: -2.24px;
+          }
+          .sup {
+            font-size: 18px;
+            letter-spacing: -1.44px;
+          }
+        }
+        .global-contents-definition {
+          width: 100%;
+          float: none;
+        }
+        .contents-figure {
+          width: 100%;
+          float: none;
+          padding-top: 0;
+          margin-bottom: 16px;
+        }
+      }
+      .global-contents-definition {
+        p {
+          font-size: 16px;
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+          &:first-of-type {
+            margin-bottom: 20px !important;
+          }
+        }
+      }
+      .second-battry-more-definition {
+        padding-top: 0px;
+        p {
+          font-size: 16px;
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .visual-business-secondarycell {background-image: url('../images/sub/visual_sub_secondary_battery_mo.png');
+    }
+  }
+  // 제강분진
+  .visual-business-steel{
+    background-image: url('../images/sub/visual_sub_business_steel_mo.png');
+  }
+
+  //수소@
+  .visual-business-hydrogen {background-image:url('../images/sub/visual_sub_business_hydrogen_mo.png')}
+
+  //폐배터리@
+  // .page_waste-battery { background-image: url('../images/sub/visual_sub_business_waste-battery_mo.png');}
+
+  //***** ONLY MOBILE DEFAULT STYLES ****//
+  .isMobileHidden {
+    display: none !important;
+  }
+
+  .isMobileBlock {
+    display: block !important;
+  }
+
+  .mobile-flex-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //***** // ONLY MOBILE DEFAULT STYLES ****//
+
+
+  // 수소 
+  .section-hydrogen-graph {
+    padding-bottom: 60px;
+    .inner {
+      padding: 0;
+    }
+    .article-box {
+      padding: 0 5vw;
+    }
+    .inner-article {
+      .title-article {
+        font-size: 28px;
+      }
+      .desc-article {
+        display: none;
+      }
+    }
+  }
+
+  .hydrogen-graph {
+    margin-top: 0px;
+    ul {
+      flex-direction: column;
+      li {
+        width: 100%;
+        height: 100%;
+        // IE 깨짐방지 
+        &:first-child {
+          margin-bottom: 40px;
+        }
+        p {
+          padding: 0 5vw;
+          margin-top: 7px;
+          font-size: 12px;
+        }
+        figure {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .section-world-wide-map {
+    .title-order {
+      font-size: 28px;
+      letter-spacing: -2.24px;
+      line-height: 36px;
+      margin-bottom: 6px;
+    }
+    .inner-article {
+      font-size: 18px;
+      line-height: 27px;
+      .title-article {
+        color: #000;
+        letter-spacing: -0.72px;
+        @include Bold;
+      }
+      .desc-article {
+        font-size: 16px;
+      }
+    }
+  }
+  .section-forward-busniess {
+    padding-top: 60px; 
+    padding-bottom: 50px;
+    h3 {
+      font-size: 28px;
+      color: #000;
+      letter-spacing: -2.24px;
+    }
+    .inner {
+      .title-definition-wrap {
+        width: 100%;
+        float: none;
+        h3 {
+          font-size: 28px;
+          line-height: 36px;
+          letter-spacing: -2.24px;
+          margin-bottom: 4px;
+        }
+        sup {
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: -1.92px;
+        }
+      }
+    }
+    .contents-definition {
+      width: 100%;
+      float: none;
+      p {
+        font-size: 16px;
+      }
+    }
+    figure {
+      float: none;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .image-inner {
+      padding: 0 5vw;
+      figure {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+  .green-main-contents-wrap {
+    width: 100%;
+    float: none;
+    padding-top: 0;
+    h3 {
+      font-size: 28px;
+      line-height: 36px;
+      color: #000;
+      letter-spacing: -2.24px;
+    }
+  }
+  .more-definition-wrap {
+    p {
+      font-size: 16px;
+    }
+  }
+  .green-figure {
+    width: 100%;
+    float: none;
+    img {
+      width: 100%;
+    }
+  }
+  .green-contents-definition {
+    width: 100%;
+    float: none;
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .more-definition-wrap {
+    padding-top: 20px;
+  }
+
+  .section-world-wide-map {
+    .inner-article {
+      margin-bottom: 32px;
+      .title-article {
+        color: #000;
+        letter-spacing: -0.72px;
+        @include Bold;
+      }
+    }
+    .figure{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .section-hydrogen-color-list {
+    .inner {
+      .hydrogen-list {
+        flex-direction: column;
+        li {
+          width: 100%;
+          margin-bottom: 12px;
+          height: 330px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &::after {
+            width: 260px;
+            height: 221px;
+          }
+          dl {
+            dt {
+              margin-bottom: 0;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-hydrogen-color-list {
+    .hydrogen-list {
+      li {
+        &:first-child {
+          background-image: url(../images/business/hydrogen_list_img_mo_01.png);
+          background-size: 254px auto;
+        }
+        &:nth-child(2) {
+          background-image: url(../images/business/hydrogen_list_img_mo_02.png);
+          background-size: 254px auto;
+        }
+        &:last-child {
+          background-image: url(../images/business/hydrogen_list_img_mo_03.png);
+          background-size: 254px auto;
+        }
+      }
+    }
+  }
+
+  // 폐 배터리
+  .visual-business-wastebattery {
+    background-image: url('../images/sub/visual_sub_business_waste-battery_mo.png');
+  }
+  .process-pc {
+    display: none;
+  }
+
+  .process-mo {
+    display: block;
+  }
+
+  .page_waste-battery {
+    .section-battery {
+      .inner {
+        &:first-of-type {
+          display: flex;
+          flex-direction: column;
+          .article-box {
+            &:last-of-type {
+              margin-top: 16px;
+              margin-bottom: 0;
+            }
+            .title-article {
+              font-size: 28px;
+              line-height: 36px;
+              letter-spacing: -2.24px;
+              @include Bold;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+  
+    .section-global-battery {
+      .inner {
+        .title-definition-wrap {
+          width: 100%;
+          float: none;
+          padding-top: 0;
+          h3 {
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -2.24px;
+          }
+        }
+        .global-contents-definition {
+          width: 100%;
+          float: none;
+          padding-bottom: 40px;
+        }
+      }
+      figure {
+        width: 100%;
+        float: none;
+        margin-bottom: 16px;
+      }
+    }
+
+    .section-forward-busniess {
+      .inner {
+        figure {
+          width: 100%;
+          float: none;
+        }
+      }
+    }
+    .section-green-hydrogen {
+      padding:60px 0;
+    }
+    .section-recylce {
+      margin: 0;
+      padding:0;
+      padding-bottom: 60px;
+      .title-article {
+        font-size: 24px;
+        line-height: 1.29;
+        letter-spacing: -1.92px;
+        margin-bottom: 0;
+      }
+      .inner {
+        .process-mo {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // 2022.01.03 add
+  .page_e-scrap{
+    padding-bottom: 80px;
+    figure{
+      padding-top: 0;
+    }
+  }
+  .page_waste-battery{
+    .section-global-battery{
+      padding-top:80px;
+      padding-bottom: 0;
+    }
+  }
+  .page_steel{
+    .section-world-wide-map{
+      padding:60px 0;
+    }
+  }
+  .page_waste-battery{
+    .section-recylce{
+      .reuse-process{
+        padding-bottom: 0;
+      }
+      .reuse-process-list{
+        margin-top: 5.55%;
+        li{
+          width:31.83%;
+          margin-right: 1.5% !important;
+          .reuse-img{
+            width:100%;
+            position: relative;
+            // height: 100%;
+            // display: flex;
+            // align-items: center;
+            // background-color: #fff;
+            &::before{
+              display: block;
+              content: '';
+              width:100%;
+              // height:80px;
+              background-repeat: no-repeat;
+              background-position:50% 50%;
+              margin: 0 auto ;
+              padding-top:100%;
+              background-size: 50%;
+              background-color: #fff;;
+            }
+            li{
+              width:11.953125%;
+              position: relative;
+              
+              &:not(:last-child){
+                margin-right:0.625%;
+                .reuse-img{
+                  &::after{
+                    display: block;
+                    content: '';
+                    background-image: url(../images/business/reuse-arrow.png);
+                    width:19px;
+                    height:22px;
+                    position: absolute;
+                    top:50%;
+                    right:-15px;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                  }
+                }
+              }
+              .reuse-img{
+                width:100%;
+                position: relative;
+                // height: 100%;
+                // display: flex;
+                // align-items: center;
+                // background-color: #fff;
+                &::before{
+                  display: block;
+                  content: '';
+                  width:100%;
+                  // height:80px;
+                  background-repeat: no-repeat;
+                  background-position:50% 50%;
+                  margin: 0 auto ;
+                  padding-top:100%;
+                  background-color: #fff;;
+                }
+              }
+              
+              span{
+                display: block;
+                text-align: center;
+                margin-top: 10.45751633986928%;
+                font-size: 18px;
+                font-family: 'NotoB';
+              }
+            }
+           
+            &.reuse-first{
+              &::before{
+                background-image:url(../images/business/reuse-img01_mo.png);
+              }
+            }
+            &.reuse-second{
+              &::before{
+                background-image:url(../images/business/reuse-img02_mo.png);
+              }
+            }
+            &.reuse-third{
+              &::before{
+                background-image:url(../images/business/reuse-img03_mo.png);
+              }
+            }
+            &.reuse-fourth{
+              &::before{
+                background-image:url(../images/business/reuse-img04_mo.png);
+              }
+            }
+            &.reuse-fifth{
+              &::before{
+                background-image:url(../images/business/reuse-img05_mo.png);
+              }
+            }
+            &.reuse-sixth{
+              &::before{
+                background-image:url(../images/business/reuse-img06_mo.png);
+              }
+            }
+            &.reuse-seven{
+              &::before{
+                background-image:url(../images/business/reuse-img07_mo.png);
+              }
+            }
+            &.reuse-eight{
+              &::before{
+                background-image:url(../images/business/reuse-img08_mo.png);
+              }
+            }
+          }
+          &:nth-child(3n){
+            margin-right:0;
+          }
+          margin-bottom:2.22%;
+          span{
+            margin-top: 5px;
+            font-size: 14px;
+          }
+        }
+      }
+      .desc-article{
+        margin-top:60px;
+      }
+      .document-title{
+        padding-top: 60px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .title-article{
+    font-size:28px;
+    line-height: 1.13;
+    letter-spacing:-2.24px;
+    font-family: 'NotoB';
+    margin-bottom: 25px;
+  }
+  .section-society-issue{
+    padding-top:0px;
+    padding-bottom: 60px;
+  }
+  // .desc-article{
+  //   font-size: 18px;
+  //   color: #666;
+  //   letter-spacing: -.72px;
+  //   line-height: 1.5;
+  // }
+  .battery-graph{
+    padding-top: 32px;
+  }
+  // 수소 2021.01.03 767
+  .new-green-hydrogen{
+    .green-hydrogen-desc{
+      width: 100%;
+      float: none;
+    }
+    .process-mo{
+      width: 100%;
+      float: none;
+    }
+    .new-inner-article{
+      .title-article{
+        font-size: 28px;
+        letter-spacing: -2.24px;
+      }
+    }
+    .green-hydrogen-desc-list{
+      strong{
+        font-size:16px;
+      }
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+  .section-world-wide-map{
+    padding-top: 60px;
+  }
+  .desc-article{
+    font-size: 16px;
+    letter-spacing: -.72px;
+  }
+  .businsess-intro-wrap{
+    margin-bottom: 40px;
+    .intro-title{
+      font-size: 28px;
+      letter-spacing: -2.24px;
+      line-height: 1.29;
+    }
+    .intro-desc{
+      font-size: 16px;
+      letter-spacing: -1.28px;
+    }
+  }
+}
+  
+// *****@media 767px 끝 ****//

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="./img/liferay.ico" type="image/x-icon" />
+	<title>Contents 스크립트 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+<h1 class="h1_guide">Contents 스크립트 가이드</h1>
+	<h2 class="h2_guide">01.탭</h2>
+	<div class="guide_wrap">
+		<div class="tab">
+			<ul>
+				<li class="on"><a href="#" title="활성화">탭명1</a></li> <!-- 탭 활성화 클래스 .on 추가 -->
+				<li><a href="#">탭명2</a></li>
+				<li><a href="#">탭명3</a></li>
+				<li><a href="#">탭명4</a></li>
+			</ul>
+			<div class="tabContent">
+				<div style="display:block">탭 컨텐츠 1</div>
+				<div>탭 컨텐츠 2</div>
+				<div>탭 컨텐츠 3</div>
+				<div>탭 컨텐츠 4</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		tabMenuCall = function(i){
+			alert(i)
+		}
+	</script>
+<!-- code -->
+	<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="tab">
+	<ul>
+		<li class="on"><a href="#" title="활성화">탭명1</a></li> <!-- 탭 활성화 클래스 .on 추가 -->
+		<li><a href="#">탭명2</a></li>
+		<li><a href="#">탭명3</a></li>
+		<li><a href="#">탭명4</a></li>
+	</ul>
+	<div class="tabContent">
+		<div style="display:block;">탭 컨텐츠 1</div>
+		<div>탭 컨텐츠 2</div>
+		<div>탭 컨텐츠 3</div>
+		<div>탭 컨텐츠 4</div>
+	</div>
+	<script>
+		/**
+		 * @function 디자인 tab menu update jQuery function
+		 * @param {i} Number - index
+		**/
+		tabMenuCall = function(i){
+			alert(i);
+		}
+	</script>
+</div>
+</xmp>
+	</div>
+<!-- // code -->
+	<h2 class="h2_guide">02.윈도우 팝업</h2>
+	<div class="guide_wrap">
+		<button class="btn btnBlue" onclick="winPopup('/html/sales/SA_P_027.html','1146','350')">윈도우 팝업</button>
+	</div>
+<!-- code -->
+	<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<button class="btn btnBlue" onclick="winPopup('/html/sales/SA_P_027.html','1146','350')">윈도우 팝업</button>
+</xmp>
+	</div>
+<!-- // code -->
+
+</div>
+
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+<script>
+	ui.init();
+</script>
+</body>
+</html>

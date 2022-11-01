@@ -1,0 +1,1512 @@
+//esg common
+// esg 페이지 공통
+.esg-page-padding{
+  padding:120px 0 160px 0;
+  .inner{
+    .type-2{
+      .desc{
+        margin-top: 8px;
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
+// esg 공통 order list
+.policy-order-list{
+  counter-reset: pol;
+  margin-bottom: 24px;
+  li{
+    border-top: 1px solid #eee;
+    padding:40px 0;
+    position: relative;
+    counter-increment: pol;
+    p{
+      font-size: 18px;
+      letter-spacing: -0.36px;
+      line-height: 1.9;
+      padding-left: 100px;
+      strong{
+        font-size: 24px;
+        @include Normal;
+        letter-spacing: -0.96px;
+      }
+    }
+    &:last-child{
+      border-bottom: 1px solid #eee;
+    }
+    &::before{
+      display: block;
+      content: counter(pol) "";
+      width: 64px;
+      height: 64px;
+      border-radius: 100%;
+      background-color: #f5f5f5;
+      color: #999;
+      font-family: 'MadeTommyB';
+      position: absolute;
+      top:50%;
+      left: 0;
+      transform: translateY(-50%);
+      font-size: 32px;
+      text-align: center;
+      line-height: 64px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+}
+  }
+}
+// esg 공통 download list
+.download-certification-wrap{
+  h4{
+    font-size: 32px;
+    letter-spacing: -1.28px;
+    @include Bold;
+    margin-bottom: 24px;
+  }
+  .certification-list{
+    padding:40px 0;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-around;
+    align-items: center;
+    &:first-of-type{
+      border-top: 1px solid #000;
+    }
+    .certification-definition{
+      width: 62%;
+      strong{
+        font-size: 24px;
+        letter-spacing: -0.96px;
+        @include Normal;
+      }
+      p{
+        color: #666;
+        font-size: 16px;
+        letter-spacing: -0.64px;
+        line-height: 1.5;
+        margin-top: 4px;
+      }
+    }
+    &:last-child{
+      ul{
+        color: #666;
+      }
+    }
+  }
+}
+
+// 안전보건방침
+.visual-sustainability-policy{
+  background-image: url(../images/esg/visual_sub_policy.png);
+}
+.page_polices{
+  .ceo-signature{
+    display: flex;
+    .ceo-text{
+      margin-right: 9px;
+    }
+    p{
+      font-size: 18px;
+      letter-spacing: -0.36px;
+      span{
+        @include Bold;
+      }
+    }
+  }
+}
+
+// 안전보건정책 
+.visual-sustainability-safety_health{
+  background-image: url(../images/esg/visual_sub_safety.png);
+}
+.page_safety_health{
+  .gray-box{
+    background-color: #ebeef7;
+    padding:50px;
+    margin-bottom: 64px;
+    h4{
+      font-size: 32px;
+      letter-spacing: -0.64px;
+      @include Bold;
+    }
+    p{
+      font-size: 18px;
+      color: #666;
+      letter-spacing: -0.36px;
+      line-height: 1.5;
+      margin-top: 16px;
+    }
+  }
+}
+
+// 안전보건 인증서
+.visual-sustainability-safety_certification{
+  background-image: url(../images/esg/visual_sub_certifiaction.png);
+}
+// 품질경영 인증서
+.visual-sustainability-quality_certification{
+  background-image: url(../images/esg/visual_sub_quality.png);
+}
+
+// 리사이클링징크 소개
+.visual-sustainability-recycling_zinc{
+  background-image: url(../images/esg/visual_sub_recycle.png);
+}
+
+.summary-sustainability{
+  &.recycle{
+    background-image: url(../images/esg/environmental_recycle_bg.png);
+  }
+}
+.recycling_zinc{
+  .pgrph-wrap{
+    margin-top: 40px;
+  }
+  .image-justify-center{
+    text-align: center;
+    background-color:#ebeef7;
+    padding:64px 0;
+  }
+  .item{
+    .item-desc{
+      margin-bottom: 40px;
+      .dt{
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .figure-wrap{
+    .item-desc{
+      margin-bottom: 0;
+      dt{
+        margin-bottom: 8px !important;
+      }
+    }
+  }
+}
+.sustain-img-wrap{
+  background-color:#ebeef7;
+  padding:48px 0 64px 0;
+  p{
+    font-size: 24px;
+    color: #000;
+    line-height: 2.58;
+    letter-spacing: -0.48px;
+    padding-left: 52px;
+    @include Bold;
+  }
+  figure{
+    text-align: center;
+    img{
+      margin-top: -50px;
+    }
+  }
+}
+
+// 나눔/상생 경영
+.page-sustainability-society {
+  .news-contents{ margin-top:0;
+    .item { margin-top:40px; }
+    
+  }
+  .news-contents {}
+  //_동반성장취지
+  .growing-together{
+    background-color: #ebeef7;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 66px 0;
+    .figure-wrap{
+      max-width: 518px;
+      width: 100%;
+      height: 408px;
+      .figure{
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .text_wrap{
+      max-width: 484px;
+      line-height: 1.5;
+      text-align: left;
+      color: #666;
+      .tit{
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: -0.48px;
+      }
+      .desc{
+        font-size: 18px;
+        letter-spacing: -0.36px;
+      }
+    }
+  }
+
+  //_협약서 주요내용
+  .tab_contents04{
+    // padding-bottom: 80px;
+    .summary-sustainability{
+      background-image: url("../images/esg/management_tab04_img01.png");
+  
+    }
+    .contents_item_list{
+      max-width: 560px;
+      .contents_item{
+        position: relative;
+        font-size: 16px;
+        padding-left:10px;
+        .fc_blue{
+          color: #0c3482;
+        }
+        &::before{
+          content: '-';
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+
+    .agreement_contents_list{
+      .agreement_contents_item{
+        // margin-bottom: 40px;
+        .figure-wrap{
+          align-items: center;
+          .contents_item_wrap{
+            margin-left: 0;
+            padding-top: 16px;
+            color: #666;
+            line-height: 1.5;
+            letter-spacing: -0.48px;
+            .tit_sm{
+              font-size: 18px;
+              @include Bold;
+              margin-bottom: 8px;
+            }
+           
+          }
+        }
+      }
+    }
+
+  } 
+}
+.section-sustainability{
+  .esg{
+    &.management{
+      .tab_nav_overflow{
+        max-width: 1280px ;
+        overflow-x:scroll;
+        flex: none;
+        padding-bottom: 15px;
+        &::-webkit-scrollbar {
+          height: 7px;
+        }
+        &::-webkit-scrollbar-thumb{
+          background-color: rgb(12, 52, 130);
+          border-radius: 10px;
+        }        
+        &::-webkit-scrollbar-button{
+          display: none;
+        }
+        &::-webkit-scrollbar-track{
+          background-color: rgba(0,0,0,0.2);
+          border-radius: 10px;
+        }  
+        li{
+          width: 310px;
+          flex: none;
+        }
+      }
+      padding-bottom: 0;
+      .summary-sustainability{
+        // margin-top: 0;
+      }
+      // .management_top_area{
+      //   padding-top: 120px;
+      //   .document-title{
+      //     margin-bottom: 64px;
+      //   }
+      // }
+      
+      .tab_cont{
+        //공통 
+        .pgrph-wrap{
+          .tit{
+            // margin-bottom: 24px;
+          }
+          .news-contents{
+            .news-item{
+              .item{
+                // margin-top: 40px;
+                // &:first-child{
+                //   margin-top: 0;
+                // }
+                // .figure-wrap{
+                  .item-desc{
+                    margin-right: 8%;
+                    .dt{
+                      // line-height: 36px;
+                      strong{
+                        // font-size: 24px;
+                        // color: #666;
+                      }
+                      
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
+        }
+        //나눔경영
+        .society_tab{
+          position: relative;
+          max-width: 1280px;
+          margin: 0 auto;
+          height: 100%;
+          // .news-contents{
+          //   margin-top: 0;
+          // }
+        }
+        .tab_contents01{
+          // padding-bottom: 80px;
+          .summary-sustainability{
+            background-image: url("../images/esg/management_tab01_img01.png");
+          }
+        }
+        //동반성장취지
+        .tab_contents02{
+          // padding-bottom: 80px;
+          .summary-sustainability{
+            background-image: url("../images/esg/management_tab02_img01.png");
+          }
+          
+        }
+        //협약식 체결의 의미
+        .tab_contents03{
+          // padding-bottom: 80px;
+          .summary-sustainability{
+            background-image: url("../images/esg/management_tab03_img01.png");
+          }
+          .fair-trade{
+            max-width: 1280px;
+            height: 491px;
+            background-color: #ebeef7;
+            @include Flex-center-center;
+          }
+        }
+        //협약서 주요내용
+        .tab_contents04{
+          // padding-bottom: 80px;
+          .summary-sustainability{
+            background-image: url("../images/esg/management_tab04_img01.png");
+          }
+          .pgrph-wrap{
+            .agreement_contents_list{
+              .agreement_contents_item{
+                // margin-bottom: 40px;
+                .figure-wrap{
+                  align-items: center;
+                  .contents_item_wrap{
+                    margin-left: 4.2%;
+                    padding-top: 21px;
+                    color: #666;
+                    line-height: 1.5;
+                    letter-spacing: -0.48px;
+                    .tit_sm{
+                      font-size: 24px;
+                      font-weight: bold;
+                      margin-bottom: 8px;
+                    }
+                    .contents_item_list{
+                      max-width: 560px;
+                      .contents_item{
+                        position: relative;
+                        font-size: 18px;
+                        padding-left: 10px;
+                        .fc_blue{
+                          color: #0c3482;
+                        }
+                        &::before{
+                          content: '-';
+                          display: inline-block;
+                          position: absolute;
+                          left: 0;
+                          top: 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } 
+        //조직도
+        .tab_contents05{
+          // padding-bottom: 80px;
+          .pgrph-wrap{
+            .figure-wrap{
+              max-width: 1280px;
+              padding: 64px;
+              background-color: #ebeef7;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+        //4대 실천사항
+        .tab_contents06{
+          .pgrph-wrap{
+            .tit{
+              margin: 0 auto 24px;
+            }
+            .download_wrap{
+              width: 100%;
+              background-color: #ebeef7;
+              .download_inner{
+                display: flex;
+                flex-wrap:wrap;
+                padding: 80px 0 96px;
+                max-width: 1280px;
+                margin: 0 auto;
+                counter-reset: down-item;
+                .download_item{
+                  max-width: 632px;
+                  background-color: #fff;
+                  margin-bottom: 16px;
+                  position: relative;
+                  padding: 48px 95px 69px 137px;
+                  box-sizing: border-box;
+                  line-height: 1.5;
+                  letter-spacing: -0.96px;
+                  text-align: left;
+                  .download_item_inner{
+                    max-width: 400px;
+                    strong{
+                      font-size: 24px;
+                      font-weight: bold;
+                    }
+                    p{
+                      margin-top: 8px;
+                      font-size: 16px;
+                    }
+                    .go-download{
+                      position: absolute;
+                      right: 48px;
+                      bottom: 48px;
+                    }
+                  }
+                  
+                  &:nth-child(even){
+                    margin-left: 0.8%;
+                  }
+                  &:hover{
+                    background-color: #0c3482;
+                    color: #fff;
+                    strong{
+                      color: #fff;
+                    }
+                    p{
+                      color: #ebeef7;
+                    }
+                    .go-download{
+                      background: url(../images/icons/icon_download_on.png) no-repeat 50% 50%;
+                    }
+                    &:before{
+                      color: #ebeef7;
+                    }
+                  }
+                  &:before{
+                    counter-increment: down-item;
+                    content: "0"counter(down-item);
+                    position: absolute;
+                    top: 48px;
+                    left: 49px;
+                    color: #999;
+                    font-size: 48px;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+          
+          
+        }
+        //동반성장 공익광고 
+        .tab_contents07{
+          .pgrph-wrap{
+            .tit{
+              max-width: 1280px;
+              margin: 0 auto 24px;
+            }
+            .video_wrap{
+              width: 100%;
+              padding: 120px 0;
+              background-color: #11203c;
+              @include Flex-center-center;
+              .video{
+                max-width: 1064px;
+                width: 100%;
+                height: 593px;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+/*윤리공통*/
+.section-sustainability{
+  .inner{
+    &.esg {
+      padding:120px 0;
+
+    }
+    .contents-wrap {padding-bottom:120px}
+  }
+  .document-title{
+    &.padding-set {
+      &+.news-contents {margin-top:0;}
+    }
+    &.padding-b {
+      padding-bottom:65px;
+    }
+  }
+  
+}
+
+
+
+.summary-sustainability{
+  &.ethical {background-image: url("../images/esg/cont-head-ethicalManage.png");}
+  &.conflict {background-image: url("../images/esg/cont-head-conflict.png");}
+  &.quality {background-image: url("../images/esg/environmental_quality_bg.png");}
+  &.greenzinc {background-image: url("../images/esg/cont-head-greenzinc.png");}
+  &.corporate {background-image: url("../images/esg/cont-head-corporate.png");}
+}
+
+.pgrph-wrap { 
+  margin-top:80px;
+  &+.news-item{margin-top:24px}
+  .tit{ 
+    @include Bold;font-size:32px;margin-bottom:24px; 
+    strong {font-size:32px; line-height: 1.29;}
+  }
+  .tit-wrap {
+    margin-bottom:20px;
+    .date {font-size:18px; color:#666; letter-spacing: -0.36px;margin-top:-6px;display: inline-block; }
+  }
+
+  .pgrph {
+    color:#666;font-size:18px; letter-spacing: -.36px; line-height:1.5;
+    strong {margin-bottom:16px;display:inline-block;line-height:1.5;font-size:24px; @include Bold;color:#666;letter-spacing: -.48px;}
+  }
+  .pgrph-imgw {
+    margin-top:40px;
+  }
+}
+.news-contents {
+   margin-top:80px;
+  .news-item{
+    .item-desc{
+      width:37.81%;
+    }
+    &.environment {
+      
+    }
+  }
+  .item {
+     margin-top:63px;  
+    &:first-child {margin-top:0}
+    }
+  
+  .item-desc{
+    .dt {margin-bottom:8px;color:#666;font-size:24px; line-height:1.5;@include Bold;
+      strong{@include Bold; letter-spacing: -0.64px;font-size:24px;}
+    }
+    .dd {font-size:18px;color:#666; line-height: 1.5; letter-spacing: -.36px;}
+  }
+
+  .figure-wrap{
+    // justify-content: space-between;
+    align-items: center;
+    .figure {width:49.37%;margin-right:6.25%}
+    .item-desc {width:45.07%}
+  }
+}
+
+.figure-wrap {display: flex;}
+
+//********************지속가능경영_윤리경영***********************/
+
+.visual-sustainability-ethical{ background-image:url("../images/sub/visual_sub_sustainability_ethical.png");}
+.page-sustainability-ethical {
+  .summary-sustainability{  }
+  .pgrph-wrap { 
+    margin:80px 0 40px;
+    .figure-wrap {margin-top:24px;
+      .figure {width:49.37%;margin-right:80px;}
+      .pgrph-box{width:37.81%;}
+    }
+  }
+  .tab_cont {
+    &.ethical-manage {
+      // padding-top:65px; 
+    }
+  }
+  .policy-order-list {
+    margin:40px 0;
+    p {
+      strong{ @include Bold;}
+    }
+  }
+  .p-txt{
+    font-size:18px;
+    letter-spacing:-.36px;
+  }
+  .pgrph-box {
+    strong {
+      font-size:24px;
+      color:#666;
+      letter-spacing: -0.48px;
+      line-height:1.5;
+      @include Bold;
+    }
+    .desc-list{
+      font-size:18px; color:#666; letter-spacing: -0.36px;margin-top:8px;
+    }
+  }
+  .gray-box {
+    >li{
+      background-color:  #f5f5f5;
+      margin-top:16px;
+      padding:64px 70px 64px 48px;
+      strong {
+        @include Bold;
+        font-size:24px;
+        line-height:1.5;
+        letter-spacing: -.48px;
+        color:#0c3482;
+        margin-bottom:16px;
+        display: inline-block;
+        
+      }
+      .gray-lst{
+        color:#666;
+        font-size:18px;
+        line-height:1.5;
+        li {font-size:18px; color:#666;}
+      }
+    }
+  }
+  .bullet {
+    li {
+      padding-left:12px;
+     
+      &:before {
+        content:"-";
+        color:#666;
+        display: inline-block;
+        text-indent: -12px;
+  
+      }
+    }
+  }
+  .bot-txt {
+    margin-top:40px;
+    .p-sign{
+      @include Bold;
+      font-size:18px;
+      letter-spacing: -.36px;
+      margin-top:8px;
+    }
+  }
+
+
+
+}
+
+//**품질경영 quality_management.html
+.visual-sustainability-quality{ background-image:url("../images/sub/visual_sub_sustainability_quality.png");}
+.page-sustainability-quality{
+  .pgrph { 
+    color:#666;
+    strong {
+      font-size:24px; @include Bold;color:#666; line-height: 1.5;
+    }
+    &+.pgrph {
+      margin-top:40px;
+    }
+  }
+  .certification-box{
+    li{
+      margin-bottom:40px;
+      display: flex; align-items:center;
+      &:last-child {margin-bottom:0}
+      .figure {
+        background-color: #f5f5f5;margin-right: 80px;text-align: center;box-sizing: border-box;
+        width:632px; height:356px; position: relative;
+        img { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) ; -webkit-transform:translate(-50%,-50%) ; -moz-transform:translate(-50%,-50%) ; -ms-transform:translate(-50%,-50%) ; -o-transform:translate(-50%,-50%) ; }
+      }
+      .dec-wrap {
+        width:37.8125%;
+        strong {font-size:32px; @include Bold; letter-spacing: -.64px; color:#000;margin-bottom:8px;display: inline-block;}
+        p {font-size:18px;color: #666;}
+      }
+    }
+  }
+}
+//*그린징크 green-zinc*/
+.visual-sustainability-greenzinc{ background-image:url("../images/sub/visual-sustainability-greenzinc.png");}
+.page-sustainability-greenzinc {
+  
+  .gzinc_table {
+    margin-top:80px;
+    .caption {
+      .fl {font-size:24px;}
+      .fr {float:right; font-size:16px; color:#666;margin-top:12px; @include Normal;}
+    }
+    .blue-txt {color:#0c3482; @include Bold;}
+    tr {
+      td{
+        &:first-child {@include Bold;color:#000; font-size:16px}
+      }
+    }
+  }
+}
+/*지배구조 Government*/
+.page-sustainability-corporate {
+  .visual-sustainability-corporate{ background-image:url("../images/sub/visual_sub_sustainability-government.jpg");}
+  .document-title {}
+  .sustain-img-wrap{
+    padding:3.75% 0 5%;
+    margin-bottom:40px;
+    p{padding-left:3.75%;}
+    .figure{
+      img {margin-top:-15px}
+    }
+  }
+}
+
+//환경경영_환경정책-sustainability-environmentalMg
+.page-sustainability-environmentalMg {
+  .pgrph-wrap{
+    .tit {margin-bottom:8px;
+      strong{font-size:32px;}
+    }
+    .pgrph {
+      font-size:16px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+
+@media (max-width: 767px){
+  //esg공통 @
+  .section-sustainability {
+   
+    .document-title {
+      &.padding-b { padding-bottom:5.55vw }
+    }
+    // .tab_cont { padding-top:9vw;  }
+    .news-contents{margin-top:11.11vw;}
+   
+  }
+  .figure-esg-diagram {
+    margin-top:11.11vw;
+    padding: 0 0 8.88vw;
+    figcaption {padding-bottom:4.16vw}
+    img {padding-top:8.88vw}
+  }
+  .pgrph-wrap {
+    margin:11.11vw 0 5.55vw;
+    .pgrph {
+      font-size:14px;
+      strong {font-size:18px;}
+    }
+    .tit {
+      font-size:24px;
+      margin-bottom:2.22vw;
+    }
+    .date {font-size:16px;}
+    .tit-wrap {
+      .date {
+        font-size:16px;
+      }
+    }
+  }
+  .figure-wrap  {
+    display: block;
+    .figure {
+      width:100%; 
+      margin-right:0;
+    }
+  }
+  .wrap-media-list {
+    padding : 11.11vw 0;
+    .title {font-size:18px;}
+  }
+  .list-media-content {
+    display: block;
+   
+    >li {width:100%;margin-bottom:11.11vw;
+      &:last-child {margin-bottom:0}
+    }
+    .img-box {
+      display: block;
+      position:relative;
+      padding-bottom: calc(100% / 648*365);
+      overflow: hidden;
+      img { width:100%; position:absolute; display: block; top:50%; left:50%; object-fit:cover; max-width:inherit;height:100%;width:100%;transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); }
+    }
+  }
+
+  .summary-sustainability {
+    background-size:cover;
+    &.environmental-01 {
+      background-image: url("../images/esg/environmental_policy_mo.png");
+    }
+    &.environmental-02 {
+      background-image: url("../images/esg/environmental_rule_bg_mo.png");
+    }
+    &.environmental-03 {
+      background-image: url("../images/esg/environmental_change_bg_mo.png");
+    }
+    &.environmental-04 {
+      background-image: url("../images/esg/environmental_energe_bg_mo.png");
+    }
+    &.environmental-05 {
+      background-image: url("../images/esg/environmental_cycle_bg_mo.png");
+    }
+    &.ethical {
+      background-image: url("../images/esg/cont-head-ethicalManage_mo.png");
+    }
+    &.conflict {
+      background-image: url('../images/esg/cont-head-conflict_mo.png');
+    }
+    &.quality {
+      background-image: url('../images/esg/environmental_quality_bg_mo.png');
+    }
+    &.greenzinc {
+      background-image: url('../images/esg/cont-head-greenzinc_mo.png');
+    }
+
+  }
+
+
+   // 상단 title / sub-title 공통
+   .summary-sustainability{
+    height: 270px;
+    margin-top: 40px; 
+    width: 100%;
+    padding: 0 5vw;
+    margin-left: -5vw;
+    .desc{
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: -1.44px;
+      padding-left: 0;
+      height: 270px;
+    }
+  }
+  .esg-page-padding{
+    padding:0;
+    padding-top:40px;
+    padding-bottom: 80px;
+    .inner{
+      .type-2{
+        .title{
+          font-size: 28px;
+          line-height: 1.29;
+          letter-spacing: -2.24px;
+        }
+        .desc{
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+          margin-bottom: 40px;;
+        }
+      }
+    }
+  }
+  // 공통 순서 리스트
+  .policy-order-list{
+    li{
+      padding: 20px 0;
+      &::before{
+        width:40px;
+        height:40px;
+        font-size: 24px;
+        line-height: 40px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: -1.12px;
+        padding-left: 60px;
+        color:#666;
+        strong{
+          font-size: 16px;
+          letter-spacing: -1.28px;
+          line-height: 1.5;
+          @include Bold;
+        }
+      }
+    }
+  }
+  // 대표이사 서명
+  .ceo-signature{
+    .ceo-text{
+      p{
+        font-size: 16px;
+        letter-spacing: -.64px;
+        line-height: 1.5;
+      }
+    }
+  }
+  // 안전보건정책
+  .page_safety_health{
+    .gray-box{
+      @include mobileFullWidth;
+      padding: 50px 5vw;
+      h4{
+        font-size: 24px;
+        letter-spacing: -.96px;
+        line-height: 1.29;
+      }
+      p{
+        margin-top: 8px;
+        font-size: 14px;
+        letter-spacing: -1.12px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // 안전보건 인증서
+  .download-certification-wrap{
+    h4{
+      display: none;
+    }
+    .certification-list{
+      &:first-of-type{
+        border-top:2px solid #000;
+      }
+      padding:20px 0;
+      flex-direction: column;
+      position: relative;
+      figure{
+        border:1px solid #eee;
+        width: 100%;
+        text-align: center;
+        padding:40px 0;
+        margin-bottom: 16px;
+      }
+      .certification-definition{
+        width: 100%;        
+        strong{
+          @include Bold;
+          font-size: 18px;
+          letter-spacing: -1.44px;
+        }
+        p{
+          font-size: 14px;
+          letter-spacing: -1.12px;
+        }
+      }
+      .go-download{
+        position: absolute;
+        top: 160px;
+        right: 20px;
+        background-image: url(../images/esg/icon_download_mo_transparent.png);
+        background-color: #eee;
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+        background-size: 50% 50%;
+      }
+    }
+  }
+ 
+  // 나눔 상생 경영
+  .section-sustainability{
+    .esg{
+      &.management{
+        .tab_cont{
+          .tab_contents02{
+            .growing-together{
+              flex-direction: column;
+              background-color: #fff;
+              margin: 0 -5vw;
+            }
+          }
+          .tab_contents04{
+            .pgrph-wrap{
+              .agreement_contents_list{
+                .agreement_contents_item{
+                  .figure-wrap{
+                    .contents_item_wrap{
+                      margin-left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-sustainability{
+    .esg{
+      &.management{
+        .tab_nav_overflow{
+          padding-bottom: 5px;
+          li{
+            width: 150px;
+          }
+        }
+        padding-bottom: 0;
+        // .summary-sustainability{
+        //   margin:0;
+        //   padding: 0;
+        // }
+        // .management_top_area{
+        //   padding-top: 40px;
+        //   .document-title{
+        //     margin-bottom: 64px;
+        //   }
+        // }
+        
+        .tab_cont{
+          //공통 
+          .pgrph-wrap{
+            .tit{
+              margin-bottom: 24px;
+            }
+            .news-contents{
+              .news-item{
+                .item{
+                  // margin-top: 40px;
+                  &:first-child{
+                    margin-top: 0;
+                  }
+                  .figure-wrap{
+                    .item-desc{
+                      // margin-right: 8%;
+                      .dt{
+                        // line-height: 36px;
+                        
+                      }
+                    }
+                  }
+                }
+              }
+              
+            }
+          }
+          //나눔경영
+          .society_tab{
+            .news-contents{
+              margin-top: 0;
+            }
+          }
+          .tab_contents01{
+            // padding-bottom: 80px;
+            .summary-sustainability{
+              background-image: url("../images/esg/management_tab01_img01.png");
+            }
+          }
+          //동반성장취지
+          .tab_contents02{
+            // padding-bottom: 80px;
+            .summary-sustainability{
+              background-image: url("../images/esg/management_tab02_img01.png");
+            }
+            .growing-together{
+              background-color: #ebeef7;
+              margin-bottom: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 66px 0;
+              .figure-wrap{
+                max-width: 518px;
+                width: 100%;
+                height: 408px;
+                .figure{
+                  img{
+                    width: 100%;
+                  }
+                }
+              }
+              .text_wrap{
+                max-width: 484px;
+                line-height: 1.5;
+                text-align: left;
+                color: #666;
+                .tit{
+                  font-size: 24px;
+                  font-weight: bold;
+                  letter-spacing: -0.48px;
+                }
+                .desc{
+                  font-size: 18px;
+                  letter-spacing: -0.36px;
+                }
+              }
+            }
+          }
+          //협약식 체결의 의미
+          .tab_contents03{
+            // padding-bottom: 80px;
+            .summary-sustainability{
+              background-image: url("../images/esg/management_tab03_img01.png");
+            }
+            .fair-trade{
+              max-width: 1280px;
+              height: 491px;
+              background-color: #ebeef7;
+              @include Flex-center-center;
+            }
+          }
+          
+          //조직도
+          .tab_contents05{
+            // padding-bottom: 80px;
+            .pgrph-wrap{
+              margin-top: 40px;
+              .figure-wrap{
+                max-width: 1280px;
+                padding: 30px;
+                background-color: #ebeef7;
+                display: flex;
+                justify-content: center;
+                margin: 0 -5vw;
+              }
+            }
+          }
+          //4대 실천사항
+          .tab_contents06{
+            .pgrph-wrap{
+              margin-top: 0;
+              .tit{
+                margin: 0 auto 24px;
+              }
+              .download_wrap{
+                width: 100%;
+                background-color: #ebeef7;
+                .download_inner{
+                  flex-direction: column;
+                  flex-wrap: wrap;
+                  padding: 50px 5vw;
+                  counter-reset: down-item;
+                  .download_item{
+                    padding-left: 86px;
+                    .download_item_inner{
+                      max-width: 400px;
+                      strong{
+                        font-size: 16x;
+                        font-weight: bold;
+                      }
+                      p{
+                        margin-top: 4px;
+                        font-size: 14px;
+                        letter-spacing: -1.12px;
+                      }
+                      .go-download{
+                        position: absolute;
+                        right: 48px;
+                        bottom: 48px;
+                      }
+                    }
+                    
+                    &:nth-child(even){
+                      margin-left: 0;
+                    }
+                    &:hover{
+                      background-color: #0c3482;
+                      color: #fff;
+                      strong{
+                        color: #fff;
+                      }
+                      p{
+                        color: #ebeef7;
+                      }
+                      .go-download{
+                        background: url(../images/icons/icon_download_on.png) no-repeat 50% 50%;
+                      }
+                      &:before{
+                        color: #ebeef7;
+                      }
+                    }
+                    &:before{
+                      counter-increment: down-item;
+                      content: "0"counter(down-item);
+                      position: absolute;
+                      top: 48px;
+                      left: 49px;
+                      color: #999;
+                      font-size: 24px;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
+            
+            
+          }
+          //동반성장 공익광고 
+          .tab_contents07{
+            .pgrph-wrap{
+              margin-top: 0;
+              .tit{
+                max-width: 1280px;
+                margin: 0 auto 24px;
+              }
+              .video_wrap{
+                width: 100%;
+                padding: 120px 0;
+                background-color: #11203c;
+                @include Flex-center-center;
+                .video{
+                  max-width: 1064px;
+                  width: 100%;
+                  height: 593px;
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+  }
+  
+  
+  .recycling_zinc{
+    .image-justify-center{
+      margin: 0 -5vw;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+    .pgrph-wrap{
+      .pgrph{
+       // @include Bold;
+        font-size: 18px;
+        letter-spacing: -1.44px;
+        line-height: 1.5;
+      }
+    }
+  }
+  // 뉴스 컨텐츠
+  .news-contents{
+    // margin-top: 60px;
+    .item-desc{
+      .dt{
+        // margin-bottom: 6px !important;
+        strong{
+          font-size: 24px;
+          letter-spacing: -1.92px;
+          line-height: 1.29;
+        }
+      }
+    }
+  }
+  .news-item{
+    .item{
+      margin-top: 60px;
+      .figure-wrap{
+        flex-direction: column;
+        .figure{
+          width: 100%;
+          margin-right: 0;
+          img {width:100%;}
+        }
+        .item-desc{
+          width: 100%;
+          .dt{
+            margin-top:16px;
+            strong{
+              font-size: 18px;
+              line-height: 1.5;
+              letter-spacing: -1.44px;             
+            }
+          }
+          .dd{
+            font-size: 16px;
+            line-height:1.5;
+            letter-spacing: -1.28px;
+          }
+        }
+      }
+    }
+  }
+
+
+  // img-full-width
+  .sustain-img-wrap{
+    padding-bottom: 0;
+    margin:0 -5vw;
+    p{
+      font-size: 18px;
+      letter-spacing: -.72px;
+      line-height: 1.5;
+      padding-left: 5vw;
+    }
+    .image-justify-center{
+      margin: 0;
+    }
+  }
+  // scroll overflow tab menu
+  .tab_nav_overflow{
+    max-width: 1280px ;
+    overflow-x:scroll;
+    flex: none;
+    li{
+      width: 150px;
+      flex: none;
+    }
+  }
+
+  //윤리경영@
+  .page-sustainability-ethical {
+    .visual-sustainability-ethical {background-image: url('../images/sub/visual_sub_sustainability_ethical_mo.png');}
+    .esg-page-padding{
+      .visual-sustainability-ethical {
+        background-image: url('../images/sub/visual_sub_sustainability_ethical_mo.png');
+      }
+      .pgrph-wrap {
+        margin:11vw 0 5.55vw;
+        .figure-wrap  {
+          display: block;
+         
+          .figure {
+            margin:4.44vw 0;
+            width:100%; 
+            margin-right:0;
+          }
+          .pgrph-box{width:100%;
+            strong {font-size:18px; }
+            .desc-list {margin-top:2.22vw;font-size:16px;}
+          }
+        }
+        .pgrph {@include Normal}
+        
+      }
+      .p-txt {font-size:16px;}
+      .tab_cont{
+        &.ethical-manage {
+          // padding-top:9vw;
+        }
+      }
+    }
+    .gray-box{
+      &>li{
+        padding: 9vw 5.5vw;
+        strong {
+          font-size:16px;margin-bottom:2.22vw;
+        }
+        .gray-lst {
+          li{font-size:16px;}
+        }
+      }
+    }
+    .bot-txt {margin-top:6.8vw;
+      .p-sign {font-size:16px; margin-top:2.22vw}
+    }
+  }
+  
+  //환경경영@
+  .visual-sustainability-environmental {
+    background-image: url("../images/sub/visual_sub_sustainability-environmental_mo.png");
+  }
+   .page-sustainability-environmentalMg {
+    // .summary-sustainability {margin-top:0}
+    
+    .esg-page-padding {
+      .pgrph-wrap{
+        .pgrph { @include Normal ;color:#000;}
+        .tit {
+          strong {font-size:28px; }
+        }
+  
+      }
+    }
+   }
+  //품질경영@
+  .page-sustainability-quality {
+    .esg-page-padding {
+      .pgrph-wrap{
+        .pgrph {
+          @include Normal;
+        &+.pgrph {margin-top:2.22vw}
+        }
+
+      }
+    }
+    .visual-sustainability-quality {
+      background-image: url("../images/sub/visual_sub_sustainability_quality_mo.png");
+    }
+    .pgrph{
+      strong {font-size:18px;}
+    }
+    .certification-box {
+      li {
+        display: block;
+        margin-bottom : 16.66vw;
+        .figure { padding-bottom: calc(100% / 648*486);overflow:hidden;width:auto; height: auto; margin-right:0;
+          img {width:43.214%}
+        }
+        .dec-wrap {width:100%; margin-top:4.44vw;
+          strong {font-size:18px; margin-bottom:2.22vw}
+        }
+      }
+    }
+  }
+
+  //그린징크@
+  .visual-sustainability-greenzinc {
+    background-image: url("../images/sub/visual_sub_sustainability-greenzinc_mo.png");
+  }
+  .page-sustainability-greenzinc {
+    .pgrph-wrap{
+      .tit {
+        margin-bottom:2.22vw;
+        strong {font-size:24px}
+      }
+      .mobile-bold {
+        font-size:18px;
+        @include Bold;
+      }
+    }
+    .gzinc_table { margin-top:11.66vw;
+      .caption {display: none;}
+      th,td {
+        padding:3.88% 2% 3.75vw 2%; letter-spacing: -1.28px;
+      }
+    }
+  }
+}

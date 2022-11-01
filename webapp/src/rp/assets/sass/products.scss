@@ -1,0 +1,747 @@
+//product only
+
+.box-product-summary2{
+  padding-top: 0 !important;
+}
+.copper-detail-table{
+  .detail01_03{
+    .figure-wrap{
+      .type-2{
+        height: 171px;
+        margin-top: 90px;
+      }
+    }
+  }
+}
+.item-summary-box > .item-summary{
+  justify-content: center;
+}
+//product common
+.section-product{
+  padding:120px 0 160px;
+  .tab_nav{
+    margin-top:65px;
+  }
+  .tab_cont{
+    margin-top:65px;
+  }
+}
+.box-product-summary{
+  padding-top:54px;
+  .title{
+    font-family:'NotoB';
+    font-size:48px;
+  }
+  .small-eng{
+    display:block;
+    color:#999999;
+    font-size:32px;
+    font-family:'NotoB';
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+  }
+  .desc{
+    margin-top:50px;
+    font-size:24px;
+    letter-spacing: -1px;
+    word-break: break-word;
+  }
+  .figure{
+    float:right;
+    width:49.38%;
+    margin:-35px 0 0 50px;
+  }
+  .hashtag-box{
+    margin-top:32px;
+  }
+}
+.box-product-use{
+  margin-top:120px;
+  .title{
+    font-family:'NotoB';
+    font-size:32px;
+  }
+  .list-product-use{
+    margin-top:25px;
+  }
+}
+.list-product-use{
+  display:flex;
+  flex-wrap:wrap;
+  font-size:0;
+  >li{
+    overflow:hidden;
+    position:relative;
+    width:146px;
+    height:146px;
+    margin-right:16px;
+    margin-bottom:16px;
+    border-radius:20px;
+    background-color:#ededed;
+    color:#ffffff;
+    font-size:18px;
+    text-align:center;
+    letter-spacing: -0.5px;
+    vertical-align:middle;
+    &:nth-of-type(8n){
+      margin-right:0;
+    }
+    img{
+      width:100%;
+      height:100%;
+    }
+    .txt{
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      position:absolute;
+      background-color: rgba(0,0,0,.6);
+      top:0;right:0;bottom:0;left:0;
+      z-index:10;
+      border-radius:20px;
+      &.bg-blue{
+        background-color: rgba(0,0,0,.2);
+      }
+    }
+  }
+}
+.box-product-detail{
+  margin-top:120px;
+  >.title{
+    font-family:'NotoB';
+    font-size:32px;
+  }
+  
+  .accordian-box{
+    margin-top:25px;
+    .top{
+      .box{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        text-align:left;
+        .btn-toggle{
+          position:relative;
+          width:100%;
+          padding:30px 0 30px 17px;
+          margin-top:0;
+          height:auto;
+          &:before{
+            position:absolute;
+            top:8px;
+            right:0px;
+          }
+          &:after{
+            position:absolute;
+            top:50%;
+            right:20px;
+            margin-top:-7px;
+          }
+          &:hover{
+            background-color:transparent;
+          }
+          &.on{
+            .title{
+              font-family:'NotoB';
+            }
+          }
+          .title{
+            margin-top:0;
+            text-align:left;
+          }
+        }
+      }
+    }
+    .pane{
+      padding:40px 0;
+    }
+  }
+  .figure-wrap {
+    display: flex;
+    .table {width: calc(100% - 493px); margin-right:6.25%}
+    .figure {width:49.3750%}
+  }
+}
+
+//product > index
+.visual-product-index{
+  background-image:url("../images/sub/visual_sub_product-index.png");
+}
+.page-product-index {
+  // overflow: hidden;
+  .inner-product-bottom {
+    .item-summary{
+      .desc-box {
+        align-items: center;
+        .desc {
+          min-height: auto;
+        }
+      }
+    }
+  }
+}
+.inner-product{
+  padding:80px 0 95px;
+  background-image:url("../images/products/bg_product_index.png");
+  background-size:cover;
+  
+  .title-box{
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 1280px;
+    margin: 0 auto;
+    .title{
+      color:#ffffff;
+      font-family:'NotoB';
+      font-size:32px;
+      letter-spacing: -0.64px;
+    }
+    .btn-common{
+      padding: 12px 39px 11px;
+      .go-download{
+        margin-left:10px;
+        background-image:url(../images/icons/icon_download_on.png);
+      }
+    }
+  }
+  .item-summary-box{
+    max-width: 1280px;
+    margin: 25px auto 0;
+    .item-summary{
+      .btn-common{
+        display:none;
+      }
+      &:hover { 
+        background-color: #0c3482;
+        color:#fff;
+        .title {color:#fff;}
+        .number {color:#fff;}
+        .desc {
+          border-top:1px solid rgba(238,238,238, 0.5);
+          .info{display:none;}
+          .btn-common{
+            display:inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+.inner-product-bottom{
+  display:flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top:80px;
+  .item-summary{
+    width:49.3%;
+    background-color:#f5f5f5;
+    .title{
+      margin-bottom:0;
+      font-size:24px;
+    }
+    .desc-box{
+      display:flex;
+      justify-content: space-between;
+      align-items: end;
+      // margin-top: -15px;
+    }
+    .desc{
+      margin-top:0;
+      padding-top:0;
+      border-top:0 none;
+    }
+    .btn-common{
+      display:inline-block;
+      width:inherit;
+    }
+  }
+}
+.item-summary-box{
+  display:flex;
+  font-size:0;
+  .box{
+    display: flex;
+    flex-wrap: wrap;
+    width:67.5%;
+    .item-summary{
+      width:48.15%;
+      overflow: hidden;
+      margin-left:1.85%;
+      &:nth-of-type(-n + 2){
+        margin-bottom:1.85%;
+      }
+    }
+  }
+}
+.item-summary{
+  display:flex;
+  flex-direction: column;
+  width:32.5%;
+  padding:48px;
+  background-color:#ffffff;
+  vertical-align:top;
+  box-sizing: border-box;
+  position: relative;
+  .title{
+    margin-bottom:10px;
+    color:#000000;
+    font-family:'NotoB';
+    font-size:18px;
+  }
+  .number{
+    color:#0c3482;
+    font-family:'MadetommyB';
+    font-size:56px;
+    letter-spacing: -2px;
+    .ton{
+      margin-left:10px;
+      font-family:'MadetommyM';
+      font-size:22px;
+      letter-spacing: 0px;
+    }
+  }
+  .desc{
+    min-height:60px;
+    margin-top:16px;
+    padding-top:16px;
+    border-top:1px solid #eeeeee;
+    color:#666666;
+    font-size:16px;
+  }
+  
+}
+.list-product-item{
+  font-size:0;
+  &.col-3{
+    >li{width:32.5%;}
+    >li:not(:nth-of-type(3n)){
+      margin-right:1.25%;
+    }
+  }
+  >li{
+    display:inline-block;
+    margin-bottom:70px;
+    vertical-align:top;
+  }
+  .figure{}
+  .title{
+    display:block;
+    margin-top:22px;
+    font-family:'NotoM';
+    font-size:24px;
+  }
+}
+
+.product-zinc-page{
+  .wrap-media-list{
+    margin-top: 100px;
+  }
+}
+.visual-product-sulfuric{
+  background-image: url("../images/sub/visual_sub_product_sulfuric.png");
+}
+//product > zinc
+.visual-product-zinc{
+  background-image:url("../images/sub/visual_sub_product-zinc.png");
+}
+
+//product > lead
+.visual-product-lead{
+  background-image:url("../images/sub/visual_sub_product-lead.png");
+}
+
+//product > copper
+.visual-product-copper{
+  background-image:url("../images/sub/visual_sub_product-copper.png");
+}
+
+//product > gold
+.visual-product-gold{
+  background-image:url("../images/sub/visual_sub_product-gold.png");
+}
+
+//product > silver
+.visual-product-silver{
+  background-image:url("../images/sub/visual_sub_product-silver.png");
+}
+
+//product > indium
+.visual-product-indium{
+  background-image:url("../images/sub/visual_sub_product-indium.png");
+}
+
+//product > bismuth
+.visual-product-bismuth{
+  background-image:url("../images/sub/visual_sub_product-bismuth.png");
+}
+
+//product > antimony
+.visual-product-antimony{
+  background-image:url("../images/sub/visual_sub_product-antimony.png");
+}
+
+//product > etc
+.visual-product-etc{
+  background-image:url("../images/sub/visual_sub_product-etc.png");
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+  // [class*="btn-common"].is-small{
+  //   min-width: unset;
+  // }
+  .table{
+    &.type-2{
+      th,td{
+        font-size: 14px;
+      }
+    }
+  }
+  .box-product-detail{
+    .figure-wrap{
+      flex-direction: column;
+      .figure{
+        width: 100%;
+        text-align: center;
+      }
+      .table{
+        width: 100%;
+      }
+    }
+  }
+  .box-product-summary{
+    .small-eng{
+      font-size: 26px;
+    }
+    .figure{
+      margin-top: 63px;
+    }
+  }
+  .page-product-index{
+    .inner-product-bottom{
+      .item-summary{
+        .desc-box{
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .btn-common{
+          margin-left: auto;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .item-summary .number .ton{
+    margin-left: 5px;
+  }
+  .inner-product{
+    padding-left: 5vw;;
+    padding-right: 5vw;
+  }
+  .item-summary{
+    .number{
+      font-size: 26px;
+      letter-spacing: -3px;
+    }
+  }
+  .inner-product-bottom{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .item-summary{
+    .desc{
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 900px) and (max-width: 1320px){
+  .inner-product{
+    padding-left: 5vw;;
+    padding-right: 5vw;
+  }
+  .item-summary{
+    .number{
+      font-size: 50px;
+    }
+  }
+  .inner-product-bottom{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 767px){
+.copper-detail-table{
+  .detail01_03{
+    .figure-wrap{
+      .type-2{
+        margin-top: 0;
+      }
+    }
+  }
+}
+// product > 황산
+.visual-product-sulfuric{
+  background-image: url("../images/sub/visual_sub_product_sulfuric_mo.png");
+}
+//product > zinc
+.visual-product-zinc{
+  background-image:url("../images/sub/visual_sub_product-zinc_mo.png");
+}
+
+//product > lead
+.visual-product-lead{
+  background-image:url("../images/sub/visual_sub_product-lead_mo.png");
+}
+
+//product > copper
+.visual-product-copper{
+  background-image:url("../images/sub/visual_sub_product-copper_mo.png");
+}
+
+//product > gold
+.visual-product-gold{
+  background-image:url("../images/sub/visual_sub_product-gold_mo.png");
+}
+
+//product > silver
+.visual-product-silver{
+  background-image:url("../images/sub/visual_sub_product-silver_mo.png");
+}
+
+//product > indium
+.visual-product-indium{
+  background-image:url("../images/sub/visual_sub_product-indium_mo.png");
+}
+
+//product > bismuth
+.visual-product-bismuth{
+  background-image:url("../images/sub/visual_sub_product-bismuth_mo.png");
+}
+
+//product > antimony
+.visual-product-antimony{
+  background-image:url("../images/sub/visual_sub_product-antimony_mo.png");
+}
+
+//product > etc
+.visual-product-etc{
+  background-image:url("../images/sub/visual_sub_product-etc_mo.png");
+}
+.none-scroll-ie{
+  overflow-x:auto !important;
+  margin: 0 -5vw;
+}
+  //product common
+  .section-product{
+    padding:40px 0 60px;
+    .tab_nav{
+      overflow-x:scroll;
+      @include CustumScroll;
+      white-space: nowrap;
+      margin-top:30px;
+      a{
+        padding:12px 20px;
+        font-size:16px;
+      }
+    }
+    .tab_cont{
+      margin-top:25px;
+    }
+  }
+  .box-product-summary{
+    padding-top:40px;
+    .title{
+      font-size:28px;
+    }
+    .small-eng{
+      font-size:18px;
+    }
+    .desc{
+      margin-top:15px;
+      font-size:16px;
+      color:#666666;
+    }
+    .figure{
+      float:none;
+      width:100%;
+      margin:15px 0 0 0;
+    }
+    .hashtag-box{
+      margin-top:15px;
+    }
+  }
+  .box-product-use{
+    margin-top:60px;
+    .title{
+      font-size:20px;
+    }
+    .list-product-use{
+      margin-top:15px;
+    }
+  }
+  .list-product-use{
+    display:flex;
+    flex-wrap:wrap;
+    flex:1 1 30%;
+    >li{
+      display:block;
+      width:32%;
+      height:auto;
+      margin:0 2% 2% 0;
+      &:nth-of-type(8n){
+        margin-right:0;
+      }
+      &:nth-of-type(3n){
+        margin-right:0;
+      }
+    }
+  }
+  .box-product-detail{
+    margin-top:60px;
+    >.title{
+      font-size:20px;
+    }
+    .accordian-box{
+      margin-top:15px;
+      .pane{
+        padding:20px 0;
+        .table th, .table td{
+          padding:10px 5px;
+          font-size:14px;
+          word-break: break-word;
+        }
+      }
+    }
+    .figure-wrap {
+      display: block;
+      .table {width:100%;}
+      .figure{width:100%;margin-top:20px}
+    }
+  }
+
+  //product > index
+  // IE TAB메뉴 깨짐 방지
+  .ie_tab_nav{
+    li{
+      flex: none;
+    }
+  }
+  .visual-product-index{
+    background-image:url("../images/sub/visual_sub_product-index_mo.png");
+  }
+  .inner-product{
+    padding:40px 5vw 30px;
+    .title-box{
+      display:block;
+      text-align:center;
+      .title{
+        font-size:28px;
+      }
+      .btn-common{
+        margin-top:20px;
+      }
+    }
+    .item-summary-box{
+      .item-summary{
+        .desc {margin-bottom:15px;}
+        .number {font-size:48px; letter-spacing: -3.84px;}
+        //.bt-more {width:33.88vw;min-width:122px;margin:0 auto}
+
+        &:hover {
+          .desc{
+            color:#fff;
+            &:after {content:none}
+            &:before {content:none}
+          }
+          //.bt-more {border:1px solid #fff; color:#fff;}
+        }
+      }
+    }
+  }
+  .inner-product-bottom{
+    display:block;
+    padding:27px 5vw 0;
+    .item-summary{
+      width:100%;
+      margin-bottom:12px;
+      padding:24px;
+      .title{
+        margin-bottom:0;
+        font-size:16px;
+      }
+      .desc-box{
+        margin-top:0px;
+      }
+      .desc{
+        width:300px;
+        margin-top:0;
+        padding-top:0;
+        border-top:0 none;
+        font-size:14px;
+        word-break: keep-all;
+      }
+      .btn-common{
+        display:inline-block;
+        width:inherit;
+        white-space: nowrap;
+        padding:5px 0;
+        font-size:13px;
+      }
+    }
+  }
+  .item-summary-box{
+    display:block;
+    .box{
+      display: block;
+      width:100%;
+      margin-top:12px;
+      .item-summary{
+        width:100%;
+        margin-left:0%;
+        margin-bottom:12px;
+        &:nth-of-type(-n + 2){
+          margin-bottom:12px;
+        }
+      }
+    }
+  }
+  .item-summary{
+    display:block;
+    width:100%;
+    padding:32px;
+    .title{
+      font-size:16px;
+    }
+    .number{
+      .ton{
+        font-size:18px;
+      }
+    }
+    .desc{
+      font-size:14px;
+    }
+  }
+  .list-product-item{
+    font-size:0;
+    &.col-3{
+      >li{width:100%;}
+      >li:not(:nth-of-type(3n)){
+        margin-right:0%;
+      }
+    }
+    >li{
+      display:block;
+      margin-bottom:40px;
+    }
+    .title{
+      margin-top:12px;
+      font-size:18px;
+    }
+  }
+
+
+}

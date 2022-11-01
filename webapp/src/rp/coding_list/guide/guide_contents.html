@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Contents Guide</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/modules.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Contents Guide</h1>
+
+
+<h2 class="h2_guide">01-1. 아코디언 박스</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="content-W-main-top">
+		<h3>점검대상 (설비)</h3>
+		<div class="button-box">
+			<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+			<button type="button" class="complete">완료<strong>1</strong></button>
+			<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+		</div>
+	</div>
+	<div class="accordion-box">
+		<div class="box-top" data-accordion="title-box">
+			<div class="txt">VGOFCC-60-06 VGOFCC-60-06 VGOFCC-60-06</div>
+			<div class="button-box">
+				<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+				<button type="button" class="complete">완료<strong>1</strong></button>
+				<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+			</div>
+		</div>
+		<div class="accordion-cont" data-accordion="contents-box">
+			content!!!!1
+		</div>
+	</div>
+	<div class="accordion-box">
+		<div class="box-top" data-accordion="title-box">
+			<div class="txt">VGOFCC-60-06 VGOFCC-60-06 VGOFCC-60-06</div>
+			<div class="button-box">
+				<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+				<button type="button" class="complete">완료<strong>1</strong></button>
+				<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+			</div>
+		</div>
+		<div class="accordion-cont" data-accordion="contents-box">
+			content!!!!2
+		</div>
+	</div>
+
+
+	<script>
+		UI.toggleAll('.content-W-main-top .accordion-btn3');
+		UI.toggle2('.accordion-box .accordion-btn3');
+	</script>
+
+
+	
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="content-W-main-top">
+	<h3>점검대상 (설비)</h3>
+	<div class="button-box">
+		<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+		<button type="button" class="complete">완료<strong>1</strong></button>
+		<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+	</div>
+</div>
+<div class="accordion-box">
+	<div class="box-top" data-accordion="title-box">
+		<div class="txt">VGOFCC-60-06 VGOFCC-60-06 VGOFCC-60-06</div>
+		<div class="button-box">
+			<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+			<button type="button" class="complete">완료<strong>1</strong></button>
+			<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+		</div>
+	</div>
+	<div class="accordion-cont" data-accordion="contents-box">
+		content!!!!1
+	</div>
+</div>
+<div class="accordion-box">
+	<div class="box-top" data-accordion="title-box">
+		<div class="txt">VGOFCC-60-06 VGOFCC-60-06 VGOFCC-60-06</div>
+		<div class="button-box">
+			<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+			<button type="button" class="complete">완료<strong>1</strong></button>
+			<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+		</div>
+	</div>
+	<div class="accordion-cont" data-accordion="contents-box">
+		content!!!!2
+	</div>
+</div>
+
+
+<script>
+	UI.toggleAll('.content-W-main-top .accordion-btn3');
+	UI.toggle2('.accordion-box .accordion-btn3');
+</script>
+	</xmp>
+</div>
+<!-- // Code -->
+
+
+<h2 class="h2_guide">01-2. 아코디언 박스(내부)</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="accordion-box">
+		<div class="box-top" data-accordion="title-box">
+			<div class="txt">VGOFCC-60-06 VGOFCC-60-06 VGOFCC-60-06</div>
+			<div class="button-box">
+				<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+				<button type="button" class="complete">완료<strong>1</strong></button>
+				<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+			</div>
+		</div>
+		<div class="accordion-cont" data-accordion="contents-box">
+
+			<div class="accordion-inner2"> <!-- 활성화시 class="active" -->
+				<div class="accordion-item2" data-accordion="title-box">
+					<p><strong>용기용기용기용기용기용기용기용기용기용기</strong></p>
+					<div class="button-box">
+						<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+					</div>
+				</div>
+				<div class="contents-box" data-accordion="contents-box">
+					내부내부!!1
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+	
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="accordion-box">
+	<div class="box-top" data-accordion="title-box">
+		<div class="txt">VGOFCC-60-06 VGOFCC-60-06 VGOFCC-60-06</div>
+		<div class="button-box">
+			<button type="button" class="incomplete">미완료 <strong>3</strong></button>
+			<button type="button" class="complete">완료<strong>1</strong></button>
+			<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+		</div>
+	</div>
+	<div class="accordion-cont" data-accordion="contents-box">
+
+		<div class="accordion-inner2"> <!-- 활성화시 class="active" -->
+			<div class="accordion-item2" data-accordion="title-box">
+				<p><strong>용기용기용기용기용기용기용기용기용기용기</strong></p>
+				<div class="button-box">
+					<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+				</div>
+			</div>
+			<div class="contents-box" data-accordion="contents-box">
+				내부내부!!1
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+		
+	</xmp>
+</div>
+<!-- // Code -->
+
+
+<h2 class="h2_guide">02. header</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<header>
+		<a href="#">뒤로가기</a>
+		<h2 class="title is-2">정기점검</h2>
+	</header>
+	
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<header>
+	<a href="#">뒤로가기</a>
+	<h2 class="title is-2">정기점검</h2>
+</header>
+	</xmp>
+</div>
+<!-- // Code -->
+<h2 class="h2_guide">03-01. 상단정보</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="sticky-W">
+		<div class="W-column bgblue">
+			<h2>강수민(4516) MORNING</h2>
+			<p>VGOFCC팀 A조</p>
+		</div>
+		<div class="main-column">
+			<select class="selectbox" name="" id="">
+				<option value="">교대조 (A조)</option>
+				<option value="">점검표1111</option>
+				<option value="">점검표2222</option>
+			</select>
+		</div>
+	</div>
+	
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+
+/**
+class="sticky-W active"시 스틱키 활성화	
+*/
+
+<div class="sticky-W">
+	<div class="W-column bgblue">
+		<h2>강수민(4516) MORNING</h2>
+		<p>VGOFCC팀 A조</p>
+	</div>
+	<div class="main-column">
+		<select class="selectbox" name="" id="">
+			<option value="">교대조 (A조)</option>
+			<option value="">점검표1111</option>
+			<option value="">점검표2222</option>
+		</select>
+	</div>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+<h2 class="h2_guide">03-02. 상단정보</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="sticky-W">
+		<div class="W-column bgblue">
+			<h2>강수민(4516) MORNING</h2>
+			<p>VGOFCC팀 A조</p>
+		</div>
+		<div class="W-accordion">
+			<div class="box-top" data-accordion="title-box">
+				<div class="txt">점검구역</div>
+				<div class="button-box">
+					<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+				</div>
+			</div>
+			<div class="accordion-cont" data-accordion="contents-box">
+				<ul>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+					<li>652 Unit</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		UI.toggle2('.W-accordion .accordion-btn3');
+	</script>
+	
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+
+/**
+class="sticky-W active"시 스틱키 활성화	
+*/
+<div class="sticky-W">
+	<div class="W-column bgblue">
+		<h2>강수민(4516) MORNING</h2>
+		<p>VGOFCC팀 A조</p>
+	</div>
+	<div class="W-accordion">
+		<div class="box-top" data-accordion="title-box">
+			<div class="txt">점검구역</div>
+			<div class="button-box">
+				<button type="button" class="accordion-btn3" data-on="false"><span>아코디언 버튼</span></button> <!-- 활성화 data-on="true" -->
+			</div>
+		</div>
+		<div class="accordion-cont" data-accordion="contents-box">
+			<ul>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+				<li>652 Unit</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	UI.toggle2('.W-accordion .accordion-btn3');
+</script>
+	</xmp>
+</div>
+<!-- // Code -->
+
+
+<h2 class="h2_guide">04. 메인아이템 리스트</h2>
+<!-- View -->
+<div class="guide_wrap">
+	<div class="main-item-list">
+		<ul>
+			<li>
+				<div class="main-item-left">
+					<p>비상발전기 점검표</p>
+					<span>2021-06-25 ~ 2021-06-26</span>
+				</div>
+				<div class="main-item-right"> 
+					<span class="textblue">완료</span>
+				</div>
+			</li>
+			<li>
+				<div class="main-item-left">
+					<p>안전변 차단 밸브 및 U-BOLT 안전변 차단 밸브 및 U-BOLT</p>
+					<span>2021-06-25 ~ 2021-06-26</span>
+				</div>
+				<div class="main-item-right"> 
+					<span>점검전</span>
+				</div>
+			</li>
+			<li>
+				<div class="main-item-left">
+					<p>LT&amp;LG 점검표</p>
+					<span>2021-06-25 ~ 2021-06-26</span>
+				</div>
+				<div class="main-item-right"> 
+					<span>점검전</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="main-item-list">
+	<ul>
+		<li>
+			<div class="main-item-left">
+				<p>비상발전기 점검표</p>
+				<span>2021-06-25 ~ 2021-06-26</span>
+			</div>
+			<div class="main-item-right"> 
+				<span class="textblue">완료</span>
+			</div>
+		</li>
+		<li>
+			<div class="main-item-left">
+				<p>안전변 차단 밸브 및 U-BOLT 안전변 차단 밸브 및 U-BOLT</p>
+				<span>2021-06-25 ~ 2021-06-26</span>
+			</div>
+			<div class="main-item-right"> 
+				<span>점검전</span>
+			</div>
+		</li>
+		<li>
+			<div class="main-item-left">
+				<p>LT&amp;LG 점검표</p>
+				<span>2021-06-25 ~ 2021-06-26</span>
+			</div>
+			<div class="main-item-right"> 
+				<span>점검전</span>
+			</div>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+
+
+<h2 class="h2_guide">05-01. item type</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="questions-list">
+		<ul>
+			<li>
+				<p class="questions">내용</p>
+				<div class="input-T2">
+					<div class="bgblue">
+						<p>정상 : Auto</p>
+					</div>
+					<button type="button" disabled class="warning"> <!-- 활성화시 disabled 제거 -->
+						<span>부적합</span>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="questions-list">
+	<ul>
+		<li>
+			<p class="questions">내용</p>
+			<div class="input-T2">
+				<div class="bgblue">
+					<p>정상 : Auto</p>
+				</div>
+				<button type="button" disabled class="warning"> <!-- 활성화시 disabled 제거 -->
+					<span>부적합</span>
+				</button>
+			</div>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+
+<h2 class="h2_guide">05-02. item type</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="questions-list">
+		<ul>
+			<li>
+				<p class="questions">내용</p>
+				<div class="btn-R-W2">
+					<div class="btn-R">
+						<input type="radio" id="radio11-1" name="radio11" value=""/>
+						<label for="radio11-1">
+							양호
+						</label>
+					</div>
+					<div class="btn-R">
+						<input type="radio" id="radio11-2" name="radio11" value=""/>
+						<label for="radio11-2">
+							불량
+						</label>
+					</div>
+					<button type="button" class="warning"> <!-- 활성화시 disabled 제거 -->
+						<span>부적합</span>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="questions-list">
+	<ul>
+		<li>
+			<p class="questions">내용</p>
+			<div class="btn-R-W2">
+				<div class="btn-R">
+					<input type="radio" id="radio11-1" name="radio11" value=""/>
+					<label for="radio11-1">
+						양호
+					</label>
+				</div>
+				<div class="btn-R">
+					<input type="radio" id="radio11-2" name="radio11" value=""/>
+					<label for="radio11-2">
+						불량
+					</label>
+				</div>
+				<button type="button" class="warning"> <!-- 활성화시 disabled 제거 -->
+					<span>부적합</span>
+				</button>
+			</div>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+
+<h2 class="h2_guide">05-03. item type</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="questions-list">
+		<ul>
+			<li>
+				<p class="questions">내용</p>
+				<div class="bgblue">
+					<p>내용</p>
+				</div>
+				<div class="input-T2">
+					<input type="text" id="" name="" placeholder="값을 입력해주세요" value=""/>
+					<button type="button" disabled class="warning"> <!-- 활성화시 disabled 제거 -->
+						<span>부적합</span>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="questions-list">
+	<ul>
+		<li>
+			<p class="questions">내용</p>
+			<div class="bgblue">
+				<p>내용</p>
+			</div>
+			<div class="input-T2">
+				<input type="text" id="" name="" placeholder="값을 입력해주세요" value=""/>
+				<button type="button" disabled class="warning"> <!-- 활성화시 disabled 제거 -->
+					<span>부적합</span>
+				</button>
+			</div>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+	
+<h2 class="h2_guide">05-04. item type</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="questions-list">
+		<ul>
+			<li>
+				<p class="questions">내용</p>
+				<div class="input-T2">
+					<input type="text" id="" name="" placeholder="값을 입력해주세요" value=""/>
+					<button type="button" class="warning"> <!-- 활성화시 disabled 제거 -->
+						<span>부적합</span>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="questions-list">
+	<ul>
+		<li>
+			<p class="questions">내용</p>
+			<div class="input-T2">
+				<input type="text" id="" name="" placeholder="값을 입력해주세요" value=""/>
+				<button type="button" class="warning"> <!-- 활성화시 disabled 제거 -->
+					<span>부적합</span>
+				</button>
+			</div>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+	
+<h2 class="h2_guide">05-05. item type</h2>
+<!-- View -->
+<div class="guide_wrap">
+
+	<div class="questions-list">
+		<ul>
+			<li>
+				<p class="questions">내용</p>
+				<div class="input-T2">
+					<input type="text" id="" name="" placeholder="값을 입력해주세요" value="" readonly/>
+					<button type="button" class="warning"> <!-- 활성화시 disabled 제거 -->
+						<span>부적합</span>
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+<div class="questions-list">
+	<ul>
+		<li>
+			<p class="questions">내용</p>
+			<div class="input-T2">
+				<input type="text" id="" name="" placeholder="값을 입력해주세요" value="" readonly/>
+				<button type="button" class="warning"> <!-- 활성화시 disabled 제거 -->
+					<span>부적합</span>
+				</button>
+			</div>
+		</li>
+	</ul>
+</div>
+	</xmp>
+</div>
+<!-- // Code -->
+	
+
+
+
+
+<!--//======= 탬플릿 =======-->
+<h2 class="h2_guide"></h2>
+<!-- View -->
+<div class="guide_wrap">
+
+</div>
+<!-- // View -->
+
+<!-- Code -->
+<div class="d_desc code">
+	<xmp class="prettyprint linenums javascript">
+
+	</xmp>
+</div>
+<!-- // Code -->
+<!--======= 탬플릿 =======//-->
+	
+
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

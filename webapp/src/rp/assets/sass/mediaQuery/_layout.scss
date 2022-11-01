@@ -1,0 +1,32 @@
+@include tab {
+    .main-visual-txt {
+        .char {
+            font-size: 30px;
+        }
+    }
+
+    .main-swiper {
+        
+        .swiper-wrapper {
+            padding-left: 0;
+            @include Inline-scrolling;
+            .swiper-slide {
+                width: 300px;
+                margin-right: 0;
+                
+            }
+        }
+    }
+
+
+    @include ResetStyle($style: 'padding', $symbol: 'pd');
+    @include ResetStyle($style: 'margin', $symbol: 'mg');
+    @include ResetStyle($style: 'margin-top', $symbol: 'mt');
+    @include ResetStyle($style: 'margin-bottom', $symbol: 'mb');
+    @include ResetStyle($style: 'margin-left', $symbol: 'ml');
+    @include ResetStyle($style: 'margin-right', $symbol: 'mr');
+    @include ResetStyle($style: 'padding-top', $symbol: 'pt');
+    @include ResetStyle($style: 'padding-bottom', $symbol: 'pb');
+    @include ResetStyle($style: 'padding-left', $symbol: 'pl');
+    @include ResetStyle($style: 'padding-right', $symbol: 'pr');
+}

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout Guide</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+	<link rel="stylesheet" href="/npass/css/npass.css">
+	<link rel="stylesheet" href="/npass/lib/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/npass/css/contents.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/npass/lib/jquery/jquery.min.js"></script>
+	<script scr="/npass/js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Layout</h1>
+	<h2 class="h2_guide">head</h2>
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+	<title>Templete</title>
+
+	<!-- Library CSS -->
+	<link rel="stylesheet" href="/npass/css/npass.css">
+	<link rel="stylesheet" href="/npass/lib/swiper/swiper-bundle.min.css">
+	<!-- // Library CSS -->
+	
+	<!-- Library JS -->
+	<script src="/npass/lib/jquery/jquery.min.js"></script>
+	<script src="/npass/lib/swiper/swiper-bundle.min.js"></script>
+	<!-- // Library JS -->
+
+	<script src="/npass/js/ui.js"></script>
+</head>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">skip navi</h2>
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+<div class="skipNavi">
+	<a href="#">본문 바로가기</a>
+</div>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">header</h2>
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+<header id="header">
+	<div class="container is-max-desktop">
+		<h1>
+			<a href=#>
+				<span><img src="/npass/images/top_logo.png" alt="GS POINT"></span>
+				<strong>통합회원 인증 서비스</strong>
+			</a>
+		</h1>
+	</div>
+</header>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">Page layout</h2>
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+/*
+ * 모바일 사이즈에서 하단 버튼이 fixed인경우 id="contents" class="button-fixed" 추가
+ */
+<div id="wrap" role="main">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="container">
+
+		</div>
+	</header>
+	<!-- // Header -->
+
+	<div id="container">
+
+		<!-- Contents -->
+		<div id="contents" class="container">
+
+
+		</div>
+		<!-- // Contents -->
+
+	</div>
+	
+	
+</div>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">Layer Popup layout</h2>
+
+	<!-- View -->
+	<div class="guide_wrap">
+		<button class="button is-green" id="aa">Layer Popup</button>
+
+		<aside class="modal" id="aa-aa">
+			<div class="modal-background" aria-label="background"></div>
+			<div class="modal-card">
+				<div class="modal-card-head">
+					<h3 class="modal-card-title">타이틀</h3>
+				</div>
+				<div class="modal-card-body">
+					<div class="modal-inner-box">
+						<!-- Content ... -->
+					</div>
+				</div>
+				<button class="modal-close" aria-label="close"></button>
+			</div>
+		</aside>
+
+		<script>
+			const button = document.querySelector('#aa'),
+				  popup  = document.querySelector('#aa-aa'),
+				  close  = popup.querySelector('.modal-close')
+
+			button.addEventListener('click', () => {
+				popup.classList.add('is-active')
+			});
+
+			close.addEventListener('click', () => {
+				popup.classList.remove('is-active')
+			});
+		</script>
+	</div>
+	<!-- // View -->
+
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+/*
+ * width 550px
+ * height 650px
+ * 활성시 class="modal"에 class="is-active" 추가
+ * 레이어팝업 활성화시 html, body태그에 style="overflow : hidden"
+ * 레이어팝업 비활성화시 html, body태그에 style="overflow : visible"
+ * 좌우 여백이 필요할경우 class="modal-inner-box"
+ * breakpoint 768 미민일 경우 full layer popup
+ */
+<aside class="modal">
+	<div class="modal-background" aria-label="background"></div>
+	<div class="modal-card">
+		<div class="modal-card-head">
+			<h3 class="modal-card-title">타이틀</h3>
+		</div>
+		<div class="modal-card-body">
+			<div class="modal-inner-box">
+				<!-- Content ... -->
+			</div>
+		</div>
+		<button class="modal-close" aria-label="close"></button>
+	</div>
+</aside>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">Layer Medium Popup layout</h2>
+
+	<!-- View -->
+	<div class="guide_wrap">
+		<button class="button is-green" id="bb">Layer Medium Popup</button>
+
+		<aside class="modal medium" id="bb-bb">
+			<div class="modal-background" aria-label="background"></div>
+			<div class="modal-card">
+				<div class="modal-card-head">
+					<h3 class="modal-card-title">타이틀</h3>
+				</div>
+				<div class="modal-card-body">
+					<!-- Content ... -->
+				</div>
+				<div class="modal-card-foot">
+					<button type="button" class="button is-medium is-gray">취소</button>
+					<button type="button" class="button is-medium is-green">확인</button>
+				</div>
+			</div>
+		</aside>
+
+		<script>
+			const button2 = document.querySelector('#bb'),
+				  popup2  = document.querySelector('#bb-bb'),
+				  cancel2 = popup2.querySelector('.is-gray'),
+				  ok2     = popup2.querySelector('.is-green');
+
+			button2.addEventListener('click', () => {
+				popup2.classList.add('is-active');
+			});
+
+			cancel2.addEventListener('click', () => {
+				popup2.classList.remove('is-active');
+			});
+
+			ok2.addEventListener('click', () => {
+				popup2.classList.remove('is-active');
+			});
+		</script>
+	</div>
+	<!-- // View -->
+
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+/*
+ * width 400px
+ * height 가변
+ * class="modal"에 class="medium" 추가
+ * 활성시 class="modal"에 class="is-active" 추가
+ * 레이어팝업 활성화시 html, body태그에 style="overflow : hidden"
+ * 레이어팝업 비활성화시 html, body태그에 style="overflow : visible"
+ * breakpoint 768 미민일 경우 중앙정렬
+ */
+ <aside class="modal medium">
+	<div class="modal-background" aria-label="background"></div>
+	<div class="modal-card">
+		<div class="modal-card-head">
+			<h3 class="modal-card-title">타이틀</h3>
+		</div>
+		<div class="modal-card-body">
+			<!-- Content ... -->
+		</div>
+		<div class="modal-card-foot">
+			<button type="button" class="button is-medium is-gray">취소</button>
+			<button type="button" class="button is-medium is-green">확인</button>
+		</div>
+	</div>
+</aside>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+	<h2 class="h2_guide">alert, confirm layout</h2>
+
+	<!-- View -->
+	<div class="guide_wrap">
+		<button class="button is-green" id="cc">confirm Popup</button>
+		<button class="button is-green" id="dd">alert Popup</button>
+
+		<aside class="modal system" id="cc-cc">
+			<div class="modal-background" aria-label="background"></div>
+			<div class="modal-card">
+				<div class="modal-card-head">
+					<h3 class="modal-card-title">타이틀</h3>
+				</div>
+				<div class="modal-card-body">
+					<div class="error-box">
+						<p>메세지 <strong class="point-color-1">강조</strong></p>
+					</div>
+					<div class="msg-box">
+						<div class="error-code">[오류코드 : 8888]</div>
+						<p>메세지</p>
+					</div>
+					<div class="box is-shadowless is-bg-gray is-align-center">
+						<p>본인인증에 관한 문의는 한국신용평가정보 고객지원센터 <span class="point-color-2 underline">1600-1522</span>로 문의하시기 바랍니다.</p>
+					</div>
+				</div>
+				<div class="modal-card-foot">
+					<button type="button" class="button is-medium is-gray">취소</button>
+					<button type="button" class="button is-medium is-green">재시도</button>
+				</div>
+			</div>
+		</aside>
+
+		<aside class="modal system" id="dd-dd">
+			<div class="modal-background" aria-label="background"></div>
+			<div class="modal-card">
+				<div class="modal-card-head">
+					<h3 class="modal-card-title">타이틀</h3>
+				</div>
+				<div class="modal-card-body">
+					<div class="error-box">
+						<p>메세지 <strong class="point-color-1">강조</strong></p>
+					</div>
+					<div class="msg-box">
+						<div class="error-code">[오류코드 : 8888]</div>
+						<p>메세지</p>
+					</div>
+					<div class="box is-shadowless is-bg-gray is-align-center">
+						<p>본인인증에 관한 문의는 한국신용평가정보 고객지원센터 <span class="point-color-2 underline">1600-1522</span>로 문의하시기 바랍니다.</p>
+					</div>
+				</div>
+				<div class="modal-card-foot">
+					<button type="button" class="button is-medium is-green">확인</button>
+				</div>
+			</div>
+		</aside>
+
+		<script>
+			const button3 = document.querySelector('#cc'),
+				  popup3  = document.querySelector('#cc-cc'),
+				  cancel3 = popup3.querySelector('.is-gray'),
+				  ok3     = popup3.querySelector('.is-green');
+
+			button3.addEventListener('click', () => {
+				popup3.classList.add('is-active');
+			});
+
+			cancel3.addEventListener('click', () => {
+				popup3.classList.remove('is-active');
+			});
+
+			ok3.addEventListener('click', () => {
+				popup3.classList.remove('is-active');
+			});
+
+			const button4 = document.querySelector('#dd'),
+				  popup4  = document.querySelector('#dd-dd'),
+				  ok4     = popup4.querySelector('.is-green');
+
+			button4.addEventListener('click', () => {
+				popup4.classList.add('is-active');
+			});
+
+			ok4.addEventListener('click', () => {
+				popup4.classList.remove('is-active');
+			});
+		</script>
+	</div>
+	<!-- // View -->
+
+	<div class="d_desc code">
+	<!-- code -->
+	<xmp class="prettyprint linenums javascript">
+/*
+ * width 400px
+ * height 가변
+ * class="modal"에 class="system" 추가
+ * 활성시 class="modal"에 class="is-active" 추가
+ * 레이어팝업 활성화시 html, body태그에 style="overflow : hidden"
+ * 레이어팝업 비활성화시 html, body태그에 style="overflow : visible"
+ * breakpoint 768 미민일 경우 중앙정렬
+ * class="error-box" 내에 메세지 입력 강조 필요시 strong태그로 감싼 후 point color class추가
+ * 오류코드와 오류코드 관련 메세지가 있을 경우 class="msg-box" 아래 마크업 유지 / 관련 내용 없을 경우 삭제
+ * 기타 메세지가 있을 경우 아래 class="box"와 관련 참고
+ * alert일 경우 취소 버튼 삭제
+ */
+<aside class="modal system">
+	<div class="modal-background" aria-label="background"></div>
+	<div class="modal-card">
+		<div class="modal-card-head">
+			<h3 class="modal-card-title">타이틀</h3>
+		</div>
+		<div class="modal-card-body">
+			<div class="error-box">
+				<p>메세지 <strong class="point-color-1">강조</strong></p>
+			</div>
+			<div class="msg-box">
+				<div class="error-code">[오류코드 : 8888]</div>
+				<p>메세지</p>
+			</div>
+			<div class="box is-shadowless is-bg-gray is-align-center">
+				<p>본인인증에 관한 문의는 한국신용평가정보 고객지원센터 <span class="point-color-2 underline">1600-1522</span>로 문의하시기 바랍니다.</p>
+			</div>
+		</div>
+		<div class="modal-card-foot">
+			<button type="button" class="button is-medium is-gray">취소</button>
+			<button type="button" class="button is-medium is-green">재시도</button>
+		</div>
+	</div>
+</aside>
+	</xmp>
+	<!-- // code -->
+	</div>
+
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

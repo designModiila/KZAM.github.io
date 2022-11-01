@@ -1,0 +1,379 @@
+$medium-devices: 768px;
+$small-devices: 480px;
+$extra-small-devices: 320px;
+
+@mixin ResetAni {
+    animation: none !important;
+    opacity: 1 !important;
+}
+
+@mixin Clear {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+@mixin Normal {
+    font-family: 'NotoR', serif;
+    font-weight: normal;
+}
+@mixin Bold {
+    font-family: 'NotoB', serif;
+    font-weight: normal;
+}
+
+@mixin NoscrollBar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* inline-block layout */
+@mixin Inline-block-config($vertical: middle, $text: left) {
+    display: inline-block;
+    vertical-align: $vertical;
+    text-align: $text;
+}
+
+/* flex layout */
+@mixin Flex-config($display: flex, $justify: flex-start, $align: flex-start, $flow: row, $wrap: nowrap) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-flow: $flow;
+    flex-wrap: $wrap;
+}
+
+@mixin Flex-start-start($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-start-center($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($align: center, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-start-end($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($align: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+
+@mixin Flex-center-start($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: center);
+}
+@mixin Flex-center-center($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: center, $align: center, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-center-end($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: center, $align: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+
+@mixin Flex-end-start($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-end-center($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: flex-end, $align: center, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-end-end($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: flex-end, $align: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+
+@mixin Flex-between-start($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: space-between, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-between-center($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: space-between, $align: center, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-between-end($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: space-between, $align: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+
+@mixin Flex-around-start($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: space-around, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-around-center($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: space-around, $align: center, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+@mixin Flex-around-end($display: flex, $wrap: nowrap, $flow: row) {
+    @include Flex-config($justify: space-around, $align: flex-end, $display: $display, $wrap: $wrap, $flow: $flow);
+}
+
+/*인라인 가로스크롤*/
+@mixin Inline-scrolling {
+    box-sizing: border-box;
+    font-size: 0;
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding-bottom: 0.2rem;
+}
+
+//cover그라디언트
+@mixin CoverImg($radius: 15px, $color: rgba(0, 0, 0, 0.1)) {
+    position: relative;
+    &:before {
+        @include Position($top: 0, $left: 0);
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: $radius;
+        background-color: $color;
+    }
+}
+
+/*폰트만 삭제시킴*/
+@mixin Hide_txt {
+    font: 0/0 a;
+}
+
+@mixin Hidden {
+    position: absolute;
+    font: 0/0 a;
+    visibility: hidden;
+}
+
+@mixin BreakWord {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*투명도 믹스인*/
+@mixin Opacity($opacity) {
+    opacity: $opacity; /* All modern browsers */
+    $opacityIE: $opacity * 100;
+    filter: alpha(opacity=$opacityIE); /* For IE5~IE9 */
+}
+
+/*포지션 믹스인*/
+//@include Position($top: 0, $left: 0)
+@mixin Position($position: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+/*백그라운드 믹스인*/
+//@include Background($sprite:'error', $type:'png', $position:right center); ---  사용법
+//@include Background($sprite:'error', $type:'jpg'); ---  사용법
+//@include Background($sprite:'error', $type:'jpg', $position:20% 20%, $size:100%); ---  사용법
+@mixin Background($sprite, $type: 'png', $position: 0 0, $size: auto, $path: 'icons') {
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/#{$path}/#{$sprite}.#{$type}');
+    background-position: $position;
+    background-size: $size;
+}
+
+/* 말줄임표 */
+// 인자 값의 기본 값은 1
+// @include Ellipsis($w:100px, $lines:2); --- 사용법
+@mixin Ellipsis($w: 100%, $lines: 1, $display: block) {
+    @if ($lines == 1) {
+        width: $w;
+        display: $display;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } @else {
+        width: $w;
+        display: $display;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+    }
+}
+@mixin mobileFullWidth{
+  width:100%;
+  margin-left:-5vw;
+}
+//커스텀 스크롤바
+@mixin CustumScroll($minus: 5px) {
+    &::-webkit-scrollbar {
+        width: 17px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #e1e1e1;
+        border: $minus solid transparent;
+        background-clip: content-box;
+        border-radius: 15px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #fafafa;
+        border: $minus solid transparent;
+        background-clip: content-box;
+        border-radius: 15px;
+    }
+    scrollbar-base-color: #e1e1e1;
+    scrollbar-face-color: #e1e1e1;
+    scrollbar-3dlight-color: #e1e1e1;
+    scrollbar-highlight-color: #e1e1e1;
+    scrollbar-track-color: #fafafa;
+    scrollbar-arrow-color: #fafafa;
+    scrollbar-shadow-color: #fafafa;
+    scrollbar-dark-shadow-color: #fafafa;
+}
+
+//@include box-shadow($top:0, $left:0px, $blur:15px, $color:rgba(50, 50, 50, 0.75));
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color;
+        -moz-box-shadow: inset $top $left $blur $color;
+        box-shadow: inset $top $left $blur $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+/*리셋*/
+@mixin ResetStyle($style, $symbol, $pc: true) {
+    @if $pc {
+        .#{$symbol}-0 {
+            #{$style}: 0 !important;
+        }
+        .#{$symbol}-5 {
+            #{$style}: 5px !important;
+        }
+        .#{$symbol}-10 {
+            #{$style}: 10px !important;
+        }
+        .#{$symbol}-15 {
+            #{$style}: 15px !important;
+        }
+        .#{$symbol}-20 {
+            #{$style}: 20px !important;
+        }
+        .#{$symbol}-25 {
+            #{$style}: 25px !important;
+        }
+        .#{$symbol}-30 {
+            #{$style}: 30px !important;
+        }
+        .#{$symbol}-35 {
+            #{$style}: 35px !important;
+        }
+        .#{$symbol}-40 {
+            #{$style}: 40px !important;
+        }
+        .#{$symbol}-45 {
+            #{$style}: 45px !important;
+        }
+        .#{$symbol}-50 {
+            #{$style}: 50px !important;
+        }
+    } @else {
+        .#{$symbol}-0 {
+            #{$style}: 0 !important;
+        }
+        .#{$symbol}-5 {
+            #{$style}: 0.4rem !important;
+        }
+        .#{$symbol}-10 {
+            #{$style}: 0.9rem !important;
+        }
+        .#{$symbol}-15 {
+            #{$style}: 1.3rem !important;
+        }
+        .#{$symbol}-20 {
+            #{$style}: 1.7rem !important;
+        }
+        .#{$symbol}-25 {
+            #{$style}: 2.1rem !important;
+        }
+        .#{$symbol}-30 {
+            #{$style}: 2.7rem !important;
+        }
+        .#{$symbol}-35 {
+            #{$style}: 3rem !important;
+        }
+        .#{$symbol}-40 {
+            #{$style}: 3.4rem !important;
+        }
+        .#{$symbol}-45 {
+            #{$style}: 3.8rem !important;
+        }
+        .#{$symbol}-50 {
+            #{$style}: 4.2rem !important;
+        }
+    }
+}
+
+/*미디어쿼리 믹스인*/
+//@include media( $queryPoint: "(max-width:480px)" ){
+//width : 50%;
+//}
+@mixin media($queryPoint) {
+    @media #{ $queryPoint } {
+        @content;
+    }
+}
+
+//
+// 미디어 쿼리 MIXIN
+// --------------------------------------------------
+
+// Break Point (Desktop First 기준 내림차순 설정)
+$desktop-l-width: 1440px;
+$tablet-l-width: 1024px;
+$tablet-s-width: 768px;
+$mob-l-width: 640px;
+$mob-m-width: 425px;
+$mob-s-width: 375px;
+
+// only PC
+@mixin pc-only {
+    @media screen and (min-width: $tablet-l-width + 1) {
+        @content;
+    }
+}
+// PC large
+@mixin pc-large {
+    @media screen and (min-width: $desktop-l-width + 1) {
+        @content;
+    }
+}
+
+// --------------------------------------------------
+
+// 태블릿
+@mixin tab {
+    @media screen and (max-width: $tablet-l-width) {
+        @content;
+    }
+}
+// 모바일
+@mixin mob {
+    @media screen and (max-width: $tablet-s-width - 1) {
+        @content;
+    }
+}
+// 모바일 large
+@mixin mob-large {
+    @media screen and (max-width: $mob-l-width) {
+        @content;
+    }
+}
+// 모바일 mid
+@mixin mob-mid {
+    @media screen and (max-width: $mob-m-width) {
+        @content;
+    }
+}
+// 모바일 small
+@mixin mob-small {
+    @media screen and (max-width: $mob-s-width) {
+        @content;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Form Guide</title>
+
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/modules.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="/assets/js/common.js"></script>
+
+
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+		.is-loading-progress .page.ui .btn.loading-prog-close {
+			position: relative;
+			z-index: 2500;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="bts">
+			<a class="btn" href="javascript:ui.progress.show('진행 중입니다.');">프로그래스열기</a>
+			<a class="btn loading-prog-close" href="javascript:ui.progress.hide();">프로그래스닫기</a>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+				ui.progress.show('진행 중입니다.'); //열기
+				ui.progress.hide(); //닫기
+		</xmp>
+	</div>
+	<!-- // code -->
+
+
+
+</div>
+<script type="text/javascript" src="/coding_list/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/coding_list/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+<script type="text/javascript" src="/coding_list/js/icheck.js"></script>
+<script type="text/javascript" src="/coding_list/js/contents.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.checkbox').iCheck();
+    $('.radio').iCheck();
+	});
+</script>
+
+</body>
+</html>

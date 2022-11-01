@@ -1,0 +1,724 @@
+//investment > 공시정보규정
+.ir-popup-title{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .btn-add-row{
+    margin-left: 15px;
+  }
+}
+.section-investment{
+  padding-bottom:120px;
+  .list-rule{
+    color:#666666;
+    font-size:16px;
+    .btn-toggle{
+      position:relative;
+      width:100%;
+      height:auto;
+      margin-top:0;
+      padding:25px 17px;
+      text-align:left;
+      .title{
+        margin-top:0;
+      }
+      &:hover{
+        border-radius:0;
+        background-color:transparent;
+      }
+      &:after{
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+        right: 20px;
+      }
+    }
+    .sub-title{
+      display:block;
+      margin-bottom:5px;
+      line-height:1.4;
+      &:not(:first-of-type){
+        margin-top:20px;
+      }
+    }
+    .txt+.sub-title{margin-top:20px;}
+  }
+}
+// investment > 재무제표 statement
+.visual-investment-statement{ background-image:url("../images/sub/visual_sub_statement.png") }
+// investment > 재무비율 ratio
+.visual-investment-ratio{ background-image:url("../images/sub/visual_sub_ratio.png") }
+// investment > 신용등급 credit_rating
+.visual-investment-credit_rating{ background-image:url("../images/sub/visual_sub_credit_rating.png") }
+
+/* investment > statement */
+.section-investment  {
+  .tab_cont{
+    .statement{
+      margin-top:65px;
+    }
+  }
+  .statement{background-color:#f5f5f5;}
+  .statement-inner{max-width:1280px;margin:0 auto;}
+  p.tableDesc  {padding-top:65px;text-align: right ; color: #666; font-size: 14px; margin-bottom:8px; }
+  table{
+    td{font-family:'MadetommyR';}
+    tr.highlight  {
+      th  {color:#0c3482; height:50px;font-family:'NotoB';}
+      td {color:#0c3482; font-size:24px;font-family:'MadetommyB';}
+    }
+    tr.line {
+      td ,th {border-bottom:1px solid #ccc;}
+    }
+  }
+}
+
+.statementChart, .ratioChart   {
+  position:relative;
+  display:flex;
+  justify-content: space-between;
+  &::before {content: ""; position:absolute; height:100%; width:1000%; background:#f5f5f5; left:50%; transform: translateX(-50%); display:none;}
+  .chartTit {position:absolute; top:40px; font-size:32px; line-height: 76px; font-weight: 800; }
+  .chartBox {
+    padding:130px 0 80px;
+    .chartTit_s {position:relative; font-size:18px; font-weight: 800; color:#000; padding-bottom:20px; }
+    .chart {
+      width:400px; height:400px;
+      .bb-grid line {stroke:#ddd}
+      .bb-xgrid, .bb-ygrid  {stroke-dasharray:0}
+      circle  {fill:#0c3482 !important; r:6 !important; stroke:#0c3482  !important; stroke-width:6px }
+      .bb-line  {stroke: rgba(0, 86, 255 ,0.2) !important; stroke-width:4px  !important; fill:transparent}
+      tspan {font-size:11px; }
+      .domain { stroke:#000; stroke-width:1px;  fill:transparent}
+      .bb-tooltip-container  { border:0; background:#0c3482; }
+      .bb-tooltip-container tr th{ background:#0c3482;color:#fff; border:0;  height:20px;  padding:5px;}
+      // .bb-tooltip-container tr td:first-child{display:none; }
+      .bb-tooltip-container tr td{ background:#0c3482;color:#fff; border:0;  height:20px ; padding:5px;}
+    }
+  }
+}
+
+.ratioChart   {
+  padding-bottom:80px;
+  flex-wrap: wrap;
+  .chartBox {
+    padding:30px 0 0;
+    &:nth-child(-n+3){
+      padding:130px 0 0;
+    }
+    .chart {
+      width:600px; height:300px;
+    }
+  }
+}
+
+//investment > irmeeting
+.visual-investment-irmeeting{
+    background-image:url("../images/sub/visual_sub_investment-irmeeting.png");
+  }
+  .calendar-indicator{
+    position:relative;
+    margin-bottom:36px;
+    text-align:center;
+    [class*="btn-cal"]{
+      display:inline-block;
+      width:48px;
+      height:48px;
+      border-radius:100%;
+      background-color:#ffffff;
+      vertical-align:top;
+      font-size:0;
+      &:after{
+        display:inline-block;
+        content:"";
+        width:12px;
+        height:12px;
+        border-style:solid;
+        transform: rotate(45deg);
+      }
+      &.btn-cal-prev:after{
+        margin-left:6px;
+        border-width:0 0 2px 2px;
+        border-color:transparent transparent #000000 #000000;
+      }
+      &.btn-cal-next:after{
+        margin-right:6px;
+        border-width:2px 2px 0 0;
+        border-color:#000000 #000000 transparent transparent;
+      }
+    }
+    .month{
+      padding:0 22px;
+      font-family:'MadetommyM';
+      font-size:48px;
+      line-height:48px;
+      letter-spacing: -2px;
+    }
+    .btn-common{
+      position:absolute;
+      right:0;
+      bottom:0;
+    }
+  }
+  .table{
+    &.tb-cal{
+      border-top:0 none;
+      .sunday{color:#cccccc;}
+      .saturday{color:#cccccc;}
+      thead{
+        th{
+          font-family:'MadetommyB';
+          line-height:1;
+        }
+      }
+      tr{border-width:1px;}
+      th,td{
+        border-left:1px solid #eeeeee;
+        background-color:#ffffff;
+      }
+      tbody{
+        td{
+          width:183px;
+          height:100px;
+          padding:14px 8px;
+          color:#000000;
+          font-family:'MadetommyB';
+          vertical-align:top;
+          .day{
+            display:block;
+            height:47px;
+            font-size:18px;
+            line-height:1;
+          }
+          .btn-cal{
+            margin-top:4px;
+          }
+        }
+      }
+    }
+  }
+  .btn-cal{
+    display:block;
+    width:100%;
+    padding:9px;
+    background-color:#0c3482;
+    color:#ffffff;
+    font-family:'NotoM';
+    font-size:14px;
+    &:disabled{
+      background-color:#cccccc;
+    }
+  }
+
+
+//investment > 공시정보
+.visual-public-info {background-image:url("../images/sub/visual_sub_investment-public.png")}
+.pubinfo-pic {background-color:#f1f1f1;position:relative;padding-bottom:calc(100% / 1280 * 802);overflow:hidden;}
+
+//investment > disclosure_rule
+
+.visual-disclosure-rule{ background-image:url("../images/sub/visual_sub_investment-rule.png");}
+.desc-area-investment {
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top:8px;
+    
+    .go-download{vertical-align:middle; margin-top:-4px;}
+}
+
+//investment >  settlement 
+.visual-investment-settlemnet {
+    background-image:url("../images/sub/visual_sub_investment_ed.png");
+}
+.settlemnet-lst { 
+    padding:0px 0 160px;
+    .total {
+        font-family:"NotoB", "ManropeB", serif;
+        font-size:18px;
+        letter-spacing: -0.72px;
+        margin-bottom:16px;
+    }
+}
+
+//investment >  settlement-view
+.settlemnet-view {
+    padding-top:120px;
+    .view-article {
+        margin-top:0;
+        .article-tit {font-family:"NotoB", "ManropeB", serif;}
+        .article-view {padding:40px 16px;}
+        .article-attr a {color:#0c3482;}
+        
+        .article-list {
+            .item {
+                .rig {width:calc(100% - 134px); display: flex; justify-content: space-between;}
+            }
+        }
+    }
+    
+}
+
+
+////investment >  사업보고서, 감사보고서
+.visual-business_report {
+    background-image:url("../images/sub/visual_sub_investment_report.png");
+}
+
+.report-area-wrap {
+    .tit-area {margin-bottom: 60px}
+}
+ .date-atth-wrap {
+     background-color:#ebeef7;
+     padding:15px 0 80px;
+
+     h4 {
+         font-size:32px;
+         font-family:"NotoB", "ManropeB", serif;
+         margin:65px 0 16px;
+        
+    }
+    
+
+ }
+
+ .presentation-box {
+    display: flex;
+    &.acc {
+        display: block; margin-left:0;overflow:hidden;
+        .item {
+        float:left;
+        padding:24.5px 40px;
+        &:first-child {margin-left:0}
+        .item-lst { margin-bottom:41.5px;}
+        }
+    }
+    .item {
+        padding:55px 34px 66px;
+        background:#fff;
+        margin-left:16px;
+        width:32.333%;
+        margin-left:1.25%;
+        box-sizing: border-box;
+
+        &:hover {
+            background:#0c3482;
+            .btn-toggle {background:#F5F5F5}
+            h5 {color:#fff }
+            .title{color:#fff}
+            .go-download{background-image:url("../images/icons/icon_download_on.png");}
+            .date-desc{
+              color:#fff;
+            }
+        }
+        &:first-child {margin-left:0;}
+        h5{
+            margin-top:11px;
+           font-size:24PX; color:#999; letter-spacing: #999; 
+           font-family: MADETOMMYB;
+        }
+        .item-lst{
+            margin-top:26px;
+           li{vertical-align: middle; display: flex; justify-content: space-between; align-items:center;
+            &+li {
+                margin-top:21px;   
+            }
+        } 
+            .title {
+                font-family:"NotoB", "ManropeB", serif; letter-spacing: -0.72px;
+                font-size:24px;
+                .sm-tit {font-size:18px; }
+            }
+        }
+    }
+    .top{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .box:first-of-type:last-of-type{
+          flex:1;
+        }
+        .btn-toggle {
+            margin-right:-10px;
+        }
+      }
+    .pane{
+    display:none;
+    }
+    
+    
+}
+
+ //investment >  presentation
+ .visual-investment-presentation {
+    background-image:url("../images/sub/visual_sub_investment_presentation.png");
+}
+
+
+ //investment >  auditor
+ .visual-investment-auditor {
+    background-image:url("../images/sub/visual_sub_investment_audit.png");
+}
+
+//investment>ir meetting
+.section-cal-area{background:#ebeef7; padding:80px 0;}
+.meet-area-wrap {
+    .tb-cal {background:#fff;}
+}
+
+//전자공고 LIST
+.settlemnet-lst{
+    .bt-more {display: none;}
+}
+
+
+
+.tb-settlement { 
+    border-top:1px solid #000; 
+    
+    .thead {
+        display: table;width:100%;font-family:"NotoB", "ManropeB", serif;
+        border-bottom:1px solid #ddd;padding:16px 0;
+        div {display: table-cell;
+            &.num{width:4.5%;text-align:center;}
+            &.tit{width:72%;
+                .txt{margin-left:52px}
+            }
+            &.date{width:10%;text-align:center;}
+            &.down{width:10%;text-align:center;}
+        }
+        
+    }
+    .tbody {
+        font-family:"NotoR", "ManropeR", serif;
+        border-bottom:1px solid #ddd;
+        li{ display: table;width:100%;padding:16px 0; border-bottom:1px solid #ddd;
+            div {
+                display: table-cell;
+            &.num{width:4.5%;text-align:center;}
+            &.tit{width:72%; font-family: "NotoM", "ManropeM", serif;
+                .txt{margin-left:52px;display: inline-block;}
+            }
+            &.date{width:10%;text-align:center;color:#666}
+            &.down{width:10%;text-align:center;}
+            }
+        }
+    }
+
+    
+}
+
+@media (min-width:800px) and (max-width:1350px){
+  .desc-area-investment {
+	  .left {
+		  width: 62%;
+	  }
+  }
+  .tab-box .tab_cont.statement {padding-bottom:90px;}
+  .statementChart, .ratioChart   {
+    display:block;
+    position:relative;
+    padding:32px 5vw 45px;
+    &::before {content: ""; position:absolute; height:100%; width:1000%; background:#f5f5f5; left:50%; transform: translateX(-50%); }
+    .chartTit {position:static; top:0; font-size:18px; line-height: 20px; font-weight: 800; }
+    .chartBox {
+      padding:35px 0 0px;
+      &:nth-child(-n+3){
+        padding:35px 0 0;
+      }
+      .chartTit_s {position:relative; font-size:18px; font-weight: 800; color:#000; padding-bottom:20px; }
+      .chart {
+        width:100%; height:200px;
+      }
+    }
+  }
+
+  .table-wrap {
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    width:100%;
+    // table {width:600px; }
+  }
+}
+@media (max-width: 767px) {
+
+  // 투자정보 investment > 재무제표 statement
+  .section-investment{
+    table{
+      tr{
+        &.highlight{
+          td{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .visual-investment-statement{ background-image:url("../images/sub/visual_sub_statement_mo.png") }
+  // 투자정보investment  > 재무비율 ratio
+  .visual-investment-ratio{ background-image:url("../images/sub/visual_sub_ratio_mo.png") }
+  // 투자정보 investment > 신용등급 credit_rating
+  .visual-investment-credit_rating{ background-image:url("../images/sub/visual_sub_credit_rating_mo.png"); }
+  
+  .tab-box .tab_cont.statement {padding-bottom:90px;}
+  .statementChart, .ratioChart   {
+    display:block;
+    position:relative;
+    padding:32px 5vw 45px;
+    &::before {content: ""; position:absolute; height:100%; width:1000%; background:#f5f5f5; left:50%; transform: translateX(-50%); }
+    .chartTit {position:static; top:0; font-size:18px; line-height: 20px; font-weight: 800; }
+    .chartBox {
+      padding:35px 0 0px;
+      &:nth-child(-n+3){
+        padding:35px 0 0;
+      }
+      .chartTit_s {position:relative; font-size:18px; font-weight: 800; color:#000; padding-bottom:20px; }
+      .chart {
+        width:100%; height:200px;
+      }
+    }
+  }
+
+  .table-wrap {
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    width:100%;
+    table {width:600px; }
+  }
+ 
+
+  //investment > irmeeting
+  .visual-investment-irmeeting{
+    background-image:url("../images/sub/visual_sub_investment-irmeeting_mo.png");
+  }
+  .calendar-indicator{
+    margin-bottom:13px;
+    padding-bottom:65px;
+    [class*="btn-cal"]{
+      width:32px;
+      height:32px;
+      &:after{
+        width:8px;
+        height:8px;
+      }
+      &.btn-cal-prev:after{
+        margin-left:6px;
+      }
+      &.btn-cal-next:after{
+        margin-right:6px;
+      }
+    }
+    .month{
+      padding:0 16px;
+      font-family:'MadetommyM';
+      font-size:32px;
+      line-height:32px;
+    }
+    .btn-common{
+      position:absolute;
+      right:0;
+      bottom:0;
+    }
+    .state-ir-application{
+      position:absolute;
+      left:0;
+      bottom:0;
+    }
+  }
+  .state-ir-application{
+    [class*="state-"]{
+      display:inline-block;
+      font-family:'NotoM';
+      font-size:14px;
+      &:before{
+        display:inline-block;
+        content:"";
+        width:12px;
+        height:12px;
+        margin-right:5px;
+      }
+      &:not(:first-of-type){
+        margin-left:12px;
+      }
+    }
+    .state-possible{
+      color:#0c3482;
+      &:before{
+        background-color:#0c3482;
+      }
+    }
+    .state-possible{
+      color:#0c3482;
+    }
+    .state-unpossible{
+      color:#666666;
+      &:before{
+        background-color:#cccccc;
+      }
+    }
+  }
+  .table{
+    &.tb-cal{
+      colgroup{
+        col:nth-of-type(1),col:nth-of-type(2){display:none;}
+      }
+      .sunday{display:none;}
+      .saturday{display:none;}
+      thead{
+        th{
+          font-size:14px;
+        }
+      }
+      tr{border-width:1px;}
+      th,td{
+        border-left:1px solid #eeeeee;
+      }
+      tbody{
+        td{
+          &:empty{
+            height:0;
+            padding:0;
+          }
+          .day{
+            height:30px;
+            font-size:14px;
+          }
+          .btn-cal{
+            padding:13px 5px;
+          }
+          .hide{display:none;}
+        }
+      }
+    }
+  }
+ 
+  //investment
+    .section-investment{padding-bottom:40px;}
+    //공시정보 disclosure_information @
+    .visual-public-info {
+        background-image:url("../images/sub/visual_sub_investment-public_mo.png")
+    }
+   
+    //공시정보관리규정@
+    .visual-disclosure-rule {
+        background-image:url("../images/sub/visual_sub_investment-rule_mo.png")
+    }
+    .page-disclosure-rule {
+        .document-title{
+            &.padding-set{
+                padding-bottom:0;
+            }
+        }
+    }
+    .section-investment {
+        .list-rule{
+            .btn-toggle{
+                padding:20px 12px;
+                .title {
+                    letter-spacing: -1.44px;
+                    line-height: 1.28;
+                    padding-right:20px;
+                }
+                &:after {right:12px}
+            }
+        }
+    }
+    .desc-area-investment {
+        display: block;
+        .rig {text-align:center;margin:11.11vw 0 8.88vw;}
+    }
+    //전자공고@  
+    .visual-investment-settlemnet {
+        background-image:url("../images/sub/visual_sub_investment_ed_mo.png")
+    }
+    .settlemnet-lst{
+        
+        padding:11.11vw 0 25vw;
+        .total {font-size:14px;margin-bottom:8px}
+        .bt-more {display: inline-block;margin-top:6.66vw;}
+        .pagination {display: none;}
+    }
+    .tb-settlement {
+        border-top:2px solid #000;
+            .thead {display: none;}
+            .tbody{
+                li{
+                    position:relative;
+                    display:block;
+                    padding:2.666vw 2.78vw;
+                    box-sizing:border-box;
+                    div{
+                        &.tit{font-size:16px; font-family: "NotoB", "ManropeB", serif;display: block;
+                            .txt{margin-left:0;}
+                            }
+                        &.num{display:none}
+                        &.date {text-align:left;color:#666;font-family: "NotoR", "ManropeR", serif;}
+                        &.down {position:absolute;top:50%; margin-top:-15px; right:12px;}        
+                    }
+                }
+            }
+            
+            
+        }
+  
+    //프레젠테이션@
+    .visual-investment-presentation {
+        background-image: url("../images/sub/visual_sub_investment_presentation_mo.png");
+    }
+     .presentation-box {
+         display: block;
+         &.acc{
+             .item {
+                 margin-top:12px;padding:0.6vw 6.77vw;
+                 .item-lst {margin-top:12px;margin-bottom:0;} 
+                .pane {padding-bottom:5.55vw}
+            }
+         }
+        .item {
+            width:100%; margin-left:0;margin-top:12px; padding:8.7vw 6.77vw;
+            &:hover{
+                background-color:#ffffff;
+                .title{color:#999999;}
+                .item-lst .title{color:#000000;}
+            }
+            h5 {font-size:16px;margin-top:0;}
+            .item-lst{
+                .title {font-size:18px}
+            }
+            .btn-toggle{
+                width:45px;
+                margin-top:0;
+                
+            }
+            .go-download{background-image:url("../images/icons/icon_download_mo.png");}
+            &:hover{
+                .btn-toggle{background-color:transparent;}
+                .go-download{background-image:url("../images/icons/icon_download_mo.png");}
+            }
+        }
+     }
+     .date-atth-wrap {
+         padding:15px 0 11.11vw;
+         h4 {
+             margin-bottom:0;
+             margin-top:11.11vw;
+             font-size:24px;
+         }
+     }
+
+     //사업보고서@
+     .visual-business_report { background-image: url("../images/sub/visual_sub_investment_report_mo.png");}
+     //감사 @
+     .visual-investment-auditor{background-image: url("../images/sub/visual_sub_investment_audit_mo.png");}
+     
+     //전자공고 @
+    .settlemnet-view{
+        padding:8.88vw 0 25vw;
+    }
+}
+
+@media (max-width: 319px) {
+  
+}

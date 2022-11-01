@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko" class="main-html">
+	@@include('./include/head.html')
+<body class="main-body">
+	
+<div id="wrap">
+
+	@@include('./include/header.html')
+
+	<main id="content">
+
+    <div id="fullpage">
+      <!-- top visual.. -->
+      <div class="section" id="section-visual">
+        <div class="inner">
+          <div class="main-swiper">
+						<!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide col1">
+                <div class="visual-bg"></div>
+                <div class="inner">
+                  <div class="slide-cont">
+                    <h2 class="title">
+                      <small class="small">신소재 사업으로 미래를 꿈꾸는</small>
+                      <div class="slide-main-visual-txt">
+                        <em class="char engB" style="--char-index:1;">Dreaming of the</em>
+                        <em class="char engB" style="--char-index:2;">future with new</em>
+                        <em class="char engB" style="--char-index:3;">material business</em>
+                      </div>
+                    </h2>
+                    <div class="slide-main-sub-txt" style="--char-index:5;">
+                      <p>미래를 이끌 성장 동력 2차전지사업</p>
+                    </div>
+                    <a href="#" class="btn-common is-outline is-white" style="--char-index:10">바로가기<span class="arrow"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col2">
+                <div class="visual-bg"></div>
+                <div class="inner">
+                  <div class="slide-cont">
+                    <h2 class="title">
+                      <div class="slide-main-visual-txt">
+                        <em class="char" style="--char-index:1;">고려아연</em>
+                        <em class="char" style="--char-index:2;">국내 금속 기업 중</em>
+                        <em class="char" style="--char-index:3;">최초로 <span class="font-weight:normal;">RE100</span> 가입</em>
+                      </div>
+                    </h2>
+                    <div class="slide-main-sub-txt" style="--char-index:5;">
+                      <p>2050년 까지 100% 재생에너지 사용</p>
+                    </div>
+                    <a href="#" class="btn-common is-outline is-white" style="--char-index:10">바로가기<span class="arrow"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col3">
+                <div class="visual-bg"></div>
+                <div class="inner">
+                  <div class="slide-cont">
+                    <h2 class="title">
+                      <small class="small">비철금속의 글로벌 리딩 컴퍼니 고려아연</small>
+                      <div class="slide-main-visual-txt">
+                        <em class="char engB" style="--char-index:1;">Thinking for next</em>
+                        <em class="char engB" style="--char-index:2;">material</em>
+                        <em class="char engB" style="--char-index:3;">KOREA ZINC</em>
+                      </div>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+						</div>
+            <div class="swiper-pagination"></div>
+            <div class="control-btns">
+              <button class="btn-start" style="display: none;">시작</button>
+              <button class="btn-stop">정지</button>
+            </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section" id="section-business">
+				<div class="inner">
+          <div class="title-text-box-common">
+            <div>
+              <h2 class="main-visual-txt">
+                <em class="char" data-aos="fade-up">신사업으로</em>
+                <em class="char" data-aos="fade-up" data-aos-delay="300">미래에</em>
+                <em class="char" data-aos="fade-up" data-aos-delay="400">도전합니다.</em>
+              </h2>
+              <div class="main-sub-txt" data-aos="fade-right" data-aos-delay="500">
+                <p>고객 감동을 실현하는 글로벌 리더가 <br/>되겠습니다.</p>
+              </div>
+              <a href="#" class="btn-common is-outline" data-aos="fade-left" data-aos-delay="500">신사업 바로가기<span class="arrow"></span></a>
+            </div>
+            <div class="box-tab" data-aos="fade-up" data-aos-delay="600">
+              <figure class="figure"><img src="/assets/images/main/tab_01.png" alt=""/></figure>
+              <ul class="list-tab">
+                <li><a href="#" class="active" data-src="/assets/images/main/tab_01.png">2차전지소재</a></li>
+                <li><a href="#" data-src="/assets/images/main/tab_02.png">폐 배터리 산업</a></li>
+                <li><a href="#" data-src="/assets/images/main/tab_03.png">Green zinc</a></li>
+                <li><a href="#" data-src="/assets/images/main/tab_04.png">Recycle zinc</a></li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="info-box-wrap">
+            <div class="info-box char" data-aos="fade-up" data-aos-delay="800">
+              <h3 class="title">ZINC <small>아연 생산량</small></h3>
+              <div class="flex-box">
+                <p class="main-info-number" id="counter1-1"></p>
+                <span>TON</span>
+              </div>
+              <p class="text">아연도강판/강판/철선,칼라강판/ 액세서리, 자동차 부품, <br/>기계, 전자부품, 방식용 도료</p>
+            </div>
+
+            <div class="info-box char" data-aos="fade-up" data-aos-delay="900">
+              <h3 class="title">LEAD <small>연(납) 생산량</small></h3>
+              <div class="flex-box">
+                <p class="main-info-number" id="counter1-2"></p>
+                <span>TON</span>
+              </div>
+              <p class="text">자동차 및 산업용 배터리, 전선피복, 전지, 방사선 차폐제, <br/>방청페인트 등</p>
+            </div>
+            
+            <div class="info-box char" data-aos="fade-up" data-aos-delay="1000">
+              <h3 class="title">COPPE <small>동(구리) 생산량</small></h3>
+              <div class="flex-box">
+                <p class="main-info-number" id="counter1-3"></p>
+                <span>TON</span>
+              </div>
+              <p class="text">황동, 동판, 동파이프, 동선 등</p>
+            </div>
+          </div>
+				</div>
+			</div>
+
+			<div class="section" id="section-product">
+				<div class="inner">
+          <div class="title-text-box-common">
+            <h2 class="main-visual-txt">
+              <em class="char" data-aos="fade-up">최고 품질</em>
+              <em class="char" data-aos="fade-up" data-aos-delay="300">그 이상의 가치를</em>
+              <em class="char" data-aos="fade-up" data-aos-delay="400">만듭니다.</em>
+            </h2>
+            <div class="main-sub-txt" data-aos="fade-right" data-aos-delay="500">
+              <p style="color: #8d939c;">
+                고려아연의 지속적인 투자와 설비 혁신, 창의적 기술<br/>력으로 세계 최고의 제품품질을 인정받고 있습니다.
+              </p>
+            </div>
+            <a href="#" class="btn-common is-outline is-white" data-aos="fade-left" data-aos-delay="500">주요 생산품 바로가기<span class="arrow"></span></a>
+          </div>
+          <ul class="list-main-product" data-aos="fade-up" data-aos-delay="800">
+            <li class="item-zinc">
+              <div class="inner">
+                <figure class="figure"><img src="../assets/images/main/figure_product_zinc.png" alt="아연"/></figure>
+                <h3 class="title">아연(ZINC)</h3>
+                <p class="desc">Zn 99.995% 이상의 최고 품질의 아연으로, 런던 금속 거래소(LME)에 등록되어 있는 SHG Zinc Slab은 세계 최고 기술력을 바탕으로 생산하고 있으며 세계적으로 그 품질의 우수성을 인정받고 있습니다.</p>
+              </div>
+            </li>
+            <li class="item-copper">
+              <div class="inner">
+                <figure class="figure"><img src="../assets/images/main/figure_product_copper.png" alt="동"/></figure>
+                <h3 class="title">동(Copper)</h3>
+                <p class="desc">고려아연이 최근에 독창적으로 개발한 KCP(Koreazinc Copper Process)공법을 적용하여 생산되는 전기동은 순도 99.9935% 이상의 품질로 연성이 좋아 박판 또는 가는 선으로 만들 수 있습니다. 기계부품, 건축용 자재, 전선 등 산업전반에 걸쳐 다양한 용도로 사용되고 있습니다.</p>
+              </div>
+            </li>
+            <li class="item-gold">
+              <div class="inner">
+                <figure class="figure"><img src="../assets/images/main/figure_product_gold.png" alt="금"/></figure>
+                <h3 class="title">금(gold)</h3>
+                <p class="desc">순도 99.99% 이상의 1kg 단위 바가 생산되고 있으며, 주로 보석류, 전기도금제품,의료용,반도체,BONDING WIRE등에 사용됩니다.</p>
+              </div>
+            </li>
+            <li class="item-lead">
+              <div class="inner">
+                <figure class="figure"><img src="../assets/images/main/figure_product_lead.png" alt="연"/></figure>
+                <h3 class="title">연(lead)</h3>
+                <p class="desc">Pb 99.99% 이상의 고품위 Lead Ingot로 최고의 기술력과 자체 품질관리를 통해 생산하고 있으며, 국내 연관련 산업전반에 걸쳐 광범위하게 사용되고 있습니다.</p>
+              </div>
+            </li>
+            <li class="item-indium">
+              <div class="inner">
+                <figure class="figure"><img src="../assets/images/main/figure_product_indium.png" alt="인듐"/></figure>
+                <h3 class="title">인듐(Indium)</h3>
+                <p class="desc">In 99.999% 이상의 최고 품질의 인듐으로 5kg 단위 바로 생산되고 있습니다. 주요 용도는 ITO Target이며 Soldering 및 Bonding 등에 사용됩니다.</p>
+              </div>
+            </li>
+            <li class="item-silver">
+              <div class="inner">
+                <figure class="figure"><img src="../assets/images/main/figure_product_silver.png" alt="은"/></figure>
+                <h3 class="title">은(silver)</h3>
+                <p class="desc">순도 99.99% 이상의 은 그래뉼과 인고트타입을 생산하고 있습니다. 당사의 제품은 국제적으로 공인된 기관인 영국 LBMA / 일본TOCOM / 미국COMEX 협회의 등록 Brand 로 그 우수성을 인정받고 있으며 태양광산업, 쥬얼리, 전기접점, 전기도금제품, 전도성 전자부품 등 다양한 산업에 널리 사용됩니다.</p>
+              </div>
+            </li>
+          </ul>
+				</div>
+			</div>
+
+      <div class="section" id="section-esg">
+				<div class="inner">
+          <div class="title-text-box-common">
+            <h2 class="main-visual-txt" data-aos="fade-up">
+              <em class="char">책임감있는 ESG 경영을 실현 하겠습니다.</em>
+            </h2>
+          </div>
+          <ul class="list-esg">
+            <li data-aos="flip-up" data-aos-delay="300">
+              <a href="#">
+                <h3 class="title">미래 성장동력 발굴</h3>
+                <p class="desc">희유금속 발굴, 원천기술 개발, 2차원료 이용<br/>율 증대 하겠습니다.</p>
+                <span class="btn-common is-small">바로가기<span class="arrow"></span></span>
+              </a>
+            </li>
+            <li data-aos="flip-down" data-aos-delay="400">
+              <a href="#">
+                <h3 class="title">저탄소 경영</h3>
+                <p class="desc">에너지 사용 저감, 신 · 재생에너지 확대, 녹색 <br/>기술 개발을 확대하겠습니다.</p>
+                <span class="btn-common is-small">바로가기<span class="arrow"></span></span>
+              </a>
+            </li>
+            <li data-aos="flip-up" data-aos-delay="500">
+              <a href="#">
+                <h3 class="title">전임직원 녹생경영 참여</h3>
+                <p class="desc">에너지 · 지원 · 온실가스, 중요성 및 절약 마인드 <br/>고취하겠습니다.</p>
+                <span class="btn-common is-small">바로가기<span class="arrow"></span></span>
+              </a>
+            </li>
+          </ul>
+			  </div>
+      </div>
+
+      <div class="section" id="section-media">
+				<div class="inner">
+          <div class="title-text-box-common">
+            <h2 class="main-visual-txt" data-aos="fade-up">
+              <em class="char">고려아연의 즐거운 소식을 만나 보세요.</em>
+            </h2>
+          </div>
+          <ul class="list-media">
+            <li data-aos="flip-up" data-aos-delay="300">
+              <a href="#">
+                <figure class="figure"><img src="../assets/images/news_01.png" alt=""/></figure>
+                <h3 class="title">아연의 재활용</h3>
+                <p class="desc">아연공급의 약 30%가 재생아연이고 매년 200만톤에 달할 것으로 <br/>예상한다.</p>
+                <time class="time" datetime="2020-05-04">2020.05.04</time>
+              </a>
+            </li>
+            <li data-aos="flip-down" data-aos-delay="400">
+              <a href="#">
+                <figure class="figure"><img src="../assets/images/news_02.png" alt=""/></figure>
+                <h3 class="title">이차전지 리튬이온 배터리 어떻게 만드나?</h3>
+                <p class="desc">기후변화에 대한 전 지구적인 관심과 공동 대응은 자동차산업을 <br/>중심으로 그와 관련되 전후방산업의 지형</p>
+                <time class="time" datetime="2020-05-04">2020.05.04</time>
+              </a>
+            </li>
+            <li data-aos="flip-up" data-aos-delay="500">
+              <a href="#">
+                <figure class="figure"><img src="../assets/images/news_03.png" alt=""/></figure>
+                <h3 class="title">전임직원 녹색경영 참여 </h3>
+                <p class="desc">에너지 자원과 환경의 중요성을 고취시켜 미래에 대한 우리의 <br/>사명을 달성하겠습니다.</p>
+                <time class="time" datetime="2020-05-04">2020.05.04</time>
+              </a>
+            </li>
+            <li data-aos="flip-down" data-aos-delay="600">
+              <a href="#">
+                <figure class="figure"><img src="../assets/images/news_04.png" alt=""/></figure>
+                <h3 class="title">아연도금 전신주의 내구성</h3>
+                <p class="desc">인터넷과 위성통신의 시대인 오늘날 국가간에는 초고속 전신전화가 연결되어 있다. 그러나 전화기 이전의 통신수단은 전선을..</p>
+                <time class="time" datetime="2020-05-04">2020.05.04</time>
+              </a>
+            </li>
+            <li data-aos="flip-up" data-aos-delay="700" style="margin-top:-294px;">
+              <a href="#">
+                <figure class="figure"><img src="../assets/images/news_05.png" alt=""/></figure>
+                <h3 class="title">지속 가능한 미래를 꿈꾼다!</h3>
+                <p class="desc">오늘날 지구상의 모든 생명체는 아연농도수준과 관련하여 진화하여 왔다. 아연은 그 특성으 로 인하여 자연의 다양한 생물학적 </p>
+                <time class="time" datetime="2020-05-04">2020.05.04</time>
+              </a>
+            </li>
+            <li data-aos="flip-down" data-aos-delay="800" style="margin-top:-134px;">
+              <a href="#">
+                <figure class="figure"><img src="../assets/images/news_06.png" alt=""/></figure>
+                <h3 class="title">고려아연, LG화학과 합작사 설립해 전구체 사업진출</h3>
+                <p class="desc">기후변화에 대한 전 지구적인 관심과 공동 대응은 자동차산업을 중심으로 전후방산업의 지형도를 바꿔 놓고 있습니다.</p>
+                <time class="time" datetime="2020-05-04">2020.05.04</time>
+              </a>
+            </li>
+          </ul>
+			  </div>
+      </div>
+
+      <div class="section" id="section-recruit">
+				<div class="inner">
+          <div class="title-text-box-common">
+            <h2 class="main-visual-txt" data-aos="fade-up">
+                <em class="char">새롭게보는 글로벌 인재를 기다립니다.</em>
+            </h2>
+          </div>
+
+          <ul class="list-recruit">
+            <li class="item-talent" data-aos="fade-up-right" data-aos-delay="400">
+              <a href="#">
+                <h3 class="title">인재상</h3>
+                <p class="desc">작은 일에도 열정적으로 <br/>몰입하고 도전의 즐거움을 아는 <br/>인재를 찾습니다. </p>
+              </a>
+            </li>
+            <li class="item-qna" data-aos="fade-up-left" data-aos-delay="400">
+              <a href="#">
+                <h3 class="title">채용문의</h3>
+                <p class="desc">채용문의를 등록하기 전에 FAQ를 <br/>먼저 찾아보시면 궁금증을 빠르게 <br/>해결하실 수 있습니다.</p>
+              </a>
+            </li>
+          </ul>
+			  </div>
+      </div>
+
+      <div class="section fp-auto-height" id="section-ir">
+				<div class="inner">
+            <!-- IR -->
+            <div class="ir-box" data-aos="fade-down-right" data-aos-delay="300">
+              <h2 class="title-heading">IR</h2>
+              <p class="kospi">고려아연 <span class="eng">010130</span></p>
+              <div class="kospi-info">
+                <p class="main-info-number" id="counter1-4"></p>
+                <div class="bottom-number">
+                  <span class="up">상승</span>
+                  <span id="counter1-5">2,000</span>
+                  <span class="percent">(+0.40%)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- news -->
+            <div class="news-box" data-aos="fade-down-left" data-aos-delay="300">
+              <h2 class="title-heading">NEWS</h2>
+              <ul class="list-news">
+                <li class="item">
+                  <a href="#">
+                    <strong class="title">고려아연과 함께하는 ‘2019 따뜻한 겨울, 사랑의 선물(Warm Box)’ 제작</strong>
+                    <p class="desc">기술대상 민덕기, 안전대상 유선정 ‘전국 상공의 날’ 유공자엔 박경환</p>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <strong class="title">켐코, 3천만불 수출의 탑 수상 고품질 황산니켈 해외 시장서 인정</strong>
+                    <p class="desc">울산시는 4월 21일 신종 코로나바이러스 감염증(코로나19) 예방을 위해...</p>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#">
+                    <strong class="title">(주)고려아연, 울산시각장애인복지관 시각장애인가정 고추장 나누기 행사금 전액후원</strong>
+                    <p class="desc">울산시(시장 송철호)는 4월 3일 시청 시장 접견실에서 울산시지역아동센터연합회..</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+				</div>
+			</div>
+
+			<footer class="footer section fp-auto-height" id="footer_section">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <ul class="sns-box">
+              <li><a href="#" title="새 창" target="_blank" class="go-instagram">인스타그램</a></li>
+              <li><a href="#" title="새 창" target="_blank" class="go-facebook">페이스북</a></li>
+              <li><a href="#" title="새 창" target="_blank" class="go-youtube">유튜브</a></li>
+            </ul>
+            <ul class="list-footer-menu">
+              <li><a href="#">고려아연사이버구매</a></li>
+              <li><a href="#">온산제련소 방문신청</a></li>
+              <li><a href="#">사이버감사실</a></li>
+              <li><a href="#">개인정보 취급방침</a></li>
+              <li><a href="#">이메일주소 무단수집거부</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+            <div class="footer-text">
+              <dl class="list-footer-company">
+                <dt>본사</dt>
+                <dd><address class="address">서울특별시 강남구 강남대로 542 영풍빌딩</address></dd>
+                <dt>전화번호</dt>
+                <dd>02-519-3416</dd>
+              </dl>
+              <dl class="list-footer-company">
+                <dt>온산제련소</dt>
+                <dd><address class="address">울산광역시 울주군 온산읍 이진로 139</address></dd>
+                <dt>전화번호</dt>
+                <dd>052-231-6000</dd>
+              </dl>
+            </div>
+            <p class="copyright">Copyright 2021 KOREAZINC. All Rights Reserved.</p>
+          </div>
+          <div class="footer-familysite">
+            <select>
+              <option value="#">Family Site</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+
+		</div>
+	</main>
+	
+</div>
+
+@@include('./include/footer_js.html')
+</body>
+</html>

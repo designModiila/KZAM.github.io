@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="./img/liferay.ico" type="image/x-icon" />
+	<title>Page 가이드</title>
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="/resource/css/layout.css" />
+	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/ui.js"></script>
+	<script>
+		// 인크루드용 개발적용시 삭제
+		$(function(){
+			$("#header").load("/html/inc/layout.html #header > div");
+			$("#footer").load("/html/inc/layout.html #footer > div");
+		})
+	</script>
+</head>
+<body>
+
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div id="container">
+			<div class="location">
+				<div>
+					<a href="#">홈</a>
+					<ul>
+						<li> <!-- 하위메뉴 활성화 class="on" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴1111111111111111111111111111111</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+								<li><a href="#"><span>하위메뉴1</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+								<li><a href="#"><span>하위메뉴2</span></a></li>
+							</ul>
+						</li>
+						<li class="last"> <!--  최종 로케이션일 경우 class="last" 추가 -->
+							<button type="button"><span>메뉴1</span></button>
+							<ul>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+								<li><a href="#"><span>하위메뉴3</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contentsTop"><h2 class="title1">대 타이틀 : 견적 의뢰 정보</h2></div>
+
+			<!-- contents -->
+			<section id="contents">
+				<h3 class="title2">레이아웃 2단 5:5 비율</h3>
+				<div class="contentsArea col2">
+					<div>
+						<div style="background:#eee;height:58px;">컨텐츠1</div>
+					</div>
+					<div>
+						<div style="background:#eee;height:58px;">컨텐츠2</div>
+					</div>
+				</div>
+
+				<h3 class="title2">레이아웃 2단 3:7 비율</h3>
+				<div class="contentsArea col2 type2">
+					<div>
+						<div style="background:#eee;height:58px;">컨텐츠1</div>
+					</div>
+					<div>
+						<div style="background:#eee;height:58px;">컨텐츠2</div>
+					</div>
+				</div>
+
+				<h3 class="title2">레이아웃 3단</h3>
+				<div class="contentsArea col3">
+					<div>
+						<div style="background:#eee;height:58px;">컨텐츠1</div>
+					</div>
+					<div>
+						<div style="background:#eee;height:58px;">컨텐츠2</div>
+					</div>
+					<div>
+							<div style="background:#eee;height:58px;">컨텐츠3</div>
+					</div>
+				</div>
+			</section>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer id="footer">
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //wrap -->
+	<script>
+		ui.init();
+	</script>
+
+
+	<div id="wrap" class="coding_guide" style="margin-top:50px;">
+		<h1 class="h1_guide">Page Guide</h1>
+		<h2 class="h2_guide">01. Page 가이드 </h2>
+		<div class="d_desc code">
+<!-- code -->
+<xmp class="prettyprint linenums javascript">
+<!-- 레이아웃 2단 5:5 -->
+<div class="contentsArea col2">
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠1</div>
+	</div>
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠2</div>
+	</div>
+</div>
+
+<!-- 레이아웃 2단 3:7 -->
+<div class="contentsArea col2 type2">
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠1</div>
+	</div>
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠2</div>
+	</div>
+</div>
+
+<!-- 레이아웃 3단 -->
+<div class="contentsArea col3">
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠1</div>
+	</div>
+	<div>
+		<div style="background:#eee;height:58px;">컨텐츠2</div>
+	</div>
+	<div>
+			<div style="background:#eee;height:58px;">컨텐츠3</div>
+	</div>
+</div>
+</xmp>
+<!-- code -->
+		</div>
+	</div>
+
+
+
+
+	</div>
+	<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>
