@@ -1,4 +1,5 @@
-.header{position: fixed; width: 100%; z-index: 10; backdrop-filter: blur(40px); background-color: rgba(0, 0, 0, 0.1);}
+.header{position: fixed; width: 100%; z-index: 10; transition: all .5s ease-in-out;}
+.header.blur{backdrop-filter: blur(40px); background-color: rgba(0, 0, 0, 0.1);}
 .header-wrap{display: flex; justify-content: space-between; box-sizing: border-box; height: 80px; padding: 30px 100px; align-items: center;}
 
 .logo{font-size: 40px; font-family: 'arsenalIb'; color: #fff;}
