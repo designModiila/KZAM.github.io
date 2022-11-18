@@ -3,8 +3,8 @@ $(document).ready(function(){
 
 
   function textMotion(){
-    TweenMax.staggerTo($(".txt-box .visual-title1"), 0.5, {opacity: 1, top: 0, delay: 0.2, ease: Power1.easeInOut}, 0.05);
-    TweenMax.staggerTo($(".txt-box .visual-title2"), 0.5, {opacity: 1, top: 0, delay: 0.5, ease: Power1.easeInOut}, 0.05);
+    TweenMax.staggerTo($(".txt-box .visual-title1"), 0.5, {opacity: 1, top: 0, delay: 0.5, ease: Power1.easeInOut}, 0.1);
+    TweenMax.staggerTo($(".txt-box .visual-title2"), 0.5, {opacity: 1, top: 0, delay: 0.8, ease: Power1.easeInOut}, 0.1);
   }
 
   function textMotionInit(){
