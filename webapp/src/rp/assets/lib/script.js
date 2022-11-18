@@ -64,7 +64,7 @@ $(document).ready(function(){
 
   var swiper = new Swiper(".main-slide-wrap", {
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: false
     },
     // autoplay: false,
