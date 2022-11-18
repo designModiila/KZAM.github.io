@@ -17,7 +17,7 @@
 .swiper-progress-bar .slide_progress-bar{position: absolute; height: 2px; background: #d9d9d9; width: auto; clear: both; opacity: 0; bottom: 0px; left: 0; right: 0;}
 .swiper-progress-bar .slide_progress-bar:after{position: absolute; top: 0; left: 0; background: #ff8b23; height: 100%; width: 0; content: ""; transition: 0.1s width linear;}
 .swiper-progress-bar.active .slide_progress-bar{opacity: 1;}
-.swiper-progress-bar.animate .slide_progress-bar:after{transition: width linear; transition-delay: unset; width: 100%; transition-duration: 5s;}
+.swiper-progress-bar.animate .slide_progress-bar:after{transition: width linear; transition-delay: unset; width: 100%; transition-duration: 10s;}
 
 .section .content-wrap{max-width: 1280px; margin: 0 auto; height: 100%; display: flex; flex-direction: column; justify-content: center; /* padding-left: 322px; padding-right: 322px;*/}
 .section .content-wrap .con-title-wrap{margin-bottom: 60px;}
