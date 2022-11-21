@@ -22,16 +22,20 @@ $(document).ready(function(){
       if((index == 1) || (index == 3)){
         $('#fp-nav li a + .fp-tooltip').css('color','#bbb');
         $('#fp-nav li a.active + .fp-tooltip').css('color','#fff');
+        $('.nav ul li, .logo').css('color','#fff')
+        $('.menu-btn .menu span').css('background','#fff')
       }else{
         $('#fp-nav li a + .fp-tooltip').css('color','#bbb');
         $('#fp-nav li a.active + .fp-tooltip').css('color','#222');
+        $('.nav ul li, .logo').css('color','#222')
+        $('.menu-btn .menu span').css('background','#222')
       }
       if(index == 1){
         textMotion();
-        $("header").removeClass("blur");
+        // $("header").removeClass("blur");
       }else{
         textMotionInit();
-        $("header").addClass("blur");
+        // $("header").addClass("blur");
       }
       if(index == 3){
         $('.counter').counterUp({
