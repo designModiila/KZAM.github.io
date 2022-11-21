@@ -38,7 +38,8 @@
 
 .footer{width: 100%; background: #363636; padding: 50px 0 30px;}
 .footer-top{display: flex; justify-content: space-between; margin-bottom: 30px;}
-.footer-top .logo{color: #909090; font-size: 35px; margin-bottom: 12px;}
+.footer-top .logo{color: #909090 !important; font-size: 35px; margin-bottom: 12px;}
+.footer-top .f-logo .logo{width: auto; height: auto; display: block;}
 .footer-top .f-logo p{font-size: 14px; color: #909090;}
 .footer-top .f-nav{display: flex; gap: 100px}
 .footer-top .f-nav dt{font-family: 'NotoM'; font-size: 18px; color: #ececec; letter-spacing: -0.03em;}

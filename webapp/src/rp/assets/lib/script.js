@@ -60,6 +60,12 @@ $(document).ready(function(){
       if((anchorLink == 2) && direction == 'up'){
         $("header").removeClass("blur");
       }
+      if((anchorLink == 4) && direction == 'up'){
+        $('.counter').counterUp({
+          delay: 1,
+          time: 1000
+        });
+      }
     },
     onSlideLeave: function(){
       jQuery('.section [data-aos]').removeClass("aos-animate");
