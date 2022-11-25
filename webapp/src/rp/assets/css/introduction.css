@@ -1,0 +1,69 @@
+/* .header{position: absolute; top: 0; left: 0;} */
+.nav > ul > li{color: #fff;}
+.company-visual{width: 100%; height: 504px; position: relative; overflow: hidden; z-index: -1;}
+.company-bg{background: url(../images/introduction/introduction_sub_visual.png) no-repeat; background-size: cover; width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.main-title{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.main-title p{font-family: 'NotoB'; font-size: 60px; letter-spacing: -0.03em; color: #fff;}
+.company-tab-box{width: 100%; height: 90px; border-bottom: 1px solid #d9d9d9; background: #fff;}
+
+.fixed-header{position: fixed; top: 0; left: 0; width: 100%; z-index: 10; margin-top: 0;}
+
+.company-tab-box ul{display: flex; width: 100%; height: 100%; justify-content: center;}
+.company-tab-box > ul > li{width: 190px; height: 100%; line-height: 90px; text-align: center;}
+.company-tab-box ul li a{display: block; color: #8f8f8f; font-size: 20px; letter-spacing: -0.03em; position: relative;}
+.company-tab-box ul li a.active{color: #323232; font-family: 'NotoB';}
+.company-tab-box ul li a.active:after{position: absolute; content: ''; width: 100%; height: 2px; background: #ff8b23; left: 0; bottom: -1px;}
+.company-content{background: #fff; position: relative;}
+
+.section{width: 100%; height: 100%; position: relative;}
+.content-wrap{max-width: 1280px; margin: 0 auto;}
+.main-title-wrap{width: 100%; text-align: center; padding: 150px 0 225px;}
+.content-wrap .title{margin-bottom: 30px;}
+.content-wrap .title p{font-family: 'NotoB'; font-size: 48px; letter-spacing: -0.03em; color: #323232;}
+.content-wrap .title-txt{margin-bottom: 96px;}
+.content-wrap .title-txt p{font-size: 24px; color: #666; letter-spacing: -0.03em; line-height: 40px;}
+
+.section01 .main-title-wrap{position: relative;}
+/* .section01 .main-title-wrap:after{position: absolute; content: ''; width: 1px; height: 130px; background: #d9d9d9;} */
+.section01 .titie-txt{position: relative;}
+.section01 .line{position: absolute; width: 1px; height: 130px; background: #d9d9d9; left: 50%; top: 175px;}
+
+.section02-bg{background: url(../images/introduction/introduction_content_bg.png) no-repeat; width: 100%; height: 100%; background-size: cover;}
+
+.section02 .content-wrap{display: flex;}
+.section02 .company-list{padding-top: 152px; padding-bottom: 108px; width: 25vw;}
+.section02 .company-list p{font-family: 'arsenalIb'; font-size: 40px; letter-spacing: -0.03em; color: #fff; margin-bottom: 15px;}
+.section02 .company-list dl{border-top: 2px solid #fff;}
+.section02 .company-list dt{float: left; clear: both; color: #fff; font-family: 'NotoB'; font-size: 16px; letter-spacing: -0.03em; line-height: 50px; width: 35%; text-align: center;}
+.section02 .company-list dd{float: left; color: #fff; font-size: 16px; letter-spacing: -0.03em; line-height: 50px; width: 65%;}
+.section02 .company-img{position: absolute; right: 10px; top: -190px;}
+
+.section03 .content-wrap{padding: 120px 0; display: flex; justify-content: center;}
+.section03 .content-wrap ul{display: flex; width: calc(100% - 200px - 177px);}
+.section03 .content-wrap ul li{width: 33.3333%; display: flex; flex-direction: column; align-items: center; position: relative;}
+.section03 .content-wrap ul li strong{font-family: 'NotoB'; font-size: 48px; letter-spacing: -0.03em; padding-top: 80px; margin-bottom: 21px; color: #323232;}
+.section03 .content-wrap ul li strong span{display: inline-block; font-size: 18px; padding-left: 10px;}
+.section03 .content-wrap ul li + li:after{ position: absolute; content: ''; width: 1px; height: 165px; background: #d9d9d9; left: 0px;}
+.section03 .content-wrap ul li:before{position: absolute; content: ''; display: block; width: 64px; height: 64px; top: 0;}
+.section03 .content-wrap ul li:nth-child(1):before{background: url(../images/introduction/introduction-icon-01.png);}
+.section03 .content-wrap ul li:nth-child(2):before{background: url(../images/introduction/introduction-icon-02.png);}
+.section03 .content-wrap ul li:nth-child(3):before{background: url(../images/introduction/introduction-icon-03.png);}
+.section03 .content-wrap ul li p{font-size: 18px; color: #666; letter-spacing: -0.03em; font-family: 'NotoM';}
+
+.section04{background: #f6f6f6; padding: 120px 0;}
+.section04 .content-wrap{display: flex; flex-direction: column; align-items: center;}
+.section04 .title-wrap{margin-bottom: 77px; text-align: center;}
+.section04 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px;}
+
+@media all and (min-width: 1440px){
+
+}
+
+@media all and (min-width: 1024px){
+  
+}
+
+
+@media all and (min-width:768px) {
+
+}

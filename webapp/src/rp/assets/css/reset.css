@@ -212,7 +212,7 @@ textarea::placeholder {
 
 #wrap{
   height: 100%;
-  overflow: hidden;
+  width: 100%;
 }
 
 /* Noto Sans CJK KR*/
