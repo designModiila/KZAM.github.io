@@ -1,5 +1,15 @@
 $(document).ready(function(){
-  AOS.init();
+  // AOS.init();
+  Splitting();
+
+  $(".splitting").each(function(){
+		var text = this;
+		$(this).find("span").each(function(i , idx){
+			$(this).addClass("num"+i+" ")
+			var i = i / 12
+			$(this).css("animation-delay", (i + 0.03)+"s")
+		})
+	})
 
   $(window).scroll(function(){
     if ($(window).scrollTop() >= 500) {
@@ -31,40 +41,30 @@ $(document).ready(function(){
   }
   gnb();
 
-  function textMotion(){
-    TweenMax.staggerTo($(".txt-box .visual-title1"), 0.5, {opacity: 1, top: 0, delay: 0.5, ease: Power1.easeInOut}, 0.1);
-    TweenMax.staggerTo($(".txt-box .visual-title2"), 0.5, {opacity: 1, top: 0, delay: 0.8, ease: Power1.easeInOut}, 0.1);
-  }
+  // function textMotion(){
+  //   TweenMax.staggerTo($(".txt-box .visual-title1"), 0.5, {opacity: 1, top: 0, delay: 0.5, ease: Power1.easeInOut}, 0.1);
+  //   TweenMax.staggerTo($(".txt-box .visual-title2"), 0.5, {opacity: 1, top: 0, delay: 0.8, ease: Power1.easeInOut}, 0.1);
+  // }
 
-  function textMotionInit(){
-    TweenMax.staggerTo($(".txt-box .visual-title1"), 0, {opacity: 0, top: '100px', ease: Power1.easeInOut});
-    TweenMax.staggerTo($(".txt-box .visual-title2"), 0, {opacity: 0, top: '100px', ease: Power1.easeInOut});
-  }
+  // function textMotionInit(){
+  //   TweenMax.staggerTo($(".txt-box .visual-title1"), 0, {opacity: 0, top: '100px', ease: Power1.easeInOut});
+  //   TweenMax.staggerTo($(".txt-box .visual-title2"), 0, {opacity: 0, top: '100px', ease: Power1.easeInOut});
+  // }
 
 
   $('#fullpage').fullpage({
     navigation: true,
+    scrollingSpeed:800,
     navigationTooltips: ['MAIN','BUSINESS','COMPANY','NEWS'],
     navigationPosition: 'left',
     afterLoad: function(anchorLink, index){
       jQuery('.section.active .aos-init').addClass("aos-animate");
       if((index == 1) || (index == 3)){
-        $('#fp-nav li a + .fp-tooltip').css('color','#bbb');
-        $('#fp-nav li a.active + .fp-tooltip').css('color','#fff');
-        $('.nav ul li, .logo').css('color','#fff')
-        $('.menu-btn .menu span').css('background','#fff');
+        $('#fp-nav li a.active + .fp-tooltip').removeClass('dark');
+        $('.nav ul li, .logo, .menu-btn .menu span').removeClass('dark');
       }else{
-        $('#fp-nav li a + .fp-tooltip').css('color','#bbb');
-        $('#fp-nav li a.active + .fp-tooltip').css('color','#222');
-        $('.nav ul li, .logo').css('color','#222')
-        $('.menu-btn .menu span').css('background','#222')
-      }
-      if(index == 1){
-        textMotion();
-        // $("header").removeClass("blur");
-      }else{
-        textMotionInit();
-        // $("header").addClass("blur");
+        $('#fp-nav li a.active + .fp-tooltip').addClass('dark');
+        $('.nav ul li, .logo, .menu-btn .menu span').addClass('dark');
       }
       if(index == 3){
         $('.counter').counterUp({
@@ -78,14 +78,6 @@ $(document).ready(function(){
     },
     onLeave: function(anchorLink, direction){
       jQuery('.section [data-aos]').removeClass("aos-animate");
-      if((anchorLink == 1) && direction == 'down'){
-        $('#fp-nav li a.active + .fp-tooltip').css('color','#bbb');
-      }
-      if((anchorLink == 1) && direction == 'up'){
-        $('#fp-nav li a.active + .fp-tooltip').css('color','#222');
-      }else{
-        $('#fp-nav li a + .fp-tooltip').css('color','#bbb');
-      }
       if((anchorLink == 2) && direction == 'up'){
         $("header").removeClass("blur");
       }
@@ -109,6 +101,10 @@ $(document).ready(function(){
     },
     // autoplay: false,
     loop: true,
+    effect : 'fade', 
+    fadeEffect: { 
+    crossFade: true 
+    },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction"
@@ -128,8 +124,6 @@ $(document).ready(function(){
         $(".swiper-progress-bar").removeClass("animate");
         $(".swiper-progress-bar").removeClass("active");
         $(".swiper-progress-bar").eq(0).addClass("active");
-        textMotion();
-        textMotionInit();
       },
       slideChangeTransitionEnd: function () {
         $(".swiper-progress-bar").eq(0).addClass("animate");

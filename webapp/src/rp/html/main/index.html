@@ -5,26 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../../assets/lib/plugins/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="../../assets/lib/plugins/main/jquery.fullpage.min.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/swiper.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+  <link rel="stylesheet" href="../../assets/lib/plugins/main/splitting.css"> 
   <link rel="stylesheet" href="../../assets/css/reset.css">
   <link rel="stylesheet" href="../../assets/css/common.css">
   <link rel="stylesheet" href="../../assets/css/main.css">
   <script type="text/javascript" src="../../assets/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="../../assets/lib/plugins/jquery.fullpage.min.js"></script>
-
-  <script src="../../assets/lib/plugins/gsap.min.js"></script>
-  <script type="text/javascript" src="../../assets/lib/plugins/tweenMax.min.js"></script>
-  <script src="../../assets/lib/plugins/jquery.waypoints.min.js"></script>
-  <script src="../../assets/lib/plugins/aos.js"></script>
-  <script src="../../assets/lib/plugins/jquery.counterup.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/main/jquery.fullpage.min.js"></script>
+  <script src="../../assets/lib/plugins/main/jquery.waypoints.min.js"></script>
+  <script src="../../assets/lib/plugins/main/splitting.min.js"></script>
+  <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
 
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+<body>
   <div id="wrap">
     <header class="header">
       <div class="header-wrap">
@@ -100,26 +97,20 @@
           <div class="swiper-wrapper">
             <div class="item swiper-slide">
               <div class="itemBg1 bg"></div>
-              <!-- <img src="../../assets/images/main/main_visual2.png" alt=""> -->
               <div class="txt-box">
-                <p class="visual-title1 visual-title">The core material of secondary</p>
-                <p class="visual-title2 visual-title">batteries, <span class="point">KZAM</span></p>
+                <p class="visual-title1 visual-title" data-splitting data-css-property="animation">The core material of secondary<br>batteries, <span class="point">KZAM</span></p>
               </div>
             </div>
             <div class="item swiper-slide">
               <div class="itemBg2 bg"></div>
-              <!-- <img src="../../assets/images/main/main_visual2.png" alt=""> -->
               <div class="txt-box">
-                <p class="visual-title1 visual-title">The core material of secondary</p>
-                <p class="visual-title2 visual-title">batteries, <span class="point">KZAM</span></p>
+                <p class="visual-title1 visual-title" data-splitting data-css-property="animation">The core material of secondary<br>batteries, <span class="point">KZAM</span></p>
               </div>
             </div>
             <div class="item swiper-slide">
               <div class="itemBg3 bg"></div>
-              <!-- <img src="../../assets/images/main/main_visual3.png" alt=""> -->
               <div class="txt-box">
-                <p class="visual-title1 visual-title">The core material of secondary</p>
-                <p class="visual-title2 visual-title">batteries, <span class="point">KZAM</span></p>
+                <p class="visual-title1 visual-title" data-splitting data-css-property="animation">The core material of secondary<br>batteries, <span class="point">KZAM</span></p>
               </div>
             </div>
           </div>
@@ -138,13 +129,12 @@
       <section class="section full2" pageNum="2">
         <div class="content-wrap">
           <div class="con-title-wrap">
-            <p class="sub-title" data-aos="fade-up" data-aos-delay="300">Business</p>
-            <p class="title" data-aos="fade-up" data-aos-delay="600"><span class="txtBold">가장 높은 기술력으로 </span><br>
-              안정성과 신뢰를 보유한 기업입니다.</p>
+              <p class="sub-title">Business</p>
+              <p class="title"><span class="txtBold">가장 높은 기술력으로 </span><br>안정성과 신뢰를 보유한 기업입니다.</p>
           </div>
           <div class="con-box">
             <ul>
-              <li data-aos="fade-up" data-aos-delay="900">
+              <li>
                 <div class="icon">
                   <img src="../../assets/images/main/full2-icon1.png" alt="">
                 </div>
@@ -155,7 +145,7 @@
                   <p>고려아연의 용해 기술과 불순물 제어 기술을 통해 <br>동(Cu) 제품을 생산하는 독보적인 기술입니다.</p>
                 </div>
               </li>
-              <li data-aos="fade-up" data-aos-delay="1200">
+              <li>
                 <div class="icon">
                   <img src="../../assets/images/main/full2-icon2.png" alt="">
                 </div>
@@ -163,10 +153,10 @@
                   <p class="txtBold">이익의 안정성</p>
                 </div>
                 <div class="box-txt">
-                  <p>수익구조가 매우 안정적인 <br>            Balance를 유지 하고 있습니다. </p>
+                  <p>수익구조가 매우 안정적인 <br>Balance를 유지 하고 있습니다. </p>
                 </div>
               </li>
-              <li data-aos="fade-up" data-aos-delay="1500">
+              <li>
                 <div class="icon">
                   <img src="../../assets/images/main/full2-icon3.png" alt="">
                 </div>
@@ -185,14 +175,14 @@
         <div class="bg"></div>
         <div class="content-wrap">
           <div class="con-title-wrap">
-            <p class="sub-title" data-aos="fade-up" data-aos-delay="300">Competitiveness</p>
-            <p class="title" data-aos="fade-up" data-aos-delay="600">케이잼만의 <span class="txtBold">경쟁력</span></p>
+            <p class="sub-title">Competitiveness</p>
+            <p class="title">케이잼만의 <span class="txtBold">경쟁력</span></p>
           </div>
-          <div class="line" data-aos="fade-up" data-aos-delay="600">
-            <span data-aos="aniSlide" data-aos-delay="700"></span>
+          <div class="line" >
+            <span data-aos="aniSlide"></span>
           </div>
           <div class="con-box">
-            <dl data-aos="fade-up" data-aos-delay="1200">
+            <dl>
               <dt>
                 <p>독보적 기술력</p>
                 <p><img src="../../assets/images/main/full3-icon1.png" alt=""></p>
@@ -202,7 +192,7 @@
                 <p>%</p>
               </dd>
             </dl>
-            <dl data-aos="fade-up" data-aos-delay="1350">
+            <dl>
               <dt>
                 <p>안정적 기반시설</p>
                 <p><img src="../../assets/images/main/full3-icon2.png" alt=""></p>
@@ -212,7 +202,7 @@
                 <p>평</p>
               </dd>
             </dl>
-            <dl data-aos="fade-up" data-aos-delay="1500">
+            <dl>
               <dt>
                 <p>높은 생산량</p>
                 <p><img src="../../assets/images/main/full3-icon3.png" alt=""></p>
@@ -228,9 +218,9 @@
       <section class="section full4" pageNum="4">
         <div class="content-wrap">
           <div class="con-title-wrap">
-            <p class="sub-title" data-aos="fade-up" data-aos-delay="300">News</p>
-            <p class="title" data-aos="fade-up" data-aos-delay="600"><span class="txtBold">KZAM 소식</span></p>
-            <div class="more-btn" data-aos="fade-up" data-aos-delay="700">
+            <p class="sub-title">News</p>
+            <p class="title"><span class="txtBold">KZAM 소식</span></p>
+            <div class="more-btn">
               <a href="#href">
                 더보기
               </a>
@@ -238,18 +228,18 @@
           </div>
           <div class="con-box">
             <div class="thumb-box">
-              <div class="thumb" data-aos="fade-up" data-aos-delay="1000">
+              <div class="thumb">
                 <img src="../../assets/images/main/full4_thumb.png" alt="">
               </div>
               <div class="thumb-txt-wrap">
-                <div class="thumb-title" data-aos="fade-up" data-aos-delay="1200">
+                <div class="thumb-title">
                   <p>고려아연, 2차 배터리 소재 자회사 ‘케이잼’에 7,356억 투자 공장증설을 통한 6만톤 생산 조기 
                     달성으로 ‘트로이카 드라이브’ 新사업 박차</p>
                 </div>
-                <div class="thumb-txt" data-aos="fade-up" data-aos-delay="1400">
+                <div class="thumb-txt">
                   <p>고려아연은 5일, 이사회를 통해 동박 제조 계열사인 케이잼(KZAM)에 약 7,356억 규모의 투자계획을 승인했다. 투자금은 케이잼의 공장증설을 위한 시설자금으로 사용된다.</p>
                 </div>
-                <div class="thumb-date" data-aos="fade-up" data-aos-delay="1600">
+                <div class="thumb-date">
                   <p>2022-09-22</p>
                 </div>
               </div>
@@ -257,85 +247,87 @@
           </div>
         </div>
       </section>
-      <section class="section footer fp-auto-height">
-        <div class="content-wrap">
-          <div class="footer-top">
-            <div class="f-logo">
-              <div class="logo">
-                <a href="./index.html">KZAM</a>
+      <section class="section mainFooter fp-auto-height">
+        <div class="footer">
+          <div class="content-wrap">
+            <div class="footer-top">
+              <div class="f-logo">
+                <div class="logo">
+                  <a href="./index.html">KZAM</a>
+                </div>
+                <p>배터리 효율을 극대화하는 가장 좋은 전기박을 만드는 기업</p>
               </div>
-              <p>배터리 효율을 극대화하는 가장 좋은 전기박을 만드는 기업</p>
-            </div>
-            <div class="f-nav">
-              <dl>
-                <dt>기업소개</dt>
-                <dd><a href="#">회사소개</a></dd>
-                <dd><a href="#">CEO 인사말</a></dd>
-                <dd><a href="#">비젼</a></dd>
-                <dd><a href="#">계열사 소개</a></dd>
-                <dd><a href="#">오시는 길</a></dd>
-              </dl>
-              <dl>
-                <dt>사업영역</dt>
-                  <dd><a href="#">사업소개</a></dd>
-                  <dd><a href="#">생산제품</a></dd>
-                  <dd><a href="#">생산공정</a></dd>
-              </dl>
-              <dl>
-                <dt>ESG</dt>
-                <dd><a href="#">윤리경영</a></dd>
-                <dd><a href="#">친환경경영</a></dd>
-                <dd><a href="#">품질경영</a></dd>
-                <dd><a href="#">사회공헌</a></dd>
-              </dl>
-              <dl>
-                <dt>미디어</dt>
-                <dd><a href="#">뉴스룸</a></dd>
-                <dd><a href="#">홍보자료</a></dd>
-              </dl>
-              <dl>
-                <dt>채용</dt>
-                <dd><a href="#">채용정보</a></dd>
-                <dd><a href="#">인재상</a></dd>
-                <dd><a href="#">복리후생</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="f-info-wrap">
-              <div class="f-menu">
-                <ul>
-                  <li><a href="#">고객의 소리</a></li>
-                  <li><a href="#">제품문의</a></li>
-                  <li><a href="#">방문신청</a></li>
-                  <li><a href="#">사이버구매</a></li>
-                </ul>
-              </div>
-              <div class="info">
+              <div class="f-nav">
                 <dl>
-                  <dt>문의전화</dt>
-                  <dd>052-240-4045</dd>
-                  <dt>Email</dt>
-                  <dd>Address@KZAM.com</dd>
+                  <dt>기업소개</dt>
+                  <dd><a href="#">회사소개</a></dd>
+                  <dd><a href="#">CEO 인사말</a></dd>
+                  <dd><a href="#">비젼</a></dd>
+                  <dd><a href="#">계열사 소개</a></dd>
+                  <dd><a href="#">오시는 길</a></dd>
                 </dl>
-                <address>울산시 울주군 온산읍 당월로 216-51</address>
-              </div>
-              <div class="copy">
-                <p>COPYRIGHT 2022 KZAM. ALL RIGHTS RESERVED.</p>
+                <dl>
+                  <dt>사업영역</dt>
+                    <dd><a href="#">사업소개</a></dd>
+                    <dd><a href="#">생산제품</a></dd>
+                    <dd><a href="#">생산공정</a></dd>
+                </dl>
+                <dl>
+                  <dt>ESG</dt>
+                  <dd><a href="#">윤리경영</a></dd>
+                  <dd><a href="#">친환경경영</a></dd>
+                  <dd><a href="#">품질경영</a></dd>
+                  <dd><a href="#">사회공헌</a></dd>
+                </dl>
+                <dl>
+                  <dt>미디어</dt>
+                  <dd><a href="#">뉴스룸</a></dd>
+                  <dd><a href="#">홍보자료</a></dd>
+                </dl>
+                <dl>
+                  <dt>채용</dt>
+                  <dd><a href="#">채용정보</a></dd>
+                  <dd><a href="#">인재상</a></dd>
+                  <dd><a href="#">복리후생</a></dd>
+                </dl>
               </div>
             </div>
-            <div class="f-site-wrap">
-              <div class="f-site">
-                <select id="siteURL" title="Family site">
-                  <option value selected>Family site</option>
-                  <option value="#href">option</option>
-                </select>
+            <div class="footer-bottom">
+              <div class="f-info-wrap">
+                <div class="f-menu">
+                  <ul>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">제품문의</a></li>
+                    <li><a href="#">방문신청</a></li>
+                    <li><a href="#">사이버구매</a></li>
+                  </ul>
+                </div>
+                <div class="info">
+                  <dl>
+                    <dt>문의전화</dt>
+                    <dd>052-240-4045</dd>
+                    <dt>Email</dt>
+                    <dd>Address@KZAM.com</dd>
+                  </dl>
+                  <address>울산시 울주군 온산읍 당월로 216-51</address>
+                </div>
+                <div class="copy">
+                  <p>COPYRIGHT 2022 KZAM. ALL RIGHTS RESERVED.</p>
+                </div>
               </div>
-              <div class="privacy">
-                <ul>
-                  <li><a href="#">개인정보처리방침</a></li>
-                  <li><a href="#">이메일주소 무단수집거부</a></li>
-                </ul>
+              <div class="f-site-wrap">
+                <div class="f-site">
+                  <select id="siteURL" title="Family site">
+                    <option value selected>Family site</option>
+                    <option value="#href">option</option>
+                  </select>
+                </div>
+                <div class="privacy">
+                  <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일주소 무단수집거부</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
