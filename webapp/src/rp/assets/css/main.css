@@ -6,7 +6,8 @@
 .swiper-wrapper .item .itemBg2{background: #000 url('../images/main/main_visual3.png') no-repeat;}
 .swiper-wrapper .item .itemBg3{background: #000 url('../images/main/main_visual1.png') no-repeat;}
 .swiper-wrapper .item .txt-box{position: absolute; top: 50%; left: 50%; z-index: 100; transform: translate(-50%, -50%); display: flex; width: calc(100% - 32vw); height: 100%; flex-direction: column; justify-content: center;}
-.swiper-wrapper .item .txt-box .visual-title{font-family: 'playB', serif; font-size: 7.2rem; color: #fff; position: relative; overflow: hidden; opacity: 0;}
+.swiper-wrapper .item .txt-box .visual-title{font-family: 'playB', serif; font-size: 7.2rem; color: #fff; position: relative; overflow: hidden; opacity: 0; margin-bottom: 20px;}
+.swiper-wrapper .item .txt-box .visual-sub-title{color: #fff; font-family: 'NotoM'; letter-spacing: -0.03em; font-size: 24px; line-height: 40px;}
 
 .swiper-controller-wrap{position:  absolute; width: 260px; height: 100px; bottom: 0px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
@@ -37,9 +38,10 @@
 .section.full3{width: 100%; height: 100vh; overflow: hidden; position: relative;}
 .section.full3 .bg{background: url('../images/main/full3_bg.png') no-repeat; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0; transform: scale(1.0,1.0); transition: opacity 2s;}
 .section.full3 .content-wrap{flex-direction: row; justify-content: space-between; align-items: center;}
+.section.full3 .content-wrap .con-box{width: 21%;}
 .section.full3 .content-wrap .title{color: #323232; color: #ececec; font-family: 'NotoR';}
-.section.full3 .content-wrap .line{width: 250px;}
-.section.full3 .content-wrap .line span{display: inline-block; height: 1px; background-color: #bbb;}
+.section.full3 .content-wrap .line{display: block; width: 250px; height: 1px; background-color: #ccc;}
+
 .section.full3 .con-box{display: flex; flex-direction: column; gap: 60px}
 .section.full3 .con-box dl dt{display: flex; color: #fff; font-family: 'NotoM'; font-size: 18px; justify-content: space-between;}
 .section.full3 .con-box dl dd{display: flex; color: #fff; font-family: 'NotoBl'; font-size: 60px; justify-content: space-between; align-items: flex-end;}
@@ -65,6 +67,9 @@
 /*animation*/
 .swiper-wrapper .swiper-slide-active .txt-box .visual-title1, .swiper-wrapper .swiper-slide-active .txt-box .visual-title2{animation: text-active-animation 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;}
 
+.swiper-wrapper .swiper-slide-active .txt-box .visual-sub-title1{animation:fadeUp 1s 2.3s both}
+.swiper-wrapper .swiper-slide-active .txt-box .visual-sub-title2{animation:fadeUp 1s 2.6s both}
+
 .swiper-wrapper .swiper-slide-active .splitting.visual-title .char{animation: text-active-animation 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;}
 
 .section.full2.active .con-title-wrap .sub-title{animation:fadeUp 1s 0.3s both}
@@ -76,7 +81,7 @@
 .section.full3.active .bg{opacity: 1; z-index: -1; transform: scale(1.1,1.1) rotate(0.0001deg); transition: all 14s cubic-bezier(0, 1, 0.34, 0.99), opacity 2s;}
 .section.full3.active .con-title-wrap .sub-title{animation:fadeUp 1s 0.3s both}
 .section.full3.active .con-title-wrap .title{animation:fadeUp 1s 0.6s both}
-.section.full3.active .content-wrap .line span{animation:separator-width 1s 0.9s both}
+.section.full3.active .content-wrap .line{animation:separator-width 1s 0.9s both;}
 .section.full3.active .con-box dl:nth-child(1){animation:fadeUp 1s 1.2s both}
 .section.full3.active .con-box dl:nth-child(2){animation:fadeUp 1s 1.5s both}
 .section.full3.active .con-box dl:nth-child(3){animation:fadeUp 1s 1.8s both}
@@ -84,18 +89,16 @@
 .section.full4.active .con-title-wrap .sub-title{animation:fadeUp 1s 0.3s both}
 .section.full4.active .con-title-wrap .title{animation:fadeUp 1s 0.6s both}
 .section.full4.active .con-title-wrap .more-btn{animation:fadeUp 1s 0.9s both}
-.section.full4.active .thumb-box{animation:fadeUp 1s 1.2s both}
+.section.full4.active .thumb-box{animation: fadeUp 1s 1.2s both}
 .section.full4.active .thumb-txt-wrap{animation:fadeUp 1s 1.5s both}
 
 @keyframes text-active-animation {
 	from {
 		opacity:0;
-		-webkit-transform: translateY(50px); 
 		transform: translateY(50px); 
 	}
 	to {
 		opacity:1.0;
-		-webkit-transform: translateY(0); 
 		transform: translateY(0); 
 	}
 }

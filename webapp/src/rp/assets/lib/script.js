@@ -6,8 +6,8 @@ $(document).ready(function(){
 		var text = this;
 		$(this).find("span").each(function(i){
 			$(this).addClass("num"+i+" ")
-			var i = i / 12
-			$(this).css("animation-delay", (i + 0.03)+"s")
+			var i = i / 14
+			$(this).css("animation-delay", (i + 0.01)+"s")
 		})
 	})
 
@@ -27,9 +27,9 @@ $(document).ready(function(){
     $('.header, .depth_1 > li').on('mouseover focus', function () {
       $(this).addClass('on');
       if ($(this).children().hasClass('depth_2')) {
-          $(this).parent('.header, .depth_1').addClass('on');
+          $(this).parent('.header, .depth_1, .nav-bg').addClass('on');
       } else {
-          $(this).parent('.header, .depth_1').removeClass('on');
+          $(this).parent('.header, .depth_1, .nav-bg').removeClass('on');
       }
     })
 

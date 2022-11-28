@@ -10,7 +10,7 @@
 .menu-btn .menu span:nth-child(2){width: 14px;}
 .menu-btn .menu span:last-child{margin-bottom: 0;}
 
-.nav-bg{position: absolute; width: 100%; height: 0px; left: 0; top: 0; background: #323232; z-index: -1; opacity: 0; transition: opacity .5s, height .5s;}
+.nav-bg{position: absolute; width: 100%; height: 0px; left: 0; top: 0px; background: #323232; z-index: -1; opacity: 0; transition: opacity .5s, height .5s;}
 .nav{display: flex; justify-content: center; width: calc(100% - 300px - 228px); height: 100%; flex-wrap: wrap;}
 .nav > ul{display: flex; justify-content: center; width: auto; height: 100%;}
 .nav > ul > li{font-family: 'notoB'; letter-spacing: -0.03em; color: #fff;}
@@ -18,16 +18,16 @@
 .nav > ul > li + li{margin-left: 80px;}
 .nav > ul > li > a{display: block; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
 .nav > ul > li.on .depth_2{display: flex; flex-direction: column;}
-.depth_2{position: absolute; top: 80px; overflow: hidden; z-index: 1; display: none;}
-.depth_2 ul{position: relative; padding-left: 40px;}
-.depth_2 ul:before{position: absolute; content: ''; width: 1px; height: 100%; background: #404040; left: 10px;}
+.depth_2{position: absolute; top: 80px; z-index: 1; display: none; width: 100%;}
+.depth_2 ul{position: relative;}
+.depth_2 ul:before{position: absolute; content: ''; width: 1px; height: 100%; background: #404040; left: -30px;}
 .depth_2 li{margin-bottom: 20px; position: relative; transition: all .5s;}
 .depth_2 li:hover:before{position: absolute; width: 2px; height: 100%; content: ''; left: -30px; background: #ff8b23;}
 .depth_2 li:last-child{margin-bottom: 0px;}
 .depth_2 a{display: block; color: #c3c3c3; font-size: 16px; letter-spacing: -0.03em; font-family: 'NotoR';}
 .depth_2 a:hover{color: #fff;}
 
-.header.on .nav-bg{opacity: 1; height: 400px;}
+.header.on .nav-bg{opacity: 1; height: 350px;}
 .header.on .logo{color: #fff !important;}
 .header.on .menu-btn .menu span{background: #fff !important;}
 .header.on .nav > ul > li{color: #fff !important;}
