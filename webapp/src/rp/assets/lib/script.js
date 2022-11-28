@@ -58,7 +58,6 @@ $(document).ready(function(){
     navigationTooltips: ['MAIN','BUSINESS','COMPANY','NEWS'],
     navigationPosition: 'left',
     afterLoad: function(anchorLink, index){
-      jQuery('.section.active .aos-init').addClass("aos-animate");
       if((index == 1) || (index == 3)){
         $('#fp-nav li a.active + .fp-tooltip').removeClass('dark');
         $('.nav ul li, .logo, .menu-btn .menu span').removeClass('dark');
@@ -73,11 +72,7 @@ $(document).ready(function(){
         });
       }
     },
-    afterSlideLoad: function(){
-      jQuery('.section.active [data-aos]').addClass("aos-animate");
-    },
     onLeave: function(anchorLink, direction){
-      jQuery('.section [data-aos]').removeClass("aos-animate");
       if((anchorLink == 2) && direction == 'up'){
         $("header").removeClass("blur");
       }
@@ -88,9 +83,6 @@ $(document).ready(function(){
         });
       }
     },
-    onSlideLeave: function(){
-      jQuery('.section [data-aos]').removeClass("aos-animate");
-    }
   });
 
   var swiper = new Swiper(".main-slide-wrap", {
