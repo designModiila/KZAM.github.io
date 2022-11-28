@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   $(".splitting").each(function(){
 		var text = this;
-		$(this).find("span").each(function(i , idx){
+		$(this).find("span").each(function(i){
 			$(this).addClass("num"+i+" ")
 			var i = i / 12
 			$(this).css("animation-delay", (i + 0.03)+"s")
@@ -40,17 +40,6 @@ $(document).ready(function(){
     })
   }
   gnb();
-
-  // function textMotion(){
-  //   TweenMax.staggerTo($(".txt-box .visual-title1"), 0.5, {opacity: 1, top: 0, delay: 0.5, ease: Power1.easeInOut}, 0.1);
-  //   TweenMax.staggerTo($(".txt-box .visual-title2"), 0.5, {opacity: 1, top: 0, delay: 0.8, ease: Power1.easeInOut}, 0.1);
-  // }
-
-  // function textMotionInit(){
-  //   TweenMax.staggerTo($(".txt-box .visual-title1"), 0, {opacity: 0, top: '100px', ease: Power1.easeInOut});
-  //   TweenMax.staggerTo($(".txt-box .visual-title2"), 0, {opacity: 0, top: '100px', ease: Power1.easeInOut});
-  // }
-
 
   $('#fullpage').fullpage({
     navigation: true,
