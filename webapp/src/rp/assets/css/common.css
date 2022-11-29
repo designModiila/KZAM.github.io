@@ -22,6 +22,7 @@
 .depth_2 ul{position: relative;}
 .depth_2 ul:before{position: absolute; content: ''; width: 1px; height: 100%; background: #404040; left: -30px;}
 .depth_2 li{margin-bottom: 20px; position: relative; transition: all .5s;}
+.depth_2 li:hover{transition: all .5s;}
 .depth_2 li:hover:before{position: absolute; width: 2px; height: 100%; content: ''; left: -30px; background: #ff8b23;}
 .depth_2 li:last-child{margin-bottom: 0px;}
 .depth_2 a{display: block; color: #c3c3c3; font-size: 16px; letter-spacing: -0.03em; font-family: 'NotoR';}
