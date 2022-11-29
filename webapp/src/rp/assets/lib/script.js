@@ -4,10 +4,10 @@ $(document).ready(function(){
 
   $(".splitting").each(function(){
 		var text = this;
-		$(this).find("span").each(function(i){
+		$(this).find(".word").each(function(i){
 			$(this).addClass("num"+i+" ")
 			var i = i / 14
-			$(this).css("animation-delay", (i + 0.01)+"s")
+			$(this).css("animation-delay", (i + 0.3)+"s")
 		})
 	})
 
