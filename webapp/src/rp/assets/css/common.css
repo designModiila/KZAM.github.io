@@ -121,6 +121,7 @@
 @media all and (max-width : 768px) {
   .logo{width: 110px; font-size: 24px;}
   .menu-btn{width: 76px;}
+  .sub-main-title p{font-size: 32px;}
   .content-wrap{width: calc(100% - 4.8rem);}
   .footer{padding: 30px 0;}
   .footer .content-wrap{width: calc(100% - 4.8rem);} 
