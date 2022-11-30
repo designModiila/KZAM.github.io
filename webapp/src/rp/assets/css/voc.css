@@ -53,12 +53,12 @@
 .submit-btn:hover{background: #ff8b23; color: #fff;}
 
 @media all and (max-width : 1280px){
-
+  .privacy-agree-box{padding: 100px 50px 0;}
 }
 
 
 @media all and (max-width : 1024px) {
-  .privacy-agree-box{padding: 100px 50px 0;}
+
 }
 
 @media all and (max-width : 768px) {
