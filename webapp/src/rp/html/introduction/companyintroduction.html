@@ -5,29 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <link rel="stylesheet" href="../../assets/lib/plugins/jquery.fullpage.min.css"> -->
-  <!-- <link rel="stylesheet" href="../../assets/lib/plugins/swiper.min.css"> -->
-  <link rel="stylesheet" href="../../assets/lib/plugins/aos.css"> 
+  <link rel="stylesheet" href="../../assets/lib/plugins/main/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="../../assets/lib/plugins/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/lib/plugins/main/splitting.css"> 
   <link rel="stylesheet" href="../../assets/css/reset.css">
   <link rel="stylesheet" href="../../assets/css/common.css">
   <link rel="stylesheet" href="../../assets/css/introduction.css">
   <script type="text/javascript" src="../../assets/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/main/jquery.fullpage.min.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.waypoints.min.js"></script>
-  <script src="../../assets/lib/plugins/aos.js"></script>
+  <script src="../../assets/lib/plugins/main/splitting.min.js"></script>
   <script src="../../assets/lib/plugins/skrollr.min.js"></script>
-  <!-- <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script> -->
+  <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
+
+  <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+<body>
   <div id="wrap">
     <header class="header">
       <div class="header-wrap">
-        <div class="nav-bg"></div>
+        <div class="nav-bg pcOnly"></div>
         <h1 class="logo">
           <a href="./index.html">KZAM</a>
         </h1>
-        <nav class="nav">
+        <nav class="nav pcOnly">
           <ul class="depth_1">
             <li>
               <a href="#none">기업소개</a>
@@ -42,10 +45,10 @@
               </div>
             </li>
             <li>
-              <a href="#none">R&D</a>
+              <a href="#none">사업영역</a>
               <div class="depth_2">
                 <ul>
-                  <li><a href="#none">사업소식</a></li>
+                  <li><a href="#none">사업소개</a></li>
                   <li><a href="#none">생산제품</a></li>
                   <li><a href="#none">생산공정</a></li>
                 </ul>
@@ -54,10 +57,11 @@
             <li><a href="#none">ESG</a>
               <div class="depth_2">
                 <ul>
-                  <li><a href="#none">윤리경영</a></li>
+                  <li><a href="#none">개요</a></li>
                   <li><a href="#none">친환경경영</a></li>
-                  <li><a href="#none">품질경영</a></li>
-                  <li><a href="#none">사회공헌</a></li>
+                  <li><a href="#none">안전경영</a></li>
+                  <li><a href="#none">사회경영</a></li>
+                  <li><a href="#none">품질공헌</a></li>
                 </ul>
               </div>
             </li>
@@ -73,8 +77,6 @@
               <div class="depth_2">
                 <ul>
                   <li><a href="#none">채용정보</a></li>
-                  <li><a href="#none">인재상</a></li>
-                  <li><a href="#none">복리후생</a></li>
                 </ul>
               </div>
             </li>
@@ -89,14 +91,14 @@
         </div>
       </div>
     </header>
-    <div class="company-visual">
-      <div class="company-bg">
-        <div class="main-title">
+    <div class="sub-visual">
+      <div class="sub-bg">
+        <div class="sub-main-title">
           <p>기업소개</p>
         </div>
       </div>
     </div>
-    <div class="company-tab-box">
+    <div class="content-tab-box">
       <ul>
         <li><a href="#" class="active">회사소개</a></li>
         <li><a href="#">CEO 인사말</a></li>
@@ -116,7 +118,7 @@
               <p>케이잼(KZAM : KZ Advanced Materials)은 모기업인 고려아연의 53년 노하우를 이어받아<br>
                 이차전지 소재 산업인 전지박의 전문적인 생산과 판매를 목적으로 설립되었습니다.</p>
             </div>
-            <span class="line" data-top-top="height: 0px" data-top-top="height: 130px"></span>
+            <span class="line" data-center-top="height: 0px" data-center-bottom="height: 130px"></span>
           </div>
         </div>
       </div>
@@ -186,7 +188,7 @@
             <div class="logo">
               <a href="./index.html">KZAM</a>
             </div>
-            <p>배터리 효율을 극대화하는 가장 좋은 전기박을 만드는 기업</p>
+            <p class="pcOnly">배터리 효율을 극대화하는 가장 좋은 전기박을 만드는 기업</p>
           </div>
           <div class="f-nav">
             <dl>
@@ -205,10 +207,11 @@
             </dl>
             <dl>
               <dt>ESG</dt>
-              <dd><a href="#">윤리경영</a></dd>
+              <dd><a href="#">개요</a></dd>
               <dd><a href="#">친환경경영</a></dd>
-              <dd><a href="#">품질경영</a></dd>
-              <dd><a href="#">사회공헌</a></dd>
+              <dd><a href="#">안전경영</a></dd>
+              <dd><a href="#">사회경영</a></dd>
+              <dd><a href="#">품질공헌</a></dd>
             </dl>
             <dl>
               <dt>미디어</dt>
@@ -218,8 +221,6 @@
             <dl>
               <dt>채용</dt>
               <dd><a href="#">채용정보</a></dd>
-              <dd><a href="#">인재상</a></dd>
-              <dd><a href="#">복리후생</a></dd>
             </dl>
           </div>
         </div>
@@ -235,12 +236,18 @@
             </div>
             <div class="info">
               <dl>
-                <dt>문의전화</dt>
+                <dt>Tel.</dt>
                 <dd>052-240-4045</dd>
-                <dt>Email</dt>
+                <dt>Email.</dt>
                 <dd>Address@KZAM.com</dd>
               </dl>
-              <address>울산시 울주군 온산읍 당월로 216-51</address>
+              <address><span>Adress. </span>울산시 울주군 온산읍 당월로 216-51</address>
+            </div>
+            <div class="privacy moOnly">
+              <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일주소 무단수집거부</a></li>
+              </ul>
             </div>
             <div class="copy">
               <p>COPYRIGHT 2022 KZAM. ALL RIGHTS RESERVED.</p>
@@ -253,7 +260,7 @@
                 <option value="#href">option</option>
               </select>
             </div>
-            <div class="privacy">
+            <div class="privacy pcOnly">
               <ul>
                 <li><a href="#">개인정보처리방침</a></li>
                 <li><a href="#">이메일주소 무단수집거부</a></li>
