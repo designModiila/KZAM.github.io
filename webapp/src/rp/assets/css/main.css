@@ -2,9 +2,9 @@
 .swiper-wrapper .item{width: 100%; height: 100%; position: relative; overflow: hidden;}
 .swiper-wrapper .swiper-slide .bg{position: absolute; top: 0; right: 0; left: 0; bottom: 0; opacity: 0.08; background-size:cover !important; transform: scale(1.0,1.0); transition: opacity 2s ease-out, transform 9.5s linear;}
 .swiper-wrapper .swiper-slide.swiper-slide-active .bg{transform: scale(1.4,1.4) rotate(0.0001deg); opacity: 1;}
-.swiper-wrapper .item .itemBg1{background: #000 url('../images/main/main_visual2.png') no-repeat;}
-.swiper-wrapper .item .itemBg2{background: #000 url('../images/main/main_visual3.png') no-repeat;}
-.swiper-wrapper .item .itemBg3{background: #000 url('../images/main/main_visual1.png') no-repeat;}
+.swiper-wrapper .item .itemBg1{background: #000 url('../images/main/main_visual2.png') no-repeat; background-size: cover;}
+.swiper-wrapper .item .itemBg2{background: #000 url('../images/main/main_visual3.png') no-repeat; background-size: cover;}
+.swiper-wrapper .item .itemBg3{background: #000 url('../images/main/main_visual1.png') no-repeat; background-size: cover;}
 .swiper-wrapper .item .txt-box{position: absolute; top: 50%; left: 50%; z-index: 100; transform: translate(-50%, -50%); display: flex; width: calc(100% - 64rem); height: 100%; flex-direction: column; justify-content: center;}
 .swiper-wrapper .item .txt-box .visual-title{font-family: 'playB', serif; font-size: 7.2rem; color: #fff; position: relative; overflow: hidden; opacity: 0; margin-bottom: 20px; letter-spacing: -0.03em;}
 .swiper-wrapper .item .txt-box .visual-sub-title{color: #fff; font-family: 'NotoM'; letter-spacing: -0.03em; font-size: 24px; opacity: 0; line-height: 40px;}
@@ -26,7 +26,7 @@
 .section .content-wrap .sub-title{font-family: 'NotoB'; font-size: 24px; color: #bbb; margin-bottom: 15px; position: relative;}
 .section .content-wrap .title{font-family: 'NotoD'; font-size: 48px; letter-spacing: -0.03em; color: #323232; line-height: 70px; position: relative;}
 
-.section.full2{background: url('../images/main/full2_bg.png') no-repeat; width: 100%; height: 100vh; overflow: hidden;}
+.section.full2{background: url('../images/main/full2_bg.png') no-repeat; background-size: cover; width: 100%; height: 100vh; overflow: hidden;}
 .section.full2 .con-box ul{display: flex; gap: 100px;}
 .section.full2 .con-box ul li .icon{margin-bottom: 20px;}
 .section.full2 .con-box ul li .box-title{margin-bottom: 45px;}
@@ -36,7 +36,7 @@
 .section.full2 .con-box ul li .box-txt p{font-family: 'NotoM'; font-size: 14px; letter-spacing: -0.03em; color: #666;}
 
 .section.full3{width: 100%; height: 100vh; overflow: hidden; position: relative;}
-.section.full3 .bg{background: url('../images/main/full3_bg.png') no-repeat; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0; transform: scale(1.0,1.0); transition: opacity 2s;}
+.section.full3 .bg{background: url('../images/main/full3_bg.png') no-repeat; background-size: cover; opacity: 0.7; position: absolute; top: 0; right: 0; left: 0; bottom: 0; transform: scale(1.0,1.0); transition: opacity 2s;}
 .section.full3 .content-wrap{flex-direction: row; justify-content: space-between; align-items: center;}
 .section.full3 .content-wrap .title{color: #323232; color: #ececec; font-family: 'NotoR';}
 .section.full3 .content-wrap .line{display: block; width: 22%;}

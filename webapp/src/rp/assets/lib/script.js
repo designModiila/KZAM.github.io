@@ -13,15 +13,13 @@ $(document).ready(function(){
 
   $(window).scroll(function(){
     if ($(window).scrollTop() >= 500) {
-        $('.company-tab-box').addClass('fixed-header');
-        $('.header').hide();
+        $('.hedaer').addClass('fixed-header');
     }
     else {
-        $('.company-tab-box').removeClass('fixed-header');
-        $('.header').show();
+        $('.header').removeClass('fixed-header');
 
     }
-});
+  });
 
   var gnb = function () {
     $('.header, .depth_1 > li').on('mouseover focus', function () {
