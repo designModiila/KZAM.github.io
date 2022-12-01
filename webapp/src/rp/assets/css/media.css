@@ -1,0 +1,25 @@
+.main-title-wrap{padding-bottom: 0;}
+.section{width: 100%; height: 100%; position: relative;}
+.sub-bg{background: url(../images/media/media_sub_visual.png) no-repeat; background-size: cover;}
+.content-wrap{max-width: 1280px; margin: 0 auto; padding-bottom: 285px;}
+
+.swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
+.swiper-controller{position: relative; width: 100%; height: 100%;}
+.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: unset;}
+.swiper-button-prev{background: url('../images/main/controller-arrow-l.png') no-repeat; background-position: center; width: 35px; left: 0;}
+.swiper-button-next{background: url('../images/main/controller-arrow-r.png') no-repeat; background-position: center; width: 35px; right: 0;}
+.swiper-button-next::after, .swiper-button-prev::after{display: none;}
+.con-box-wrap li{width: 100%; overflow: hidden;}
+.con-box-wrap .con-list{position: relative;}
+.con-box-wrap .list{width: 100%; overflow: hidden; background: #f6f6f6;}
+.con-box-wrap a{display: block;}
+.con-box-wrap .list{display: flex;}
+.con-box-wrap .img-box{width: 50%;}
+.con-box-wrap .txt-box{width: 50%; padding: 64px 40px;}
+.con-box-wrap .txt-box .category{margin-bottom: 20px;}
+.con-box-wrap .txt-box .category p{color: #ff8b23; font-size: 16px; font-family: 'NotoB'; letter-spacing: -0.03em;}
+.con-box-wrap .txt-box .con-title{margin-bottom: 30px;}
+.con-box-wrap .txt-box .con-title p{font-size: 28px; font-family: 'NotoB'; line-height: 42px; letter-spacing: -0.03em; color: #323232; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.con-box-wrap .txt-box .con-txt{margin-bottom: 25px;}
+.con-box-wrap .txt-box .con-txt p{font-size: 18px; letter-spacing: -0.03em; color: #666666; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+.con-box-wrap .txt-box .con-date p{font-size: 16px; letter-spacing: -0.03em; color: #bbbbbb; font-family: 'NotoM';}

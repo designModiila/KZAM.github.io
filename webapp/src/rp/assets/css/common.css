@@ -123,6 +123,9 @@
   .menu-btn{width: 76px;}
   .sub-main-title p{font-size: 32px;}
   .content-wrap{width: calc(100% - 4.8rem);}
+  .tabs{width: 100%;}
+  .mo-tab-box{width: 100%; height: 65px; box-sizing: border-box; background: #fff;}
+  #tab-box{width: 100%; height: 100%; padding: 20px 24px; color: #323232; font-size: 18px; font-family: 'NotoB'; background: url(../images/customerSupport/select_default.png) no-repeat right 50%;}
   .footer{padding: 30px 0;}
   .footer .content-wrap{width: calc(100% - 4.8rem);} 
   .footer-top{flex-direction: column; margin-bottom: 0;}
@@ -140,4 +143,6 @@
   .footer-bottom .f-info-wrap .info address{font-size: 12px;}
   .footer-bottom .f-info-wrap .info address span{width: 42px; padding-right: 17px;}
   .footer-bottom .privacy.moOnly{margin-bottom: 10px;}
+  .scroll-top-btn{width: 40px; height: 40px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/mo-scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer;}
+  .scroll-top-btn.on{opacity: 1; visibility: visible;}
 }

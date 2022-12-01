@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <link rel="stylesheet" href="../../assets/lib/plugins/aos.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/main/jquery.fullpage.min.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/swiper.min.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/main/splitting.css"> 
+  <link rel="stylesheet" href="../../assets/lib/plugins/aos.css"> 
   <link rel="stylesheet" href="../../assets/css/reset.css">
   <link rel="stylesheet" href="../../assets/css/common.css">
   <link rel="stylesheet" href="../../assets/css/customerSupport.css">
@@ -103,8 +103,8 @@
     <div class="tabs">
       <div class="content-tab-box pcOnly">
         <ul>
-          <li><a href="./voc.html" class="active">고객의 소리</a></li>
-          <li><a href="./product.html">제품문의</a></li>
+          <li><a href="./voc.html">고객의 소리</a></li>
+          <li><a href="./product.html" class="active">제품문의</a></li>
         </ul>
       </div>
       <div class="mo-tab-box moOnly">
@@ -119,10 +119,10 @@
         <div class="content-wrap">   
           <div class="main-title-wrap">
             <div class="title" data-aos="fade-up">
-              <p>여러분의 소리를 들려주세요.</p>
+              <p>KZAM의 제품을 고민하고 계신가요?</p>
             </div>
             <div class="title-txt" data-aos="fade-up">
-              <p>고객의 소리는 케이잼에 대한 건의, 칭찬, 불만 등 다양한 의견을 공유하여 <br class="pcOnly">더 나은 기업으로 거듭나기 위한 고객 여러분과의 소통의 장입니다.</p>
+              <p>제품에 대한 문의가 있으시다면 아래 양식을 등록해주세요. <br>케이잼의 제품상담 전문가가 빠르게 응대해 드리겠습니다.</p>
             </div>
           </div>
           <form>
@@ -132,9 +132,47 @@
                 <caption>고객의 소리</caption>
                 <tbody>
                   <tr>
-                    <th scope="row"><span class="title">제목<span class="bul-must"></span></span></th>
+                    <th scope="row"><span class="title">국가<span class="bul-must"></span></span></th>
                     <td>
-                      <input type="text" class="input" placeholder="제목을 입력하세요." required>
+                      <div class="input-box type2">
+                          <select class="select">
+                            <option>Korea, Republic Of</option>
+                            <option>Korea, Republic Of</option>
+                            <option>Korea, Republic Of</option>
+                            <option>Korea, Republic Of</option>
+                          </select>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="title">회사/조직</span></th>
+                    <td>
+                      <input type="text" class="input">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="title">부서명</span></th>
+                    <td>
+                      <input type="text" class="input">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="title">연락처<span class="bul-must"></span></span></th>
+                    <td>
+                      <div class="input-box type2">
+                        <div class="flex-wrap">
+                          <select class="select">
+                            <option>+82</option>
+                            <option>+</option>
+                            <option>+</option>
+                            <option>+</option>
+                          </select>
+                          <span class="dash">-</span>
+                          <input type="text" class="input">
+                          <span class="dash">-</span>
+                          <input type="text" class="input">
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -142,9 +180,10 @@
                     <td>
                       <div class="input-box type2">
                         <div class="flex-wrap">
-                        <input type="text" class="input" placeholder="이메일을 입력하세요." required>
+                        <input type="text" class="input" placeholder="이메일을 입력하세요.">
                         <span class="dash">@</span>
-                        <select class="select" onchange="selectEmail();">
+                        <!-- <input type="text" class="input emailTxt" id="domainName" placeholder="도메인을 입력하세요" disabled=""> -->
+                        <select class="select">
                           <option>선택하세요</option>
                           <option>naver.com</option>
                           <option>daum.net</option>
@@ -156,9 +195,15 @@
                     </td>
                   </tr>
                   <tr>
+                    <th scope="row"><span class="title">제목<span class="bul-must"></span></span></th>
+                    <td>
+                      <input type="text" class="input">
+                    </td>
+                  </tr>
+                  <tr>
                     <th scope="row"><span class="title">내용<span class="bul-must"></span></span></th>
                     <td>
-                      <textarea class="textarea" rows="25" placeholder="내용을 입력하세요." required></textarea>
+                      <textarea class="textarea" rows="25" placeholder="내용을 입력하세요."></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -192,12 +237,12 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="agree-btn-box">
                 <input type="checkbox" name="check-privacy" value="privacy" class="icheckbox" id="agree">
                 <label for="agree" class="agree">개인정보 수집 및 이용에 대해 동의합니다.</label>
               </div>
             </div>
-            <div class="btn-box"  data-aos="fade-up">
+            <div class="btn-box" data-aos="fade-up">
               <button type="submit" class="submit-btn">등록하기</button>
             </div>
           </form>
@@ -296,5 +341,8 @@
   </div>
   <div class="scroll-top-btn moOnly" onclick="window.scrollTo(0,0);">
   </div>
+  <!-- <script>
+    skrollr.init();
+  </script> -->
 </body>
 </html>

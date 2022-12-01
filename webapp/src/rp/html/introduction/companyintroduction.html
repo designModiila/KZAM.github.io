@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="../../assets/lib/plugins/aos.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/main/jquery.fullpage.min.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/swiper.min.css">
   <link rel="stylesheet" href="../../assets/lib/plugins/main/splitting.css"> 
@@ -15,14 +16,14 @@
   <script type="text/javascript" src="../../assets/lib/plugins/main/jquery.fullpage.min.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.waypoints.min.js"></script>
   <script src="../../assets/lib/plugins/main/splitting.min.js"></script>
-  <script src="../../assets/lib/plugins/skrollr.min.js"></script>
+  <script src="../../assets/lib/plugins/aos.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
 
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
-<body>
+<body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="300">
   <div id="wrap">
     <header class="header">
       <div class="header-wrap">
@@ -271,8 +272,7 @@
       </div>
     </footer>
   </div>
-  <script>
-    skrollr.init();
-  </script>
+  <div class="scroll-top-btn moOnly" onclick="window.scrollTo(0,0);">
+  </div>
 </body>
 </html>
