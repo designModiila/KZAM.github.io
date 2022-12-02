@@ -58,6 +58,7 @@ select option[value=""][disabled]{display: none;}
 .board-view-box{padding: 50px 108px 120px;}
 .board-view-box p{ text-align: justify; word-break: break-all; font-size: 18px; letter-spacing: -0.03em; color: #666; margin-bottom: 30px;}
 .board-view-box > img{display: block; margin: 0 auto;}
+.board-navi{margin-bottom: 60px;}
 .board-navi .box{width: 100%; display: table;}
 .board-navi .box.prev{padding: 11px 0; border-bottom: 1px solid #d9d9d9;}
 .board-navi .box.next{padding: 11px 0;}
@@ -68,6 +69,11 @@ select option[value=""][disabled]{display: none;}
 .board-navi .box .pg-title{display: table-cell; padding-left: 30px; vertical-align: middle; font-size: 18px; color: #666; letter-spacing: -0.03em;}
 .board-navi .box .pg-date{display: table-cell; vertical-align: middle; font-size: 16px; letter-spacing: -0.03em; color: #666}
 .board-navi .box .pg-title.no-data{color: #bbbbbb;}
+.board-btn{text-align: center;}
+.board-btn .go-btn{width: 129px; height: 52px; margin: 0 auto; border: 1px solid #ff8b23; background: #fff; box-sizing: border-box; padding: 15px 0; transition: background 0.5s ease-in-out;}
+.board-btn .go-btn a{display: block; font-family: 'NotoM'; color: #ff8b23; letter-spacing: -0.03em;}
+.board-btn .go-btn:hover{background: #ff8b23;}
+.board-btn .go-btn:hover a{color: #fff;}
 
 .pr-list{text-align: center;}
 
