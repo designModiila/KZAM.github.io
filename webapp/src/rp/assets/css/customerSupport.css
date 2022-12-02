@@ -64,10 +64,6 @@
 
 @media all and (max-width : 768px) {
   .sub-bg{background: url(../images/customerSupport/customerSupport_sub_visual_mo.png) no-repeat; background-size: cover;}
-  .main-title-wrap{text-align: left;}
-  .content-wrap .title-txt{margin-bottom: 30px;}
-  .content-wrap .title p{font-size: 28px;}
-  .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
   .table td, .table th{padding: 0;}
   .table.type-write th, .table.type-write td{width: 100%; display: block;}
   .table.type-write tr th{padding-top: 20px; padding-bottom: 0;}

@@ -158,7 +158,7 @@ $(document).ready(function(){
   // conImgSwiper.controller.control = conTxtSwiper;
   // conTxtSwiper.controller.control = conImgSwiper;
 
-    var conListSwiper = new Swiper('.con-list .swiper-container', {
+    var conListSwiper = new Swiper('.con-recent .swiper-container', {
       loop : true,
       pagination: {
         el: ".swiper-pagination",
