@@ -28,7 +28,7 @@
 .depth_2 a{display: block; color: #c3c3c3; font-size: 16px; letter-spacing: -0.03em; font-family: 'NotoR';}
 .depth_2 a:hover{color: #fff;}
 
-.header.on .nav-bg{opacity: 1; height: 350px;}
+.header.on .nav-bg{opacity: 1; height: 300px;}
 .header.on .logo{color: #fff !important;}
 .header.on .menu-btn .menu span{background: #fff !important;}
 .header.on .nav > ul > li{color: #fff !important;}
@@ -123,9 +123,23 @@
   .menu-btn{width: 76px;}
   .sub-main-title p{font-size: 32px;}
   .content-wrap{width: calc(100% - 4.8rem);}
-  .tabs{width: 100%;}
-  .mo-tab-box{width: 100%; height: 65px; box-sizing: border-box; background: #fff;}
-  #tab-box{width: 100%; height: 100%; padding: 20px 24px; color: #323232; font-size: 18px; font-family: 'NotoB'; background: url(../images/customerSupport/select_default.png) no-repeat right 50%;}
+  /* .tabs{width: 100%;} */
+  /* .mo-tab-box{width: 100%; height: 65px; box-sizing: border-box; background: #fff; position: relative;} */
+  /* #tab-box{width: 100%; height: 100%; padding: 20px 24px; color: #323232; font-size: 18px; font-family: 'NotoB'; background: url(../images/customerSupport/select_default.png) no-repeat right 50%; border-bottom: 1px solid #d9d9d9;} */
+
+  .content-tab-box{position: relative; width: 100%; height: 65px;}
+
+  .content-tab-box:after{position: absolute; content: ''; background: url(../images/customerSupport/select_default.png) no-repeat; right: 0; top: 50%; width: 30px; height: 10px; transform: translateY(-50%); z-index: 10;}
+  .content-tab-box ul{display: block; position: absolute; top: 0; left: 0; width: 100%; background-color: #ffffff; z-index: 5;}
+  .content-tab-box ul li{width: 100%; display: none;}
+  .content-tab-box.active ul li{display: block;}
+  .content-tab-box > ul > li{line-height: unset;}
+  .content-tab-box ul li a.active:after{content: none;}
+  .content-tab-box ul li.active{display: block;}
+  .content-tab-box ul li a{display: block; font-weight: 400; font-size: 18px; text-align: left; padding: 24px 20px; height: 65px; box-sizing: border-box;}
+
+
+
   .main-title-wrap{text-align: left;}
   .content-wrap .title-txt{margin-bottom: 30px;}
   .content-wrap .title p{font-size: 28px;}

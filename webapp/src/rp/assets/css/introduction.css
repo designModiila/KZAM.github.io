@@ -17,22 +17,28 @@
 .section02 .company-img{position: absolute; right: 10px; top: -190px;}
 
 .section03 .content-wrap{padding: 120px 0; display: flex; justify-content: center;}
-.section03 .content-wrap ul{display: flex; width: calc(100% - 200px - 177px);}
-.section03 .content-wrap ul li{width: 33.3333%; display: flex; flex-direction: column; align-items: center; position: relative;}
-.section03 .content-wrap ul li strong{font-family: 'NotoB'; font-size: 48px; letter-spacing: -0.03em; padding-top: 80px; margin-bottom: 21px; color: #323232;}
-.section03 .content-wrap ul li strong span{display: inline-block; font-size: 18px; padding-left: 10px;}
-.section03 .content-wrap ul li + li:after{ position: absolute; content: ''; width: 1px; height: 165px; background: #d9d9d9; left: 0px;}
-.section03 .content-wrap ul li:before{position: absolute; content: ''; display: block; width: 64px; height: 64px; top: 0;}
-.section03 .content-wrap ul li:nth-child(1):before{background: url(../images/introduction/introduction-icon-01.png);}
-.section03 .content-wrap ul li:nth-child(2):before{background: url(../images/introduction/introduction-icon-02.png);}
-.section03 .content-wrap ul li:nth-child(3):before{background: url(../images/introduction/introduction-icon-03.png);}
-.section03 .content-wrap ul li p{font-size: 18px; color: #666; letter-spacing: -0.03em; font-family: 'NotoM';}
+.section03 .content-wrap > ul{display: flex; width: calc(100% - 200px - 177px);}
+.section03 .content-wrap > ul > li{width: 33.3333%; display: flex; flex-direction: column; align-items: center; position: relative;}
+.section03 .content-wrap > ul > li strong{font-family: 'NotoB'; font-size: 24px; letter-spacing: -0.03em; padding-top: 80px; margin-bottom: 21px; color: #323232;}
+.section03 .content-wrap > ul > li strong span{display: inline-block; font-size: 18px; padding-left: 10px;}
+.section03 .content-wrap > ul > li + li:after{ position: absolute; content: ''; width: 1px; height: 165px; background: #d9d9d9; left: 0px;}
+.section03 .content-wrap > ul > li:before{position: absolute; content: ''; display: block; width: 64px; height: 64px; top: 0;}
+.section03 .content-wrap > ul > li:nth-child(1):before{background: url(../images/introduction/introduction-icon-01.png);}
+.section03 .content-wrap > ul > li:nth-child(2):before{background: url(../images/introduction/introduction-icon-02.png);}
+.section03 .content-wrap > ul > li:nth-child(3):before{background: url(../images/introduction/introduction-icon-03.png);}
+.section03 .content-wrap > ul > li p{font-size: 18px; color: #666; letter-spacing: -0.03em; font-family: 'NotoM';}
+.section03 .content-wrap .item-info li{color: #666; font-size: 14px; letter-spacing: -0.03em; line-height: 30px; text-indent: -7px;}
+.section03 .content-wrap .item-info li:before{content: '-'; position: absolute;}
 
 .section04{background: #f6f6f6; padding: 120px 0;}
 .section04 .content-wrap{display: flex; flex-direction: column; align-items: center;}
 .section04 .title-wrap{margin-bottom: 77px; text-align: center;}
 .section04 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px;}
 
+.section05{padding: 120px 0; background: #fff;}
+.section05 .content-wrap{display: flex; flex-direction: column; align-items: center;}
+.section05 .title-wrap{margin-bottom: 77px; text-align: center;}
+.section05 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px;}
 @media all and (min-width: 1440px){
 
 }

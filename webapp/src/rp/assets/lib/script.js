@@ -123,41 +123,57 @@ $(document).ready(function(){
   // });
 
 
+  $(".content-tab-box").find("li a.active").click(function (e) {
+    e.preventDefault()
+      $('.content-tab-box').addClass("active");
+    });
 
-  $('.content-tab-box li a').click(function(){
-    $('.content-tab-box li a').removeClass('active');
-    $(this).addClass('active');
+
+  var conListSwiper = new Swiper('.con-recent .swiper-container', {
+    loop : true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
   });
 
-  // var conImgSwiper = $('.img-list .swiper-container');
-  // var conTxtSwiper = $('.txt-list .swiper-container');
+  var product = $(".product.section04");
+  var productTabNav = $(".product-tab-menu a")
+  var productTabCon =  product.find(".product-tab-content > div");
 
-  // var conImgSwiper = new Swiper('.img-list .swiper-container', {
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     type: 'bullets',
-  //     clickable: true,
-  //   },
-  // });
-  // var conTxtSwiper = new Swiper('.txt-list .swiper-container', {
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  // });
-  // conImgSwiper.controller.control = conTxtSwiper;
-  // conTxtSwiper.controller.control = conImgSwiper;
+  productTabCon.hide();
+  productTabNav.click(function() {
+    productTabCon.hide().filter(this.hash).fadeIn();
+    productTabNav.parent('li').removeClass('active');
+    $(this).parent('li').addClass('active');
+    return false;
+  }).filter(':eq(0)').click();
 
-    var conListSwiper = new Swiper('.con-recent .swiper-container', {
-      loop : true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction"
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
+	var overviewImgSwiper = $('.overview-img-slide').find('.swiper-slide');
+	var overviewTxtSwiper = $('.overview-txt-slide').find('.overview-txt-slide');
+
+  var overviewImgSwiper = new Swiper('.overview-img-slide', {
+    loop : true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
+    },
   });
+
+  var overviewTxtSwiper = new Swiper('.overview-txt-slide', {
+    loop : true,
+    effect : 'fade',
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+  });
+
+  overviewImgSwiper.controller.control = overviewTxtSwiper;
+  overviewTxtSwiper.controller.control = overviewImgSwiper;
 
 });
