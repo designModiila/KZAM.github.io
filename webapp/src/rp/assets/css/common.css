@@ -50,7 +50,7 @@
 #fp-nav li a.active + .fp-tooltip.dark{color: #323232;}
 
 .footer{width: 100%; background: #363636; padding: 50px 0 30px;}
-.footer-wrap{width: calc(100% - 20rem); margin: 0 auto; height: 100%; display: flex; flex-direction: column; justify-content: center; padding-bottom: 0;}
+.footer-wrap{width: calc(100% - 64rem); margin: 0 auto; height: 100%; display: flex; flex-direction: column; justify-content: center; padding-bottom: 0;}
 .footer-top{display: flex; justify-content: space-between; margin-bottom: 30px;}
 .footer-top .logo{color: #909090 !important; font-size: 35px; margin-bottom: 12px;}
 .footer-top .f-logo{flex: 0 0 33.3333%;}
@@ -107,6 +107,10 @@
 .content-wrap .title-txt{margin-bottom: 96px;}
 .content-wrap .title-txt p{font-size: 24px; color: #666; letter-spacing: -0.03em; line-height: 40px;}
 
+@media all and (max-width : 1440px){
+  .footer-wrap{width: calc(100% - 23rem);}
+}
+
 @media all and (max-width : 1240px){
   .nav > ul > li + li{margin-left: 60px;}
 }
@@ -145,7 +149,7 @@
   .content-wrap .title p{font-size: 28px;}
   .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
   .footer{padding: 30px 0;}
-  .footer .content-wrap{width: calc(100% - 4.8rem);} 
+  .footer-wrap{width: calc(100% - 4.8rem);} 
   .footer-top{flex-direction: column; margin-bottom: 0;}
   .footer-top .f-logo .logo{margin-bottom: 20px;}
   .footer-top .f-nav dt{font-size: 15px; margin-bottom: 20px;}
