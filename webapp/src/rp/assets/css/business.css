@@ -63,7 +63,11 @@
 .overview-txt-slide .txt-box .txt p{font-size: 18px; color: #fff; letter-spacing: -0.03em;}
 .overview-txt-slide .swiper-controller-wrap{background: none;}
 
+.overview.section05 .content-wrap{padding-bottom: 205px;}
 .overview.section05 .main-title-wrap{padding: 0 0 60px;}
+.overview.section05 .patent-box ul{width: 100%; border-top: 1px solid #323232; overflow: hidden;}
+.overview.section05 .patent-box ul li{float: left;padding: 17px 30px; width: 100%; border-bottom: 1px solid #d6d6d6; font-size: 18px; letter-spacing: -0.03em; color: #666;}
+.overview.section05 .patent-box ul li a{display: block; float: right; padding: 13px 40px; box-sizing: border-box; text-align: center; font-size: 14px; color: #fff; background: #444444; font-family: 'NotoM';}
 
 .product.section04 .content-wrap{padding-bottom: 155px;}
 .product.section04 .main-title-wrap{padding: 0px 0px 60px;}
