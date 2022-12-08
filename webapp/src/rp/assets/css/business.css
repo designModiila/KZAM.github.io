@@ -3,7 +3,8 @@
 .content-wrap .title-txt{margin-bottom: 0;}
 .content-wrap .title-txt p{font-size: 18px; line-height: 30px;}
 
-.overview.section01{background: url(../images/business/overview-sub-bg.png) no-repeat; background-size: cover; width: 100%;}
+.sub-content{overflow: hidden;}
+.overview.section01{background: url(../images/business/overview-sub-bg.png) no-repeat; background-size: cover; width: 100%; animation-duration: 5s; animation-name: bg-scale; overflow: hidden;}
 .overview.section01 .main-title-wrap{text-align: left; padding: 344px 0;}
 .overview.section01 .content-wrap .title p{color: #ececec; line-height: 68px;}
 .overview.section01 .content-wrap .title{margin-bottom: 50px;}
