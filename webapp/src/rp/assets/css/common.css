@@ -94,7 +94,7 @@
 .header.fixed-header .menu-btn span{background: #323232;}
 
 .content-tab-box ul{display: flex; width: 100%; height: 100%; justify-content: center;}
-.content-tab-box > ul > li{width: 190px; height: 100%; line-height: 90px; text-align: center;}
+.content-tab-box > ul > li{width: 190px; height: 100%; line-height: 90px; text-align: center; background-color: #ffffff;}
 .content-tab-box ul li a{display: block; color: #8f8f8f; font-size: 20px; letter-spacing: -0.03em; position: relative;}
 .content-tab-box ul li a.active{color: #323232; font-family: 'NotoB';}
 .content-tab-box ul li a.active:after{position: absolute; content: ''; width: 100%; height: 2px; background: #ff8b23; left: 0; bottom: -1px;}
@@ -108,7 +108,9 @@
 .content-wrap .title-txt p{font-size: 24px; color: #666; letter-spacing: -0.03em; line-height: 40px;}
 
 @media all and (max-width : 1440px){
+  .content-wrap{width: calc(100% - 4.8rem);}
   .footer-wrap{width: calc(100% - 23rem);}
+
 }
 
 @media all and (max-width : 1240px){

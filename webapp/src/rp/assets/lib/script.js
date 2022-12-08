@@ -145,7 +145,7 @@ $(document).ready(function(){
 
   $(".content-tab-box").find("li a.active").click(function (e) {
     e.preventDefault()
-      $('.content-tab-box').addClass("active");
+      $('.content-tab-box').toggleClass("active");
     });
 
 

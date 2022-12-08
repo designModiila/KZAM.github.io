@@ -1,0 +1,25 @@
+.section{width: 100%; height: 100%; position: relative; background: #fff;}
+.sub-bg{background: url(../images/sustainability/sustainability_sub_visual.png) no-repeat; background-size: cover;}
+
+
+
+@media all and (min-width: 1440px){
+
+}
+
+
+@media all and (max-width: 1080px){
+
+}
+
+
+@media all and (max-width: 1030px){
+
+}
+
+
+
+
+@media all and (max-width:768px) {
+  .sub-bg{background: url(../images/sustainability/sustainability_sub_visual_mo.png) no-repeat; background-size: cover;}
+}
