@@ -2,8 +2,8 @@
 
 
 $(document).ready(function(){
-  $('#header').load('../_include/header.html');
-  $('#footer').load('../_include/footer.html');
+  $('#header').load('/webapp/src/rp/html/_include/header.html');
+  $('#footer').load('/webapp/src/rp/html/_include/footer.html');
 
   AOS.init();
   Splitting();
