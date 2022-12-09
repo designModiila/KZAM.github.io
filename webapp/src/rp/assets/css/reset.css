@@ -231,35 +231,35 @@ textarea::placeholder {
 }
 
 @font-face {
-  font-family: 'notoR';
+  font-family: 'NotoR';
   src: url('../fonts/NotoSansKR/NotoSansKR-Regular.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-Regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'notoM';
+  font-family: 'NotoM';
   src: url('../fonts/NotoSansKR/NotoSansKR-Medium.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-Medium.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'notoL';
+  font-family: 'NotoL';
   src: url('../fonts/NotoSansKR/NotoSansKR-Light.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-Light.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-Light.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'notoB';
+  font-family: 'NotoB';
   src: url('../fonts/NotoSansKR/NotoSansKR-Bold.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-Bold.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-Bold.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'notoBl';
+  font-family: 'NotoBl';
   src: url('../fonts/NotoSansKR/NotoSansKR-Black.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-Black.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-Black.otf') format('opentype');
