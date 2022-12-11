@@ -12,8 +12,8 @@ $(document).ready(function(){
 		var text = this;
 		$(this).find(".word").each(function(i){
 			$(this).addClass("num"+i+" ")
-			var i = i / 14
-			$(this).css("animation-delay", (i + 0.3)+"s")
+			var i = i / 5
+			$(this).css("animation-delay", (i + 0.5)+"s")
 		})
 	})
 
@@ -31,20 +31,17 @@ $(document).ready(function(){
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    //console.log(scroll);
     if (scroll >= 350) {
-      //console.log('a');
       $(".header").addClass("fixed-header");
       $('.scroll-top-btn').addClass("on");
     } else {
-      //console.log('a');
       $(".header").removeClass("fixed-header");
       $('.scroll-top-btn').removeClass("on");
     }
   });
 
 
- 
+
 
   $('#fullpage').fullpage({
     navigation: true,
@@ -83,16 +80,18 @@ $(document).ready(function(){
     $('.header, .depth_1 > li').on('mouseover focus', function () {
       $(this).addClass('on');
       if ($(this).children().hasClass('depth_2')) {
-          $(this).parent('.header, .depth_1, .nav-bg').addClass('on');
+          $(this).parents('.header, .nav').addClass('on');
+          e.preventDefault()
       } else {
-          $(this).parent('.header, .depth_1, .nav-bg').removeClass('on');
+          $(this).parents('.header, .nav').removeClass('on');
+          e.preventDefault()
       }
     })
 
-    $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout blur', function () {
+    $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout', function () {
       $('.header').removeClass('on')
       $('.depth_1 > li').removeClass('on');
-      $('.depth_1').removeClass('on');
+      $('.nav').removeClass('on');
     })
   }
   gnb();

@@ -1,5 +1,5 @@
 .header * {box-sizing: border-box;}
-.header{position: fixed; width: 100%; z-index: 10;}
+.header{position: fixed; width: 100%; z-index: 10; transition: background .5s;}
 .header-wrap{display: flex; justify-content: space-between; box-sizing: border-box; height: 80px; align-items: center;}
 
 .logo{width: 300px; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 40px; font-family: 'arsenalIb'; color: #FFF;}
@@ -10,7 +10,6 @@
 .menu-btn .menu span:nth-child(2){width: 14px;}
 .menu-btn .menu span:last-child{margin-bottom: 0;}
 
-.nav-bg{position: absolute; width: 100%; height: 0px; left: 0; top: 0px; background: #323232; z-index: -1; opacity: 0; transition: opacity .5s, height .5s;}
 .nav{display: flex; justify-content: center; width: calc(100% - 300px - 228px); height: 100%; flex-wrap: wrap;}
 .nav > ul{display: flex; justify-content: center; width: auto; height: 100%;}
 .nav > ul > li{font-family: 'notoB'; letter-spacing: -0.03em; color: #fff;}
@@ -28,7 +27,10 @@
 .depth_2 a{display: block; color: #c3c3c3; font-size: 16px; letter-spacing: -0.03em; font-family: 'NotoR';}
 .depth_2 a:hover{color: #fff;}
 
-.header.on .nav-bg{opacity: 1; height: 300px;}
+/* .nav-bg{position: absolute; width: 100%; height: 0px; left: 0; top: 0px; background: #323232; z-index: -1; opacity: 0; transition: opacity .5s, height .5s;} */
+.nav-bg{position: absolute; width: 100%; height: 0px; left: 0; top: 80px; background: #323232; z-index: -1; opacity: 0; transition: opacity .5s, height .5s;}
+.nav.on .nav-bg{opacity: 1; height: 210px;}
+.header.on{background: #323232;}
 .header.on .logo{color: #fff !important;}
 .header.on .menu-btn .menu span{background: #fff !important;}
 .header.on .nav > ul > li{color: #fff !important;}

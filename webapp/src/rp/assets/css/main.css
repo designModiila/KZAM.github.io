@@ -94,7 +94,7 @@
 @keyframes text-active-animation {
 	from {
 		opacity:0;
-		transform: translateY(50px); 
+		transform: translateY(80px); 
 	}
 	to {
 		opacity:1.0;
