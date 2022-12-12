@@ -116,7 +116,7 @@
 .society.section02 .table-box{border-top: 1px solid #323232;}
 .society.section02 .table-box table{width: 100%;}
 .society.section02 .table-box tr{border-bottom: 1px solid #d9d9d9; padding: 36px 0;}
-.society.section02 .table-box th{text-align: left; font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; vertical-align: middle; padding: 36px 0; padding-left: 38px; position: relative;}
+.society.section02 .table-box th{text-align: left; font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; vertical-align: middle; padding: 36px 0; padding-left: 38px; position: relative; word-break: keep-all;}
 .society.section02 .table-box th span{display: inline-block; padding-right: 15px;}
 .society.section02 .table-box td{font-size: 18px; letter-spacing: -0.03em; line-height: 32px; color: #666666; padding: 36px 0;}
 /* .society.section02 .table-box td span{display: block; font-family: 'NotoB';} */
@@ -197,19 +197,20 @@
 
   .overview.section01 .main-title-wrap{padding: 60px 0 0;}
   .overview.section01 .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
+  .overview.section01 .content-wrap .title-txt p br{display: none;}
   .overview.section02 .content-wrap{padding: 50px 0 0;}
   .overview.section02 .inner-circle-wrap{transform: scale(0.5);}
   .overview.section02 .right-circle-box{right: -130px;}
   .overview.section02 .left-circle-box{left: -130px;}
   .overview.section02 .mo-strategy-info{margin-top: 0; padding-top: 0;}
-  .overview.section02 .mo-strategy-info dt{font-size: 16px; width: 15%;}
+  .overview.section02 .mo-strategy-info dt{font-size: 16px; width: 20%; padding-right: 20px;}
   .overview.section02 .mo-strategy-info dt span{font-size: 10px;}
   .overview.section02 .mo-strategy-info dd p{font-size: 14px; line-height: 30px;}
   .overview.section03 .title p{font-size: 28px;}
   .overview.section03 .task-box{flex-direction: column;}
   .overview.section03 .task-box .task{width: 100%; overflow: hidden;}
   .overview.section03 .task-box .task .img{text-align: center;}
-  .overview.section03 .task-box .task .task-info{position: relative; width: 70%; top: -50px; float: right;}
+  .overview.section03 .task-box .task .task-info{position: relative; width: 79%; top: -50px; float: right;}
 
   .ecoFriendly.section01 .main-title-wrap{padding: 60px 0;}
   .ecoFriendly.section01 .content-wrap .title{margin-bottom: 10px;}
@@ -218,7 +219,7 @@
   .ecoFriendly.section01 .ecofriendly-box .box{width: 100%; margin-bottom: 60px;}
   .ecoFriendly.section01 .ecofriendly-box .box .img-box img{display: block; margin: 0 auto; width: 100%;}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info{flex-direction: row; padding-top: 20px;}
-  .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{padding: 0 30px; line-height: 28px; width: calc(100% - 22%);}
+  .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{padding: 0 10px; line-height: 28px; width: calc(100% - 22%);}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info .point{margin-bottom: 0;}
   .ecoFriendly.section02 .content-wrap .title p{text-align: left}
 
@@ -252,7 +253,7 @@
 
   .safetyHealth.section02 .purpose-box{flex-direction: column;}
   .safetyHealth.section02 .purpose-box > div{width: 100%; display: flex; align-items: center; gap: 40px;}
-  .safetyHealth.section02 .purpose-box .item p{width: 120px; height: 120px; border: 1px solid #ff8b23; font-size: 16px; text-align: center;}
+  .safetyHealth.section02 .purpose-box .item p{width: 120px; height: 120px; border: 1px solid #ff8b23; font-size: 16px; text-align: center; flex-shrink: 0;}
   .safetyHealth.section02 .purpose-box .item .info > ul > li{font-size: 14px; margin-bottom: 10px;}
   .safetyHealth.section02 .purpose-box .item .info{padding-top: 0; text-align: left; display: inline-block;}
   .safetyHealth.section02 .purpose-box .item01 .info ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
@@ -262,4 +263,22 @@
   .safetyHealth.section02 .purpose-box .item03 .info li{padding-left: 0; display: flex; gap: 12px;}
   .safetyHealth.section02 .purpose-box .arrow-box span{transform: rotate(90deg); width: 80px; padding-left: 20px;}
   .safetyHealth.section02 .purpose-box .arrow-box{height: 200px;}
+
+  .society.section01 .content-wrap{padding: 60px 0 180px;}
+  .society.section01 .content-wrap .title{text-align: left;}
+  .society.section01 .content-wrap .top-box{flex-direction: column; gap: 60px;}
+  .society.section01 .content-wrap .top-box .box .info-tit{margin-bottom: 10px;}
+  .society.section01 .content-wrap .top-box .box .info-txt{line-height: 28px;}
+  .society.section02 .content-wrap .title{text-align: left; margin-bottom: 40px;}
+  .society.section02 .table-box th{display: block; padding: 30px 0 10px 38px;}
+  .society.section02 .table-box td{display: block; padding: 0 0 30px; font-size: 16px; line-height: 30px;}
+}
+
+@media all and (max-width: 450px){
+  .content-wrap .title p br{display: none;}
+  .content-wrap .title-txt p br{display: none;}
+  .ecoFriendly.section02 .circle-box-txt .line{display: none;}
+  .safetyHealth.section02 .purpose-box > div{gap: 30px;}
+  .safetyHealth.section02 .purpose-box .item .info > ul > li{display: block; line-height: unset;}
+  .safetyHealth.section02 .purpose-box .item .info > ul > li br{display: none;}
 }

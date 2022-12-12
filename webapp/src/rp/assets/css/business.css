@@ -4,7 +4,7 @@
 .content-wrap .title-txt p{font-size: 18px; line-height: 30px;}
 
 .sub-content{overflow: hidden;}
-.overview.section01 .section01-bg{background: url(../images/business/overview-sub-bg.png) no-repeat; background-size: cover; width: 100%; height: 100vh; animation: bg-scale 5s forwards; overflow: hidden; position: absolute;}
+.overview.section01 .section01-bg{background: url(../images/business/overview-sub-bg.png) no-repeat; background-size: cover; background-position: 40%; width: 100%; height: 100vh; animation: bg-scale 5s forwards; overflow: hidden; position: absolute;}
 .overview.section01 .main-title-wrap{text-align: left; padding: 344px 0;}
 .overview.section01 .content-wrap .title p{color: #ececec; line-height: 68px;}
 .overview.section01 .content-wrap .title{margin-bottom: 50px;}
@@ -50,7 +50,9 @@
 .product.section03 .box .box-title{font-size: 24px; color: #323232; letter-spacing: -0.03em; font-family: 'NotoB'; margin-bottom: 20px;}
 .product.section03 .box .desc{font-size: 16px; color: #666; letter-spacing: -0.03em;}
 .swiper-container{position: relative;}
-.swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 320px; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
+.swiper-slide{height: 100vh;}
+.swiper-slide img{height: 100%; object-fit: cover;}
+.swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 120px; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: unset;}
 .swiper-button-prev{background: url('../images/main/controller-arrow-l.png') no-repeat; background-position: center; width: 35px; left: 0;}
@@ -59,7 +61,9 @@
 
 .overview-slide{position: relative; width: 100%; height: 100%; overflow: hidden; margin-bottom: 120px;}
 .overview-img-slide{position: absolute; top: 0; left: 0; width: 100%; overflow: hidden;}
-.overview-txt-slide{position: relative; height: 100%; padding-left: 320px; padding-top: 605px; padding-bottom: 124px;}
+/* .overview-txt-slide{position: relative; height: 100%; padding-left: 320px; padding-top: 605px; padding-bottom: 124px;} */
+.overview-txt-slide{position: relative; height: 100%;}
+.overview-txt-slide .txt-box{position: absolute; left: 120px; bottom: 120px;}
 .overview-txt-slide .txt-box .title{margin-bottom: 30px;}
 .overview-txt-slide .txt-box .title p{font-size: 48px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #fff; line-height: 70px;}
 .overview-txt-slide .txt-box .txt p{font-size: 18px; color: #fff; letter-spacing: -0.03em;}
@@ -67,13 +71,14 @@
 
 .overview.section05 .content-wrap{padding-bottom: 205px;}
 .overview.section05 .main-title-wrap{padding: 0 0 60px;}
-.overview.section05 .patent-box table{width: 100%; border-top: 1px solid #323232}
-.overview.section05 .patent-box table td{color: #666; font-size: 18px; letter-spacing: -0.03em; border-bottom: 1px solid #d6d6d6; padding: 17px 30px; vertical-align: middle;}
+.overview.section05 .patent-box table{width: 100%; border-top: 1px solid #323232;}
+.overview.section05 .patent-box table tr{border-bottom: 1px solid #d6d6d6;}
+.overview.section05 .patent-box table td{color: #666; font-size: 18px; letter-spacing: -0.03em; padding: 17px 30px; vertical-align: middle;}
 .overview.section05 .patent-box table td:nth-child(2){text-align: right;}
 .overview.section05 .patent-box table td a{display: inline-block; background: #444444; color: #fff; padding: 13px 40px; font-size: 14px; letter-spacing: -0.03em; font-family: 'NotoM'; border: 1px solid #444; box-sizing: border-box; transition: background 0.5s ease-in-out;}
 .overview.section05 .patent-box table td a:hover{color: #444444; background: #fff;}
 .overview.section05 .go-btn{width: 100%; text-align: center;}
-.overview.section05 .go-btn a{display: block; padding: 30px 0; color: #ffffff; background: #b4b4b4; font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; transition: background 0.5s ease-in-out;}
+.overview.section05 .go-btn a{display: block; padding: 30px 0; color: #ffffff; background: #b4b4b4; font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; transition: background 0.5s ease-in-out; padding: 30px 40px;}
 .overview.section05 .go-btn a:hover{background: #ff8b23;}
 .overview.section05 .go-btn a span{display: inline-block; position: relative;}
 .overview.section05 .go-btn a span:after{position: absolute; content: ''; height: 2px; width: 10px; background: #fff; top: 40%; right: -20px; transform: rotate(45deg);}
@@ -82,8 +87,8 @@
 .product.section04 .content-wrap{padding-bottom: 155px;}
 .product.section04 .main-title-wrap{padding: 0px 0px 60px;}
 .product.section04 .product-tab-menu{margin-bottom: 50px;}
-.product.section04 .product-tab-menu ul{display: flex; border-bottom: 1px solid #d6d6d6;}
-.product.section04 .product-tab-menu ul li{width: 20%; text-align: center; margin-bottom: -1px; box-sizing: border-box;}
+.product.section04 .product-tab-menu ul{display: flex; overflow: hidden; overflow-x: auto;}
+.product.section04 .product-tab-menu ul li{width: 20%; min-width: 150px; text-align: center; box-sizing: border-box; border-bottom: 1px solid #d6d6d6;}
 .product.section04 .product-tab-menu ul li.active{border-bottom: 1px solid #ff8b23;}
 .product.section04 .product-tab-menu ul li a{display: block; padding: 15px 0;}
 .product.section04 .thumb-top{position: relative; margin-bottom: 76px;}
@@ -127,7 +132,44 @@
 @media all and (max-width:768px) {
   .sub-bg{background: url(../images/business/business_sub_visual_mo.png) no-repeat; background-size: cover;}
   .content-wrap .title{margin-bottom: 20px;}
-  .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
+  .content-wrap .title-txt p{font-size: 14px; line-height: 26px;}
+
+  .overview.section01 .main-title-wrap{padding: 227px 0;}
+  .overview.section01 .content-wrap .title p{line-height: unset; word-break: keep-all;}
+  .overview.section02 .content-wrap{padding: 120px 0;}
+  .overview.section02 .content-wrap .title{text-align: left;}
+  .overview.section02 .content-wrap .title p{word-break: keep-all;}
+
+  .overview.section02 .inner-circle .circle-txt{width: 144px; height: 144px; font-size: 18px; line-height: 28px; word-break: keep-all;}
+  .overview.section02 .inner-circle .circle-txt br{display: none;}
+  .overview.section02 .inner-circle{width: 193px; height: 193px;}
+  .overview.section02 .inner-circle > div p{font-size: 14px;}
+  .overview.section02 .inner-circle > div p:after{width: 5px; height: 5px;}
+  .overview.section02 .inner-circle .left-box{left: -90px;}
+  .overview.section02 .inner-circle .left-box p:after{left: 87px;}
+  .overview.section02 .inner-circle .right-box{right: -75px;}
+  .overview.section02 .inner-circle .right-box p:after{right: 72px;}
+  .overview.section02 .inner-circle .bottom-box{bottom: -50px;}
+  .overview.section02 .inner-circle .bottom-box p:after{top: -14px;}
+  .overview.section02 .circle-box-txt p{font-size: 14px; line-height: 26px; padding: 0 10%;}
+  .overview.section02 .circle-box-txt .line{height: 110px;}
+
+  .swiper-slide{height: 700px;}
+  .overview-img-slide .swiper-slide img{height: 100%; object-fit: cover;}
+  .overview-txt-slide{padding: 0;}
+  .overview-txt-slide .txt-box{left: 24px;}
+  .overview-txt-slide .txt-box .title p{font-size: 28px; line-height: 42px;}
+  .swiper-controller-wrap{right: 24px; width: 185px; height: 60px;}
+  .swiper-button-prev{background-position: left; width: 20px;}
+  .swiper-button-next{background-position: right; width: 20px;}
+  .swiper-controller-wrap{padding: 20px;}
+  .overview-txt-slide .txt-box .txt p{font-size: 14px; line-height: 26px;;}
+  .overview.section05 .main-title-wrap{padding: 0 0 18px;}
+  .overview.section05 .patent-box table td{font-size: 14px; display: block; padding: 20px 0 24px;}
+  .overview.section05 .patent-box table td:nth-child(2){text-align: left; padding: 0 0 20px}
+  .overview.section05 .go-btn a{font-size: 16px;}
+
+
   .product.section01 .main-title-wrap{padding-bottom: 30px;}
   .product.section02 .section02-top-bg{margin-bottom: 30px;}
   .product.section02 .section02-top-bg img{height: 200px; object-fit: cover;}
@@ -150,4 +192,10 @@
   .product.section04 .thumb-info > ul li:before{top: 15px;}
   .product.section04 .thumb-info-img ul li + li{margin-left: 10px;}
   .product.section04 .thumb-info-img ul li span{margin-top: 10px; font-size: 12px;}
+}
+
+@media all and (max-width: 450px){
+  .overview.section01 .content-wrap .title-txt p br{display: none;}
+  .overview.section02 .circle-box-txt .line{display: none;}
+  .overview-txt-slide .txt-box .title p br{display: none;}
 }
