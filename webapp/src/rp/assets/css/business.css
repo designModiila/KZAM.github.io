@@ -116,6 +116,8 @@
 @media all and (max-width: 1080px){
   .product.section02 .content-wrap .item .title span{padding-left: 20px;}
   .product.section04 .thumb-bottom{flex-direction: column; align-items: center;}
+  .overview-txt-slide .txt-box{left: 60px;}
+  .swiper-controller-wrap{right: 60px;}
 }
 
 
