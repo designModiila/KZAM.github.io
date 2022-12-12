@@ -296,6 +296,14 @@ textarea::placeholder {
   font: 0/0 a;
   visibility: hidden;
 }
+.screen-out {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
 .align-c {
   text-align: center !important;
 }
