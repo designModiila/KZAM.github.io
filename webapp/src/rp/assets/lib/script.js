@@ -84,6 +84,9 @@ $(document).ready(function(){
       } else {
           $(this).parents('.header, .nav').removeClass('on');
       }
+      if($('#gnb').hasClass('open') === true){
+        $('#header').removeClass('on');
+      }
     })
 
     $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout', function () {
@@ -98,7 +101,6 @@ $(document).ready(function(){
     $('.menu, .close-btn').click(function(){
       $('#gnb').toggleClass('open');
     });
-
     if(window.innerWidth < 769){
       $('#gnb h2').click(function(){
         $('#gnb h2').removeClass('active');
