@@ -218,14 +218,14 @@ textarea::placeholder {
 
 /* Noto Sans CJK KR*/
 @font-face {
-  font-family: 'notoD';
+  font-family: 'NotoD';
   src: url('../fonts/NotoSansKR/NotoSansKR-DemiLight.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-DemiLight.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-DemiLight.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'notoT';
+  font-family: 'NotoT';
   src: url('../fonts/NotoSansKR/NotoSansKR-Thin.woff') format('woff'),
   url('../fonts/NotoSansKR/NotoSansKR-Thin.woff2') format('woff2'),
   url('../fonts/NotoSansKR/NotoSansKR-Thin.otf') format('opentype');

@@ -1,7 +1,7 @@
 .section{width: 100%; height: 100%; position: relative; background: #fff;}
 .sub-bg{background: url(../images/business/business_sub_visual.png) no-repeat; background-size: cover;}
 .content-wrap .title-txt{margin-bottom: 0;}
-.content-wrap .title-txt p{font-size: 18px; line-height: 30px;}
+.content-wrap .title-txt p{font-size: 20px; line-height: 36px;}
 
 .sub-content{overflow: hidden;}
 .overview.section01 .section01-bg{background: url(../images/business/overview-sub-bg.png) no-repeat; background-size: cover; background-position: 40%; width: 100%; height: 100vh; animation: bg-scale 5s forwards; overflow: hidden; position: absolute;}
@@ -134,7 +134,7 @@
 @media all and (max-width:768px) {
   .sub-bg{background: url(../images/business/business_sub_visual_mo.png) no-repeat; background-size: cover;}
   .content-wrap .title{margin-bottom: 20px;}
-  .content-wrap .title-txt p{font-size: 14px; line-height: 26px;}
+  .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
 
   .overview.section01 .main-title-wrap{padding: 227px 0;}
   .overview.section01 .content-wrap .title p{line-height: unset; word-break: keep-all;}
@@ -165,11 +165,14 @@
   .swiper-button-prev{background-position: left; width: 20px;}
   .swiper-button-next{background-position: right; width: 20px;}
   .swiper-controller-wrap{padding: 20px;}
-  .overview-txt-slide .txt-box .txt p{font-size: 14px; line-height: 26px;;}
+  .overview-txt-slide .txt-box .txt{padding-right: 24px;}
+  .overview-txt-slide .txt-box .txt p{font-size: 14px; line-height: 26px;}
   .overview.section05 .main-title-wrap{padding: 0 0 18px;}
+  .overview.section05 .main-title-wrap .title-txt p br{display: none;}
   .overview.section05 .patent-box table td{font-size: 14px; display: block; padding: 20px 0 24px;}
   .overview.section05 .patent-box table td:nth-child(2){text-align: left; padding: 0 0 20px}
-  .overview.section05 .go-btn a{font-size: 16px;}
+  .overview.section05 .go-btn a{font-size: 14px; padding: 25px 30px;}
+  .overview.section05 .go-btn a span:after{top: 26%;}
 
 
   .product.section01 .main-title-wrap{padding-bottom: 30px;}
@@ -183,8 +186,8 @@
   .product.section03 .main-title-wrap{padding: 0px 0px 40px;}
   .product.section03 .box{flex-direction: column;}
   .product.section03 .box .box-title{font-size: 20px;}
-  .product.section03 .box .desc{font-size: 14px; padding-bottom: 20px;}
-  .product.section04 .thumb-top img{height: 200px; object-fit: cover;}
+  .product.section03 .box .desc{font-size: 14px; padding-bottom: 20px; line-height: 22px;}
+  .product.section04 .thumb-top img{width: 100%; height: 200px; object-fit: cover;}
   .product.section04 .thumb-btn{bottom: -38px;}
   .product.section04 .thumb-btn a{font-size: 12px; padding: 10px 30px;}
   .product.section04 .thumb-bottom{align-items: flex-start;}
