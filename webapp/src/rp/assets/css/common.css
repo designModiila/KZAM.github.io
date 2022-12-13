@@ -170,7 +170,7 @@
   #gnb .gnb-depth2{display: none; padding-left: 20px; transition: all .5s ease-in-out;}
   #gnb .gnb-depth2.open{display: block;}
   #gnb .gnb-close{width: 76px;}
-  #gnb .gnb-inner{width: calc(100% - 4.8rem); margin: 0 auto; justify-content: flex-start; align-items: flex-start; padding: 9rem 0 5.4rem;}
+  #gnb .gnb-inner{width: calc(100% - 4.8rem); margin: 0 auto; justify-content: flex-start; align-items: flex-start; padding: 5rem 0 5rem;}
   #gnb .gnb-menu > li:before{display: none;}
   #gnb .gnb-menu{flex-direction: column; margin: 0; gap: 25px;}
   #gnb .gnb-menu > li h2{color: #c4c4c4; cursor: pointer; margin-bottom: 12px; font-size: 24px;}
