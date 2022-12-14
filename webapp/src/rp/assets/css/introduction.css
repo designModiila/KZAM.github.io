@@ -199,6 +199,8 @@
 .btn-close:after { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -ms-transform: rotate(40deg); }
 .btn-close.is-black:before, .btn-close.is-black:after { background-color: #000000; }
 
+.map-bg{background: url(../images/introduction/global-map-bg.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
+
 
 @media all and (max-width: 1440px){
 
