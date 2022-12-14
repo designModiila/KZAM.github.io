@@ -101,14 +101,14 @@ $(document).ready(function(){
     $('.menu, .close-btn').click(function(){
       $('#gnb').toggleClass('open');
     });
-    if(window.innerWidth < 769){
-      $('#gnb h2').click(function(){
-        $('#gnb h2').removeClass('active');
-        $('.gnb-depth2').removeClass('open');
-        $(this).toggleClass('active');
-        $(this).parent('li').find('.gnb-depth2').addClass('open');
-      });
-    }
+    // if(window.innerWidth < 769){
+    //   $('#gnb h2').click(function(){
+    //     $('#gnb h2').removeClass('active');
+    //     $('.gnb-depth2').removeClass('open');
+    //     $(this).toggleClass('active');
+    //     $(this).parent('li').find('.gnb-depth2').addClass('open');
+    //   });
+    // }
   }
   gnb();
 
@@ -160,8 +160,9 @@ $(document).ready(function(){
 
   $(".content-tab-box").find("li a.active").click(function (e) {
     e.preventDefault()
-      $('.content-tab-box').toggleClass("active");
-    });
+    $('.content-tab-box').toggleClass("active");
+  });
+
 
 
   var conListSwiper = new Swiper('.con-recent .swiper-container', {
