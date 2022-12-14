@@ -191,11 +191,14 @@ $(document).ready(function(){
     return false;
   }).filter(':eq(0)').click();
 
-	var overviewImgSwiper = $('.overview-img-slide').find('.swiper-slide');
-	var overviewTxtSwiper = $('.overview-txt-slide').find('.overview-txt-slide');
-
   var overviewImgSwiper = new Swiper('.overview-img-slide', {
     loop : true,
+    effect : "slide",
+    parallax : true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction"
@@ -204,10 +207,17 @@ $(document).ready(function(){
 
   var overviewTxtSwiper = new Swiper('.overview-txt-slide', {
     loop : true,
-    effect : 'fade',
+    effect : "fade",
+    fadeEffect: {
+			crossFade: true
+		},
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
     },
   });
 

@@ -51,7 +51,7 @@
 .product.section03 .box .desc{font-size: 16px; color: #666; letter-spacing: -0.03em;}
 .swiper-container{position: relative;}
 .swiper-slide{height: 100vh;}
-.swiper-slide img{height: 100%; object-fit: cover;}
+.swiper-slide img{width: 100%; height: 100%; object-fit: cover;}
 .swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 120px; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: unset;}
@@ -66,7 +66,9 @@
 .overview-txt-slide .txt-box{position: absolute; left: 120px; bottom: 120px;}
 .overview-txt-slide .txt-box .title{margin-bottom: 30px;}
 .overview-txt-slide .txt-box .title p{font-size: 48px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #fff; line-height: 70px;}
-.overview-txt-slide .txt-box .txt p{font-size: 18px; color: #fff; letter-spacing: -0.03em;}
+.overview-txt-slide .txt-box .txt{display: flex; align-items: center;}
+.overview-txt-slide .txt-box .txt p{display: inline-block; font-size: 18px; color: #fff; letter-spacing: -0.03em;}
+.overview-txt-slide .txt-box .txt p.num{background: #ff8b23; width: 60px; height: 60px; color: #fff; box-sizing: border-box; text-align: center; line-height: 60px; font-size: 24px; letter-spacing: -0.03em; font-family: 'NotoM'; margin-right: 16px;}
 .overview-txt-slide .swiper-controller-wrap{background: none;}
 
 .overview.section05 .content-wrap{padding-bottom: 205px;}
@@ -165,7 +167,9 @@
   .swiper-button-prev{background-position: left; width: 20px;}
   .swiper-button-next{background-position: right; width: 20px;}
   .swiper-controller-wrap{padding: 20px;}
-  .overview-txt-slide .txt-box .txt{padding-right: 24px;}
+  .overview-txt-slide .txt-box .title{margin-bottom: 20px;}
+  .overview-txt-slide .txt-box .txt{padding-right: 24px; flex-direction: column; align-items: flex-start;}
+  .overview-txt-slide .txt-box .txt p.num{margin-right: 0; margin-bottom: 10px; width: 40px; height: 40px; font-size: 20px; line-height: 40px;}
   .overview-txt-slide .txt-box .txt p{font-size: 14px; line-height: 26px;}
   .overview.section05 .main-title-wrap{padding: 0 0 18px;}
   .overview.section05 .main-title-wrap .title-txt p br{display: none;}

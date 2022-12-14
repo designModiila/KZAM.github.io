@@ -167,7 +167,7 @@
 }
 
 @media all and (max-width: 1024px){
-  .introduction.section03 .content-wrap > ul > li{padding: 0 20px;}
+  .introduction.section03 .content-wrap > ul > li{padding: 0 20px; box-sizing: border-box;}
   .ceo.section01 .intro-txt strong br{display: none;}
   .ceo.section01 .intro-inner{margin-top: 80px;}
   .ceo.section01 .intro-image{width: 50%; right: 0;}
@@ -185,7 +185,7 @@
   .introduction.section03 .content-wrap .title{margin-bottom: 30px;}
   .introduction.section03 .content-wrap .title{text-align: left;}
   .introduction.section03 .content-wrap > ul{flex-direction: column; gap: 60px;}
-  .introduction.section03 .content-wrap > ul > li{width: 100%;}
+  .introduction.section03 .content-wrap > ul > li{width: 100%; padding: 0;}
   .introduction.section03 .content-wrap > ul > li + li:after{content: none;}
   .introduction.section03 .content-wrap > ul > li strong{font-size: 20px; margin-bottom: 15px; padding-top: 84px;}
   .introduction.section04{padding: 60px 0;}
