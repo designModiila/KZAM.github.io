@@ -462,44 +462,35 @@ $(document).ready(function(){
 
   vision_core_slider();
 
-
-
-  var swiper = new Swiper(".quality .swiper-container", {
-    direction: "vertical",
-    mousewheel: {
-        invert: false,
-    },
-    grabCursor: true,
-    effect: "creative",
-    creativeEffect: {
-      prev: {
-        translate: [0, 0, 0],
-      },
-      next: {
-        translate: [0, "100%", 0],
-      },
-    },
+  var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
+  var swiper = new Swiper('.quality .swiper-container', {
+    speed: 1000,
+    direction: 'vertical',
+    mousewheel: true,
+    pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<div class="list '+className+'">'+
+				'<div class="text" data-txt="'+(secNavName[index])+'"><span>'+(secNavName[index])+'</span></div>'+
+				'</div>'
+			}
+		},
     on: {
-      slideChange: function() {
-          setTimeout(function () {
-            swiper.params.touchReleaseOnEdges = false;  
-            swiper.params.mousewheel.releaseOnEdges = false;
-          });
-      },
-      reachEnd: function() {
-          setTimeout(function () {
-              swiper.params.touchReleaseOnEdges = true;
-              swiper.params.mousewheel.releaseOnEdges = true;
-          }, 500);
-      },
-      reachBeginning: function() {
-          setTimeout(function () {
-              swiper.params.touchReleaseOnEdges = true;
-              swiper.params.mousewheel.releaseOnEdges = true;
-          }, 500);
+      reachEnd: function () {
+        swiper.mousewheel.disable();
       }
     }
   });
+
+  window.addEventListener('wheel', function (event) {
+    if (event.deltaY < 0) {
+      swiper.mousewheel.enable();
+    } else if (event.deltaY > 0) {
+      // swiper.mousewheel.disable();
+    }
+  });
+
 
 });
 

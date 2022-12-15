@@ -130,10 +130,27 @@
 
 
 .quality .swiper-container {height: 100vh;}
-.quality .slide01 {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide01.png);}
-.quality .slide02 {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide02.png);}
-.quality  .slide03 {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide03.png);}
-.quality  .slide04 {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide04.png);}
+.quality .slide01 .mainImg {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide01.png);}
+.quality .slide02 .mainImg {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide02.png);}
+.quality .slide03 .mainImg {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide03.png);}
+.quality .slide04 .mainImg {width: 100%; height: 100%; background: url(../images/sustainability/quality_imageslide04.png);}
+
+.quality .swiper-pagination{position: absolute; left: 300px; color: rgba(255,255,255,0.8); z-index: 100; width: 100px;}
+.quality .swiper-pagination .list{position: relative; background: transparent; display: block; width: 100%;}
+.quality .swiper-pagination .list:before{display: block;content:""; position: absolute; bottom: -10px; left: 0;width: 100%; height: 1px; background: rgba(255,255,255,0.8);transform: scaleX(0); transform-origin: left;transition: 0.4s;}
+.quality .swiper-pagination .list.swiper-pagination-bullet-active:before{transform:scaleX(1);}
+.quality .swiper-pagination .list + .list{margin-top: 25px;}
+.quality .swiper-pagination .text{position: relative;font-size: 16px; font-family: 'NotoB'; transition: 0.5s;}
+.quality .swiper-pagination .text span{position: relative;display: block; transition: 0.5s;}
+.quality .swiper-pagination .text:after{display:block;content:attr(data-txt); position: absolute; top: -10px; left: 10px; transition: 0.5s; opacity: 0;}
+.quality .swiper-pagination .list:hover .text:after,
+.quality .swiper-pagination .list.swiper-pagination-bullet-active .text:after{opacity:1;font-size:18px; color:#fff;}
+/* .quality .swiper-pagination .list:hover .text,
+.quality .swiper-pagination .list.swiper-pagination-bullet-active .text{transform:translateY(-100%);} */
+.quality .swiper-pagination .list:hover span,
+.quality .swiper-pagination .list.swiper-pagination-bullet-active span{opacity:0;}
+
+
 
 @media all and (max-width: 1300px){
   .overview.section02 .top-circle-box{left: 500px;}
