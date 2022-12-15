@@ -461,4 +461,45 @@ $(document).ready(function(){
   }
 
   vision_core_slider();
+
+
+
+  var swiper = new Swiper(".quality .swiper-container", {
+    direction: "vertical",
+    mousewheel: {
+        invert: false,
+    },
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        translate: [0, 0, 0],
+      },
+      next: {
+        translate: [0, "100%", 0],
+      },
+    },
+    on: {
+      slideChange: function() {
+          setTimeout(function () {
+            swiper.params.touchReleaseOnEdges = false;  
+            swiper.params.mousewheel.releaseOnEdges = false;
+          });
+      },
+      reachEnd: function() {
+          setTimeout(function () {
+              swiper.params.touchReleaseOnEdges = true;
+              swiper.params.mousewheel.releaseOnEdges = true;
+          }, 500);
+      },
+      reachBeginning: function() {
+          setTimeout(function () {
+              swiper.params.touchReleaseOnEdges = true;
+              swiper.params.mousewheel.releaseOnEdges = true;
+          }, 500);
+      }
+    }
+  });
+
 });
+

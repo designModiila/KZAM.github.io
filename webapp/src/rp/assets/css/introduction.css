@@ -200,6 +200,54 @@
 .btn-close.is-black:before, .btn-close.is-black:after { background-color: #000000; }
 
 .map-bg{background: url(../images/introduction/global-map-bg.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
+.global-map-wrap .circle-btn{width: 35px; height: 35px; border-radius: 100%; background: #fff url(../images/introduction/icon_global_location.png) no-repeat center; border: 1px solid #d9d9d9; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transition: all .5s;}
+.global-map-wrap .circle-btn span{display: block; display: none; color: #fff; font-size: 14px; font-family: 'NotoB'; padding: 0px 15px;}
+.global-map-wrap .circle-btn:hover{width: auto; border-radius: 100px; background: #ff8b23 url(../images/introduction/icon_global_locationW.png) no-repeat 3% center; padding: 0px 15px;}
+.global-map-wrap .circle-btn:hover span{display: block;}
+
+.thailand-wrap .circle-btn:first-child{margin-top: -2%; margin-left: -9%;}
+.vietnam-wrap .circle-btn:first-child{margin-top: -0%; margin-left: -6%;}
+.singapore-wrap .circle-btn:first-child{margin-top: 4%; margin-left: -7.5%;}
+.autralia-wrap .circle-btn.aus-town-marine{margin-top: 11.5%; margin-left: 7.5%;}
+.autralia-wrap .circle-btn.aus-town-logi{margin-top: 11%; margin-left: 4%;}
+.autralia-wrap .circle-btn.aus-sun-metal-hold{margin-top: 9.5%; margin-left: 6%;}
+.autralia-wrap .circle-btn.aus-sun-metal-co{margin-top: 14%; margin-left: 8.5%;}
+.autralia-wrap .circle-btn.aus-ark-h2{margin-top: 16.5%; margin-left: 8.5%;}
+.autralia-wrap .circle-btn.aus-ark-co{margin-top: 19%; margin-left: 7.5%;}
+.autralia-wrap .circle-btn.aus-ark-mac{margin-top: 21%; margin-left: 5.5%;}
+.autralia-wrap .circle-btn.aus-epuron{margin-top: 22%; margin-left: 3%;}
+.canada-wrap .circle-btn{margin-top: -17%; margin-left: 36%;}
+.america-wrap .circle-btn{margin-top: -12.5%; margin-left: 34.5%;}
+.america-wrap .circle-btn.ame-igneo{margin-left: 22%;margin-top:-11%;}
+.peru-wrap .circle-btn{margin-left: 35.5%; margin-top: 8.5%; }
+
+
+
+#affiliate02 .affiliate-wrap{padding: 96px 0 233px;}
+#affiliate02 .wrap-layer .item .box .title{font-size: 38px; line-height: 52px; font-family: 'NotoB';}
+#affiliate02 .wrap-layer .item .box .desc{margin-bottom: 0;}
+#affiliate02 .wrap-layer .top{display: flex; margin-bottom: 40px;}
+#affiliate02 .wrap-layer .top .box{display: flex; flex-direction: column; flex: 1;margin-bottom: 0;}
+#affiliate02 .wrap-layer .item .box02{padding-right: 45px;}
+#affiliate02 .wrap-layer .item .box02:before{content: none;}
+#affiliate02 .wrap-layer .item .box02 dl{position: relative;}
+#affiliate02 .wrap-layer .item .box02 dl:before{position: absolute; content: ''; width: 24px; height: 24px; top: 5px; background: url(../images/introduction/icon_location.png) no-repeat center;}
+#affiliate02 .wrap-layer .item .box02 dl:nth-child(2):before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
+#affiliate02 .wrap-layer .item .box02 dl:nth-child(3):before{background: url(../images/introduction/icon_global_fax.png) no-repeat center;}
+#affiliate02 .wrap-layer .top .box dl{padding-left: 0; margin-bottom: 3%; line-height: 26px;}
+#affiliate02 .wrap-layer .top .box dl:last-child{margin-bottom: 0;}
+#affiliate02 .wrap-layer .top .box dd{padding-left: 44px;}
+
+.location.section01 .main-title-wrap{padding: 150px 0 120px;}
+.location.section01 .company-info{margin-bottom: 60px;}
+.location.section01 .company-info .item{display: flex; gap: 40px; justify-content: center;}
+.location.section01 .company-info .item dl{display: flex;}
+.location.section01 .company-info .item dl dt{position: relative; font-size: 20px; font-family: 'NotoB'; color: #323232; padding-left: 44px;}
+.location.section01 .company-info .item dl dt:before{position: absolute; content: ''; width: 24px; height: 24px; left: 0; background: url(../images/introduction/icon_map.png) no-repeat center;}
+.location.section01 .company-info .item dl:nth-child(2) dt:before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
+.location.section01 .company-info .item dl:nth-child(3) dt:before{background: url(../images/introduction/icon_sms.png) no-repeat center;}
+.location.section01 .company-info .item dl dd{font-size: 20px; color: #666666; margin-left: 20px;}
+.location.section02 .company-map{padding-bottom: 200px;}
 
 
 @media all and (max-width: 1440px){
@@ -219,6 +267,8 @@
   .vision_core_list > li:nth-child(3){right: -35%;}
   .vision_core_list > li:nth-child(4){left: -35%;}
   .vision_core_list > li > button > b{font-size: 20px; line-height: 32px;}
+
+  .location.section01 .company-info .item{flex-direction: column; gap: 20px;}
 }
 
 @media all and (max-width: 1024px){
@@ -228,6 +278,7 @@
   .ceo.section01 .intro-image{width: 50%; right: 0;}
 
   .affiliate-wrap .list-album > li{width: 48.25%;}
+  .global-map-wrap .circle-btn{width: 30px; height: 30px;}
 }
 
 @media all and (max-width:821px){
@@ -292,6 +343,16 @@
   .wrap-layer .item .box .list-network dt{display: inline-block;}
   .wrap-layer .item .box .list-network dd{display: inline-block;}
 
+  .global-map-wrap .circle-btn{width: 18px; height: 18px;}
+  .global-map-wrap .circle-btn{background-size: 75%;}
+  #affiliate02 .wrap-layer .item .box .title{font-size: 22px; line-height: 34px;}
+  #affiliate02 .wrap-layer .item .box .list-network dt{display: none;}
+
+  .location.section02 .company-map{padding-bottom: 120px;}
+  .location.section01 .main-title-wrap{padding: 60px 0;}
+  .location.section01 .company-info .item dl{flex-direction: column; gap: 10px;}
+  .location.section01 .company-info .item dl dt{font-size: 16px;}
+  .location.section01 .company-info .item dl dd{margin-left: 0; font-size: 16px;}
 }
 
 @media all and (max-width:450px){
