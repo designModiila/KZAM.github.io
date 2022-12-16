@@ -462,8 +462,71 @@ $(document).ready(function(){
 
   vision_core_slider();
 
+// // Set all components to "from" position
+// TweenMax.set( 'section' , { css:{ backgroundPosition: '50% 50%' } } );
+
+// function moveToSlide( index ){
+//   var intoSection = $('section:nth-child('+index+')');
+//   var outSectionAbove = $( 'section:nth-child('+(index-1)+')' );
+//   var outSectionBelow = $( 'section:nth-child('+(index+1)+')' );    
+
+//   // flanking slides
+//   if( outSectionAbove.length ){
+//     TweenMax.to( outSectionAbove, .25 , { css:{ backgroundPosition: '50% 100%' } } );
+//   }
+  
+//   if( outSectionBelow.length ){
+//     TweenMax.to( outSectionBelow, .25 , { css:{ backgroundPosition: '50% 0' } } );
+//   }
+  
+//   // Slide moving to
+//   TweenMax.to('#slideContainer', .75 , { y: -$('.panel').height()*(index-1), ease: Power2.easeOut } );
+//   TweenMax.to( intoSection, 1.25 , { css:{ backgroundPosition: '50% 50%' } } );
+// }
+
+// moveToSlide( 1 );
+// var curSlide = 1;
+// var isScrolling = false;
+
+// $('#slideContainer').on('mousewheel', function(e) {
+//   if( e.deltaY < -1 ){ // Scroll Down   
+//     if( !isScrolling && curSlide < $('section').length ){
+//       moveToSlide( curSlide+1 );
+//       curSlide++;
+//     }  
+//     isScrolling = true;
+//   }else if( e.deltaY > 1 && curSlide > 1 ){ // Scroll Up
+//     if( !isScrolling ){
+//       moveToSlide( curSlide-1 );
+//       curSlide--;
+//     }
+//     isScrolling = true;
+//   }else{
+//     // Scroll Done
+//     isScrolling = false;
+//   }
+// });
+
+
+	// var controller = new ScrollMagic.Controller({
+	// 	globalSceneOptions: {
+	// 		triggerHook: 'onLeave',
+	// 		duration: '100%'
+	// 	}
+	// });
+
+	// var slides = $('section.panel');
+	// for(var i=0; i<slides.length; i++){
+	// 	var scene = new ScrollMagic.Scene({
+	// 		triggerElement: slides[i]
+	// 	})
+	// 	.setPin(slides[i], {pushFollowers:false}) //setPin 되어있는 동안 다음 Section 요소가 밀려나도록 기본설정 되어있기 때문에 pushFollowers:false로 이를 비활성화 합니다.
+	// 	.addTo(controller)
+	// 	.addIndicators();
+	// }
+
   var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
-  var swiper = new Swiper('.quality .swiper-container', {
+  var qswiper = new Swiper('.quality .swiper-container', {
     speed: 1000,
     direction: 'vertical',
     mousewheel: true,
@@ -478,19 +541,24 @@ $(document).ready(function(){
 		},
     on: {
       reachEnd: function () {
-        swiper.mousewheel.disable();
+        qswiper.mousewheel.disable();
       }
     }
   });
 
   window.addEventListener('wheel', function (event) {
     if (event.deltaY < 0) {
-      swiper.mousewheel.enable();
+      qswiper.mousewheel.enable();
     } else if (event.deltaY > 0) {
       // swiper.mousewheel.disable();
     }
   });
 
+  // qswiper.waypoint(function(){
+  //   $('.swiper-slide').addClass('swiper-slide-active')
+  // },{
+  //   offset : '0%'
+  // });
 
 });
 
