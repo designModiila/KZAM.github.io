@@ -136,7 +136,7 @@
 @media all and (max-width:768px) {
   .sub-bg{background: url(../images/business/business_sub_visual_mo.png) no-repeat; background-size: cover;}
   .content-wrap .title{margin-bottom: 20px;}
-  .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
+  .content-wrap .title-txt p{font-size: 16px; line-height: 28px;}
 
   .overview.section01 .main-title-wrap{padding: 227px 0;}
   .overview.section01 .content-wrap .title p{line-height: unset; word-break: keep-all;}

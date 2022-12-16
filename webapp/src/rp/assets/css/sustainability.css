@@ -38,11 +38,13 @@
 .ecoFriendly.section01 .content-wrap{padding-bottom: 240px;}
 .ecoFriendly.section01 .main-title-wrap{padding: 150px 0 100px;}
 .ecoFriendly.section01 .content-wrap .title-txt{margin-bottom: 0;}
-.ecoFriendly.section01 .ecofriendly-box{display: flex; justify-content: space-between;}
-.ecoFriendly.section01 .ecofriendly-box .box{width: 25%;}
+.ecoFriendly.section01 .ecofriendly-box{display: flex; flex-direction: column; gap: 184px;}
+.ecoFriendly.section01 .ecofriendly-box .box{display: flex; align-items: center; justify-content: space-between;}
+.ecoFriendly.section01 .ecofriendly-box .box:nth-child(2){flex-direction: row-reverse;}
+.ecoFriendly.section01 .ecofriendly-box .box:nth-child(4){flex-direction: row-reverse;}
 .ecoFriendly.section01 .ecofriendly-box .box .img-info{display: flex; flex-direction: column;}
 .ecoFriendly.section01 .ecofriendly-box .box .img-info .point{font-size: 40px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #ff8b23; margin-bottom: 20px;}
-.ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{font-size: 18px; letter-spacing: -0.03em; color: #323232;}
+.ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{font-size: 20px; line-height: 34px;; letter-spacing: -0.03em; color: #323232;}
 
 .ecoFriendly.section02 .content-wrap{padding-bottom: 200px;}
 .ecoFriendly.section02 .content-wrap .title{text-align: center; margin-bottom: 120px;}
@@ -165,7 +167,6 @@
   .overview.section02 .left-circle-box{bottom: -80px;}
   .overview.section02 .right-circle-box{bottom: -80px;}
 
-  .ecoFriendly.section01 .ecofriendly-box .box{width: 24%;}
 }
 
 @media all and (max-width: 1240px){
@@ -228,7 +229,7 @@
   .sub-bg{background: url(../images/sustainability/sustainability_sub_visual_mo.png) no-repeat; background-size: cover;}
 
   .overview.section01 .main-title-wrap{padding: 60px 0 0;}
-  .overview.section01 .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
+  .overview.section01 .content-wrap .title-txt p{font-size: 16px; line-height: 28px;}
   .overview.section01 .content-wrap .title-txt p br{display: none;}
   .overview.section02 .content-wrap{padding: 50px 0 0;}
   .overview.section02 .inner-circle-wrap{transform: scale(0.5);}
@@ -248,10 +249,12 @@
   .ecoFriendly.section01 .content-wrap .title{margin-bottom: 10px;}
   .ecoFriendly.section01 .content-wrap .title-txt p{font-size: 14px; letter-spacing: -0.03em; color: #666666; line-height: 22px;}
   .ecoFriendly.section01 .ecofriendly-box{display: block;}
-  .ecoFriendly.section01 .ecofriendly-box .box{width: 100%; margin-bottom: 60px;}
+  .ecoFriendly.section01 .ecofriendly-box .box{width: 100%; margin-bottom: 60px; flex-direction: column; align-items: flex-start;}
+  .ecoFriendly.section01 .ecofriendly-box .box:nth-child(2){flex-direction: column;}
+  .ecoFriendly.section01 .ecofriendly-box .box:nth-child(4){flex-direction: column;}
   .ecoFriendly.section01 .ecofriendly-box .box .img-box img{display: block; margin: 0 auto; width: 100%;}
-  .ecoFriendly.section01 .ecofriendly-box .box .img-info{flex-direction: row; padding-top: 20px;}
-  .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{padding: 0 10px; line-height: 28px; width: calc(100% - 22%);}
+  .ecoFriendly.section01 .ecofriendly-box .box .img-info{padding-top: 20px;}
+  .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{line-height: 28px; width: calc(100% - 22%);}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info .point{margin-bottom: 0;}
   .ecoFriendly.section02 .content-wrap .title p{text-align: left}
 
@@ -275,7 +278,7 @@
   .safetyHealth.section01 .content-wrap{padding-bottom: 90px;}
   .safetyHealth.section01 .main-title-wrap{padding: 60px 0 50px;}
   .safetyHealth.section01 .content-wrap .title{margin-bottom: 20px;}
-  .safetyHealth.section01 .content-wrap .title-txt p{font-size: 14px;}
+  .safetyHealth.section01 .content-wrap .title-txt p{font-size: 16px;}
   .safetyHealth.section01 .table-box th{display: block; padding: 30px 0 10px 38px;}
   .safetyHealth.section01 .table-box td{display: block; padding: 0 0 30px; font-size: 16px; line-height: 31px;}
   .safetyHealth.section01 .table-box td br{display: none; word-break: keep-all;}

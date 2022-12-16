@@ -203,8 +203,8 @@
 
   .main-title-wrap{text-align: left;}
   .content-wrap .title-txt{margin-bottom: 30px;}
-  .content-wrap .title p{font-size: 28px;}
-  .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
+  .content-wrap .title p{font-size: 28px; line-height: 40px;}
+  .content-wrap .title-txt p{font-size: 16px; line-height: 28px;}
   .footer{padding: 30px 0;}
   .footer-wrap{width: calc(100% - 4.8rem);} 
   .footer-top{flex-direction: column; margin-bottom: 0;}

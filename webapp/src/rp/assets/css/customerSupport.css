@@ -40,9 +40,25 @@
 .attr-box .file { position: absolute; top: 0; right: 0; bottom: 0; left: 0; font-size: 100px; opacity: 0; }
 
 
-.privacy-agree-box{padding-top: 100px; margin-bottom: 50px;}
+.privacy-agree-box{padding-top: 60px; margin-bottom: 120px;}
+.privacy-agree-box .top p{font-size: 20px; letter-spacing: -0.03em; color: #323232; margin-bottom: 20px;}
+.privacy-agree-box .top p:after{content:"*"; color: #ff8b23; margin-left: 5px;}
+.privacy-agree-box .top > div{display: inline-block;}
+
+.btn-toggle { margin-top: 5px; display: inline-block; width: 55px; height: 55px; border-radius: 100%; font: 0/0 a; text-align: center;}
+.btn-toggle:after { display: inline-block; content: ""; width: 8px; height: 8px; border-top: 2px solid #323232; border-right: 2px solid #323232; transform: rotate(135deg);}
+.btn-toggle.on:after { transform: rotate(-45deg);}
+.btn-toggle.toggle-text { width: auto; height: auto; margin: 0 0 0 15px; padding-bottom: 3px; border-bottom: 1px solid; border-radius: 0; color: #323232;}
+.btn-toggle.toggle-text:before { content: "자세히보기"; font-family: 'NotoB'; font-size: 16px; line-height: 1; }
+.btn-toggle.toggle-text:after { margin: 0 0 3px 25px; }
+.btn-toggle.toggle-text:hover { background-color: transparent; }
+.btn-toggle.toggle-text.on:before { content: "닫기"; }
+.btn-toggle.toggle-text.on:after { margin-bottom: 0; }
+
+
 .privacy-agree > p{font-size: 20px; letter-spacing: -0.03em; color: #323232; margin-bottom: 14px;}
-.privacy-agree{height: 270px; border: 1px solid #d9d9d9; padding: 30px; box-sizing: border-box; overflow: auto; margin-bottom: 20px;}
+.privacy-agree{display: none; height: 270px; margin-top: 30px; border: 1px solid #d9d9d9; padding: 30px; box-sizing: border-box; overflow: auto; margin-bottom: 20px; transition: all 0.5s ease-in-out;}
+.privacy-agree.on{display: block;}
 .privacy-agree p{color: #666666; font-size: 16px; letter-spacing: -0.03em; line-height: 32px;}
 .agree-btn-box{padding-left: 25px;}
 .agree{color: #323232; letter-spacing: -0.03em; padding: 3px 0; padding-left: 36px;}
@@ -74,6 +90,9 @@
   .input::placeholder{font-size: 14px;}
   .textarea::placeholder{font-size: 14px;}
   .select{font-size: 14px;}
-  .privacy-agree-box{padding: 60px 0 0;}
+  .privacy-agree-box{margin-bottom: 80px; padding: 60px 0 0;}
+  .privacy-agree-box .top > div{display: block;}
+  .btn-toggle.toggle-text{margin: 15px 0 0 0;}
   .attr-box .btn-attr{width: 115px;}
+
 }

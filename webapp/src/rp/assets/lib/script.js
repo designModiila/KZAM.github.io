@@ -175,6 +175,7 @@ $(document).ready(function(){
     $("#"+tab_id).addClass('current');
   });
 
+  //국내 해외 계열사
   function layerPopup(){
     var popup = $('.wrap-layer');
     var layerBg = $('.layer-dimm');
@@ -224,6 +225,7 @@ $(document).ready(function(){
     },
   });
 
+  //생산제품 탭 컨텐츠
   var product = $(".product.section04");
   var productTabNav = $(".product-tab-menu a")
   var productTabCon =  product.find(".product-tab-content > div");
@@ -236,6 +238,8 @@ $(document).ready(function(){
     return false;
   }).filter(':eq(0)').click();
 
+
+  //사업소개 이미지 슬라이드
   var overviewImgSwiper = new Swiper('.overview-img-slide', {
     loop : true,
     effect : "slide",
@@ -270,6 +274,8 @@ $(document).ready(function(){
   overviewTxtSwiper.controller.control = overviewImgSwiper;
 
 
+
+  //비전
   function vision_core_slider(){
 
     // slider
@@ -462,69 +468,7 @@ $(document).ready(function(){
 
   vision_core_slider();
 
-// // Set all components to "from" position
-// TweenMax.set( 'section' , { css:{ backgroundPosition: '50% 50%' } } );
-
-// function moveToSlide( index ){
-//   var intoSection = $('section:nth-child('+index+')');
-//   var outSectionAbove = $( 'section:nth-child('+(index-1)+')' );
-//   var outSectionBelow = $( 'section:nth-child('+(index+1)+')' );    
-
-//   // flanking slides
-//   if( outSectionAbove.length ){
-//     TweenMax.to( outSectionAbove, .25 , { css:{ backgroundPosition: '50% 100%' } } );
-//   }
-  
-//   if( outSectionBelow.length ){
-//     TweenMax.to( outSectionBelow, .25 , { css:{ backgroundPosition: '50% 0' } } );
-//   }
-  
-//   // Slide moving to
-//   TweenMax.to('#slideContainer', .75 , { y: -$('.panel').height()*(index-1), ease: Power2.easeOut } );
-//   TweenMax.to( intoSection, 1.25 , { css:{ backgroundPosition: '50% 50%' } } );
-// }
-
-// moveToSlide( 1 );
-// var curSlide = 1;
-// var isScrolling = false;
-
-// $('#slideContainer').on('mousewheel', function(e) {
-//   if( e.deltaY < -1 ){ // Scroll Down   
-//     if( !isScrolling && curSlide < $('section').length ){
-//       moveToSlide( curSlide+1 );
-//       curSlide++;
-//     }  
-//     isScrolling = true;
-//   }else if( e.deltaY > 1 && curSlide > 1 ){ // Scroll Up
-//     if( !isScrolling ){
-//       moveToSlide( curSlide-1 );
-//       curSlide--;
-//     }
-//     isScrolling = true;
-//   }else{
-//     // Scroll Done
-//     isScrolling = false;
-//   }
-// });
-
-
-	// var controller = new ScrollMagic.Controller({
-	// 	globalSceneOptions: {
-	// 		triggerHook: 'onLeave',
-	// 		duration: '100%'
-	// 	}
-	// });
-
-	// var slides = $('section.panel');
-	// for(var i=0; i<slides.length; i++){
-	// 	var scene = new ScrollMagic.Scene({
-	// 		triggerElement: slides[i]
-	// 	})
-	// 	.setPin(slides[i], {pushFollowers:false}) //setPin 되어있는 동안 다음 Section 요소가 밀려나도록 기본설정 되어있기 때문에 pushFollowers:false로 이를 비활성화 합니다.
-	// 	.addTo(controller)
-	// 	.addIndicators();
-	// }
-
+  //사회공헌
   var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
   var qswiper = new Swiper('.quality .swiper-container', {
     speed: 1000,
@@ -560,5 +504,10 @@ $(document).ready(function(){
   //   offset : '0%'
   // });
 
+  //voc 개인정보처리방침
+  $('.btn-toggle').click(function(){
+    $(this).toggleClass('on');
+    $('.privacy-agree').toggleClass('on');
+  });
 });
 
