@@ -85,9 +85,9 @@ $(document).ready(function(){
       } else {
           $(this).parents('.header, .nav').removeClass('on');
       }
-      if($('#gnb').hasClass('open') === true){
-        $('#header').removeClass('on');
-      }
+      // if($('#gnb').hasClass('open') === true){
+      //   $('#header').removeClass('on');
+      // }
     })
 
     $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout', function () {
@@ -111,6 +111,15 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         $(this).parent('li').find('.gnb-depth2').addClass('open');
       });
+    }
+    if($('#gnb').hasClass('open') === true){
+      $('body').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
+    }else{
+      $('body').off('scroll touchmove mousewheel');
     }
   }
   gnb();
