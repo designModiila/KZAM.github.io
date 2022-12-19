@@ -48,6 +48,7 @@ $(document).ready(function(){
     scrollingSpeed:800,
     navigationTooltips: ['MAIN','BUSINESS','COMPANY','NEWS'],
     navigationPosition: 'left',
+    responsiveWidth: 768,
     afterLoad: function(anchorLink, index){
       if((index == 1) || (index == 3)){
         $('#fp-nav li a.active + .fp-tooltip').removeClass('dark');
@@ -74,7 +75,6 @@ $(document).ready(function(){
         });
       }
     },
-    responsiveWidth: 768,
   });
 
   var mainMenu = function () {
@@ -85,9 +85,9 @@ $(document).ready(function(){
       } else {
           $(this).parents('.header, .nav').removeClass('on');
       }
-      // if($('#gnb').hasClass('open') === true){
-      //   $('#header').removeClass('on');
-      // }
+      if($('#gnb').hasClass('open') === true){
+        $('#header').removeClass('on');
+      }
     })
 
     $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout', function () {
@@ -103,7 +103,6 @@ $(document).ready(function(){
       $('#gnb').toggleClass('open');
       $('#gnb h2').removeClass('active');
       $('.gnb-depth2').removeClass('open');
-      $('.header').removeClass('on');
     });
     if(window.innerWidth < 769){
       $('#gnb h2').click(function(){
@@ -112,15 +111,6 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         $(this).parent('li').find('.gnb-depth2').addClass('open');
       });
-    }
-    if($('#gnb').hasClass('open') === true){
-      $('body').on('scroll touchmove mousewheel', function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        return false;
-      });
-    }else{
-      $('body').off('scroll touchmove mousewheel');
     }
   }
   gnb();
@@ -481,7 +471,7 @@ $(document).ready(function(){
 
   //사회공헌
   var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
-  var qswiper = new Swiper('.quality .swiper-container', {
+  var swiper = new Swiper('.quality .swiper-container', {
     speed: 1000,
     direction: 'vertical',
     mousewheel: true,
@@ -496,24 +486,18 @@ $(document).ready(function(){
 		},
     on: {
       reachEnd: function () {
-        qswiper.mousewheel.disable();
+        swiper.mousewheel.disable();
       }
     }
   });
 
   window.addEventListener('wheel', function (event) {
     if (event.deltaY < 0) {
-      qswiper.mousewheel.enable();
+      swiper.mousewheel.enable();
     } else if (event.deltaY > 0) {
       // swiper.mousewheel.disable();
     }
   });
-
-  // qswiper.waypoint(function(){
-  //   $('.swiper-slide').addClass('swiper-slide-active')
-  // },{
-  //   offset : '0%'
-  // });
 
   //voc 개인정보처리방침
   $('.btn-toggle').click(function(){
