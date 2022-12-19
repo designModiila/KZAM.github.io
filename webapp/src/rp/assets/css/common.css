@@ -37,7 +37,7 @@
 .header.on .nav > ul > li{color: #fff !important;}
 .header.on .nav > ul > li:hover{color: #ff8b23 !important;}
 
-#gnb{display: flex; flex-direction: column; width: 100%; height: 100%; position: fixed; background: #323232; z-index: 200; top: -100%; overflow: hidden; opacity: 0; transition: top .3s, opacity .3s ease-in-out;}
+#gnb{display: flex; flex-direction: column; width: 100%; height: 100%; position: fixed; background: #323232; z-index: 200; top: -100%; overflow: hidden; overflow-y: auto; opacity: 0; transition: top .3s, opacity .3s ease-in-out;}
 #gnb.open{top: 0; opacity: 1;}
 #gnb .gnb-header{height: 80px; display: flex; justify-content: space-between;}
 #gnb .gnb-close{width: 228px; height: 100%; display: flex; align-items: center; justify-content: center;}

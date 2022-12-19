@@ -150,7 +150,7 @@
   .swiper-wrapper .item .txt-box .visual-title{font-size: 4rem;}
   .swiper-wrapper .item .txt-box .visual-sub-title{font-size: 1.8rem; line-height: unset;}
 
-  .section .content-wrap{width: calc(100% - 4.8rem);}
+  .section .content-wrap{width: calc(100% - 4.8rem); padding: 40px 0; box-sizing: border-box;}
   .section .content-wrap .sub-title{font-size: 1.8rem;}
   .section .content-wrap .title{font-size: 3.2rem; line-height: unset;}
   .section.full2 .con-box ul{flex-direction: column; gap: 30px; text-align: center;}
