@@ -103,6 +103,7 @@ $(document).ready(function(){
       $('#gnb').toggleClass('open');
       $('#gnb h2').removeClass('active');
       $('.gnb-depth2').removeClass('open');
+      $('.header').removeClass('on');
     });
     if(window.innerWidth < 769){
       $('#gnb h2').click(function(){

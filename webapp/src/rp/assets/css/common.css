@@ -170,14 +170,16 @@
   #gnb .gnb-depth2{display: none; padding-left: 20px; transition: all .5s ease-in-out;}
   #gnb .gnb-depth2.open{display: block;}
   #gnb .gnb-close{width: 76px;}
-  #gnb .gnb-inner{width: calc(100% - 4.8rem); margin: 0 auto; justify-content: flex-start; align-items: flex-start; padding: 5rem 0 5rem;}
+  /* #gnb .gnb-inner{width: calc(100% - 4.8rem); margin: 0 auto; justify-content: flex-start; align-items: flex-start; padding: 5rem 0 5rem;} */
+  #gnb .gnb-inner{width: calc(100% - 4.8rem); margin: 0 auto; flex-direction: column; justify-content: space-between; align-items: flex-start; padding: 5rem 0 5rem;}
   #gnb .gnb-menu > li:before{display: none;}
   #gnb .gnb-menu{flex-direction: column; margin: 0; gap: 25px;}
   #gnb .gnb-menu > li h2{color: #c4c4c4; cursor: pointer; margin-bottom: 12px; font-size: 24px;}
   #gnb .gnb-menu > li h2:hover{color: #ff8b23;}
   #gnb .gnb-menu > li h2.active{color: #ff8b23;}
   #gnb .gnb-menu li a{font-size: 14px; padding: 0 0 15px; color: #c3c3c3;}
-  #gnb .gnb-bottom{right: auto; left: auto; bottom: 20px; width: 100%;}
+  /* #gnb .gnb-bottom{right: auto; left: auto; bottom: 20px; width: 100%;} */
+  #gnb .gnb-bottom{position: unset; width: 100%;}
   #gnb .gnb-bottom ul{justify-content: flex-start; gap: unset;}
   #gnb .gnb-bottom ul li{width: 25%; text-align: center;}
   #gnb .gnb-bottom ul li a{font-size: 13px;}
