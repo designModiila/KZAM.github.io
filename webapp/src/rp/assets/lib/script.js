@@ -74,6 +74,7 @@ $(document).ready(function(){
         });
       }
     },
+    responsiveWidth: 768,
   });
 
   var mainMenu = function () {
@@ -509,5 +510,7 @@ $(document).ready(function(){
     $(this).toggleClass('on');
     $('.privacy-agree').toggleClass('on');
   });
+
+  
 });
 
