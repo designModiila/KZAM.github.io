@@ -199,10 +199,12 @@
 .btn-close.is-black:before, .btn-close.is-black:after { background-color: #000000; }
 
 .map-bg{background: url(../images/introduction/global-map-bg.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
-.global-map-wrap .circle-btn{width: 35px; height: 35px; border-radius: 100%; background: #fff url(../images/introduction/icon_global_location.png) no-repeat center; border: 1px solid #d9d9d9; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transition: all .5s;}
-.global-map-wrap .circle-btn span{display: block; display: none; color: #fff; font-size: 14px; font-family: 'NotoB'; padding: 0px 15px;}
-.global-map-wrap .circle-btn:hover{width: auto; border-radius: 100px; background: #ff8b23 url(../images/introduction/icon_global_locationW.png) no-repeat 3% center; padding: 0px 15px;}
-.global-map-wrap .circle-btn:hover span{display: block;}
+.global-map-wrap .circle-btn{width: 35px; height: 35px; border-radius: 100%; background: #fff url(../images/introduction/icon_global_location.png) no-repeat center; border: 1px solid #d9d9d9; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transition: width .5s;}
+.global-map-wrap .circle-btn span{display: block; display: none; color: #fff; font-size: 14px; font-family: 'NotoB'; padding-left: 20px;}
+/* .global-map-wrap .circle-btn:hover{width: auto; border-radius: 100px; background: #ff8b23 url(../images/introduction/icon_global_locationW.png) no-repeat 4% center; padding: 0px 15px; z-index: 10;} */
+.global-map-wrap .circle-btn:hover{width: auto; border-radius: 100px; background: #ff8b23; padding: 0 10px; z-index: 10;}
+.global-map-wrap .circle-btn:hover span{display: block; position: relative;}
+.global-map-wrap .circle-btn:hover span:before{position: absolute; content: ''; width: 18px; height: 18px; left: 0; top: 50%; background: url(../images/introduction/icon_global_locationW.png) no-repeat; transform: translateY(-50%);}
 
 .thailand-wrap .circle-btn:first-child{margin-top: -2%; margin-left: -9%;}
 .vietnam-wrap .circle-btn:first-child{margin-top: -0%; margin-left: -6%;}
@@ -217,6 +219,10 @@
 .autralia-wrap .circle-btn.aus-epuron{margin-top: 22%; margin-left: 3%;}
 .canada-wrap .circle-btn{margin-top: -17%; margin-left: 36%;}
 .america-wrap .circle-btn{margin-top: -12.5%; margin-left: 34.5%;}
+.america-wrap .circle-btn:hover{margin-left: 20%;}
+.canada-wrap .circle-btn:hover{margin-left: 19%;}
+.america-wrap .circle-btn:hover span, .canada-wrap .circle-btn:hover span{padding-left: 0; padding-right: 20px;}
+.america-wrap .circle-btn:hover span:before, .canada-wrap .circle-btn:hover span:before{left: auto; right: 0;}
 .america-wrap .circle-btn.ame-igneo{margin-left: 22%;margin-top:-11%;}
 .peru-wrap .circle-btn{margin-left: 35.5%; margin-top: 8.5%; }
 
@@ -268,6 +274,8 @@
   .vision_core_list > li > button > b{font-size: 20px; line-height: 32px;}
 
   .location.section01 .company-info .item{flex-direction: column; gap: 20px;}
+  .america-wrap .circle-btn:hover{margin-left: 19%;}
+  .canada-wrap .circle-btn:hover{margin-left: 17%;}
 }
 
 @media all and (max-width: 1024px){
@@ -278,6 +286,11 @@
 
   .affiliate-wrap .list-album > li{width: 48.25%;}
   .global-map-wrap .circle-btn{width: 30px; height: 30px;}
+  .america-wrap .circle-btn:hover{margin-left: 15%;}
+  .canada-wrap .circle-btn:hover{margin-left: 13%;}
+  .peru-wrap .circle-btn:hover{margin-left: 22%;}
+  .peru-wrap .circle-btn:hover span{padding-left: 0; padding-right: 20px;}
+  .peru-wrap .circle-btn:hover span:before{left: auto; right: 0;}
 }
 
 @media all and (max-width:821px){
@@ -356,6 +369,30 @@
   .global-map-wrap .circle-btn{background-size: 75%;}
   #affiliate02 .wrap-layer .item .box .title{font-size: 22px; line-height: 34px;}
   #affiliate02 .wrap-layer .item .box .list-network dt{display: none;}
+  /*해외계열사 모바일*/
+  /* #affiliate02 .affiliate-mo-tab{position: relative; width: 100%; height: 50px;}
+  #affiliate02 .affiliate-mo-select{padding: 11px 0 11px 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232;}
+  #affiliate02 .affiliate-mo-tab ul{display: none; position: absolute; width: 100%; left: 0; top: 50px;}
+  #affiliate02 .affiliate-mo-select.on + ul{display: block;} */
+  #affiliate02 .affiliate-mo-tab{display: none;}
+  #affiliate02 .affiliate-mo-select{width: 100%; border: 1px solid #d9d9d9; box-sizing: border-box; padding: 11px 0 11px 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; margin: 50px 0 30px;}
+  #affiliate02 .affiliate-mo-con{border-top: 1px solid #323232;}
+  #affiliate02 .affiliate02-mo .map-bg{background: url(../images/introduction/global-map-bg-mo.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
+  #affiliate02 .affiliate02-mo .affiliate-wrap{padding: 30px 0 172px;}
+
+  #accordion-wrap{border-bottom: 1px solid #d9d9d9;}
+  #accordion-wrap .accor-top{padding: 15px 0; display: flex; align-items: center; justify-content: space-between;}
+  #accordion-wrap .accor-tit{font-size: 18px; letter-spacing: -0.03em; font-family: 'NotoB'; color: #323232; margin-bottom: 5px;}
+  #accordion-wrap .accor-desc{font-size: 14px; letter-spacing: -0.03em; color: #666666;}
+  #accordion-wrap .accor-btn{ width: 20px; height: 20px; font: 0/0 a; text-align: center;}
+  #accordion-wrap .accor-btn:after{display: inline-block; content: ""; width: 8px; height: 8px; border-top: 2px solid #000000; border-right: 2px solid #000000; transform: rotate(135deg);}
+  #accordion-wrap .accor-btn.on:after{transform: rotate(-45deg);}
+  #accordion-wrap .accor-pane{display: none; box-sizing: border-box; padding: 10px 0 30px;}
+  #accordion-wrap .accor-pane .item p{font-size: 14px; color: #666; line-height: 26px; letter-spacing: -0.03em; padding-left: 44px; position: relative; margin-bottom: 10px;}
+  #accordion-wrap .accor-pane .item p:before{position: absolute; width: 20px; height: 22px; content: ''; left: 0; margin-top: 3px; background: url(../images/introduction/icon_location.png) no-repeat center;}
+  #accordion-wrap .accor-pane .item p:nth-child(2):before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
+  #accordion-wrap .accor-pane .item p:nth-child(3):before{background: url(../images/introduction/icon_global_fax.png) no-repeat center;}
+
 
   .location.section02 .company-map{padding-bottom: 120px;}
   .location.section01 .main-title-wrap{padding: 60px 0;}

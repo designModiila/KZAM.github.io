@@ -214,6 +214,49 @@ $(document).ready(function(){
   }
   layerPopup();
 
+  //해외계열사 모바일 탭
+	var $tabButtonItem = $('.affiliate-mo-tab li'),
+    $tabSelect = $('#affiliate-mo'),
+    $tabContents = $('.affiliate-mo-con'),
+    activeClass = 'is-active';
+
+	$tabButtonItem.first().addClass(activeClass);
+	$tabContents.not(':first').hide();
+
+	// button
+	$tabButtonItem.find('a').on('click', function(e) {
+		var target = $(this).attr('href');
+
+		$tabButtonItem.removeClass(activeClass);
+		$(this).parent().addClass(activeClass);
+		$tabSelect.val(target);
+		$tabContents.hide();
+		$(target).show();
+		e.preventDefault();
+	});
+
+	// select
+	$tabSelect.on('change', function() {
+		var target = $(this).val(),
+      targetSelectNum = $(this).prop('selectedIndex');
+
+		$tabButtonItem.removeClass(activeClass);
+		$tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+		$tabContents.hide();
+		$(target).show();
+	});
+
+  function accordion(){
+    $('.accor-pane').hide();
+    $('.accor-top').click(function(){
+      $(this).find('button').toggleClass('on');
+      $(this).next('.accor-pane').slideToggle(500);
+    })
+  }
+  accordion();
+
+
+
   var conListSwiper = new Swiper('.con-recent .swiper-container', {
     loop : true,
     pagination: {
