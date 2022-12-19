@@ -255,6 +255,57 @@
 .location.section02 .company-map{padding-bottom: 200px;}
 
 
+/* @media all and (max-width:768px) {
+
+  nav {
+    background: transparent;
+  }
+
+  .affiliate-mo-tab nav ul li.is-active {
+    box-shadow: inset 0 -3px 0 #5098B3;
+  }
+
+  .affiliate-mo-tab nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+  }
+
+  .affiliate-mo-tab nav ul li {
+    display: inline-block;
+    margin: 0 1rem 0 1rem;
+    padding: 0 0 .2rem 0;
+    border: none;
+  }
+
+  .affiliate-mo-tab nav ul li:not(.is-active) {
+    position: relative;
+    top: auto;
+  }
+
+  .affiliate-mo-tab nav ul li.is-active {
+    order: 1;
+  }
+
+  .affiliate-mo-tab nav ul li.is-active:after {
+    display: none;
+  }
+} */
+
+
+.affiliate-mo-con{
+    display: none;
+    padding: 15px;
+}
+.affiliate-mo-con.current{
+    display: inherit;
+}
+
+
 @media all and (max-width: 1440px){
 
 }
@@ -369,13 +420,30 @@
   .global-map-wrap .circle-btn{background-size: 75%;}
   #affiliate02 .wrap-layer .item .box .title{font-size: 22px; line-height: 34px;}
   #affiliate02 .wrap-layer .item .box .list-network dt{display: none;}
-  /*해외계열사 모바일*/
-  /* #affiliate02 .affiliate-mo-tab{position: relative; width: 100%; height: 50px;}
-  #affiliate02 .affiliate-mo-select{padding: 11px 0 11px 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232;}
-  #affiliate02 .affiliate-mo-tab ul{display: none; position: absolute; width: 100%; left: 0; top: 50px;}
-  #affiliate02 .affiliate-mo-select.on + ul{display: block;} */
-  #affiliate02 .affiliate-mo-tab{display: none;}
-  #affiliate02 .affiliate-mo-select{width: 100%; border: 1px solid #d9d9d9; box-sizing: border-box; padding: 11px 0 11px 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; margin: 50px 0 30px;}
+
+
+  /*해외계열사 모바일탭메뉴*/
+  /* .affiliate-mo-tab nav {background: #fff;}
+  .affiliate-mo-tab nav ul {border: 1px solid #d9d9d9;}
+  .affiliate-mo-tab nav ul li {padding: 0px 0 0px 20px; cursor: pointer; color: #bbbbbb;}
+  .affiliate-mo-tab nav ul li:hover {color: #323232;}
+  .affiliate-mo-tab nav ul li.is-active {color: #323232; font-family: 'NotoB'; border-top: none;} */
+  
+  .affiliate-mo-tab {position: relative; height: 50px; padding: 30px 0 50px;}
+  .affiliate-mo-tab nav {position: absolute; width: 100%; background: #ffffff;}
+  .affiliate-mo-tab nav ul {border: 1px solid #d9d9d9; display: flex; flex-direction: column; height: 50px; line-height: 50px;}
+  .affiliate-mo-tab nav ul.expanded{height: 134px; overflow-y: scroll;}
+  .affiliate-mo-tab nav ul li {padding: 0px 0 0px 20px; cursor: pointer; color: #bbbbbb; order: 1;}
+  .affiliate-mo-tab nav ul li:hover {color: #323232;}
+  .affiliate-mo-tab nav ul li.is-active {color: #323232; font-family: 'NotoB'; border-top: none; order: 0;}
+  
+  .affiliate-mo-tab nav ul li.is-active:after {width: 1px; height: 1px; border: 5px solid transparent; border-top: 5px solid #555; content: ''; position: absolute; right: 1.5em; top: 1.4em; z-index: 9999;}
+  .affiliate-mo-tab nav ul li:not(.is-active) {position: absolute; top: -999em;}
+  .affiliate-mo-tab nav ul.expanded li.is-active:after{border-top-color: transparent; border-bottom-color: #555; top: 1em;}
+  .affiliate-mo-tab nav ul.expanded li:not(.is-active) {position: relative; top: auto;}
+
+
+
   #affiliate02 .affiliate-mo-con{border-top: 1px solid #323232;}
   #affiliate02 .affiliate02-mo .map-bg{background: url(../images/introduction/global-map-bg-mo.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
   #affiliate02 .affiliate02-mo .affiliate-wrap{padding: 30px 0 172px;}

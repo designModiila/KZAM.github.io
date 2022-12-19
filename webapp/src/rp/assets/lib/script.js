@@ -215,36 +215,16 @@ $(document).ready(function(){
   layerPopup();
 
   //해외계열사 모바일 탭
-	var $tabButtonItem = $('.affiliate-mo-tab li'),
-    $tabSelect = $('#affiliate-mo'),
-    $tabContents = $('.affiliate-mo-con'),
-    activeClass = 'is-active';
 
-	$tabButtonItem.first().addClass(activeClass);
-	$tabContents.not(':first').hide();
-
-	// button
-	$tabButtonItem.find('a').on('click', function(e) {
-		var target = $(this).attr('href');
-
-		$tabButtonItem.removeClass(activeClass);
-		$(this).parent().addClass(activeClass);
-		$tabSelect.val(target);
-		$tabContents.hide();
-		$(target).show();
-		e.preventDefault();
-	});
-
-	// select
-	$tabSelect.on('change', function() {
-		var target = $(this).val(),
-      targetSelectNum = $(this).prop('selectedIndex');
-
-		$tabButtonItem.removeClass(activeClass);
-		$tabButtonItem.eq(targetSelectNum).addClass(activeClass);
-		$tabContents.hide();
-		$(target).show();
-	});
+  $('.affiliate02-mo').on('click','li',function(){
+    $('li').removeClass('is-active');
+    $('ul').toggleClass('expanded');
+    $(this).addClass('is-active');
+    var tab_id = $(this).attr('data-tab');
+    $('.affiliate-mo-con').removeClass('current');
+    $(this).addClass('current');
+    $('#'+tab_id).addClass('current');
+  });
 
   function accordion(){
     $('.accor-pane').hide();
