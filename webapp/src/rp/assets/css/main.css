@@ -154,7 +154,9 @@
   .section .content-wrap{width: calc(100% - 4.8rem); padding: 40px 0; box-sizing: border-box;}
   .section .content-wrap .con-title-wrap{margin-bottom: 0;}
   .section .content-wrap .sub-title{font-size: 1.8rem;}
-  .section .content-wrap .title{font-size: 3.2rem; line-height: unset;}
+  .section .content-wrap .title{font-size: 3.2rem; line-height: 42px;}
+
+  .section.full2 {background-position-x: -245px;}
   .section.full2 .con-box ul{flex-direction: column; gap: 30px; text-align: center;}
   .section.full2 .con-box ul li{width: 100%;}
   .section.full2 .con-box ul li .icon{margin-bottom: 10px;}

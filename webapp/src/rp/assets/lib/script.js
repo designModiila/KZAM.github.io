@@ -1,10 +1,5 @@
 
-
-
 $(document).ready(function(){
-  // $('#header').load('/webapp/src/rp/html/_include/header.html');
-  // $('#footer').load('/webapp/src/rp/html/_include/footer.html');
-
   AOS.init();
   Splitting();
 
@@ -15,19 +10,7 @@ $(document).ready(function(){
 			var i = i / 5
 			$(this).css("animation-delay", (i + 0.5)+"s")
 		})
-	})
-
-  
-
-  // $(window).scroll(function(){
-  //   if ($(window).scrollTop() >= 500) {
-  //       $('.hedaer').addClass('fixed-header');
-  //   }
-  //   else {
-  //       $('.header').removeClass('fixed-header');
-
-  //   }
-  // });
+	});
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -39,10 +22,6 @@ $(document).ready(function(){
       $('.scroll-top-btn').removeClass("on");
     }
   });
-
-
-
-
   $('#fullpage').fullpage({
     navigation: true,
     scrollingSpeed:800,
@@ -51,16 +30,18 @@ $(document).ready(function(){
     responsiveWidth: 768,
     afterLoad: function(anchorLink, index){
       if((index == 1) || (index == 3)){
+        $(".header").removeClass("dark");
         $('#fp-nav li a.active + .fp-tooltip').removeClass('dark');
-        $('.nav ul li, .logo, .menu-btn .menu span').removeClass('dark');
+       // $('.nav ul li, .logo, .menu-btn .menu span').removeClass('dark');
       }else{
+         $(".header").addClass("dark");
         $('#fp-nav li a.active + .fp-tooltip').addClass('dark');
-        $('.nav ul li, .logo, .menu-btn .menu span').addClass('dark');
+     //   $('.nav ul li, .logo, .menu-btn .menu span').addClass('dark');
       }
       if(index == 3){
         $('.counter').counterUp({
           delay: 1,
-          time: 1000
+          time: 750
         });
       }
     },
@@ -71,32 +52,48 @@ $(document).ready(function(){
       if((anchorLink == 4) && direction == 'up'){
         $('.counter').counterUp({
           delay: 1,
-          time: 1000
+          time: 750
         });
       }
     },
   });
 
   var mainMenu = function () {
-    $('.header, .depth_1 > li').on('mouseover focus', function () {
-      $(this).addClass('on');
+    $('.header .header-wrap .nav, .header .header-wrap .nav > ul > li').on('mouseover focus', function () {
+      $('.header').addClass('on');
       if ($(this).children().hasClass('depth_2')) {
-          $(this).parents('.header, .nav').addClass('on');
+          $(this).addClass('on');
       } else {
-          $(this).parents('.header, .nav').removeClass('on');
+          $(this).removeClass('on');
       }
-      if($('#gnb').hasClass('open') === true){
-        $('#header').removeClass('on');
-      }
-    })
-
-    $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout', function () {
-      $('.header').removeClass('on')
-      $('.depth_1 > li').removeClass('on');
-      $('.nav').removeClass('on');
-    })
+    });
+    $('.header .header-wrap .nav, .header .header-wrap .nav > ul > li').on('mouseout', function () {
+        $('.header').removeClass('on')
+        $('.depth_1 > li').removeClass('on');
+        $('.nav').removeClass('on');
+    });
   }
   mainMenu();
+  // var mainMenu = function () {
+  //   $('.header, .depth_1 > li').on('mouseover focus', function () {
+  //     $(this).addClass('on');
+  //     if ($(this).children().hasClass('depth_2')) {
+  //         $(this).parents('.header, .nav').addClass('on');
+  //     } else {
+  //         $(this).parents('.header, .nav').removeClass('on');
+  //     }
+  //     if($('#gnb').hasClass('open') === true){
+  //       $('#header').removeClass('on');
+  //     }
+  //   })
+
+  //   $('.header, .depth_1 > li, .depth_2 > ul').on('mouseout', function () {
+  //     $('.header').removeClass('on')
+  //     $('.depth_1 > li').removeClass('on');
+  //     $('.nav').removeClass('on');
+  //   })
+  // }
+  // mainMenu();
 
   var gnb = function (){
     $('.menu, .close-btn').click(function(){
@@ -114,6 +111,35 @@ $(document).ready(function(){
     }
   }
   gnb();
+
+});
+
+$(document).ready(function(){
+  // $('#header').load('/webapp/src/rp/html/_include/header.html');
+  // $('#footer').load('/webapp/src/rp/html/_include/footer.html');
+
+
+
+  
+
+  
+
+  // $(window).scroll(function(){
+  //   if ($(window).scrollTop() >= 500) {
+  //       $('.hedaer').addClass('fixed-header');
+  //   }
+  //   else {
+  //       $('.header').removeClass('fixed-header');
+
+  //   }
+  // });
+
+
+
+
+
+
+  
 
   var swiper = new Swiper(".main-slide-wrap", {
     speed: 1000,

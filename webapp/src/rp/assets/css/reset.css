@@ -1,5 +1,75 @@
 @charset "utf-8";
 
+
+/* Noto Sans CJK KR*/
+@font-face {
+  font-family: 'NotoD';
+  src: url('../fonts/NotoSansKR/NotoSansKR-DemiLight.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-DemiLight.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-DemiLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoT';
+  src: url('../fonts/NotoSansKR/NotoSansKR-Thin.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-Thin.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoR';
+  src: url('../fonts/NotoSansKR/NotoSansKR-Regular.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoM';
+  src: url('../fonts/NotoSansKR/NotoSansKR-Medium.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoL';
+  src: url('../fonts/NotoSansKR/NotoSansKR-Light.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-Light.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoB';
+  src: url('../fonts/NotoSansKR/NotoSansKR-Bold.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-Bold.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoBl';
+  src: url('../fonts/NotoSansKR/NotoSansKR-Black.woff') format('woff'),
+  url('../fonts/NotoSansKR/NotoSansKR-Black.woff2') format('woff2'),
+  url('../fonts/NotoSansKR/NotoSansKR-Black.otf') format('opentype');
+}
+
+/*arsenalBold*/
+@font-face {
+  font-family: 'arsenalIb';
+  src: url('../fonts/arsenalBold/Arsenal Bold Italic.woff') format('woff'),
+  url('../fonts/arsenalBold/Arsenal Bold Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*playBold*/
+@font-face {
+  font-family: 'playB';
+  src: url('../fonts/play/Play-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 html,
 body,
 div,
@@ -67,6 +137,8 @@ video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 article,
 aside,
@@ -141,7 +213,6 @@ body {
   flex-flow: column;
   min-height: 100vh;
   color: #000;
-  font-size: 15px;
   position: relative;
 }
 input,
@@ -214,73 +285,6 @@ textarea::placeholder {
   height: 100%;
   width: 100%;
   overflow: hidden;
-}
-
-/* Noto Sans CJK KR*/
-@font-face {
-  font-family: 'NotoD';
-  src: url('../fonts/NotoSansKR/NotoSansKR-DemiLight.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-DemiLight.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-DemiLight.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoT';
-  src: url('../fonts/NotoSansKR/NotoSansKR-Thin.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-Thin.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-Thin.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoR';
-  src: url('../fonts/NotoSansKR/NotoSansKR-Regular.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoM';
-  src: url('../fonts/NotoSansKR/NotoSansKR-Medium.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoL';
-  src: url('../fonts/NotoSansKR/NotoSansKR-Light.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-Light.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-Light.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoB';
-  src: url('../fonts/NotoSansKR/NotoSansKR-Bold.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-Bold.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'NotoBl';
-  src: url('../fonts/NotoSansKR/NotoSansKR-Black.woff') format('woff'),
-  url('../fonts/NotoSansKR/NotoSansKR-Black.woff2') format('woff2'),
-  url('../fonts/NotoSansKR/NotoSansKR-Black.otf') format('opentype');
-}
-
-/*arsenalBold*/
-@font-face {
-  font-family: 'arsenalIb';
-  src: url('../fonts/arsenalBold/Arsenal Bold Italic.woff') format('woff'),
-  url('../fonts/arsenalBold/Arsenal Bold Italic.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*playBold*/
-@font-face {
-  font-family: 'playB';
-  src: url('../fonts/play/Play-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 
