@@ -276,11 +276,11 @@
   
   .header-wrap {padding:24px 24px; align-items: center}
   .header .header-wrap .logo a {font-size: 24px; line-height: normal;} 
+  .header .header-wrap .menu-btn .menu {padding: 0 0;}
   .header.on .header-wrap {background: transparent;}
   .header.on .header-wrap .logo a {color: #fff;} 
   .header.dark .header-wrap .menu span{background: #323232;}
-  .header .header-wrap .menu-btn .menu {padding: 0 0;}
-
+  .header.fixed-header .logo a {color: #323232;} 
 
   #gnb .gnb-header {padding:24px 24px; position: relative;}
   #gnb .gnb-header .logo a {font-size: 24px; line-height: normal;} 
@@ -299,6 +299,9 @@
   #gnb .gnb-bottom ul{justify-content: flex-start; gap: unset;}
   #gnb .gnb-bottom ul li{width: 25%; text-align: center;}
   #gnb .gnb-bottom ul li a{font-size: 13px;} 
+
+
+
 
   
   /* #gnb .gnb-header {padding:24px 24px; align-items: center}
