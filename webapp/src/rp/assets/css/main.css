@@ -50,7 +50,7 @@
 
 .section.full4 .content-wrap .sub-title{margin-bottom: 0px;}
 .section.full4 .content-wrap .con-title-wrap{margin-bottom: 33px; position: relative;}
-.section.full4 .content-wrap .con-title-wrap .more-btn{position: absolute; right: 0px; bottom: 12px;}
+.section.full4 .content-wrap .con-title-wrap .more-btn{position: absolute; right: 0px; bottom: 45px;}
 .section.full4 .content-wrap .con-title-wrap .more-btn a{display: block; width: 118px; height: 45px; color: #ff8b23; border: 1px solid #ff8b23; box-sizing: border-box; text-align: center; line-height: 45px;font-family: 'NotoM'; position: relative; transition: color .2s cubic-bezier(0.55,0.055,0.675,0.19);}
 .section.full4 .content-wrap .con-title-wrap .more-btn a:before{position: absolute; content: ''; display: inline-block; width: 0; height: 100%;  transition: all .4s; top: 0; left: 0; z-index: -1; background: #ff8b23;}
 .section.full4 .content-wrap .con-title-wrap .more-btn a:hover{color: #fff;}
@@ -69,8 +69,7 @@
 .swiper-wrapper .swiper-slide-active .txt-box .visual-sub-title{animation: text-active-animation 3s cubic-bezier(0.4, 0, 0.2, 1) both;}
 
 .swiper-wrapper .swiper-slide-active .splitting.visual-title .word{animation: text-active-animation 1s cubic-bezier(0.4, 0, 0.2, 1) both;}
-.swiper-wrapper .swiper-slide-active .splitting.visual-sub-title .word
-{animation: text-active-animation 1s cubic-bezier(0.4, 0, 0.2, 1) both;}
+.swiper-wrapper .swiper-slide-active .splitting.visual-sub-title .word {animation: text-active-animation 1s cubic-bezier(0.4, 0, 0.2, 1) both;}
 
 .section.full2.active .con-title-wrap .sub-title{animation:fadeUp 1s 0.3s both}
 .section.full2.active .con-title-wrap .title{animation:fadeUp 1s 0.6s both}
@@ -117,30 +116,60 @@
   }
 }
 
+@media all and (max-width : 1540px){
+  .section.full2 .con-box ul {gap:75px;}
+  .section.full3 .content-wrap .line {width:20%;}
+  .section.full3 .con-box {min-width:227px;}
+  .section.full4 .content-wrap .thumb-box .thumb-title {margin-top:0;}
+  .section.full2 .con-box ul li .box-txt p br {display: none;}
+
+}
 @media all and (max-width : 1440px){
   .swiper-wrapper .item .txt-box{width: calc(100% - 44rem);}
   .section .content-wrap{width: calc(100% - 44rem);}
   .section.full4 .content-wrap .thumb-box .thumb-txt{margin-bottom: 30px;}
+  .section.full2 .con-box ul {gap:75px;}
+  
+}
+@media all and (max-width : 1280px){
+  .swiper-wrapper .item .txt-box .visual-title {font-size: 6rem;}
+  .section.full2 .con-box ul {gap:60px;}
+  .section .content-wrap .title {font-size:46px; line-height: 68px;}
+  .section.full3 .content-wrap .line {width:20%;} 
+  .section.full4 .content-wrap .thumb-box .thumb {width:60%;}
+  .section.full4 .content-wrap .thumb-box .thumb img {max-width:100%;}
+  .section.full4 .content-wrap .thumb-box .thumb-title p {font-size:26px; line-height: 36px;}
+  .section.full4 .content-wrap .thumb-box .thumb-txt p {font-size:16px; line-height: 26px;}
+  .section.full4 .content-wrap .thumb-box .thumb-title {margin-top:0;}
+  
 }
 
 @media all and (max-width : 1240px){
-  .swiper-wrapper .item .txt-box{width: calc(100% - 40rem);}
+  .swiper-wrapper .item .txt-box{width: calc(100% - 30rem); left:58%;}
+  .swiper-wrapper .item .txt-box .visual-title {font-size: 5.5rem; letter-spacing:0;}
+  
   .section .content-wrap{width: calc(100% - 40rem);}
+  .section .content-wrap .title { font-size: 42px; line-height: 58px;}
   .section.full2 .con-box ul{gap: unset; justify-content: space-between;}
   .section.full2 .con-box ul li{width: 30%;}
   .section.full3 .content-wrap .title span{display: block;}
+  .footer-top .f-nav {flex: 0 0 50%;}
+  
 }
 
 @media all and (max-width : 1024px) {
-  .swiper-wrapper .item .txt-box{width: calc(100% - 20rem);}
+  .swiper-wrapper .item .txt-box{width: calc(100% - 20rem); left:50%;}
   .section .content-wrap{width: calc(100% - 20rem);}
 
 
-  .section.full3 .content-wrap{flex-direction: column; justify-content: center; align-items: flex-start;}
+
+  .section.full3 .content-wrap{flex-direction: row; justify-content: space-between; align-items: center;}
   .section.full3 .content-wrap .title span{display: unset;}
   .section.full3 .content-wrap .line{display: none !important;}
-  .section.full3 .content-wrap .con-box{width: 50%; margin: 0 auto;}
-  .section.full4 .content-wrap .thumb-box{flex-direction: column; gap: 30px; align-items: center;}
+  /* .section.full4 .content-wrap {width: calc(100% - 40rem);} */
+  
+  .section.full4 .content-wrap .thumb-box{gap: 30px;}
+  .section.full4 .content-wrap .thumb-box .thumb {width: 80%;}
   .section.full4 .content-wrap .thumb-box .thumb-title p{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 32px;}
   .section.full4 .content-wrap .thumb-box .thumb-txt-wrap{width: 100%; padding-left: 0;}
   .section.full4 .content-wrap .thumb-box .thumb-txt p{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 32px;}
@@ -159,8 +188,10 @@
 
   .section.full2 .content-wrap {padding: 60px 0 !important;}
   .section.full2 {background-position-x: -245px;}
+  
   .section.full2 .con-box ul{flex-direction: column; gap: 39px; text-align: center;}
   .section.full2 .con-box ul li{width: 100%;}
+  .section.full2 .con-box ul li .box-txt p br {display: block; }
   .section.full2 .con-box ul li .icon{margin-bottom: 10px;}
   .section.full2 .con-box ul li .box-title{margin-bottom: 5px;}
   .section.full2 .con-box ul li .box-title p{font-size: 2rem;}
@@ -171,10 +202,11 @@
  
   .section.full4 .content-wrap {padding: 90px 0 120px 0 !important;}
   .section.full4 .content-wrap .thumb-box{flex-direction: column;}
-  .section.full3 .content-wrap .con-box {width:227px}
+  .section.full3 .content-wrap .con-box {min-width:227px; margin-left:60px;}
   .section.full4 .content-wrap .con-title-wrap{margin-bottom: 20px;}
   .section.full4 .content-wrap .con-title-wrap .more-btn {bottom:35px}
   .section.full4 .content-wrap .thumb-box{gap: 20px;}
+  .section.full4 .content-wrap .thumb-box .thumb {width:100%;}
   .section.full4 .content-wrap .thumb-box .thumb img{display: block; width: 100%;}
   .section.full4 .content-wrap .thumb-box .thumb-title{margin-bottom: 15px; margin-top:0;}
   .section.full4 .content-wrap .thumb-box .thumb-title p{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 2.4rem; line-height: 32px;}

@@ -56,7 +56,24 @@ $(document).ready(function(){
         });
       }
     },
+    
   });
+
+
+  var f = function () {
+    if (!$this.data('counter-nums')) {
+        return;
+    }
+    $this.text($this.data('counterup-nums').shift());
+    if ($this.data('counterup-nums').length) {
+        setTimeout($this.data('counterup-func'), $settings.delay);
+    } else {
+        delete $this.data('counterup-nums');
+        $this.data('counterup-nums', null);
+        $this.data('counterup-func', null);
+    }
+};
+
 
   var mainMenu = function () {
     $('.header .header-wrap .nav, .header .header-wrap .nav > ul > li').on('mouseover focus', function () {
@@ -540,13 +557,13 @@ $(document).ready(function(){
     }
   });
 
-  window.addEventListener('wheel', function (event) {
-    if (event.deltaY < 0) {
-      swiper.mousewheel.enable();
-    } else if (event.deltaY > 0) {
-      // swiper.mousewheel.disable();
-    }
-  });
+  // window.addEventListener('wheel', function (event) {
+  //   if (event.deltaY < 0) {
+  //     swiper.mousewheel.enable();
+  //   } else if (event.deltaY > 0) {
+  //     // swiper.mousewheel.disable();
+  //   }
+  // });
 
   //voc 개인정보처리방침
   $('.btn-toggle').click(function(){
