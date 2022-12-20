@@ -118,7 +118,19 @@ $(document).ready(function(){
       $('#gnb h2').removeClass('active');
       $('.gnb-depth2').removeClass('open');
     });
-    if(window.innerWidth < 769){
+  }
+  gnb();
+
+
+
+  window.onresize = function() {
+    checkWidth();
+  }
+  checkWidth();
+  
+  function checkWidth() {
+    var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    if (vw < 1024) {
       $('#gnb h2').click(function(){
         $('#gnb h2').removeClass('active');
         $('.gnb-depth2').removeClass('open');
@@ -127,36 +139,7 @@ $(document).ready(function(){
       });
     }
   }
-  gnb();
 
-});
-
-$(document).ready(function(){
-  // $('#header').load('/webapp/src/rp/html/_include/header.html');
-  // $('#footer').load('/webapp/src/rp/html/_include/footer.html');
-
-
-
-  
-
-  
-
-  // $(window).scroll(function(){
-  //   if ($(window).scrollTop() >= 500) {
-  //       $('.hedaer').addClass('fixed-header');
-  //   }
-  //   else {
-  //       $('.header').removeClass('fixed-header');
-
-  //   }
-  // });
-
-
-
-
-
-
-  
 
   var swiper = new Swiper(".main-slide-wrap", {
     speed: 1000,
@@ -195,13 +178,6 @@ $(document).ready(function(){
       },
     }
   });
-  // $(".swiper-wrapper").hover(function () {
-  //   swiper.autoplay.stop();
-  //   $(".swiper-progress-bar").removeClass("animate");
-  // }, function () {
-  //   swiper.autoplay.start();
-  //   $(".swiper-progress-bar").addClass("animate");
-  // });
 
 
   $(".content-tab-box").find("li a.active").click(function (e) {
@@ -571,6 +547,42 @@ $(document).ready(function(){
     $('.privacy-agree').toggleClass('on');
   });
 
-  
 });
+
+// $(document).ready(function(){
+  // $('#header').load('/webapp/src/rp/html/_include/header.html');
+  // $('#footer').load('/webapp/src/rp/html/_include/footer.html');
+
+
+  // $(window).scroll(function(){
+  //   if ($(window).scrollTop() >= 500) {
+  //       $('.hedaer').addClass('fixed-header');
+  //   }
+  //   else {
+  //       $('.header').removeClass('fixed-header');
+
+  //   }
+  // });
+
+
+
+
+
+
+  
+
+  
+  // $(".swiper-wrapper").hover(function () {
+  //   swiper.autoplay.stop();
+  //   $(".swiper-progress-bar").removeClass("animate");
+  // }, function () {
+  //   swiper.autoplay.start();
+  //   $(".swiper-progress-bar").addClass("animate");
+  // });
+
+
+  
+
+  
+// });
 
