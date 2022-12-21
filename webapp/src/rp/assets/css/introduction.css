@@ -67,7 +67,7 @@
 .vision.section01 .content-wrap .title-txt{margin-bottom: 0;}
 .vision.section01 .content-wrap .title-txt p{font-size: 20px; line-height: 36px;}
 
-.vision.section02 .content-wrap{padding-top: 45px;}
+.vision.section02 .content-wrap{padding-top: 45px; padding-bottom: 230px;}
 .vision.section02 .item:nth-child(odd){text-align: left;}
 .vision.section02 .item:nth-child(even){text-align: right;}
 .vision.section02 .item-wrap{display:inline-block; position: relative;}
