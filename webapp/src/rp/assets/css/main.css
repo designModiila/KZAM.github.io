@@ -291,7 +291,7 @@
   .section.full2 .con-box ul li:nth-child(2) .icon{margin-top: 8px;}
   .section.full2 .con-box ul li:nth-child(3) .icon{margin-top: 8px;}
   .section.full2 .con-box ul li .box-title {margin-bottom:0; margin-left: 75px;}
-  .section.full2 .con-box ul li .box-title p { font-size:19px;}
+  .section.full2 .con-box ul li .box-title p { font-size:18px;}
   .section.full2 .con-box ul li .box-title p::after {display: none; left:50%; transform:translateX(-50%);     bottom: -15px;}
   .section.full2 .con-box ul li .box-txt p {margin-left: 75px; font-size:15px}
   .section.full2 .con-box ul li .box-txt p br {display: none;}
