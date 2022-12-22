@@ -375,10 +375,31 @@
 }
 
 @media all and (max-width:425px){
+  .swiper-controller-wrap {
+    width: 200px;
+    height: 70px;
+    padding: 15px 17px;
+}
+  .swiper-wrapper .item .txt-box .visual-title {font-size: 36px; line-height: 44px;}
+  .section .content-wrap .sub-title {margin-bottom:10px;}
+  .section.full2 .content-wrap .title {font-size: 26px; line-height: 36px;}
+  .section.full2 .con-box ul li .box-txt { line-height: 20px;}
   .section.full2 {background-position-x: -245px; }
- 
+  .section.full3 .content-wrap {padding:80px 0 80px 0;}
+  .section.full3 .con-box dl dd {font-size: 36px; }
   .section.full3 .bg {background-position-x: -345px; background-size: cover;}
+  .section.full3 .con-box {min-width:180px;  margin-left: 35%; gap:30px;}
+  .section.full3 .con-box dl dd p:last-child {padding-bottom:5px;}
+  .section.full3 .content-wrap .con-title-wrap .title {font-size: 30px;}
+  .section.full4 .content-wrap {padding: 60px 0 60px 0;}
   .section.full4 .content-wrap .thumb-box .thumb-txt-wrap {padding-left: 0;  width: 100%;}
+  .section.full4 .content-wrap .con-title-wrap .more-btn {bottom:0;}
+  .section.full4 .content-wrap .con-title-wrap .more-btn a {
+   
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
 
 
 }
