@@ -351,7 +351,7 @@ $(document).ready(function(){
 
   //사회공헌
   var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
-  var swiper = new Swiper('.quality .swiper-container', {
+  var socialswiper = new Swiper('.quality .swiper-container', {
     speed: 1000,
     direction: 'vertical',
     mousewheel: true,
@@ -366,14 +366,14 @@ $(document).ready(function(){
 		},
     on: {
       reachEnd: function () {
-        swiper.mousewheel.disable();
+        socialswiper.mousewheel.disable();
       }
     }
   });
 
   // window.addEventListener('wheel', function (event) {
   //   if (event.deltaY < 0) {
-  //     swiper.mousewheel.enable();
+  //     socialswiper.mousewheel.enable();
   //   } else if (event.deltaY > 0) {
   //     // swiper.mousewheel.disable();
   //   }
