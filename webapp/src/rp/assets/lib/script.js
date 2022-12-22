@@ -40,7 +40,7 @@ $(document).ready(function(){
         $('#fp-nav li a.active + .fp-tooltip').removeClass('dark');
        // $('.nav ul li, .logo, .menu-btn .menu span').removeClass('dark');
       }else{
-         $(".header").addClass("dark");
+        $(".header").addClass("dark");
         $('#fp-nav li a.active + .fp-tooltip').addClass('dark');
      //   $('.nav ul li, .logo, .menu-btn .menu span').addClass('dark');
       }
@@ -247,27 +247,6 @@ $(window).on('scroll', function (e) {
 
   //해외계열사 모바일 탭
 
-  // $('.affiliate-mo').each(function(){
-  //   $(this).on('click','li',function(){
-  //     $('.mo-tab li').removeClass('is-active');
-  //     $('.mo-tab ul').toggleClass('expanded');
-  //     $(this).addClass('is-active');
-  //     var tab_id = $(this).attr('data-tab');
-  //     $('.affiliate-mo-con').removeClass('current');
-  //     $(this).addClass('current');
-  //     $('#'+tab_id).addClass('current');
-  //   })
-
-  // $('.affiliate-mo').on('click','li',function(){
-  //   $('.mo-tab li').removeClass('is-active');
-  //   $('.mo-tab ul').toggleClass('expanded');
-  //   $(this).addClass('is-active');
-  //   var tab_id = $(this).attr('data-tab');
-  //   $('.affiliate-mo-con').removeClass('current');
-  //   $(this).addClass('current');
-  //   $('#'+tab_id).addClass('current');
-  // });
-
   $('.affiliate01-mo').on('click','li',function(){
     $('.affiliate01-mo li').removeClass('is-active');
     $('.affiliate01-mo ul').toggleClass('expanded');
@@ -359,35 +338,35 @@ $(window).on('scroll', function (e) {
   overviewImgSwiper.controller.control = overviewTxtSwiper;
   overviewTxtSwiper.controller.control = overviewImgSwiper;
 
-  //사회공헌
-  var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
-  var socialswiper = new Swiper('.quality .swiper-container', {
-    speed: 1000,
-    direction: 'vertical',
-    mousewheel: true,
-    pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-			renderBullet: function (index, className) {
-				return '<div class="list '+className+'">'+
-				'<div class="text" data-txt="'+(secNavName[index])+'"><span>'+(secNavName[index])+'</span></div>'+
-				'</div>'
-			}
-		},
-    on: {
-      reachEnd: function () {
-        socialswiper.mousewheel.disable();
-      }
-    }
-  });
-
-  // window.addEventListener('wheel', function (event) {
-  //   if (event.deltaY < 0) {
-  //     socialswiper.mousewheel.enable();
-  //   } else if (event.deltaY > 0) {
-  //     // swiper.mousewheel.disable();
+  // //사회공헌
+  // var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
+  // var socialswiper = new Swiper('.quality .swiper-container', {
+  //   speed: 1000,
+  //   direction: 'vertical',
+  //   mousewheel: true,
+  //   pagination: {
+	// 		el: '.swiper-pagination',
+	// 		clickable: true,
+	// 		renderBullet: function (index, className) {
+	// 			return '<div class="list '+className+'">'+
+	// 			'<div class="text" data-txt="'+(secNavName[index])+'"><span>'+(secNavName[index])+'</span></div>'+
+	// 			'</div>'
+	// 		}
+	// 	},
+  //   on: {
+  //     reachEnd: function () {
+  //       socialswiper.mousewheel.disable();
+  //     }
   //   }
   // });
+
+  // // window.addEventListener('wheel', function (event) {
+  // //   if (event.deltaY < 0) {
+  // //     socialswiper.mousewheel.enable();
+  // //   } else if (event.deltaY > 0) {
+  // //     // swiper.mousewheel.disable();
+  // //   }
+  // // });
 
   //voc 개인정보처리방침
   $('.btn-toggle').click(function(){

@@ -19,6 +19,7 @@
   <script src="../../assets/lib/plugins/aos.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
@@ -184,47 +185,59 @@
       </div>
       <div class="quality section section02">
         <div class="swiper-container">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper slider">
             <div class="swiper-slide slide01">
               <div class="mainImg">
-                <div class="panel-title">
-                  <p>#기부봉사</p>
-                </div>
-                <div class="panel-txt">
-                  <p>나의 삶은 다른 이들의삶과 연결되어 함께 하는 우리가 될 수 있습니다. <br>임직원들도 다양한 사회공헌활동에 적극 참여하며 함께하고 있습니다.</p>
+                <img src="../../assets/images/sustainability/quality_imageslide01.png" alt="">
+                <div class="panel-wrap">
+                  <div class="panel-title">
+                    <p>#기부봉사</p>
+                  </div>
+                  <div class="panel-txt">
+                    <p>나의 삶은 다른 이들의삶과 연결되어 함께 하는 우리가 될 수 있습니다. <br>임직원들도 다양한 사회공헌활동에 적극 참여하며 함께하고 있습니다.</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide02">
               <div class="mainImg">
-                <div class="panel-title">
-                  <p>#인재육성</p>
-                </div>
-                <div class="panel-txt">
-                  <p>사람을 키우는 교육의 힘을 믿으며, <br>
-                    관련 사회공헌사업에 힘을 쏟고있습니다.</p>
+                <img src="../../assets/images/sustainability/quality_imageslide02.png" alt="">
+                <div class="panel-wrap">
+                  <div class="panel-title">
+                    <p>#인재육성</p>
+                  </div>
+                  <div class="panel-txt">
+                    <p>사람을 키우는 교육의 힘을 믿으며, <br>
+                      관련 사회공헌사업에 힘을 쏟고있습니다.</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide03">
               <div class="mainImg">
-                <div class="panel-title">
-                  <p>#친환경</p>
-                </div>
-                <div class="panel-txt">
-                  <p>자연이 주는 이로움을 사람과 환경에 무해하게 활용하고 <br>순환시키기 위해 환경 분야의 다양한 사회공헌활동을 펼치고 있습니다.</p>
+                <img src="../../assets/images/sustainability/quality_imageslide03.png" alt="">
+                <div class="panel-wrap">
+                  <div class="panel-title">
+                    <p>#친환경</p>
+                  </div>
+                  <div class="panel-txt">
+                    <p>자연이 주는 이로움을 사람과 환경에 무해하게 활용하고 <br>순환시키기 위해 환경 분야의 다양한 사회공헌활동을 펼치고 있습니다.</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide slide04">
               <div class="mainImg">
-                <div class="panel-title">
-                  <p>#문화예술</p>
+                <img src="../../assets/images/sustainability/quality_imageslide04.png" alt="">
+                <div class="panel-wrap">
+                  <div class="panel-title">
+                    <p>#문화예술</p>
+                  </div>
+                  <div class="panel-txt">
+                    <p>다양한 소재는 우리 삶의 질을 높여줍니다. <br>
+                      한 걸음 더 나아가, 더 행복하고 더 나은 삶을 위해 문화예술 분야의 가능성을 후원하고 있습니다.</p>
+                  </div>  
                 </div>
-                <div class="panel-txt">
-                  <p>다양한 소재는 우리 삶의 질을 높여줍니다. <br>
-                    한 걸음 더 나아가, 더 행복하고 더 나은 삶을 위해 문화예술 분야의 가능성을 후원하고 있습니다.</p>
-                </div>  
               </div>
             </div>
           </div>
@@ -393,5 +406,57 @@
   </div>
   <div class="scroll-top-btn moOnly" onclick="window.scrollTo(0,0);">
   </div>
+  <script>
+
+const interleaveOffset = 1;
+
+var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
+var swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  speed: 800,
+  mousewheelControl: true,
+  watchSlidesProgress: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: false,
+    type: 'bullets',
+    renderBullet: function (index, className) {
+      return '<div class="list '+className+'">'+
+      '<div class="text" data-txt="'+(secNavName[index])+'"><span>'+(secNavName[index])+'</span></div>'+
+      '</div>'
+    }
+  },
+  on: {
+    progress: function() {
+      console.log('test')
+      let swiper = this;
+
+      for (let i = 0; i < swiper.slides.length; i++) {
+        let slideProgress = swiper.slides[i].progress;
+        let innerOffset = swiper.height * interleaveOffset;
+        let innerTranslate = slideProgress * innerOffset;
+
+        TweenMax.set(swiper.slides[i].querySelector(".mainImg"), {
+          y: innerTranslate,
+        });
+
+      }
+    },
+    setTransition: function(slider, speed) {
+      let swiper = this;
+      for (let i = 0; i < swiper.slides.length; i++) {
+        swiper.slides[i].style.transition = speed + "ms";
+        swiper.slides[i].querySelector(".mainImg").style.transition =
+          speed + "ms";
+      }
+    }
+  }
+});
+
+
+  </script>
 </body>
 </html>
