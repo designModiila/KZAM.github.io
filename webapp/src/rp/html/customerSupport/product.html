@@ -241,14 +241,14 @@
                         <input type="text" class="input" placeholder="이메일을 입력하세요.">
                         <span class="dash">@</span>
                         <!-- <input type="text" class="input emailTxt" id="domainName" placeholder="도메인을 입력하세요" disabled=""> -->
-                        <select class="select">
+                        <select class="select select-mail">
                           <option>선택하세요</option>
                           <option>naver.com</option>
                           <option>daum.net</option>
-                          <option>직접 입력</option>
+                          <option value="direct">직접입력</option>
                         </select>
+                        <input type="text" id="selectDirect" name="selectDirect"/>
                         </div>
-
                       </div>
                     </td>
                   </tr>
@@ -309,6 +309,15 @@
           </form>
         </div>
       </div>
+      <div class="layer-alert">
+        <div class="document-layer">
+          <p class="desc-alert">내용을 입력해주세요.</p>
+        </div>
+        <div class="btn-box">
+          <button type="button" class="alert-btn" data-layer="layer-alert">확인</button>
+        </div>
+      </div>
+      <div class="layer-dimm"></div>
     </div>
     <footer class="footer" id="footer">
       <div class="footer-wrap">

@@ -374,6 +374,35 @@ $(window).on('scroll', function (e) {
     $('.privacy-agree').toggleClass('on');
   });
 
+  function layerAlert(){
+    $('.submit-btn').each(function(){
+      $(this).click(function(e){
+        e.preventDefault();
+        $('.layer-alert, .layer-dimm').show();
+      });
+    });
+    $('.layer-alert').click(function(e){
+      e.preventDefault();
+      $('.layer-alert, .layer-dimm').hide();
+    });
+  }
+
+  layerAlert();
+
+  function selectDirect(){
+    $("#selectDirect").hide();
+    $(".select-mail").change(function() {
+      if($(this).val() == "direct") {
+        $("#selectDirect").show();
+        $('.select-mail').hide();
+      }  else {
+        $("#selectDirect").hide();
+        $('.select-mail').show();
+      }
+    }) 
+  }
+  selectDirect();
+
 });
 
 // $(document).ready(function(){

@@ -173,7 +173,7 @@
       </div>
     </div>
     <div class="sub-content">
-      <div class="section section01">
+      <div class="voc section section01">
         <div class="content-wrap">   
           <div class="main-title-wrap">
             <div class="title" data-aos="fade-up">
@@ -202,14 +202,14 @@
                         <div class="flex-wrap">
                         <input type="text" class="input" placeholder="이메일을 입력하세요." required>
                         <span class="dash">@</span>
-                        <select class="select" onchange="selectEmail();">
+                        <select class="select select-mail" onchange="selectEmail();">
                           <option>선택하세요</option>
                           <option>naver.com</option>
                           <option>daum.net</option>
-                          <option>직접 입력</option>
+                          <option value="direct">직접입력</option>
                         </select>
+                        <input type="text" id="selectDirect" name="selectDirect"/>
                         </div>
-
                       </div>
                     </td>
                   </tr>
@@ -264,7 +264,16 @@
           </form>
         </div>
       </div>
-    </div>
+      <div class="layer-alert">
+        <div class="document-layer">
+          <p class="desc-alert">내용을 입력해주세요.</p>
+        </div>
+        <div class="btn-box">
+          <button type="button" class="alert-btn" data-layer="layer-alert">확인</button>
+        </div>
+      </div>
+      <div class="layer-dimm"></div>
+    </div><!--sub-content-->
     <footer class="footer" id="footer">
       <div class="footer-wrap">
         <div class="footer-top">

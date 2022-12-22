@@ -21,6 +21,7 @@
 .input-box {display: flex; }
 .input-box.type2 { width: 100%; display: flex; }
 .select { width: 100%; height: 61px; padding: 0 8px; border: 1px solid #d9d9d9; background: url(../images/customerSupport/select_default.png) no-repeat right 50%; }
+#selectDirect{width: 100%; height: 61px; padding: 0 8px; border: 1px solid #d9d9d9;}
 .input-box.type2 .flex-wrap {display: flex; width: 100%; align-items: center;}
 .input-box .dash { padding: 0 10px; line-height: 40px; }
 .input { width: 100%; padding: 19px 7px; border: 1px solid #d9d9d9; color: #323232; font-size: 16px; box-sizing: border-box; }
@@ -66,8 +67,16 @@
 .icheckbox[type=checkbox] + label {display: inline-block; background: url(../images/customerSupport/icheck-square.png) no-repeat;}
 .btn-box{width: 100%; text-align: center;}
 .icheckbox[type=checkbox]:checked + label {background: url(../images/customerSupport/icheck-square-color.png) no-repeat;}
-.submit-btn{padding: 15px 50px; background: #d9d9d9; color: #efefef; transition: background-color ease .4s;}
-.submit-btn:hover{background: #ff8b23; color: #fff;}
+.submit-btn{padding: 15px 50px; background: #ff8b23; color: #ffffff; border: 1px solid #ff8b23; box-sizing: border-box;; transition: background ease .4s;}
+.submit-btn:hover{background: #ffffff; color: #ff8b23;}
+
+.layer-dimm {display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 100; }
+.layer-alert{display: none; position: fixed; width: 400px; background-color: #ffffff; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 110;}
+.layer-alert .document-layer{background: #f6f6f6; padding: 93px 0px 48px; text-align: center; position: relative; color: #666666; letter-spacing: -0.03em;}
+.layer-alert .document-layer:before{position: absolute; content: ''; width: 30px; height: 30px; background: url(../images/customerSupport/info-circle.png) no-repeat; left: 50%; transform: translateX(-50%); top: 48px;}
+.layer-alert .btn-box{padding: 18px 0; color: #323232; font-family: 'NotoM'; letter-spacing: -0.03em; background: #fff; transition: background 0.5s ease-in-out;}
+.layer-alert .btn-box:hover{background: #ff8b23; color: #fff;}
+
 
 @media all and (max-width : 1280px){
   .privacy-agree-box{padding: 100px 50px 0;}
@@ -95,4 +104,8 @@
   .btn-toggle.toggle-text{margin: 15px 0 0 0;}
   .attr-box .btn-attr{width: 115px;}
 
+}
+
+@media all and (max-width : 400px){
+  .layer-alert{width: 300px;}
 }
