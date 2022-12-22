@@ -134,7 +134,9 @@
 /* .quality .swiper-container {height: 100vh; position: relative;;} */
 .quality .swiper-container {width: 100%; height: 100vh; position: relative;}
 
-.quality .swiper-container .swiper-slide {-webkit-backface-visibility: hidden;-webkit-transform: translate3d(0, 0, 0);}
+.quality .swiper-container .swiper-slide {-webkit-backface-visibility:hidden;
+	-webkit-transform:translateZ(0);
+	-webkit-transform:translate3d(0, 0, 0);}
 
 .quality .swiper-container .slider{min-height: 100vh;}
 .quality .swiper-container .slider .swiper-slide{overflow: hidden; position: relative; height: 100%; text-align: center; font-size: 18px; display: flex; justify-content: center; align-items: center;}
