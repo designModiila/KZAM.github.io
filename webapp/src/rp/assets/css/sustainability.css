@@ -307,10 +307,10 @@
   .society.section02 .table-box th{display: block; padding: 30px 0 10px 38px;}
   .society.section02 .table-box td{display: block; padding: 0 0 30px; font-size: 16px; line-height: 30px;}
   .quality.section02 .swiper-pagination{display: none;}
-  .quality .swiper-slide .mainImg {background-position: 50% 50%;}
+  .quality.section01 .main-title-wrap{padding: 60px 0; text-align: left;}
+  .quality .swiper-slide .mainImg img{height: 100vh; object-fit: cover;}
   .mainImg .panel-title p{font-size: 28px;}
   .mainImg .panel-txt p{font-size: 16px; line-height: 28px;}
-  .mainImg .panel-txt{padding: 0 6.9vw;}
   .mainImg .panel-txt p br{display: none}
 }
 

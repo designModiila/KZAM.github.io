@@ -366,6 +366,7 @@
   .content-tab-box ul li.active{display: block;}
   .content-tab-box ul li a{display: block; font-weight: 400; font-size: 18px; text-align: left; padding: 24px 20px; height: 65px; box-sizing: border-box;}
 
+  .main-title-wrap{text-align: left;}
   .sub-main-title p{font-size: 32px;}
 
 
