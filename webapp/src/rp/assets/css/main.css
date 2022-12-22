@@ -286,13 +286,17 @@
   .section .content-wrap .title{font-size: 3.1rem; line-height: 40px;}
 
   .section.full2 .con-box ul {gap:30px; flex-direction: column; align-items: center;}
-  .section.full2 .con-box ul li{width: 100%; text-align: center;}
-  .section.full2 .con-box ul li .icon {margin-bottom:0;}
-  .section.full2 .con-box ul li .box-title {margin-bottom:30px;}
-  .section.full2 .con-box ul li .box-title p::after { left:50%; transform:translateX(-50%);     bottom: -15px;}
-  .section.full2 .con-box ul li .box-txt p br {display: block;}
-
-
+  .section.full2 .con-box ul li{width: 100%; text-align: left;  display: flex;  gap: 6px; flex-direction: column; position: relative;}
+  .section.full2 .con-box ul li .icon {margin-bottom:0; position: absolute; left:0; top:0;}
+  .section.full2 .con-box ul li:nth-child(2) .icon{margin-top: 8px;}
+  .section.full2 .con-box ul li:nth-child(3) .icon{margin-top: 8px;}
+  .section.full2 .con-box ul li .box-title {margin-bottom:0; margin-left: 75px;}
+  .section.full2 .con-box ul li .box-title p { font-size:19px;}
+  .section.full2 .con-box ul li .box-title p::after {display: none; left:50%; transform:translateX(-50%);     bottom: -15px;}
+  .section.full2 .con-box ul li .box-txt p {margin-left: 75px; font-size:15px}
+  .section.full2 .con-box ul li .box-txt p br {display: none;}
+  .section.full2 .content-wrap .title br.moOnly {display: none !important;}
+  
 
   .section.full4 .content-wrap {padding: 120px 0 120px 0;}
   .section.full3 .content-wrap .line {width:20%; margin-top: 30px; }
@@ -353,12 +357,9 @@
   .section.full2 {background-position-x: -245px;}
   .section.full2 .content-wrap {padding:60px 0 80px 0; justify-content: flex-start}
   .section.full2 .content-wrap .con-title-wrap {margin-bottom:60px; }
-  .section.full2 .content-wrap .title {font-size:32px; line-height: 46px; margin-bottom:0; letter-spacing: -0.01em;}
+  .section.full2 .content-wrap .title {font-size:24px; line-height: 32px; margin-bottom:0;}
   
-  .section.full2 .con-box ul li .icon {margin-bottom:5px;}
-  .section.full2 .con-box ul li .box-title {margin-bottom:10px;}
-  .section.full2 .con-box ul li .box-title p {font-size:20px; line-height: 29px;;}
-  .section.full2 .con-box ul li .box-title p::after {display: none;}
+
 
   .section.full3 .content-wrap {display: flex; flex-direction: column;  align-items: flex-start; padding:120px 0; position: relative; }
   .section.full3 .content-wrap .line.pcOnlay {display: none !important; }
@@ -371,18 +372,15 @@
 
 }
 @media all and (max-width:540px){
-  .section.full2 .content-wrap .title br.moOnly {display: block !important;}
+  
 }
 
 @media all and (max-width:425px){
-  .swiper-controller-wrap {
-    width: 200px;
-    height: 70px;
-    padding: 15px 17px;
+  .swiper-controller-wrap { width: 200px; height: 70px; padding: 15px 17px;
 }
   .swiper-wrapper .item .txt-box .visual-title {font-size: 36px; line-height: 44px;}
   .section .content-wrap .sub-title {margin-bottom:10px;}
-  .section.full2 .content-wrap .title {font-size: 26px; line-height: 36px;}
+
   .section.full2 .con-box ul li .box-txt { line-height: 20px;}
   .section.full2 {background-position-x: -245px; }
   .section.full3 .content-wrap {padding:80px 0 80px 0;}
@@ -394,12 +392,7 @@
   .section.full4 .content-wrap {padding: 60px 0 60px 0;}
   .section.full4 .content-wrap .thumb-box .thumb-txt-wrap {padding-left: 0;  width: 100%;}
   .section.full4 .content-wrap .con-title-wrap .more-btn {bottom:0;}
-  .section.full4 .content-wrap .con-title-wrap .more-btn a {
-   
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-}
+  .section.full4 .content-wrap .con-title-wrap .more-btn a { width: 100px; height: 40px;  line-height: 40px;}
 
 
 }
