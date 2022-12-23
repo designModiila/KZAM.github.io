@@ -87,7 +87,7 @@
 
 .section.full3 .con-title-wrap .sub-title{opacity: 0;}
 .section.full3 .con-title-wrap .title{opacity: 0;}
-.section.full3 .content-wrap .line span{opacity: 0;}
+/* .section.full3 .content-wrap .line span{opacity: 0;} */
 .section.full3 .con-box dl:nth-child(1){opacity: 0;}
 .section.full3 .con-box dl:nth-child(2){opacity: 0;}
 .section.full3 .con-box dl:nth-child(3){opacity: 0;}
