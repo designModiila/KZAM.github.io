@@ -147,7 +147,7 @@
 .mainImg .panel-title{font-size: 60px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #fff;}
 .mainImg .panel-txt{font-size: 20px; line-height: 34px; letter-spacing: -0.03em; color: #ececec}
 
-.quality.section02 .swiper-pagination{position: absolute; left: 10vw; color: rgba(255,255,255,0.8); z-index: 100; width: 100px;}
+.quality.section02 .swiper-pagination{position: absolute; left: 10vw; color: rgba(255,255,255,0.8); z-index: 10; width: 100px;}
 .quality.section02 .swiper-pagination .list{position: relative; background: transparent; display: block; width: 100%;}
 .quality.section02 .swiper-pagination .list:before{display: block;content:""; position: absolute; bottom: -10px; left: 0;width: 100%; height: 1px; background: rgba(255,255,255,0.8);transform: scaleX(0); transform-origin: left;transition: 0.4s;}
 .quality.section02 .swiper-pagination .list.swiper-pagination-bullet-active:before{transform:scaleX(1);}
@@ -159,6 +159,14 @@
 .quality.section02 .swiper-pagination .list.swiper-pagination-bullet-active .text:after{opacity:1;font-size:18px; color:#fff;}
 .quality.section02 .swiper-pagination .list:hover span,
 .quality.section02 .swiper-pagination .list.swiper-pagination-bullet-active span{opacity:0;}
+
+.quality-nav-wrap{position:absolute;top: 58%; right: 24px; padding-top: 15px; width: calc(100% - 80px); z-index: 40;}
+.quality-nav-wrap .quality-nav{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end;width: 100%;}
+.quality-nav-wrap .quality-nav .button-g{display: flex; flex-wrap: wrap;}
+.quality-nav-wrap .quality-nav .button-g .arrow{position: relative; width: 34px; height: 34px;}
+.quality-nav-wrap .quality-nav .button-g .arrow:after{display: block; content:""; position: absolute; top: 12px; left: 15px; width: 8px; height: 8px; border: 1px solid #fff; transform: rotate(135deg); border-top: 0; border-left: 0;}
+.quality-nav-wrap .quality-nav .button-g .arrow + .arrow{border-left: 0;}
+.quality-nav-wrap .quality-nav .button-g .arrow.button-next:after{transform: rotate(-45deg); left: 10px;}
 
 
 .quality.section03 .content-wrap{padding-bottom: 200px;}

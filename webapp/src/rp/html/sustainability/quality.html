@@ -264,6 +264,14 @@
               </div>
             </div>
           </div>
+          <div class="quality-nav-wrap moOnly">
+            <div class="quality-nav">
+              <div class="button-g">
+                <button type="button" class="button-prev arrow" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></button>
+                <button type="button" class="button-next arrow" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></button>
+              </div>
+            </div>
+          </div>
         </div>
       </div><!--class="quality section section02"-->
       <div class="quality section section03">
@@ -438,6 +446,10 @@ var swiper = new Swiper('.swiper-container', {
       '</div>'
     }
   },
+  navigation: {
+			prevEl: '.quality-nav .button-prev',
+			nextEl: '.quality-nav .button-next',
+		},
   on: {
     progress: function() {
       // console.log('test')
