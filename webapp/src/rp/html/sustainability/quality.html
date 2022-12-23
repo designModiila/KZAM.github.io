@@ -413,12 +413,21 @@ const interleaveOffset = 1;
 var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
 var swiper = new Swiper('.swiper-container', {
   direction: 'vertical',
-  speed: 800,
+  effect: 'slide',
+  loop: false,
+  parallax: true,
+  autoplay: false,
+  allowTouchMove:false,
+  simulateTouch:false,
+  grabCursor: false,
+  speed: 1100,
   mousewheelControl: true,
   watchSlidesProgress: true,
   mousewheel: {
     releaseOnEdges: true,
   },
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
