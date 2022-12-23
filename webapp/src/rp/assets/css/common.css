@@ -447,7 +447,8 @@
 
 
 @media(max-width:425px){
-
+  .content-wrap .title p{word-break: keep-all;}
+  .content-wrap .title p br{display: none;}
 }
 
 @media(max-width:375px){

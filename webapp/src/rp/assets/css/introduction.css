@@ -332,6 +332,7 @@
   .introduction.section05 .title-wrap .con-txt p{font-size: 16px; line-height: 28px;}
   .introduction.section05 .title-wrap .con-txt p br{display: none;}
 
+  .ceo.section01 .content-wrap .main-title-wrap{padding: 60px 0 60px;}
   .ceo.section02 .intro-image img{margin: 0 auto;}
   .ceo.section02 .intro-sign{position: unset; width: 100%; height: 66px; line-height: 66px; text-align: right; padding-right: 37px;}
   .ceo.section02 .intro-sign .intro-text-end{font-size: 16px;}
@@ -438,6 +439,7 @@
   .ceo.section01 .intro-content .intro-title p br{display: none;}
   .vision_core_circle_outer{zoom: 0.4;}
 
+  .affiliate.section01 .content-wrap .title-txt p br{display: none;}
   .affiliate-wrap .thumb{margin-top: 11%;}
   .wrap-layer .item .box .list-network dt{display: block;}
   .wrap-layer .item .box .list-network dd{display: block;}

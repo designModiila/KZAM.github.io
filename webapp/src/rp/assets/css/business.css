@@ -156,8 +156,9 @@
   .overview.section02 .inner-circle .right-box p:after{right: 72px;}
   .overview.section02 .inner-circle .bottom-box{bottom: -50px;}
   .overview.section02 .inner-circle .bottom-box p:after{top: -14px;}
-  .overview.section02 .circle-box-txt p{font-size: 14px; line-height: 26px; padding: 0 10%;}
-  .overview.section02 .circle-box-txt .line{height: 110px;}
+  .overview.section02 .circle-box-txt p{font-size: 14px; line-height: 26px; padding: 0;}
+  .overview.section02 .circle-box-txt p br{display: none;}
+  .overview.section02 .circle-box-txt .line{display: none;}
 
   .swiper-slide{height: 700px;}
   .overview-img-slide .swiper-slide img{height: 100%; object-fit: cover;}
@@ -206,6 +207,8 @@
 
 @media all and (max-width: 450px){
   .overview.section01 .content-wrap .title-txt p br{display: none;}
-  .overview.section02 .circle-box-txt .line{display: none;}
+  /* .overview.section02 .circle-box-txt .line{display: none;} */
+  .overview.section02 .circle-box-txt br{display: none;}
   .overview-txt-slide .txt-box .title p br{display: none;}
+  .content-wrap .title-txt p br{display: none;}
 }

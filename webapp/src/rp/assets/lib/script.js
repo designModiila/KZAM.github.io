@@ -54,7 +54,7 @@ $(document).ready(function(){
       setTimeout(function () {
         $('.fp-table.active').addClass('loaded');
       }, 2500);
-      
+      $('.full'+index).addClass('ani');
       if((index == 1) || (index == 3)){
         $(".header").removeClass("dark");
         $('#fp-nav li a.active + .fp-tooltip').removeClass('dark');
@@ -68,12 +68,12 @@ $(document).ready(function(){
         counterUp();
       }
     },
-    onLeave: function(anchorLink, direction){
+    onLeave: function(anchorLink, index, direction){
       if((anchorLink == 2) && direction == 'up'){
         $("header").removeClass("blur");
       }
       if((anchorLink == 4) && direction == 'up'){
-        counterUp();
+        // counterUp();
       }
     },
     
