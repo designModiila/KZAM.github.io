@@ -25,7 +25,7 @@ $(document).ready(function(){
   function counterUp(){
     var counterUp = window.counterUp["default"];
     var $counters = $(".counter");
-    $counters.each(function (ignore, counter) {
+    $counters.off().each(function (ignore, counter) {
       var waypoint = new Waypoint( {
         element: $(this),
         handler: function() { 
