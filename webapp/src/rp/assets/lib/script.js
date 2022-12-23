@@ -22,6 +22,26 @@ $(document).ready(function(){
     }
   });
 
+  function counterUp(){
+    var counterUp = window.counterUp["default"];
+    var $counters = $(".counter");
+    $counters.each(function (ignore, counter) {
+      var waypoint = new Waypoint( {
+        element: $(this),
+        handler: function() { 
+          counterUp(counter, {
+            duration: 5000,
+            delay: 16
+          }); 
+          this.destroy();
+        },
+        offset: 'bottom-in-view',
+      } );
+    });
+  }
+
+
+
   var $fullpage = $('#fullpage');
   $('#fullpage').fullpage({
     navigation: true,
@@ -45,7 +65,7 @@ $(document).ready(function(){
      //   $('.nav ul li, .logo, .menu-btn .menu span').addClass('dark');
       }
       if(index == 3){
-        $('.counter').counterUp({delay: 1, time: 750 });
+        counterUp();
       }
     },
     onLeave: function(anchorLink, direction){
@@ -53,7 +73,7 @@ $(document).ready(function(){
         $("header").removeClass("blur");
       }
       if((anchorLink == 4) && direction == 'up'){
-        $('.counter').counterUp({delay: 1, time: 750 });
+        counterUp();
       }
     },
     
@@ -151,6 +171,18 @@ $(window).on('scroll', function (e) {
       });
     }
   }
+  // var waypoint1 = new Waypoint({
+  //   element: document.getElementById('waypoint1'),
+  //   handler: function(direction) {
+  
+  //     if (direction == "up") {
+  //       counter.reset();
+  //     } else {
+  //       counter.start();
+  //     }
+  //   },
+  //   offset: '50%'
+  // });
 
 
   var swiper = new Swiper(".main-slide-wrap", {
