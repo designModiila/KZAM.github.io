@@ -25,7 +25,7 @@ $(document).ready(function(){
   var $fullpage = $('#fullpage');
   $('#fullpage').fullpage({
     navigation: true,
-    autoScrolling: false,
+    autoScrolling: true,
     scrollingSpeed:800,
     navigationTooltips: ['MAIN','BUSINESS','COMPANY','NEWS'],
     navigationPosition: 'left',
