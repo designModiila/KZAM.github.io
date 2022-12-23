@@ -30,7 +30,7 @@ $(document).ready(function(){
         element: $(this),
         handler: function() { 
           counterUp(counter, {
-            duration: 5000,
+            duration: 2500,
             delay: 16
           }); 
           this.destroy();
@@ -95,7 +95,7 @@ var chkScrollPages = function chkScrollPages() {
       //console.log('idx : ', idx);
       //$body.addClass(`fp-viewing-${idx}`);
       if (!$target.hasClass('loaded') && idx === 4) {
-        $('.counter').counterUp({ delay: 1,time: 750});
+        counterUp();
       }
       $target.addClass('loaded');
       currentNum = idx;
