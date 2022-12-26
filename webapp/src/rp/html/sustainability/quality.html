@@ -19,7 +19,8 @@
   <script src="../../assets/lib/plugins/aos.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
@@ -416,6 +417,18 @@
   </div>
   <script>
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".swiper-slide",{
+  scrollTrigger: {
+    trigger : '.swiper-continer',
+      start: "bottom bottom",
+      pin: true,
+      scrub: true,
+  }
+})
+
+
 const interleaveOffset = 1;
 
 var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
@@ -476,6 +489,7 @@ var swiper = new Swiper('.swiper-container', {
     }
   }
 });
+
 
 
   </script>
