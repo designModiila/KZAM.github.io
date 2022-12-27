@@ -7,7 +7,7 @@
 .overview.section02 .inner-circle-wrap{position: relative;}
 .overview.section02 .inner-circle{width: 480px; height: 480px; border-radius: 50%; background: #f9f9f9; box-sizing: border-box; display: flex; align-items: center; position: relative; left: 50%; transform: translateX(-50%);}
 .overview.section02 .inner-circle:after{position: absolute; content: ''; width: 650px; height: 650px; border-radius: 50%; border: 1px dashed #d9d9d9; box-sizing: border-box; left: 50%; transform: translateX(-50%);}
-.overview.section02 .inner-circle p{font-size: 38px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; text-align: center; width: 290px; height: 290px; border-radius: 50%; border: 13px solid #f2f2f2; background: #fff; box-sizing: border-box; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
+.overview.section02 .inner-circle p{font-size: 24px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; text-align: center; width: 290px; height: 290px; border-radius: 50%; border: 13px solid #f2f2f2; background: #fff; box-sizing: border-box; margin: 0 auto; display: flex; align-items: center; justify-content: center;}
 .overview.section02 .circle p{width: 250px; height: 250px; border-radius: 50%; background: #ff8b23; color: #fff; font-size: 20px; letter-spacing: -0.03em; display: flex; align-items: center; justify-content: center; flex-direction: column; position: relative;}
 .overview.section02 .circle p:after{position: absolute; content: ''; width: 24px; height: 24px; border: 3px solid #fff; background-color: #ff8b23; box-sizing: border-box; border-radius: 50%;}
 .overview.section02 .circle{display: flex;}
@@ -95,10 +95,10 @@
 .safetyHealth.section02 .purpose-box .item p{width: 250px; height: 250px; border-radius: 50%; background: #fff; box-sizing: border-box; border: 1px solid #b9b9b9; color: #323232; font-size: 20px; letter-spacing: -0.03em; font-family: 'NotoB'; display: flex; justify-content: center; align-items: center;}
 /* .safetyHealth.section02 .purpose-box .item04{margin-left: 0;} */
 .safetyHealth.section02 .purpose-box .item04 p{background-color: #ff8b23; border: 0; color: #fff}
-.safetyHealth.section02 .purpose-box .arrow-box{margin-left: 0; text-align: center; line-height: 250px;}
-.safetyHealth.section02 .purpose-box .arrow-box span{display: inline-block; width: 125px; height: 3px; background: #666666; position: relative;}
-.safetyHealth.section02 .purpose-box .arrow-box span:after{position: absolute; content: ''; width: 20px; height: 3px; background: #666666; right: -2px; top: -7px; transform: rotate(45deg);}
-.safetyHealth.section02 .purpose-box .arrow-box span:before{position: absolute; content: ''; width: 20px; height: 3px; background: #666666; right: -2px; top: 7px; transform: rotate(-45deg);}
+.safetyHealth.section02 .purpose-box .arrow-box{text-align: center; line-height: 250px;}
+.safetyHealth.section02 .purpose-box .arrow-box span{display: inline-block; width: 119px; height: 2px; background: #666666; position: relative; margin-right: 40px;}
+.safetyHealth.section02 .purpose-box .arrow-box span:after{position: absolute; content: ''; width: 20px; height: 2px; background: #666666; right: -2px; top: -7px; transform: rotate(45deg);}
+.safetyHealth.section02 .purpose-box .arrow-box span:before{position: absolute; content: ''; width: 20px; height: 2px; background: #666666; right: -2px; top: 7px; transform: rotate(-45deg);}
 .safetyHealth.section02 .purpose-box .item .info{text-align: center; padding-top: 40px;}
 .safetyHealth.section02 .purpose-box .item03 .info li{font-size: 14px; font-family: 'NotoR'; padding-left: 50px;}
 .safetyHealth.section02 .purpose-box .item03 .info > ul > li{padding-left: 0;}
@@ -130,43 +130,28 @@
 .society.section02 .table-box tr:nth-child(4) th:before{content:'04';}
 .society.section02 .table-box tr:nth-child(5) th:before{content:'05';}
 
+.container{position: relative;}
+.panel{overflow: hidden; position: relative;}
 
-/* .quality .swiper-container {height: 100vh; position: relative;;} */
-.quality .swiper-container {width: 100%; height: 100vh; position: relative;}
+/* .anchor-nav{
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  background:red;
+  z-index: 1000;
+  padding: 20px;
+  width: 200px;
+} */
+.quality.section02 .panel-info-wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.quality.section02 .panel-title{font-size: 60px; font-family: 'NotoB'; color: #fff; letter-spacing: -0.03em; margin-bottom: 30px; text-align: center;}
+.quality.section02 .panel-desc{font-size: 20px; letter-spacing: -0.03em; line-height: 34px; color: #ececec; text-align: center;}
 
-.quality .swiper-container .swiper-slide {-webkit-backface-visibility:hidden;
-	-webkit-transform:translateZ(0);
-	-webkit-transform:translate3d(0, 0, 0);}
+.item01 .bg{background: url(../images/sustainability/quality_imageslide01.png); width: 100%; height: 100vh;}
+.item02 .bg{background: url(../images/sustainability/quality_imageslide02.png); width: 100%; height: 100vh;}
+.item03 .bg{background: url(../images/sustainability/quality_imageslide03.png); width: 100%; height: 100vh;}
+.item04 .bg{background: url(../images/sustainability/quality_imageslide04.png); width: 100%; height: 100vh;}
 
-.quality .swiper-container .slider{min-height: 100vh;}
-.quality .swiper-container .slider .swiper-slide{overflow: hidden; position: relative; height: 100%; text-align: center; font-size: 18px; display: flex; justify-content: center; align-items: center;}
-.quality .swiper-slide .mainImg{position: absolute; width: 100%; height: 100vh; left: 0; top: 0;}
-.quality .swiper-slide .mainImg img{position: absolute; width: 100%; left: 0; top: 0; bottom: 0; margin: auto;}
-.quality .swiper-slide .mainImg .panel-wrap{position: absolute; z-index: 10; top: 50%; left: 50%; transform: translate(-50%,-50%);}
-.mainImg .panel-title{margin-bottom: 30px;}
-.mainImg .panel-title{font-size: 60px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #fff;}
-.mainImg .panel-txt{font-size: 20px; line-height: 34px; letter-spacing: -0.03em; color: #ececec}
 
-.quality.section02 .swiper-pagination{position: absolute; left: 10vw; color: rgba(255,255,255,0.8); z-index: 10; width: 80px; text-align: left;}
-.quality.section02 .swiper-pagination .list{position: relative; background: transparent; display: block; width: 100%;}
-.quality.section02 .swiper-pagination .list:before{display: block;content:""; position: absolute; bottom: -10px; left: 0;width: 100%; height: 1px; background: rgba(255,255,255,0.8);transform: scaleX(0); transform-origin: left;transition: 0.4s;}
-.quality.section02 .swiper-pagination .list.swiper-pagination-bullet-active:before{transform:scaleX(1);}
-.quality.section02 .swiper-pagination .list + .list{margin-top: 25px;}
-.quality.section02 .swiper-pagination .text{position: relative;font-size: 16px; font-family: 'NotoB'; transition: 0.5s;}
-.quality.section02 .swiper-pagination .text span{position: relative;display: block; transition: 0.5s;}
-.quality.section02 .swiper-pagination .text:after{display:block;content:attr(data-txt); position: absolute; top: -10px; transition: 0.5s; opacity: 0;}
-.quality.section02 .swiper-pagination .list:hover .text:after,
-.quality.section02 .swiper-pagination .list.swiper-pagination-bullet-active .text:after{opacity:1;font-size:18px; color:#fff;}
-.quality.section02 .swiper-pagination .list:hover span,
-.quality.section02 .swiper-pagination .list.swiper-pagination-bullet-active span{opacity:0;}
-
-.quality-nav-wrap{position:absolute;top: 58%; right: 24px; padding-top: 15px; width: calc(100% - 80px); z-index: 40;}
-.quality-nav-wrap .quality-nav{display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end;width: 100%;}
-.quality-nav-wrap .quality-nav .button-g{display: flex; flex-wrap: wrap;}
-.quality-nav-wrap .quality-nav .button-g .arrow{position: relative; width: 34px; height: 34px;}
-.quality-nav-wrap .quality-nav .button-g .arrow:after{display: block; content:""; position: absolute; top: 12px; left: 15px; width: 8px; height: 8px; border: 1px solid #fff; transform: rotate(135deg); border-top: 0; border-left: 0;}
-.quality-nav-wrap .quality-nav .button-g .arrow + .arrow{border-left: 0;}
-.quality-nav-wrap .quality-nav .button-g .arrow.button-next:after{transform: rotate(-45deg); left: 10px;}
 
 
 .quality.section03 .content-wrap{padding-bottom: 200px;}
@@ -264,9 +249,9 @@
   .ecoFriendly.section01 .ecofriendly-box .box{width: 100%; margin-bottom: 60px; flex-direction: column; align-items: flex-start;}
   .ecoFriendly.section01 .ecofriendly-box .box:nth-child(2){flex-direction: column;}
   .ecoFriendly.section01 .ecofriendly-box .box:nth-child(4){flex-direction: column;}
-  .ecoFriendly.section01 .ecofriendly-box .box .img-box img{display: block; margin: 0 auto; width: 100%; min-height: 200px; object-fit: cover;}
+  .ecoFriendly.section01 .ecofriendly-box .box .img-box img{display: block; margin: 0 auto; width: 100%;}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info{padding-top: 20px;}
-  .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{line-height: 28px;}
+  .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{line-height: 28px; width: calc(100% - 22%);}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info .point{margin-bottom: 0;}
   .ecoFriendly.section02 .content-wrap .title p{text-align: left}
 
@@ -322,9 +307,10 @@
   .quality.section02 .swiper-pagination{display: none;}
   .quality.section01 .main-title-wrap{padding: 60px 0; text-align: left;}
   .quality .swiper-slide .mainImg img{height: 100vh; object-fit: cover;}
-  .mainImg .panel-title p{font-size: 28px;}
-  .mainImg .panel-txt p{font-size: 16px; line-height: 28px;}
-  .mainImg .panel-txt p br{display: none}
+  .quality.section02 .panel-title{font-size: 28px;}
+  .quality.section02 .panel-desc{font-size: 16px; line-height: 28px;}
+  .quality.section02 .panel-desc br{display: none}
+  .quality.section03 .members{justify-content: center;}
 }
 
 @media all and (max-width: 450px){
@@ -334,5 +320,4 @@
   .safetyHealth.section02 .purpose-box > div{gap: 30px;}
   .safetyHealth.section02 .purpose-box .item .info > ul > li{display: block; line-height: unset;}
   .safetyHealth.section02 .purpose-box .item .info > ul > li br{display: none;}
-  .society.section02 .table-box td span{display: inline;}
 }

@@ -11,7 +11,7 @@
 
 
 .introduction.section02 .company-box{position: relative;  width: 100%; height: 100%;}
-.introduction.section02 .company-image{width: 100%; height: 563px;}
+.introduction.section02 .company-image{width: 100%; height: 563px; animation: bg-scale 5s forwards;}
 .introduction.section02 .company-image img{height: 100%; object-fit: cover;}
 .introduction.section02 .company-info{width: 50%; position: absolute; top: 50%; left: 15%; transform: translateY(-50%);}
 .introduction.section02 .company-info table tr{border-bottom: 1px solid #becde2;}
@@ -89,7 +89,7 @@
 
 #affiliate01 .company-wrap{position: relative; min-height: 840px; clear: both; margin-top: 100px; padding-bottom: 200px;}
 #affiliate01  .company-wrap .item {float: left; clear: both; width: 325px;}
-#affiliate01  .company-wrap .item label {padding: 19px 0 19px 20px; border-bottom: 1px solid #d9d9d9; margin-left: -1px; font-size: 18px; letter-spacing: -0.03em; position: relative; left: 1px; width: 325px; color: #606060; display: inline-block; box-sizing: border-box; position: relative;}
+#affiliate01  .company-wrap .item label {padding: 19px 0 19px 20px; border-bottom: 1px solid #d9d9d9; margin-left: -1px; font-size: 18px; letter-spacing: -0.03em; position: relative; left: 1px; width: 305px; color: #606060; display: inline-block; box-sizing: border-box; position: relative;}
 #affiliate01 .company-wrap .item:first-child label{border-top: 1px solid #383838;}
 #affiliate01 .company-wrap .item:last-child label{border-bottom: 1px solid #383838;}
 #affiliate01 .company-wrap .item label:hover{background: #f6f6f6;}
@@ -98,20 +98,21 @@
 #affiliate01 .company-wrap .item label:before{position: absolute; content: ''; width: 10px; height: 1px; background: #323232; right: 10px; transform: rotate(45deg); top: 28px; opacity: 0;}
 #affiliate01 .company-wrap .item label:after{position: absolute; content: ''; width: 10px; height: 1px; background: #323232; right: 10px; transform: rotate(-45deg); bottom: 28px; opacity: 0;}
 #affiliate01 .company-wrap .item [type=radio] {display: none;}
-#affiliate01 .company-wrap .content {position: absolute; top: 0; left: 425px; background: white; right: 0; bottom: 0;}
+#affiliate01 .company-wrap .content {position: absolute; top: 0; left: 433px; background: white; right: 0; bottom: 0;}
 #affiliate01 .company-wrap [type=radio]:checked ~ label {z-index: 2; color: #323232; font-family: 'NotoB';}
 #affiliate01 .company-wrap [type=radio]:checked ~ label:after {opacity: 1;}
 #affiliate01 .company-wrap [type=radio]:checked ~ label:before {opacity: 1;}
 #affiliate01 .company-wrap [type=radio]:checked ~ label ~ .content {z-index: 1;}
-#affiliate01 .company-wrap .box{margin-bottom: 30px; position: relative;}
-#affiliate01 .company-wrap .box:before{position: absolute; content: ''; width: 24px; height: 24px;}
-#affiliate01 .company-wrap .box02:before{position: absolute; content: ''; width: 24px; height: 24px; background: url(../images/introduction/icon_location.png);}
-#affiliate01 .company-wrap .box03:before{position: absolute; content: ''; width: 24px; height: 24px; background: url(../images/introduction/icon_global.png);}
+#affiliate01 .company-wrap .box{margin-bottom: 50px; position: relative;}
+#affiliate01 .company-wrap .box:before{position: absolute; content: '';}
+#affiliate01 .company-wrap .box02:before{position: absolute; display: inline-block; content: 'Add.'; color: #323232; font-family: 'NotoB'; letter-spacing: -0.03em;/* width: 24px; height: 24px; background: url(../images/introduction/icon_location.png);*/}
+#affiliate01 .company-wrap .box03:before{position: absolute; content: 'Web.'; color: #323232; font-family: 'NotoB';/*width: 24px; height: 24px; background: url(../images/introduction/icon_global.png);*/}
 #affiliate01 .company-wrap .box03{margin-bottom: 50px;}
 #affiliate01 .company-wrap .box .title{display: block; font-size: 38px; letter-spacing: -0.03em; font-family: 'NotoB'; color: #323232; margin-bottom: 20px;}
 #affiliate01 .company-wrap .box .desc{font-size: 20px; letter-spacing: -0.03em; color: #4e4e4e;}
 #affiliate01 .company-wrap .box dl{display: flex; padding-left: 47px; margin-bottom: 15px;}
 #affiliate01 .company-wrap .box dt{font-family: 'NotoB'; color: #4e4e4e; letter-spacing: -0.03em; padding-right: 5px;}
+#affiliate01 .company-wrap .box03 dt{font: 0/0 a;}
 #affiliate01 .company-wrap .box dd{color: #4e4e4e; letter-spacing: -0.03em; margin-right: 15px;}
 
 
@@ -195,9 +196,9 @@
 #affiliate02 .wrap-layer .item .box02{padding-right: 45px;}
 #affiliate02 .wrap-layer .item .box02:before{content: none;}
 #affiliate02 .wrap-layer .item .box02 dl{position: relative;}
-#affiliate02 .wrap-layer .item .box02 dl:before{position: absolute; content: ''; width: 24px; height: 24px; top: 5px; background: url(../images/introduction/icon_location.png) no-repeat center;}
-#affiliate02 .wrap-layer .item .box02 dl:nth-child(2):before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
-#affiliate02 .wrap-layer .item .box02 dl:nth-child(3):before{background: url(../images/introduction/icon_global_fax.png) no-repeat center;}
+#affiliate02 .wrap-layer .item .box02 dl:before{position: absolute; content: 'Add.'; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; /*width: 24px; height: 24px; top: 5px; background: url(../images/introduction/icon_location.png) no-repeat center;*/}
+#affiliate02 .wrap-layer .item .box02 dl:nth-child(2):before{content: 'Tel.';/*background: url(../images/introduction/icon_global_tel.png) no-repeat center;*/}
+#affiliate02 .wrap-layer .item .box02 dl:nth-child(3):before{content: 'Fax.';/*background: url(../images/introduction/icon_global_fax.png) no-repeat center;*/}
 #affiliate02 .wrap-layer .top .box dl{padding-left: 0; margin-bottom: 3%; line-height: 26px;}
 #affiliate02 .wrap-layer .top .box dl:last-child{margin-bottom: 0;}
 #affiliate02 .wrap-layer .top .box dd{padding-left: 44px;}
@@ -275,7 +276,7 @@
 
   .location.section01 .company-info .item{flex-direction: column; gap: 20px;}
   #affiliate01 .company-wrap .item label{width: 225px;}
-  #affiliate01 .company-wrap .content{left: 250px;}
+  #affiliate01 .company-wrap .content{left: 300px;}
   .america-wrap .circle-btn:hover{margin-left: 19%;}
   .canada-wrap .circle-btn:hover{margin-left: 17%;}
   .ceo.section02 .intro-sign{height: 80px; line-height: 80px;;}
@@ -295,6 +296,10 @@
 
 @media all and (max-width:1100px){
   .vision.section02 .item:not(:first-child){margin-top: 50px;}
+}
+
+@media all and (max-width: 864px){
+  #affiliate01 .company-wrap .content{left: 250px;}
 }
 
 @media all and (max-width:821px){
@@ -405,12 +410,13 @@
   .accordion-wrap{border-bottom: 1px solid #d9d9d9;}
   .accordion-wrap .accor-top{padding: 15px 0; display: flex; align-items: center; justify-content: space-between;}
   #affiliate01 .accordion-wrap .accor-top{padding: 15px 0 20px;}
-  #affiliate01 .accordion-wrap .accor-pane .item{padding-left: 31px; position: relative;}
-  #affiliate01 .accordion-wrap .accor-pane .item:before{position: absolute; content: ''; width: 24px; height: 24px; left: 0; background: url(../../assets/images/introduction/icon_location.png);}
-  #affiliate01 .accordion-wrap .accor-pane .item:nth-child(2):before{background: url(../../assets/images/introduction/icon_global.png);}
+  #affiliate01 .accordion-wrap .accor-pane .item{padding-left: 40px; position: relative;}
+  #affiliate01 .accordion-wrap .accor-pane .item:before{position: absolute; left: 0; content: 'Add.'; font-family: 'NotoB'; font-size: 14px; line-height: 26px; letter-spacing: -0.03em; color: #323232; /*width: 24px; height: 24px; left: 0; background: url(../../assets/images/introduction/icon_location.png);*/}
+  #affiliate01 .accordion-wrap .accor-pane .item:nth-child(2):before{content: 'Web.';/*background: url(../../assets/images/introduction/icon_global.png);*/}
   #affiliate01 .accordion-wrap .accor-pane dl{line-height: 26px; margin-bottom: 10px;}
   #affiliate01 .accordion-wrap .accor-pane dl:last-child{margin-bottom: 20px;}
   #affiliate01 .accordion-wrap .accor-pane dt{font-size: 14px; color: #4e4e4e; font-family: 'NotoB'; letter-spacing: -0.03em;}
+  #affiliate01 .accordion-wrap .accor-pane .item:nth-child(2) dt{font: 0/0 a;}
   #affiliate01 .accordion-wrap .accor-pane dd{font-size: 14px; color: #4e4e4e; letter-spacing: -0.03em;}
   #affiliate01 .accordion-wrap .accor-pane dd span{font-size: 14px; font-family: 'NotoB'; display: inline-block; padding-right: 5px; color: #4e4e4e; letter-spacing: -0.03em;}
   .accordion-wrap .accor-tit{font-size: 18px; letter-spacing: -0.03em; font-family: 'NotoB'; color: #323232; margin-bottom: 5px;}
@@ -421,9 +427,9 @@
   .accordion-wrap .accor-pane{display: none; box-sizing: border-box; padding: 10px 0 30px;}
   #affiliate01 .accordion-wrap .accor-pane{display: block; box-sizing: border-box; padding: 10px 0 30px;}
   .accordion-wrap .accor-pane .item p{font-size: 14px; color: #4e4e4e; line-height: 26px; letter-spacing: -0.03em; padding-left: 44px; position: relative; margin-bottom: 10px;}
-  .accordion-wrap .accor-pane .item p:before{position: absolute; width: 20px; height: 22px; content: ''; left: 0; margin-top: 3px; background: url(../images/introduction/icon_location.png) no-repeat center;}
-  .accordion-wrap .accor-pane .item p:nth-child(2):before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
-  .accordion-wrap .accor-pane .item p:nth-child(3):before{background: url(../images/introduction/icon_global_fax.png) no-repeat center;}
+  .accordion-wrap .accor-pane .item p:before{position: absolute; content: 'Add.'; font-size: 14px; font-family: 'NotoB'; letter-spacing: -0.03em; left: 0; margin-top: 3px;/*background: url(../images/introduction/icon_location.png) no-repeat center;*/}
+  .accordion-wrap .accor-pane .item p:nth-child(2):before{content: 'Tel.';/*background: url(../images/introduction/icon_global_tel.png) no-repeat center;*/}
+  .accordion-wrap .accor-pane .item p:nth-child(3):before{content: 'Fax.';/*background: url(../images/introduction/icon_global_fax.png) no-repeat center;*/}
 
 
   .location.section02 .company-map{padding-bottom: 120px;}

@@ -108,4 +108,5 @@
 
 @media all and (max-width : 400px){
   .layer-alert{width: 300px;}
+  .content-wrap .title-txt p br{display: none;}
 }

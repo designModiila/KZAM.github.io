@@ -21,6 +21,7 @@
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
@@ -185,95 +186,51 @@
         </div>
       </div>
       <div class="quality section section02">
-        <div class="swiper-container">
-          <div class="swiper-wrapper slider">
-            <div class="swiper-slide slide01">
-              <div class="mainImg">
-                <img src="../../assets/images/sustainability/quality_imageslide01.png" alt="">
-                <div class="panel-wrap">
-                  <div class="panel-title">
-                    <p>#기부봉사</p>
-                  </div>
-                  <div class="panel-txt">
-                    <p>나의 삶은 다른 이들의삶과 연결되어 함께 하는 우리가 될 수 있습니다. <br>임직원들도 다양한 사회공헌활동에 적극 참여하며 함께하고 있습니다.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slide02">
-              <div class="mainImg">
-                <img src="../../assets/images/sustainability/quality_imageslide02.png" alt="">
-                <div class="panel-wrap">
-                  <div class="panel-title">
-                    <p>#인재육성</p>
-                  </div>
-                  <div class="panel-txt">
-                    <p>사람을 키우는 교육의 힘을 믿으며, <br>
-                      관련 사회공헌사업에 힘을 쏟고있습니다.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slide03">
-              <div class="mainImg">
-                <img src="../../assets/images/sustainability/quality_imageslide03.png" alt="">
-                <div class="panel-wrap">
-                  <div class="panel-title">
-                    <p>#친환경</p>
-                  </div>
-                  <div class="panel-txt">
-                    <p>자연이 주는 이로움을 사람과 환경에 무해하게 활용하고 <br>순환시키기 위해 환경 분야의 다양한 사회공헌활동을 펼치고 있습니다.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide slide04">
-              <div class="mainImg">
-                <img src="../../assets/images/sustainability/quality_imageslide04.png" alt="">
-                <div class="panel-wrap">
-                  <div class="panel-title">
-                    <p>#문화예술</p>
-                  </div>
-                  <div class="panel-txt">
-                    <p>다양한 소재는 우리 삶의 질을 높여줍니다. <br>
-                      한 걸음 더 나아가, 더 행복하고 더 나은 삶을 위해 문화예술 분야의 가능성을 후원하고 있습니다.</p>
-                  </div>  
-                </div>
-              </div>
+        <div class="container">
+          <div class="panel item01" id="one">
+            <div class="bg"></div>
+            <div class="panel-info-wrap">
+              <p class="panel-title">#기부봉사</p>
+              <p class="panel-desc">나의 삶은 다른 이들의삶과 연결되어 함께 하는 우리가 될 수 있습니다. <br>임직원들도 다양한 사회공헌활동에 적극 참여하며 함께하고 있습니다.</p>
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination">
-            <div class="list swiper-pagination-bullet" role="button" aria-label="Go to slide 1">
-              <div class="text" data-txt="Sell Side">
-                <span>#기부봉사</span>
-              </div>
-            </div>
-            <div class="list swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">
-              <div class="text" data-txt="Sell Side">
-                <span>#인재육성</span>
-              </div>
-            </div>
-            <div class="list swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">
-              <div class="text" data-txt="Sell Side">
-                <span>#친환경</span>
-              </div>
-            </div>
-            <div class="list swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">
-              <div class="text" data-txt="Sell Side">
-                <span>#문화예술</span>
-              </div>
+          <div class="panel item02" id="two">
+            <div class="bg"></div>
+            <div class="panel-info-wrap">
+              <p class="panel-title">#인재육성</p>
+              <p class="panel-desc">사람을 키우는 교육의 힘을 믿으며, <br>관련 사회공헌사업에 힘을 쏟고있습니다.</p>
             </div>
           </div>
-          <div class="quality-nav-wrap moOnly">
-            <div class="quality-nav">
-              <div class="button-g">
-                <button type="button" class="button-prev arrow" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></button>
-                <button type="button" class="button-next arrow" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></button>
-              </div>
+          <div class="panel item03" id="three">
+            <div class="bg"></div>
+            <div class="panel-info-wrap">
+              <p class="panel-title">#친환경</p>
+              <p class="panel-desc">자연이 주는 이로움을 사람과 환경에 무해하게 활용하고 <br>순환시키기 위해 환경 분야의 다양한 사회공헌활동을 펼치고 있습니다.</p>
             </div>
           </div>
+          <div class="panel item04" id="four">
+            <div class="bg"></div>
+            <div class="panel-info-wrap">
+              <p class="panel-title">#문화예술</p>
+              <p class="panel-desc">다양한 소재는 우리 삶의 질을 높여줍니다. <br>한 걸음 더 나아가, 더 행복하고 더 나은 삶을 위해 문화예술 분야의 가능성을 후원하고 있습니다.</p>
+            </div>
+          </div>
+            <!-- <div class="anchor-nav" role="navigation">
+              <div>
+                <a href="#one" class="anchor">#기부봉사</a>
+              </div>
+              <div>
+                <a href="#two" class="anchor">#인재육성</a>
+              </div>
+              <div>
+                <a href="#three" class="anchor">#친환경</a>
+              </div>
+              <div>
+                <a href="#four" class="anchor">#문화예술</a>
+              </div>
+            </div> -->
         </div>
+
       </div><!--class="quality section section02"-->
       <div class="quality section section03">
         <div class="content-wrap">
@@ -415,80 +372,112 @@
   </div>
   <div class="scroll-top-btn moOnly" onclick="window.scrollTo(0,0);">
   </div>
+
   <script>
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-gsap.to(".swiper-slide",{
-  scrollTrigger: {
-    trigger : '.swiper-continer',
-      start: "bottom bottom",
-      pin: true,
+
+const sections = gsap.utils.toArray('.panel');
+
+var scroller = {
+  target: document.querySelector(".container"),
+  ease: 0.05, // <= scroll speed
+  endY: 0,
+  y: 0,
+  resizeRequest: 1,
+  scrollRequest: 0,
+};
+
+
+
+sections.forEach(section => {
+  gsap.to(section, {
+    ease: "power1.inOut",
+    opacity: 1,
+    scale: 0.9,
+    y: -100,
+    scrollTrigger: {
+      trigger: section,
       scrub: true,
-  }
+      start: "top top",
+      pin: true,
+      snap: 1,
+      pinSpacing: false,
+    }
+  })
+
 })
 
 
-const interleaveOffset = 1;
 
-var secNavName = ["#기부봉사","#인재육성","#친환경","#문화예술"];
-var swiper = new Swiper('.swiper-container', {
-  direction: 'vertical',
-  effect: 'slide',
-  loop: false,
-  parallax: true,
-  autoplay: false,
-  allowTouchMove:false,
-  simulateTouch:false,
-  grabCursor: false,
-  speed: 1100,
-  mousewheelControl: true,
-  watchSlidesProgress: true,
-  mousewheel: {
-    releaseOnEdges: true,
-  },
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    type: 'bullets',
-    renderBullet: function (index, className) {
-      return '<div class="list '+className+'">'+
-      '<div class="text" data-txt="'+(secNavName[index])+'"><span>'+(secNavName[index])+'</span></div>'+
-      '</div>'
-    }
-  },
-  navigation: {
-			prevEl: '.quality-nav .button-prev',
-			nextEl: '.quality-nav .button-next',
-		},
-  on: {
-    progress: function() {
-      // console.log('test')
-      let swiper = this;
+// $(".anchor-nav a").on("click", "a[href^=#]", function(e) {
+//   var id = $(this).attr("href");
 
-      for (let i = 0; i < swiper.slides.length; i++) {
-        let slideProgress = swiper.slides[i].progress;
-        let innerOffset = swiper.height * interleaveOffset;
-        let innerTranslate = slideProgress * innerOffset;
+//   if($(id).length > 0) {
+//     e.preventDefault();
 
-        TweenMax.set(swiper.slides[i].querySelector(".mainImg"), {
-          y: innerTranslate,
-        });
+//     // trigger scroll
+//     controller.scrollTo(id);
 
-      }
-    },
-    setTransition: function(slider, speed) {
-      let swiper = this;
-      for (let i = 0; i < swiper.slides.length; i++) {
-        swiper.slides[i].style.transition = speed + "ms";
-        swiper.slides[i].querySelector(".mainImg").style.transition =
-          speed + "ms";
-      }
-    }
-  }
-});
+//     // If supported by the browser we can also update the URL
+//     if (window.history && window.history.pushState) {
+//       history.pushState("", document.title, id);
+//     }
+//   }
+
+// });
+
+// let links = gsap.utils.toArray(".anchor-nav a");
+// links.forEach(a => {
+//   let element = document.querySelector(a.getAttribute("href")),
+//       linkST = ScrollTrigger.create({
+//             trigger: element,
+//             start: "top top"
+//           });
+//   ScrollTrigger.create({
+//     trigger: element,
+//     start: "top center",
+//     end: "bottom center",
+//     onToggle: self => self.isActive && setActive(a),
+//   });
+//   a.addEventListener("click", e => {
+//     e.preventDefault();
+//     gsap.to(window, {duration: 1, scrollTo: linkST.start, overwrite: "auto"});
+//   });
+// });
+
+// function setActive(link) {
+//   links.forEach(el => el.classList.remove("active"));
+//   link.classList.add("active");
+// }
+
+
+
+
+// let links = gsap.utils.toArray(".anchor-nav a");
+// links.forEach(a => {
+//   let element = document.querySelector(a.getAttribute("href")),
+//       linkST = ScrollTrigger.create({
+//             trigger: element,
+//             start: "top top"
+//           });
+//   ScrollTrigger.create({
+//     trigger: element,
+//     start: "top center",
+//     end: "bottom center",
+//     onToggle: self => self.isActive && setActive(a),
+//   });
+//   a.addEventListener("click", e => {
+//     e.preventDefault();
+//     gsap.to(window, {duration: 1, scrollTo: linkST.start, overwrite: "auto"});
+//   });
+// });
+
+// function setActive(link) {
+//   links.forEach(el => el.classList.remove("active"));
+//   link.classList.add("active");
+// }
 
 
 

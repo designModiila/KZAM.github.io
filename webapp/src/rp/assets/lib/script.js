@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
   Splitting();
 
   $(".splitting").each(function(){
