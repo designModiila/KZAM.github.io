@@ -19,9 +19,9 @@
   <script src="../../assets/lib/plugins/aos.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/gsap.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/ScrollToPlugin.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
 </head>
@@ -186,7 +186,7 @@
         </div>
       </div>
       <div class="quality section section02">
-        <div class="container">
+        <div class="qualityContainer">
           <div class="panel item01" id="one">
             <div class="bg"></div>
             <div class="panel-info-wrap">
@@ -215,20 +215,6 @@
               <p class="panel-desc">다양한 소재는 우리 삶의 질을 높여줍니다. <br>한 걸음 더 나아가, 더 행복하고 더 나은 삶을 위해 문화예술 분야의 가능성을 후원하고 있습니다.</p>
             </div>
           </div>
-            <!-- <div class="anchor-nav" role="navigation">
-              <div>
-                <a href="#one" class="anchor">#기부봉사</a>
-              </div>
-              <div>
-                <a href="#two" class="anchor">#인재육성</a>
-              </div>
-              <div>
-                <a href="#three" class="anchor">#친환경</a>
-              </div>
-              <div>
-                <a href="#four" class="anchor">#문화예술</a>
-              </div>
-            </div> -->
         </div>
 
       </div><!--class="quality section section02"-->
@@ -373,114 +359,5 @@
   <div class="scroll-top-btn moOnly" onclick="window.scrollTo(0,0);">
   </div>
 
-  <script>
-
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-
-const sections = gsap.utils.toArray('.panel');
-
-var scroller = {
-  target: document.querySelector(".container"),
-  ease: 0.05, // <= scroll speed
-  endY: 0,
-  y: 0,
-  resizeRequest: 1,
-  scrollRequest: 0,
-};
-
-
-
-sections.forEach(section => {
-  gsap.to(section, {
-    ease: "power1.inOut",
-    opacity: 1,
-    scale: 0.9,
-    y: -100,
-    scrollTrigger: {
-      trigger: section,
-      scrub: true,
-      start: "top top",
-      pin: true,
-      snap: 1,
-      pinSpacing: false,
-    }
-  })
-
-})
-
-
-
-// $(".anchor-nav a").on("click", "a[href^=#]", function(e) {
-//   var id = $(this).attr("href");
-
-//   if($(id).length > 0) {
-//     e.preventDefault();
-
-//     // trigger scroll
-//     controller.scrollTo(id);
-
-//     // If supported by the browser we can also update the URL
-//     if (window.history && window.history.pushState) {
-//       history.pushState("", document.title, id);
-//     }
-//   }
-
-// });
-
-// let links = gsap.utils.toArray(".anchor-nav a");
-// links.forEach(a => {
-//   let element = document.querySelector(a.getAttribute("href")),
-//       linkST = ScrollTrigger.create({
-//             trigger: element,
-//             start: "top top"
-//           });
-//   ScrollTrigger.create({
-//     trigger: element,
-//     start: "top center",
-//     end: "bottom center",
-//     onToggle: self => self.isActive && setActive(a),
-//   });
-//   a.addEventListener("click", e => {
-//     e.preventDefault();
-//     gsap.to(window, {duration: 1, scrollTo: linkST.start, overwrite: "auto"});
-//   });
-// });
-
-// function setActive(link) {
-//   links.forEach(el => el.classList.remove("active"));
-//   link.classList.add("active");
-// }
-
-
-
-
-// let links = gsap.utils.toArray(".anchor-nav a");
-// links.forEach(a => {
-//   let element = document.querySelector(a.getAttribute("href")),
-//       linkST = ScrollTrigger.create({
-//             trigger: element,
-//             start: "top top"
-//           });
-//   ScrollTrigger.create({
-//     trigger: element,
-//     start: "top center",
-//     end: "bottom center",
-//     onToggle: self => self.isActive && setActive(a),
-//   });
-//   a.addEventListener("click", e => {
-//     e.preventDefault();
-//     gsap.to(window, {duration: 1, scrollTo: linkST.start, overwrite: "auto"});
-//   });
-// });
-
-// function setActive(link) {
-//   links.forEach(el => el.classList.remove("active"));
-//   link.classList.add("active");
-// }
-
-
-
-  </script>
 </body>
 </html>

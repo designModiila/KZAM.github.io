@@ -437,6 +437,41 @@ $(window).on('scroll', function (e) {
   }
   selectDirect();
 
+
+
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  const sections = gsap.utils.toArray('.panel');
+
+  var scroller = {
+    target: document.querySelector(".qualityContainer"),
+    ease: 0.05, // <= scroll speed
+    endY: 0,
+    y: 0,
+    resizeRequest: 1,
+    scrollRequest: 0,
+  };
+
+
+
+  sections.forEach(section => {
+    gsap.to(section, {
+      ease: "power1.inOut",
+      opacity: 1,
+      scale: 0.9,
+      y: -100,
+      scrollTrigger: {
+        trigger: section,
+        scrub: true,
+        start: "top top",
+        pin: true,
+        snap: 1,
+        pinSpacing: false,
+      }
+    })
+
+  })
+
+
 });
 
 // $(document).ready(function(){
