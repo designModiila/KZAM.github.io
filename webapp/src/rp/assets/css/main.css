@@ -7,6 +7,9 @@
 .swiper-wrapper .item .itemBg1{background: #000 url('../images/main/main_visual1.png') no-repeat; background-size: cover;}
 .swiper-wrapper .item .itemBg2{background: #000 url('../images/main/main_visual2.png') no-repeat; background-size: cover;}
 .swiper-wrapper .item .itemBg3{background: #000 url('../images/main/main_visual3.png') no-repeat; background-size: cover;}
+.swiper-wrapper .item .itemBg4{background: #000 url('../images/main/main_visual4.png') no-repeat; background-size: cover;}
+.swiper-wrapper .item .itemBg5{background: #000 url('../images/main/main_visual5.png') no-repeat; background-size: cover;}
+.swiper-wrapper .item .itemBg6{background: #000 url('../images/main/main_visual6.png') no-repeat; background-size: cover;}
 .swiper-wrapper .item .txt-box{position: absolute; top: 50%; left: 50%; z-index: 100; transform: translate(-50%, -50%); display: flex; width: calc(100% - 64rem); height: 100%; flex-direction: column; justify-content: center;}
 .swiper-wrapper .item .txt-box .visual-title{font-family: 'playB', serif; font-size: 7.2rem; color: #fff; position: relative; overflow: hidden; opacity: 0; margin-bottom: 0; letter-spacing: -0.03em;}
 
