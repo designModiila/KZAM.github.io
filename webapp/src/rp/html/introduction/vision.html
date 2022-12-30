@@ -19,12 +19,17 @@
   <script src="../../assets/lib/plugins/aos.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
 
-  <script type="text/javascript" src="../../assets/lib/plugins/jquery.cycle2.min.js"></script>
-  <script type="text/javascript" src="../../assets/lib/plugins/jquery.cycle2.swipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/gsap.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="../../assets/lib/plugins/ScrollToPlugin.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/plugins/TweenMax.min.js"></script>
-  <script type="text/javascript" src="../../assets/lib/plugins/DrawSVGPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
+  <script type="text/javascript" src="../../assets/lib/visionJs.js"></script>
   <title>KZAM</title>
 </head>
 <body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="300">
@@ -194,6 +199,92 @@
       </div>
       <div class="vision section section02">
         <div class="content-wrap">
+          <div id="output">
+          </div>
+          <div class="divWrapper">
+            <div class="sliderWrapper">
+              <div class="sliderImage load">
+                <div class="sliderImageWrapper">
+                  <div data-title="01" data-text="투명하고 신뢰받는 기업경영" class="sliderImageItem">
+                    <img src="../../assets/images/introduction/vision_img01.png" />
+                  </div>
+                  <div data-title="02" data-text="기술우위를 지향하는 기업경영" class="sliderImageItem">
+                    <img src="../../assets/images/introduction/vision_img02.png" />
+                  </div>
+                  <div data-title="03" data-text="고객만족과 인류복지에 기여하는 기업" class="sliderImageItem">
+                    <img src="../../assets/images/introduction/vision_img03.png" />
+                  </div>
+                  <div data-title="04" data-text="환경 친화적인 기업경영" class="sliderImageItem">
+                    <img src="../../assets/images/introduction/vision_img04.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="sliderText">
+                <div class="sliderTextFloat">
+                  <div class="sliderTextWrapper">
+                    <h3 class="sliderSubText">경영이념</h3>
+                    <h2 class="sliderTitleText"><span></span></h2>
+                    <p> data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic ambiguo ludimur. Quae similitudo in genere etiam humano apparet. Hoc est non dividere, sed frangere. Neminem videbis ita laudatum, ut artifex callidus comparandarum voluptatum diceretur. Ex quo illud efficitur, qui bene cenent omnis libenter cenare, qui libenter, non continuo bene. Duo Reges: constructio interrete. Tu autem negas fortem esse quemquam posse, qui dolorem malum putet. Quamquam te quidem video minime esse deterritum. Quid, quod res alia tota est? Nam, ut sint illa vendibiliora, haec uberiora certe sunt."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="divWrapper"><h1>Filterable Categories</h1></div> -->
+          <div class="sliderWrapperEnd"></div>
+        </div>
+      </div>
+      <!-- <div class="vision section section02 scroll-content">
+        <div class="content-wrap">
+          <div class="left">
+            <div class="vision-inner">
+              <div class="sub-tit">경영이념</div>
+              <div class="txt-wrap">
+                <div class="vision-list">
+                  <div class="list-wrap">
+                    <p>01</p>
+                    <p>투명하고 신뢰받는 기업경영</p>
+                  </div>
+                </div>
+                <div class="vision-list">
+                  <div class="list-wrap">
+                    <p>02</p>
+                    <p>기술우위를 지향하는 기업경영</p>
+                  </div>
+                </div>
+                <div class="vision-list">
+                  <div class="list-wrap">
+                    <p>03</p>
+                    <p>고객만족과 인류복지에 기여하는 기업</p>
+                  </div>
+                </div>
+                <div class="vision-list">
+                  <div class="list-wrap">
+                    <p>04</p>
+                    <p>환경친화적인 기업경영</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="img-box">
+              <img src="../../assets/images/introduction/vision_img01.png" alt="">
+            </div>
+            <div class="img-box">
+              <img src="../../assets/images/introduction/vision_img02.png" alt="">
+            </div>
+            <div class="img-box">
+              <img src="../../assets/images/introduction/vision_img03.png" alt="">
+            </div>
+            <div class="img-box">
+              <img src="../../assets/images/introduction/vision_img04.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="vision section section02">
+        <div class="content-wrap">
           <div class="item item01" data-aos="fade-up" data-aos-duration="1000">
             <div class="item-wrap">
               <img src="../../assets/images/introduction/vision_img01.png" alt="">
@@ -219,7 +310,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <footer class="footer" id="footer">
       <div class="footer-wrap">

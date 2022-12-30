@@ -130,8 +130,8 @@
 .society.section02 .table-box tr:nth-child(4) th:before{content:'04';}
 .society.section02 .table-box tr:nth-child(5) th:before{content:'05';}
 
-.container{position: relative;}
-.panel{overflow: hidden; position: relative;}
+.qualityContainer{position: relative;}
+.qualityContainer .panel{overflow: hidden; position: relative;}
 
 /* .anchor-nav{
   position: fixed;

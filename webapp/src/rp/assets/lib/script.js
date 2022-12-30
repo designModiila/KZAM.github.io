@@ -471,6 +471,70 @@ $(window).on('scroll', function (e) {
 
   })
 
+  // function smoothScroll() {
+
+  //   ScrollTrigger.scrollerProxy(".scroll-content", {
+  //       scrollTop(value) {
+  //           if (arguments.length) {
+  //               scroll.scrollTop = value;
+  //           }
+  //           return scroll.scrollTop;
+  //       }
+  //   });
+  //   scroll.addListener(ScrollTrigger.update);
+  //   ScrollTrigger.defaults({
+  //       scroller: ".scroll-content"
+  //   })
+
+//   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+//   gsap.set(".vision-list", { zIndex: (i, target, targets) => targets.length - i });
+//   var texts = gsap.utils.toArray('.vision-list');
+//   setTimeout(() => {
+//       var imgH = $(".vision.section02 .right .img-box").height();
+//       var startTiming = 14.714;
+//       // var step = $(".esports_philosophy .pc_version .step");
+//       texts.forEach((text, i) => {
+//           var tl = gsap.timeline({
+//               scrollTrigger: {
+//                   trigger: ".vision-inner",
+//                   scroller: ".sub-content",
+//                   start: () => "-30% -" + ((imgH + 30) * i),
+//                   // start: () => "-" + startTiming + "vw -" + ((imgH + 30) * i),
+//                   end: () => "+=" + ((imgH / 1.2)),
+//                   scrub: true,
+//                   toggleActions: "play none reverse none",
+//                   invalidateOnRefresh: true,
+//                   // markers: true,
+//               }
+
+//           });
+//           tl
+//               .to(text, {
+//                   duration: 0.4, opacity: 1, y: "0%",
+//                   // onStart: function () {
+//                   //     step.children(".now").text("0" + (i + 1));
+//                   // }
+//               })
+//               .to(text, {
+//                   duration: 0.4, opacity: 0, y: "-30%"
+//               }, 0.6)
+//               ;
+//       });
+//       ScrollTrigger.create({
+//           trigger: ".vision-inner",
+//           scroller: ".sub-content",
+//           scrub: true,
+//           pin: true,
+//           // markers: true,
+//           start: () => "top top",
+//           end: () => "+=" + ((texts.length - 1) * imgH),
+//           invalidateOnRefresh: true,
+//       });
+//   }, "100");
+
+//   }
+
 
 });
 
