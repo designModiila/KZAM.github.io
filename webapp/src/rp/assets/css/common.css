@@ -1,6 +1,6 @@
 .header * {box-sizing: border-box;}
 .header {position: fixed; width: 100%; z-index: 10;}
-.header-wrap {display: flex; justify-content: space-between; align-items: flex-start; padding:25px 100px;}
+.header-wrap {display: flex; justify-content: space-between; align-items: flex-start; padding:15px 100px;}
 .header-wrap .logo a {color:#fff; font-family: 'Arsenal'; font-style: italic;  font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; }
 .header-wrap .menu-btn .menu {display: flex; flex-direction: column; gap: 6px; cursor: pointer; padding:16px 0}
 .header-wrap .menu-btn .menu span{display: block; width: 21px; height: 2px; background: #fff;
@@ -166,11 +166,11 @@
 /*sub-page*/
 
 
-.sub-visual{width: 100%; height: 504px; position: relative; overflow: hidden; z-index: -1;}
-.sub-bg{width: 100%; height: 504px; position: fixed; top: 0; left: 0; animation: bg-scale 5s forwards; }
+.sub-visual{width: 100%; height: 600px; position: relative; overflow: hidden; z-index: -1;}
+.sub-bg{width: 100%; height: 600px; position: absolute; top: 0; left: 0; /*animation: bg-scale 5s forwards;*/ }
 .sub-main-title{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .sub-main-title p{font-family: 'NotoB'; font-size: 60px; letter-spacing: -0.03em; color: #fff;}
-.content-tab-box{width: 100%; height: 77px; border-bottom: 1px solid #d9d9d9; background: #fff; box-sizing: border-box;}
+.content-tab-box{width: 100%; height: 66px; border-bottom: 1px solid #d9d9d9; background: #fff; box-sizing: border-box;}
 
 .fixed-header{position: fixed; top: 0; left: 0; width: 100%; z-index: 100; margin-top: 0; transition: all 0.3s ease-in-out;}
 .header.fixed-header{background: #fff; border-bottom: 1px solid #d9d9d9;}
@@ -184,8 +184,8 @@
 .header.fixed-header.on  .nav > ul > li a:hover {color:#FF8B23}
 
 .content-tab-box ul{display: flex; width: 100%; height: 100%; justify-content: center;}
-.content-tab-box > ul > li{width: 190px; height: 100%; line-height: 77px; text-align: center; background-color: #ffffff;}
-.content-tab-box ul li a{display: block; color: #8f8f8f; font-size: 18px; letter-spacing: -0.03em; position: relative;}
+.content-tab-box > ul > li{width: 190px; height: 100%; line-height: 66px; text-align: center; background-color: #ffffff;}
+.content-tab-box ul li a{display: block; color: #4e4e4e; font-size: 16px; letter-spacing: -0.03em; position: relative;}
 .content-tab-box ul li a.active{color: #323232; font-family: 'NotoB';}
 .content-tab-box ul li a.active:after{position: absolute; content: ''; width: 100%; height: 2px; background: #ff8b23; left: 0; bottom: -1px;}
 
