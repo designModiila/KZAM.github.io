@@ -1,0 +1,167 @@
+
+ <!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>케이잼 주식회사 :: 어드민</title>
+
+<link rel="stylesheet" href="../../../assets/css/reset.css"/>
+<link rel="stylesheet" href="../../../assets/css/layout.css"/>
+<link rel="stylesheet" href="../../../assets/css/font.css"/>
+
+
+<script type="text/javascript" src="../../../assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/vendor/jquery/form/jquery.form.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/vendor/jquery/ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/jquery/ui/jquery-ui.min.css"/>
+
+<!--tui-->
+<script type="text/javascript" src="../../../assets/js/vendor/tui/tooltip/tooltip.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/tooltip/tooltip.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/pagination/tui-pagination.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/pagination/tui-pagination.min.css"/>
+<script type="text/javascript"src="../../../assets/js/vendor/tui/selectbox/toastui-select-box.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/selectbox/toastui-select-box.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/datepicker/tui-date-picker.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/datepicker/tui-date-picker.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/timepicker/tui-time-picker.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/timepicker/tui-time-picker.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/grid/tui-grid.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/grid/tui-grid.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/editor/toastui-editor-all.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/editor/toastui-editor.min.css"/>
+
+
+
+
+<script type="text/javascript" src="../../../assets/js/common.js"></script>
+
+<!-- dummy data 추후 삭제-->
+<script type="text/javascript" src="../../../assets/js/basic-dummy.js"></script>
+<!-- dummy data 추후 삭제-->	
+</head>
+<body>
+	<header>
+		<div class="left">
+			<button class="toggle-sidebar-btn"><span></span> <span></span> <span></span></button>
+			<h1>케이잼 주식회사</h1>
+		</div>	
+		<div class="right">
+			<div id="btnLanguage"  class="form-select"></div>
+			<button class="btn-sm btn-white btn-logout">로그아웃</button>
+		</div>	
+	</header>
+	<nav>
+		<p class="nav-item-group-title">컨텐츠 관리</p>
+		<ul>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon email"></i>  고객센터</a>
+				<ul>
+					<li class="nav-item"><a href="../../customerService/voice/list.html">고객의 소리</a></li>
+					<li class="nav-item"><a href="#">제품문의</a></li>
+				</ul>
+			</li>
+			<li class="nav-item-title open">
+				<a href="#"><i class="icon message"></i>  게시판</a>
+				<ul>
+					<li class="nav-item active"><a href="../../board/news/list.html">케이잼 뉴스</a></li>
+				</ul>
+			</li>
+		</ul>
+		<p class="nav-item-group-title"> 사이트 관리</p>
+		<ul>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon document"></i>  메뉴 관리</a>
+				<ul>
+					<li class="nav-item"><a href="#">메뉴관리 1</a></li>
+					<li class="nav-item"><a href="#">메뉴관리 2</a></li>
+				</ul>
+			</li>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon user"></i>  사용자 관리</a>
+			</li>
+		</ul>
+		<p class="nav-item-group-title">관리자 설정</p>
+		<ul>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon document"></i>  권한관리</a>
+			</li>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon user"></i>  정보수정</a>
+			</li>
+		</ul>
+	</nav>
+<section>
+	<div class="content-header">
+		<h2>케이잼 뉴스</h2>
+		<div class="btn-area">
+			<button class="btn-icon" title="저장"><i class="icon icon-save"></i></button>
+			<button class="btn-icon" title="삭제"><i class="icon icon-delete"></i></button>
+		</div>
+	</div>
+
+	<div class="content-body">
+		<div class="row">
+			<div class="col wid100p">
+				<label for="inputTitle" class="form-label">제목</label>
+				<div class="form-item">
+					<input type="email" class="form-control" id="inputTitle" placeholder="검색어를 입력해주세요">
+				</div>
+			</div>
+		</div>
+		<div class="editor-wrap">
+			<div id="editor"></div>
+		</div>
+		<div class="row">
+			<div class="col wid100p">
+				<label for="uploadFile" class="form-label">썸네일 첨부</label>
+				<div class="form-item fileUpload-wrap">
+					<input id="uploadFile" class="form-control" />
+					<div class="fileUpload btn-white btn-sm">
+						<input id="uploadBtn" type="file" class="upload" />
+						<span>파일첨부</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-footer">
+		<div class="btn-area">
+			<div class="left">
+				
+				<label for="uploadFile" class="form-label">게시여부</label>
+				<div class="scroll-sync-wrap form-item">
+					<label class="scroll-sync active"><input type="checkbox"><span class="switch"></span></label>
+				</div>
+				
+			</div>
+			<div class="right"><button class="btn-lg btn-black">작성하기</button></div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<script>
+	
+	const editor = new toastui.Editor({
+        el: document.querySelector('#editor'),
+        previewStyle: 'vertical',
+        height: '485px',
+        //initialValue: content
+      });
+
+
+	document.getElementById("uploadBtn").onchange = function () {
+	document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+};
+
+</script>
+	
+</body>
+</html>

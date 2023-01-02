@@ -1,0 +1,383 @@
+
+ <!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>케이잼 주식회사 :: 어드민</title>
+
+<link rel="stylesheet" href="../../../assets/css/reset.css"/>
+<link rel="stylesheet" href="../../../assets/css/layout.css"/>
+<link rel="stylesheet" href="../../../assets/css/font.css"/>
+
+
+<script type="text/javascript" src="../../../assets/js/vendor/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/vendor/jquery/form/jquery.form.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/vendor/jquery/ui/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/jquery/ui/jquery-ui.min.css"/>
+
+<!--tui-->
+<script type="text/javascript" src="../../../assets/js/vendor/tui/tooltip/tooltip.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/tooltip/tooltip.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/pagination/tui-pagination.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/pagination/tui-pagination.min.css"/>
+<script type="text/javascript"src="../../../assets/js/vendor/tui/selectbox/toastui-select-box.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/selectbox/toastui-select-box.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/datepicker/tui-date-picker.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/datepicker/tui-date-picker.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/timepicker/tui-time-picker.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/timepicker/tui-time-picker.min.css"/>
+<script type="text/javascript" src="../../../assets/js/vendor/tui/grid/tui-grid.min.js"></script>
+<link rel="stylesheet" href="../../../assets/js/vendor/tui/grid/tui-grid.min.css"/>
+
+
+
+<script type="text/javascript" src="../../../assets/js/common.js"></script>
+
+<!-- dummy data 추후 삭제-->
+<script type="text/javascript" src="../../../assets/js/basic-dummy.js"></script>
+<!-- dummy data 추후 삭제-->	
+</head>
+<body>
+	<header>
+		<div class="left">
+			<button class="toggle-sidebar-btn"><span></span> <span></span> <span></span></button>
+			<h1>케이잼 주식회사</h1>
+		</div>	
+		<div class="right">
+			<div id="btnLanguage"  class="form-select"></div>
+			<button class="btn-sm btn-white btn-logout">로그아웃</button>
+		</div>	
+	</header>
+	<nav>
+		<p class="nav-item-group-title">컨텐츠 관리</p>
+		<ul>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon email"></i>  고객센터</a>
+				<ul>
+					<li class="nav-item"><a href="../../customerService/voice/list.html">고객의 소리</a></li>
+					<li class="nav-item"><a href="#">제품문의</a></li>
+				</ul>
+			</li>
+			<li class="nav-item-title open">
+				<a href="#"><i class="icon message"></i>  게시판</a>
+				<ul>
+					<li class="nav-item active"><a href="../news/list.html">케이잼 뉴스</a></li>
+				</ul>
+			</li>
+		</ul>
+		<p class="nav-item-group-title"> 사이트 관리</p>
+		<ul>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon document"></i>  메뉴 관리</a>
+				<ul>
+					<li class="nav-item"><a href="#">메뉴관리 1</a></li>
+					<li class="nav-item"><a href="#">메뉴관리 2</a></li>
+				</ul>
+			</li>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon user"></i>  사용자 관리</a>
+			</li>
+		</ul>
+		<p class="nav-item-group-title">관리자 설정</p>
+		<ul>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon document"></i>  권한관리</a>
+			</li>
+			<li class="nav-item-title">
+				<a href="#"><i class="icon user"></i>  정보수정</a>
+			</li>
+		</ul>
+	</nav>
+<section>
+	<div class="content-header">
+		<h2>케이잼 뉴스</h2>
+		<div class="btn-area">
+			<button class="btn-icon" title="조회"><i class="icon icon-search"></i></button>
+			<button class="btn-icon" title="저장"><i class="icon icon-save"></i></button>
+			<button class="btn-icon" title="삭제"><i class="icon icon-delete"></i></button>
+			<button class="btn-icon" title="작성" OnClick="location.href='edit.html'"><i class="icon icon-edit"></i></button>
+		</div>
+	</div>
+	<div class="content-body">
+		<div class="content-search-box">
+			<div class="row">
+				<div class="col">
+					<div class="search-item">
+						<label for="inputPeriod" class="form-label">기간</label>
+						<div class="form-item icon-right tui-datepicker-input tui-datetime-input">
+							<input type="text"  class="form-control" id="inputPeriod" aria-label="Date-Time">
+							<i class="icon icon-calendar"></i>
+						</div>
+						<div id="tui-datepicker-wrapper" style="margin-top: 2px;"></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="search-item">
+						<label for="inputDivision" class="form-label">구분</label>
+						<div class="form-item">
+							<div id="select-box" class="form-select" style="width: 100%"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="search-item">
+						<label for="inputSearch" class="form-label">검색</label>
+						<div class="form-item">
+							<input type="email" class="form-control" id="inputSearch" placeholder="검색어를 입력해주세요">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-wrap">
+			<div class="grid-header">
+				<div class="left"><span class="text">총 5 건 1 페이지</span></div>
+				<div class="right">
+					<button type="button" class="btn-sm open-overlay">상세보기</button>
+					<div id="page-option"  class="form-select" style="width: 100%"></div>
+				</div>
+			</div>
+			<div id="grid"></div>
+		</div>
+	</div>
+	
+	
+</section>
+
+
+
+<!--VOICE 상세화면-->
+<div class="overlay" aria-hidden="true">
+	<div class="overlay-wrap">
+		<div class="overlay-header">
+			<h2>공장부지 증설에 대해 관심이 있으십니까?</h2>
+			<span class="label before">답변전</span>
+
+			<div class="overlay-content-info">
+				<dl>
+					<dt>작성자</dt>
+					<dd>강무호</dd>
+				</dl>
+				<dl>
+					<dt>작성일자</dt>
+					<dd>2022-12-23</dd>
+				</dl>
+				<dl>
+					<dt>첨부파일</dt>
+					<dd><a href="#">공장전경.jpg</a></dd>
+				</dl>
+			</div>
+		</div>
+	  
+	  
+		<div class="overlay-content">
+			2공장 가동이 본궤도에 오르면 국내 2개 생산기지를 가동, 경쟁자들과의 생산물량 격차는 더욱 벌어질 것으로 보입니다.<br><br>
+
+			<div>
+				<span class="label before">답변전</span>&nbsp;&nbsp;&nbsp;
+				<span class="label ing">답변중</span>&nbsp;&nbsp;&nbsp;
+				<span class="label end">답변완료</span>&nbsp;&nbsp;&nbsp;
+
+				<span class="label before">게시중</span>&nbsp;&nbsp;&nbsp;
+				<span class="label end">미게시</span>&nbsp;&nbsp;&nbsp;
+			</div>
+			
+				<br><br>
+		다만 2공장 가동과 동시에 연간 생산량이 곧바로 3000만세트로 확대되는 것은 아닙니다.<br>
+		​홍성조 오스템임플란트 생산총괄본부장(부사장)는 "제2공장의 경우 새로 건설하는 형태가 아닌 공장이 조성된 부지를 인수하는 형식으로, 가동을 위한 일부 작업과 설비 도입 등을 마치면 내년 4월부터 충분히 정상 가동이 가능할 것으로 보인다"며 "내년의 경우 올해 대비 20% 수준의 생산물량 증가를 예상하고 있으며, 수요가 더욱 늘어나 생산시설이 또 필요할 경우 2공장 가동률을 끌어 올리면서 선제적으로 확보에 나설 것"이라고 설명했습니다.
+		</div>
+		<div class="overlay-reply">
+			<p>답변하기</p>
+			<div class="textarea-wrap">
+				<textarea></textarea>
+			</div>
+		</div>
+		<div class="overlay-footer">
+			<button type="button" class="btn-lg btn-white close-overlay" >닫기</button>
+			<button type="button" class="btn-lg btn-black">답변하기</button>
+		</div>
+	</div>
+</div>
+<!--// VOICE 상세화면-->
+
+<script>
+
+	var datepicker = new tui.DatePicker('#tui-datepicker-wrapper', {
+            date: new Date(),
+            input: {
+                element: '#inputPeriod',
+                format: 'yyyy-MM-dd'
+            }
+        });
+
+	var selectBox = new tui.SelectBox('#select-box', {
+		placeholder: 'Please select an option.',
+		data: [
+			{
+			label: 'Fruits',
+			data: [{ label: 'Apple', value: 'apple' }, { label: 'Banana', value: 'banana' }]
+			},
+			{ label: 'The quick brown fox jumps over the lazy dog.', value: 'none' },
+			{
+			label: 'Colors',
+			data: [
+				{ label: 'Red', value: 'red' },
+				{ label: 'Yellow', value: 'yellow' },
+				{ label: 'Green', value: 'green', disabled: true },
+				{ label: 'Blue', value: 'blue', disabled: true },
+				{ label: 'Purple', value: 'purple' }
+			]
+			}
+		]
+	});
+
+	var selectBox2 = new tui.SelectBox('#page-option', {
+		placeholder: '선택',
+		data: [
+				{ label: '10', value: '10' },
+				{ label: '20', value: '20' },
+				{ label: '30', value: '30'},
+				{ label: '40', value: '40' },
+				{ label: '50', value: '50' }
+			]
+	});
+
+	var body = document.body,
+    	overlay = document.querySelector('.overlay'),
+    	overlayBtts = document.querySelectorAll('button[class$="overlay"]'),
+    	openingBtt;
+	
+	[].forEach.call(overlayBtts, function(btt) {
+
+	btt.addEventListener('click', function() { 
+		var overlayOpen = this.className === 'btn-sm open-overlay';
+		if (overlayOpen) {
+			openingBtt = this;
+		}
+		overlay.setAttribute('aria-hidden', !overlayOpen);
+		body.classList.toggle('noscroll', overlayOpen);
+			setTimeout(function() {
+				overlay.scrollTop = 0;             
+			}, 1000);
+		
+		if (overlayOpen) {
+			overlay.focus();
+		}
+		else {
+		openingBtt.focus();
+			openingBtt = null;
+		}
+
+	}, false);
+
+	}); 
+
+
+	
+    const grid = new tui.Grid({
+		
+      el: document.getElementById('grid'),
+	  data: {
+        api: {
+          readData: { url: '/api/readData', method: 'GET' }
+        }
+      },
+	  
+     scrollX: true,
+     scrollY: false,
+	 header: {height: 62},
+	 minBodyHeight: 52,
+	 bodyHeight: 537,
+	 rowHeight: 52,
+	 pageOptions: {perPage: 5},
+	 rowHeaders: [
+        {
+            type: 'checkbox',
+			width:80
+        },
+        {
+            type: 'rowNum',
+            title: 'No.',
+			width:80
+        }
+    ],
+	 cell: {
+		normal: {
+		background: '#fff',
+		border: '#e0e0e0',
+		showVerticalBorder: true
+		},},
+      columns: [
+        {
+          header: '제목',
+          name: 'title',
+		  
+        },
+        {
+          header: '작성자',
+          name: 'writer',
+		  align: 'center',
+		  width: 180
+        },
+        {
+          header: '작성일자',
+          name: 'date',
+		  align: 'center',
+		  width: 180
+        },
+        {
+          header: '상태',
+          name: 'status',
+		  align: 'center',
+		  width: 180
+        }
+      ]
+    });
+	tui.Grid.applyTheme('clean');
+	
+	
+    grid.on('beforeChange', ev => {
+      console.log('before change:', ev);
+    });
+    grid.on('afterChange', ev => {
+      console.log('after change:', ev);
+    })
+    grid.resetData(gridData);
+	
+
+	const extOptions = {
+		grid: {
+				background: '#fff',
+				border: '#EBEBEB',
+				text: '#333333'
+				},
+		outline: {
+				border: '#EBEBEB',
+				showVerticalBorder: true
+			},
+		cell: {
+			normal: {
+			background: '#ffffff',
+			border: '#EBEBEB',
+			showHorizontalBorder: true
+			},
+			header: {
+			background: '#ffffff',
+			border: '#EBEBEB',
+			showVerticalBorder: false
+			},
+			rowHeader: {
+				border: '#EBEBEB',
+			showHorizontalBorder: true
+			}
+		}
+	};
+	tui.Grid.applyTheme('clean',extOptions);
+
+
+</script>
+	
+</body>
+</html>
