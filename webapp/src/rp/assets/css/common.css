@@ -23,14 +23,28 @@
 .header-wrap .nav > ul > li > a {display: block; font-family: 'NotoB';  font-size: 16px; line-height: 22px;  letter-spacing: -0.03em; color: #ECECEC; padding:15px 40px 11px 40px;}
 .header-wrap .nav > ul > li > a:hover,
 .header-wrap .nav > ul > li.on > a {color:#FF8B23}
-.header-wrap .nav > ul > li > .depth_2 {overflow: hidden; position: absolute; height:0%; z-index: 10; min-width:115px; padding-top:20px; margin-left:20px; 
+/* .header-wrap .nav > ul > li > .depth_2 {overflow: hidden; position: absolute; height:0%; z-index: 10; min-width:115px; padding-top:20px; margin-left:20px; 
   -webkit-transition: height 0.4s ease-out;
   -moz-transition: height 0.4s ease-out;
   -ms-transition: height 0.4s ease-out;
   -o-transition: height 0.4s ease-out;
-  transition: height 0.4s ease-out;}
+  transition: height 0.4s ease-out;} */
+  .header-wrap .nav > ul > li > .depth_2 {/*overflow: hidden;*/ position: absolute; height:0%; z-index: 10; min-width:115px; padding-top: 0px; margin-left:20px; display: none; 
+    -webkit-transition: height 0.4s ease-out;
+    -moz-transition: height 0.4s ease-out;
+    -ms-transition: height 0.4s ease-out;
+    -o-transition: height 0.4s ease-out;
+    transition: height 0.4s ease-out;}
+  .header-wrap .nav > ul > li > .depth_2 .menu_intro{position: absolute; left: -310px; top: 10px;}
+  .header-wrap .nav > ul > li:nth-child(2) > .depth_2 .menu_intro{left: -447px;}
+  .header-wrap .nav > ul > li:nth-child(3) > .depth_2 .menu_intro{left: -584px;}
+  .header-wrap .nav > ul > li:nth-child(4) > .depth_2 .menu_intro{left: -694px;}
+  .header-wrap .nav > ul > li:nth-child(5) > .depth_2 .menu_intro{left: -816px;}
+  .header-wrap .nav > ul > li > .depth_2 .menu_intro .menu_title{color: #fff; font-size: 22px; font-family: 'NotoB'; letter-spacing: -0.03em; margin-bottom: 10px;}
+  .header-wrap .nav > ul > li > .depth_2 .menu_intro .menu_desc{color: #c3c3c3; font-size: 14px; letter-spacing: -0.03em; line-height: 24px;}
   .header-wrap .nav > ul > li > .depth_2 > ul { border-left:solid 1px #404040;}
-  .header-wrap .nav > ul > li > .depth_2 > ul > li > a {display: block; font-family: 'NotoR'; font-size: 16px; line-height: 22px; letter-spacing: -0.03em; color: #C3C3C3; position: relative; padding-left:20px; margin:20px 0 18px 0; }
+  /* .header-wrap .nav > ul > li > .depth_2 > ul > li > a {display: block; font-family: 'NotoR'; font-size: 16px; line-height: 22px; letter-spacing: -0.03em; color: #C3C3C3; position: relative; padding-left:20px; margin:20px 0 18px 0;} */
+  .header-wrap .nav > ul > li > .depth_2 > ul > li > a {display: block; font-family: 'NotoR'; font-size: 14px; letter-spacing: -0.03em; color: #C3C3C3; position: relative; padding-left:20px; margin: 10px 0 10px 0;}
   .header-wrap .nav > ul > li > .depth_2 > ul > li > a:hover,
   .header-wrap .nav > ul > li > .depth_2 > ul > li.active > a:hover {color:#FFFFFF;}
   .header-wrap .nav > ul > li > .depth_2 > ul > li > a:hover::before,
@@ -43,8 +57,8 @@
   .header.dark .header-wrap .menu span{background: #323232;}
   
   .header.on .header-wrap {background: #323232;}
-  .header.on .header-wrap .nav-bg{opacity: 1; height: 360px;} 
-  .header.on .header-wrap .nav > ul > li.on .depth_2 {opacity: 1; height: 240px;}  
+  .header.on .header-wrap .nav-bg{opacity: 1; height: 260px;} 
+  .header.on .header-wrap .nav > ul > li.on .depth_2 {opacity: 1; height: 190px; display: block;}  
   
   
   .header.dark.on .header-wrap .logo a {color: #fff;}
@@ -205,6 +219,12 @@
 @media all and (max-width : 1200px){
   .header-wrap {padding:24px 24px; align-items: center}
   .header .header-wrap .logo a {font-size: 32px; line-height: normal;} 
+  
+  .header-wrap .nav > ul > li > .depth_2 .menu_intro{position: absolute; left: -220px;}
+  .header-wrap .nav > ul > li:nth-child(2) > .depth_2 .menu_intro{left: -357px;}
+  .header-wrap .nav > ul > li:nth-child(3) > .depth_2 .menu_intro{left: -494px;}
+  .header-wrap .nav > ul > li:nth-child(4) > .depth_2 .menu_intro{left: -604px;}
+  .header-wrap .nav > ul > li:nth-child(5) > .depth_2 .menu_intro{left: -727px;}
 
 
   #gnb .gnb-header {padding:24px 24px; position: relative;}
