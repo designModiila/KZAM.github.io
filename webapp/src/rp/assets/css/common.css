@@ -56,7 +56,7 @@
   .header.dark .header-wrap .nav > ul > li > a {color: #323232;}
   .header.dark .header-wrap .menu span{background: #323232;}
   
-  .header.on .header-wrap {background: #323232;}
+  /* .header.on .header-wrap {background: #323232;} */
   .header.on .header-wrap .nav-bg{opacity: 1; height: 260px;} 
   .header.on .header-wrap .nav > ul > li.on .depth_2 {opacity: 1; height: 190px; display: block;}  
   
