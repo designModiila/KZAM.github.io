@@ -4,33 +4,35 @@
 .content-wrap .title-txt p{font-size: 20px; line-height: 36px;}
 
 .sub-content{overflow: hidden;}
-.overview.section01 .section01-bg{background: url(../images/business/overview-sub-bg.png) no-repeat; background-size: cover; background-position: 40%; width: 100%; height: 100vh; animation: bg-scale 5s forwards; overflow: hidden; position: absolute;}
-.overview.section01 .main-title-wrap{text-align: left; padding: 344px 0;}
-.overview.section01 .content-wrap .title p{color: #ececec; line-height: 68px;}
-.overview.section01 .content-wrap .title{margin-bottom: 50px;}
-.overview.section01 .content-wrap .title-txt p{color: #ececec;}
-.overview.section02 .content-wrap{padding: 150px 0;}
-.overview.section02 .content-wrap .title{text-align: center; margin-bottom: 110px;}
-.overview.section02 .circle-box-wrap{margin-bottom: 60px;}
-.overview.section02 .circle-box{position: relative; padding-bottom: 85px;}
-.overview.section02 .inner-circle{width: 450px; height: 450px; border: 1px dashed #d9d9d9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; position: relative;}
-.overview.section02 .inner-circle .circle-txt{width: 330px; height: 330px; background: #ff8b23; border-radius: 50%;; line-height: 38px; color: #fff; font-size: 24px; letter-spacing: -0.03em; font-family: 'NotoB'; box-sizing: border-box; text-align: center; display: flex; align-items: center; justify-content: center;}
-.overview.section02 .inner-circle > div{position: absolute;}
-.overview.section02 .inner-circle > div p{position: relative; color: #323232; font-family: 'NotoB'; letter-spacing: -0.03em; font-size: 20px; text-align: center;}
-.overview.section02 .inner-circle > div p:after{position: absolute; content: ''; width: 12px; height: 12px; border-radius: 50%; background: #ff8b23; top: 50%; transform: translateY(-50%);}
-.overview.section02 .inner-circle .left-box{left: -150px;}
-.overview.section02 .inner-circle .left-box p:after{left: 143px;}
-.overview.section02 .inner-circle .right-box{right: -125px;}
-.overview.section02 .inner-circle .right-box p:after{right: 118px;}
-.overview.section02 .inner-circle .bottom-box{bottom: -90px;}
-.overview.section02 .inner-circle .bottom-box p:after{top: -40px;left:  50%;transform: translateX(-50%);}
-.overview.section02 .circle-box-txt{text-align: center;}
-.overview.section02  .circle-box-txt .line{display: inline-block; height: 70px; width: 3px; background: #4e4e4e; position: relative;}
-.overview.section02  .circle-box-txt .line:before{position: absolute; content: ''; width: 13px; height: 3px; background: #4e4e4e; right: 0; top: 0;}
-.overview.section02  .circle-box-txt .line:after{position: absolute; content: ''; width: 13px; height: 3px; background: #4e4e4e; right: 0; bottom: 0;}
-.overview.section02 .circle-box-txt p{display: inline-block; color: #4e4e4e; letter-spacing: -0.03em; line-height: 30px; padding: 0 100px;}
-.overview.section02  .circle-box-txt .line.left:before, .overview.section02  .circle-box-txt .line.left:after{left: 0;}
-
+.overview.section01 .main-title-wrap{padding: 160px 0 200px;}
+.overview.section02 .content-wrap{display: flex; margin-bottom: 80px;}
+.overview.section02 .content-wrap .title{margin-right: 70px;}
+.overview.section02 .content-wrap .title-txt{flex: 1; line-height: 34px;}
+.overview.section02 .content-wrap .title-txt p{word-break: keep-all;}
+.overview.section02 .section02-img{display: flex; justify-content: flex-end; overflow: hidden;}
+.overview.section03 .content-wrap{padding-top: 249px; display: flex; margin-bottom: 80px;}
+.overview.section03 .content-wrap .title{margin-right: 70px;}
+.overview.section03 .content-wrap .title-txt{flex: 1; line-height: 34px;}
+.overview.section03 .section03-bg{position: absolute; bottom: 0; background: #f6f6f6; width: 100%; height: 752px;}
+.overview.section03 .section03-img{position: relative; z-index: 1; overflow: hidden;}
+.overview.section03 .content-wrap.bot-content{padding-top: 80px; margin-bottom: 0; padding-bottom: 120px; position: relative; z-index: 1; flex-wrap: wrap; gap: 60px 90px; justify-content: space-between;}
+.overview.section03 .content-wrap.bot-content .item{flex: 0 0 45%;}
+.overview.section03 .content-wrap.bot-content .item p:first-child{font-family: 'NotoB'; font-size: 24px; letter-spacing: -0.03em; color: #323232; margin-bottom: 20px;}
+.overview.section03 .content-wrap.bot-content .item p:nth-child(2){color: #4e4e4e; font-size: 18px; line-height: 30px; word-break: keep-all;}
+.overview.section04 .content-wrap{padding-top: 249px; display: flex; margin-bottom: 80px;}
+.overview.section04 .content-wrap .title{margin-right: 165px;}
+.overview.section04 .content-wrap .title-txt{flex: 1; line-height: 34px;}
+.overview.section04 .section04-img{display: flex; justify-content: flex-end;}
+.overview.section04 .content-wrap.bot-content{padding-top: 80px; margin-bottom: 0; padding-bottom: 240px; align-items: center;}
+.overview.section04 .content-wrap.bot-content .item01{margin-right: 70px;}
+.overview.section04 .content-wrap.bot-content .item02 p:first-child{margin-bottom: 10px; color: #323232; font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em;}
+.overview.section04 .content-wrap.bot-content .item02 p:nth-child(2){letter-spacing: -0.03em; color: #4e4e4e; font-size: 18px;}
+.overview.go-product-btn{width: 100%; background: #b4b4b4; transition: background 0.5s ease-in-out; text-align: center;}
+.overview.go-product-btn:hover{background: #ff8b23;}
+.overview.go-product-btn a{width: 100%; display: inline-block; padding: 30px 0; color: #ffffff; font-family: 'NotoB'; font-size: 20px; letter-spacing: -0.03em;}
+.overview.go-product-btn a span{display: inline-block; position: relative;}
+.overview.go-product-btn a span:before{position: absolute; content: ''; width: 2px; height: 13px; background: #ffffff; right: -25px; top: 3px; transform: rotate(-45deg);}
+.overview.go-product-btn a span:after{position: absolute; content: ''; width: 2px; height: 13px; background: #ffffff; right: -25px; bottom: 3px; transform: rotate(45deg);}
 
 .product.section01 .main-title-wrap{padding-bottom: 60px;}
 .product.section02 .content-wrap{display: flex; justify-content: center; padding-bottom: 240px;}

@@ -11,7 +11,7 @@
 
 
 .introduction.section02 .company-box{position: relative;  width: 100%; height: 100%;}
-.introduction.section02 .company-image{width: 100%; height: 563px; animation: bg-scale 5s forwards;}
+.introduction.section02 .company-image{width: 100%; height: 563px;}
 .introduction.section02 .company-image img{height: 100%; object-fit: cover;}
 .introduction.section02 .company-info{width: 50%; position: absolute; top: 50%; left: 15%; transform: translateY(-50%);}
 .introduction.section02 .company-info table tr{border-bottom: 1px solid #becde2;}
@@ -19,66 +19,11 @@
 .introduction.section02 .company-info table td{color: #ffffff; line-height: 56px; padding: 0 61px 0 0;}
 
 
-/* .introduction.section03 .content-wrap{padding: 120px 0; justify-content: center;}
-.introduction.section03 .content-wrap .title{margin-bottom: 100px; text-align: center;}
-.introduction.section03 .content-wrap > ul{display: flex; justify-content: space-between;}
-.introduction.section03 .content-wrap > ul > li{width: 33.3333%; display: flex; flex-direction: column; align-items: center; position: relative;}
-.introduction.section03 .content-wrap > ul > li strong{font-family: 'NotoB'; font-size: 24px; letter-spacing: -0.03em; padding-top: 94px; margin-bottom: 21px; color: #323232;}
-.introduction.section03 .content-wrap > ul > li strong span{display: inline-block; font-size: 18px; padding-left: 10px;}
-.introduction.section03 .content-wrap > ul > li + li:after{ position: absolute; content: ''; width: 1px; height: 100%; background: #d9d9d9; left: 0px;}
-.introduction.section03 .content-wrap > ul > li:before{position: absolute; content: ''; display: block; width: 64px; height: 64px; top: 0;}
-.introduction.section03 .content-wrap > ul > li:nth-child(1):before{background: url(../images/introduction/introduction-icon-01.png);}
-.introduction.section03 .content-wrap > ul > li:nth-child(2):before{background: url(../images/introduction/introduction-icon-02.png);}
-.introduction.section03 .content-wrap > ul > li:nth-child(3):before{background: url(../images/introduction/introduction-icon-03.png);}
-.introduction.section03 .content-wrap > ul > li p{font-size: 18px; color: #666; letter-spacing: -0.03em; font-family: 'NotoM';}
-.introduction.section03 .content-wrap .item-info li{color: #4e4e4e; font-size: 14px; letter-spacing: -0.03em; line-height: 30px; position: relative;}
-.introduction.section03 .content-wrap .item-info li:before{content: '-'; position: absolute; left: -10px;} */
+.introduction.section03{padding: 120px 0 200px; background: #fff;}
+.introduction.section03 .content-wrap{display: flex; flex-direction: column; align-items: center;}
+.introduction.section03 .title-wrap{margin-bottom: 77px; text-align: center;}
+.introduction.section03 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px; color: #4e4e4e;}
 
-/* .introduction.section04{background: #f6f6f6; padding: 120px 0;}
-.introduction.section04 .content-wrap{display: flex; flex-direction: column; align-items: center;}
-.introduction.section04 .title-wrap{margin-bottom: 30px; text-align: center;}
-.introduction.section04 .title-wrap .title{line-height: 70px;}
-.introduction.section04 .title-wrap .title span{display: block; color: #ff8b23;}
-.introduction.section04 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px; color: #4e4e4e;}
-.introduction.section04 .section04-img p{text-align: center; font-size: 22px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #666666;} */
-
-.introduction.section05{padding: 120px 0 200px; background: #fff;}
-.introduction.section05 .content-wrap{display: flex; flex-direction: column; align-items: center;}
-.introduction.section05 .title-wrap{margin-bottom: 77px; text-align: center;}
-.introduction.section05 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px; color: #4e4e4e;}
-
-/* .introduction.section05 .company-graph-wrap{width: 100%;}
-.introduction.section05 .company-graph{width: 100%; height: 550px; border-bottom: 2px solid #e8e8e8; position: relative; background: url(../images/introduction/graphBg.png) no-repeat 90% 80%;}
-.introduction.section05 .company-graph .xYears{position: absolute; display: flex; bottom: -64px; left: 20px; width: 100%; justify-content: space-around; align-items: flex-end; text-align: center;}
-.introduction.section05 .company-graph .xYears > li{position: relative; width: calc(100% / 7); height: 100%;}
-.introduction.section05 .company-graph .xYears > li:after{position: absolute; width: 2px; height: 483px; content: ''; background: #e8e8e8; bottom: 62px;}
-
-.introduction.section05 .company-graph .xYears > li span{display: block; font-size: 34px; font-family: 'NotoB'; color: #c0c0c0;}
-.introduction.section05 .graph-circle{width: 100%; height: 100%; overflow: hidden;}
-.introduction.section05 .graph-circle .box{position: relative; z-index: 1;}
-.introduction.section05 .graph-circle .box01{margin-top: 100px; margin-left: 50px;}
-.introduction.section05 .graph-circle .box02{margin-top: 50px; margin-left: 415px;}
-.introduction.section05 .graph-circle .box03{margin-top: 10px; margin-left: 600px;}
-.introduction.section05 .graph-circle .object{width: 120px; height: 120px; border-radius: 100%;  display: flex; align-items: center; justify-content: center;}
-.introduction.section05 .graph-circle .object01{background: #444444;}
-.introduction.section05 .graph-circle .object02{background: #a1a1a1;}
-.introduction.section05 .graph-circle .object03{background: #f9a331;}
-.introduction.section05 .graph-circle .object>span{display: inline-block; color: #ffffff; font-size: 18px; font-family: 'NotoB'; letter-spacing: -0.03em; text-align: center;}
-.introduction.section05 .graph-circle .box01 .line01{width: 297px; height: 3px; background: #444444; position: absolute; left: 120px; top: 50%; transform: translateY(-50%);}
-.introduction.section05 .graph-circle .box01 .line01:after{position: absolute; content: ''; width: 22px; height: 22px; border: 3px solid #444444; border-radius: 100%; right: -25px; top: 50%; transform: translateY(-50%); background: #fff;}
-.introduction.section05 .graph-circle .box01 .line02{position: absolute; right: 400px; top: 50%; transform: translateY(-50%);}
-.introduction.section05 .graph-circle .box .line02:after{position: absolute; content: ''; width: 22px; height: 22px; border: 3px solid #444444; border-radius: 100%; left: -25px; top: 50%; transform: translateY(-50%); background: #fff;}
-.introduction.section05 .graph-circle .box .line02:before{position: absolute; content: ''; width: 0; height: 0; right: -25px; top: 50%; transform: translateY(-50%); border-bottom: 15px solid transparent; border-top: 15px solid transparent; border-left: 25px solid #444444;  border-right: 25px solid transparent;}
-.introduction.section05 .graph-circle .box02 .line01{position: absolute; left: 120px; top: 50%; transform: translateY(-50%);}
-.introduction.section05 .graph-circle .box02 .line02{position: absolute; right: 227px; top: 50%; transform: translateY(-50%);}
-.introduction.section05 .graph-circle .box02 .line02:after{border: 3px solid #a1a1a1;}
-.introduction.section05 .graph-circle .box02 .line02:before{border-left: 25px solid #a1a1a1;}
-.introduction.section05 .graph-circle .box03 .line01{position: absolute; left: 120px; top: 50%; transform: translateY(-50%);}
-.introduction.section05 .graph-circle .box03 .line02{position: absolute; right: 43px; top: 50%; transform: translateY(-50%);}
-.introduction.section05 .graph-circle .box03 .line02:after{border: 3px solid #f9a331;}
-.introduction.section05 .graph-circle .box03 .line02:before{border-left: 25px solid #fa9331;}
-.introduction.section05 .graph-circle .box02 .line01:before{position: absolute; content: ''; width: 0; height: 0; right: -27px; top: 50%; transform: translateY(-50%); border-bottom: 15px solid transparent; border-top: 15px solid transparent; border-left: 25px solid #a1a1a1;  border-right: 25px solid transparent;}
-.introduction.section05 .graph-circle .box03 .line01:before{position: absolute; content: ''; width: 0; height: 0; right: -27px; top: 50%; transform: translateY(-50%); border-bottom: 15px solid transparent; border-top: 15px solid transparent; border-left: 25px solid #fa9331;  border-right: 25px solid transparent;} */
 
 
 .ceo.section01 .content-wrap .main-title-wrap{padding: 160px 0 60px; text-align:left;}

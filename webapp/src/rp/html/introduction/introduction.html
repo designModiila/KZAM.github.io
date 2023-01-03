@@ -16,9 +16,12 @@
   <script type="text/javascript" src="../../assets/lib/plugins/main/jquery.fullpage.min.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.waypoints.min.js"></script>
   <script src="../../assets/lib/plugins/main/splitting.min.js"></script>
+  <script src="../../assets/lib/plugins/gsap.min.js"></script>
+  <script src="../../assets/lib/plugins/TweenMax.min.js"></script>
+  <script src="../../assets/lib/plugins/ScrollTrigger.min.js"></script>
+  <script src="../../assets/lib/plugins/ScrollToPlugin.min.js"></script>
   <script src="../../assets/lib/plugins/aos.js"></script>
   <script src="../../assets/lib/plugins/main/jquery.counterup.min.js"></script>
-
   <script type="text/javascript" src="../../assets/lib/plugins/swiper.min.js"></script>
   <script type="text/javascript" src="../../assets/lib/script.js"></script>
   <title>KZAM</title>
@@ -191,95 +194,44 @@
         <span data-aos="aniLine" data-aos-duration="3000"></span>
       </div>
       <div class="introduction section section02">
-        <!-- <div class="content-wrap">  -->
-          <div class="company-box" data-aos="fade-up" data-aos-duration="1000"> 
-            <div class="company-image" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="300"> 
-            <img src="../../assets/images/introduction/introduction_content_bg.png" alt=""> 
-            </div>
-            <div class="company-info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-              <table>
-                <caption>KZAM company infomation</caption>
-                <colgroup>
-                  <col style="width: 25%;">
-                  <col style="width: 75%;">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th>회사명</th>
-                    <td>케이잼 주식회사</td>
-                  </tr>
-                  <tr>
-                    <th>대표이사</th>
-                    <td>허균</td>
-                  </tr>
-                  <tr>
-                    <th>설립일</th>
-                    <td>2020년 03월 17일</td>
-                  </tr>
-                  <tr>
-                    <th>사업분야</th>
-                    <td>이차전지용 전지박의 제조 및 판매</td>
-                  </tr>
-                  <tr>
-                    <th>주소</th>
-                    <td>울산광역시 울주군 온산읍 당월로 216-2</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          <!-- </div>  -->
+        <div class="company-box" data-aos="fade-up" data-aos-duration="1000"> 
+          <div class="company-image full-img" data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="300"> 
+          <img src="../../assets/images/introduction/introduction_content_bg.png" alt=""> 
+          </div>
+          <div class="company-info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <table>
+              <caption>KZAM company infomation</caption>
+              <colgroup>
+                <col style="width: 25%;">
+                <col style="width: 75%;">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>회사명</th>
+                  <td>케이잼 주식회사</td>
+                </tr>
+                <tr>
+                  <th>대표이사</th>
+                  <td>허균</td>
+                </tr>
+                <tr>
+                  <th>설립일</th>
+                  <td>2020년 03월 17일</td>
+                </tr>
+                <tr>
+                  <th>사업분야</th>
+                  <td>이차전지용 전지박의 제조 및 판매</td>
+                </tr>
+                <tr>
+                  <th>주소</th>
+                  <td>울산광역시 울주군 온산읍 당월로 216-2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <!-- <div class="introduction section section03">
-        <div class="content-wrap">
-          <div class="title" data-aos="fade-up" data-aos-duration="1000">
-            <p>경쟁력</p>
-          </div>
-          <ul>
-            <li class="item item1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-              <strong>기술의 효율성</strong>
-              <ul class="item-info">
-                <li>원료용해 효율 및 전해효율 극대화</li>
-                <li>전해액 제조, 유지관리, 운용능력 보유</li>
-              </ul>
-            </li>
-            <li class="item item2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-              <strong>공급의 안정성</strong>
-              <ul class="item-info">
-                <li>자체 전기동 생산으로 안정적인 원료공급</li>
-                <li>다양한 원료로부터 Cu를 회수 능력</li>
-              </ul>
-            </li>
-            <li class="item item3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
-              <strong>양상 능력 및 해외진출 계획</strong>
-              <ul class="item-info">
-                <li>2022년 연 1.3만톤 양산능력 확보 및 <br>
-                  2027년까지 연 6만톤 추가 증설 계획</li>
-                <li>미국/유럽 진출 예정</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div> -->
-      <!-- <div class="introduction section section04">
-        <div class="content-wrap">
-          <div class="title-wrap">
-            <div class="title" data-aos="fade-up" data-aos-duration="1000">
-              <p><span class="point">"전지박"</span>이차전지를 생산하는 핵심소재</p>
-            </div>
-            <div class="con-txt" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-              <p>이차전지 산업에서 소재부품이 원가의 70% 이상을 차지할 정도로 높은 가치를 지니고 있으며 <br>
-                전기차, 드론, 로봇, 모바일 기기 등 다양한 산업 분야에서 활용되는 만큼 <br>
-                그 수요가 폭발적으로 증가하고 있으며 무한한 성장 가능성을 가지고 있습니다.</p>
-            </div>
-          </div>
-          <div class="section04-img" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-            <img src="../../assets/images/introduction/introduction_section04img.png" alt="">
-            <p>전지박 수요 증가 추이</p>
-          </div>
-        </div>
-      </div> -->
-      <div class="introduction section section05">
+      <div class="introduction section section03">
         <div class="content-wrap">
           <div class="title-wrap">
             <div class="title" data-aos="fade-up" data-aos-duration="1000">
@@ -293,66 +245,6 @@
             <img src="../../assets/images/introduction/introduction_section05img.png" alt="" class="pcOnly">
             <img src="../../assets/images/introduction/introduction_section05img_mo.png" alt="" class="moOnly">
           </div>
-          <!-- <div class="company-graph-wrap">
-            <div class="company-graph">
-              <ul class="xYears">
-                <li><span>2022</span></li>
-                <li><span>2023</span></li>
-                <li><span>2024</span></li>
-                <li><span>2025</span></li>
-                <li><span>2026</span></li>
-                <li><span>2027</span></li>
-                <li><span>2028</span></li>
-              </ul>
-              <div class="graph-circle">
-                <div class="box box01">
-                  <div class="object object01"><span>증설공사</span></div>
-                  <div class="line line01"></div>
-                  <div class="line line02">
-                    <svg height="75" width="300">
-                      <g fill="none" stroke="#444444" stroke-width="3">
-                        <path stroke-dasharray="10,10" d="M5 40 l297 0" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="box box02">
-                  <div class="object object02"><span>드럼설치 <br>및 제품인증</span></div>
-                  <div class="line line01">
-                    <svg height="75" width="150">
-                      <g fill="none" stroke="#a1a1a1" stroke-width="3">
-                        <path stroke-dasharray="10,10" d="M5 40 l297 0" />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="line line02">
-                    <svg height="75" width="200">
-                      <g fill="none" stroke="#a1a1a1" stroke-width="3">
-                        <path stroke-dasharray="10,10" d="M5 40 l297 0" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div class="box box03">
-                  <div class="object object03"><span>상용생산</span></div>
-                  <div class="line line01">
-                    <svg height="75" width="150">
-                      <g fill="none" stroke="#f9a331" stroke-width="3">
-                        <path stroke-dasharray="10,10" d="M5 40 l297 0" />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="line line02">
-                    <svg height="75" width="200">
-                      <g fill="none" stroke="#f9a331" stroke-width="3">
-                        <path stroke-dasharray="10,10" d="M5 40 l297 0" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

@@ -42,49 +42,20 @@ $(document).ready(function(){
     });
   }
 
-
-
-  const inner = document.querySelector(".sub-bg");
-  const section = document.querySelector(".sub-content");
-
-window.onscroll = function() {
-  let value = (window.pageYOffset / 5 ) / section.offsetTop + 1;
-  inner.style.transform = `scale(${value})`;
-};
-
-
-$(function(){
-  
-  var $window = $(window);    //Window object
-  
-  var scrollTime = 1.2;     //Scroll time
-  var scrollDistance = 170;   //Distance. Use smaller value for shorter scroll and greater value for longer scroll
-    
-  $window.on("mousewheel DOMMouseScroll", function(event){
-    
-    event.preventDefault(); 
-                    
-    var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-    var scrollTop = $window.scrollTop();
-    var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-      
-    TweenMax.to($window, scrollTime, {
-      scrollTo : { y: finalScroll, autoKill:true },
-        ease: Power1.easeOut, //For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
-        autoKill: true,
-        overwrite: 5,             
-      });
-          
+  ScrollTrigger.create({
+    trigger: ".sub-visual",
+    start: "+=30px top",
+    toggleClass: {targets: '.sub-visual', className: 'ani'},
+    toggleActions: "play pause resume reset"
   });
   
-});
 
 
 //   const inner = document.querySelector(".sub-bg");
 //   const section = document.querySelector(".sub-content");
 
 // window.onscroll = function() {
-//   let value = window.pageYOffset / section.offsetTop + 1;
+//   let value = (window.pageYOffset / 5 ) / section.offsetTop + 1;
 //   inner.style.transform = `scale(${value})`;
 // };
 
@@ -106,18 +77,14 @@ $(function(){
       
 //     TweenMax.to($window, scrollTime, {
 //       scrollTo : { y: finalScroll, autoKill:true },
-//         ease: Power1.easeOut, //For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+//         ease: "Power3.easeOut",
 //         autoKill: true,
-//         overwrite: 5              
+//         overwrite: 5,             
 //       });
           
 //   });
   
 // });
-
-
-
-
 
   var $fullpage = $('#fullpage');
   $('#fullpage').fullpage({
@@ -542,72 +509,25 @@ $(window).on('scroll', function (e) {
         pinSpacing: false,
       }
     })
-
   })
 
-  // function smoothScroll() {
+  const fullImg = gsap.utils.toArray('.full-img');
 
-  //   ScrollTrigger.scrollerProxy(".scroll-content", {
-  //       scrollTop(value) {
-  //           if (arguments.length) {
-  //               scroll.scrollTop = value;
-  //           }
-  //           return scroll.scrollTop;
-  //       }
-  //   });
-  //   scroll.addListener(ScrollTrigger.update);
-  //   ScrollTrigger.defaults({
-  //       scroller: ".scroll-content"
-  //   })
+  fullImg.forEach(fullImg => {
+    gsap.to(fullImg, {
+      ease: "power1.inOut",
+      scale: 1.1,
+      y: 0,
+      scrollTrigger: {
+        trigger: fullImg,
+        scrub: true,
+        start: "-=100% top",
+        end: "+=100 bottom",
+        toggleActions: "play pause resume reset"
+      }
+    })
+  })
 
-//   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-//   gsap.set(".vision-list", { zIndex: (i, target, targets) => targets.length - i });
-//   var texts = gsap.utils.toArray('.vision-list');
-//   setTimeout(() => {
-//       var imgH = $(".vision.section02 .right .img-box").height();
-//       var startTiming = 14.714;
-//       // var step = $(".esports_philosophy .pc_version .step");
-//       texts.forEach((text, i) => {
-//           var tl = gsap.timeline({
-//               scrollTrigger: {
-//                   trigger: ".vision-inner",
-//                   scroller: ".sub-content",
-//                   start: () => "-30% -" + ((imgH + 30) * i),
-//                   // start: () => "-" + startTiming + "vw -" + ((imgH + 30) * i),
-//                   end: () => "+=" + ((imgH / 1.2)),
-//                   scrub: true,
-//                   toggleActions: "play none reverse none",
-//                   invalidateOnRefresh: true,
-//                   // markers: true,
-//               }
-
-//           });
-//           tl
-//               .to(text, {
-//                   duration: 0.4, opacity: 1, y: "0%",
-//                   // onStart: function () {
-//                   //     step.children(".now").text("0" + (i + 1));
-//                   // }
-//               })
-//               .to(text, {
-//                   duration: 0.4, opacity: 0, y: "-30%"
-//               }, 0.6)
-//               ;
-//       });
-//       ScrollTrigger.create({
-//           trigger: ".vision-inner",
-//           scroller: ".sub-content",
-//           scrub: true,
-//           pin: true,
-//           // markers: true,
-//           start: () => "top top",
-//           end: () => "+=" + ((texts.length - 1) * imgH),
-//           invalidateOnRefresh: true,
-//       });
-//   }, "100");
-
-//   }
 
 
 });
@@ -627,25 +547,4 @@ $(window).on('scroll', function (e) {
   //   }
   // });
 
-
-
-
-
-
-  
-
-  
-  // $(".swiper-wrapper").hover(function () {
-  //   swiper.autoplay.stop();
-  //   $(".swiper-progress-bar").removeClass("animate");
-  // }, function () {
-  //   swiper.autoplay.start();
-  //   $(".swiper-progress-bar").addClass("animate");
-  // });
-
-
-  
-
-  
-// });
 
