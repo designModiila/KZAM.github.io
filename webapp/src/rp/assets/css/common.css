@@ -1,7 +1,7 @@
 .header * {box-sizing: border-box;}
 .header {position: fixed; width: 100%; z-index: 10;}
 .header-wrap {display: flex; justify-content: space-between; align-items: flex-start; padding:15px 100px;}
-.header-wrap .logo a {color:#fff; font-family: 'Arsenal'; font-style: italic;  font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; }
+.header-wrap .logo a {color:#fff; font-family: 'Arsenal'; /*font-style: italic;*/  font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; }
 .header-wrap .menu-btn .menu {display: flex; flex-direction: column; gap: 6px; cursor: pointer; padding:16px 0}
 .header-wrap .menu-btn .menu span{display: block; width: 21px; height: 2px; background: #fff;
   -webkit-transition: width 0.2s ease-out;
@@ -124,7 +124,7 @@
 .footer-top .logo{color: #909090 !important; font-size: 35px; margin-bottom: 12px;}
 .footer-top .f-logo{flex: 0 0 33.3333%;}
 .footer-top .f-logo .logo{width: auto; height: auto; display: block;}
-.footer-top .f-logo .logo a {font-family: 'Arsenal'; font-style: italic; font-weight: 700; font-size: 35px; line-height: 44px;}
+.footer-top .f-logo .logo a {font-family: 'Arsenal'; /*font-style: italic;*/ font-weight: 700; font-size: 35px; line-height: 44px;}
 .footer-top .f-logo p{font-family: 'NotoR'; font-size: 14px; color: #909090;}
 .footer-top .f-nav{display: flex; justify-content: space-between; flex: 0 0 50%;;}
 .footer-top .f-nav dt{font-family: 'NotoM'; font-size: 18px; font-weight:500; color: #ececec; letter-spacing: -0.03em; margin-bottom: 10px;}
