@@ -85,6 +85,31 @@ $(document).ready(function(){
 //   });
   
 // });
+function selectHide() {
+  $('.lang-select').removeClass('active');
+
+}
+var selectHideTimer = setTimeout(selectHide, 3000);
+$('.lang-select .current').on("click", function (e) {
+  e.preventDefault();
+  clearTimeout(selectHideTimer);
+  if ($(this).parent('.lang-select').hasClass('active')) {
+      $(this).parent('.lang-select').removeClass('active');
+  } else {
+      $('.lang-select').removeClass('active');
+      $(this).parent('.lang-select').addClass('active');
+  }
+});
+
+$('.lang-select').on("mouseleave", function (e) {
+  selectHideTimer = setTimeout(selectHide, 2000);
+});
+
+$('.lang-select li a').on("click", function (e) {
+  selectHide();
+  $(this).parents('.lang-select').find('.current').text($(this).text());
+});
+
 
   var $fullpage = $('#fullpage');
   $('#fullpage').fullpage({
