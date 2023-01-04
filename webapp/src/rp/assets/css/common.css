@@ -73,8 +73,8 @@
   .header-wrap .header-wrap .logo.dark a{background-image: url(../images/main/logo.svg);}
   /* .header.dark .header-wrap .logo a {color: #323232;}
   .header-wrap .header-wrap .logo.dark a{color: #323232;} */
-  .header.dark .link-select a{color: #323232;}
-  .header.dark .link-select::after{border-bottom: 2px solid #323232; border-right: 2px solid #323232;}
+  .header.dark .lang-select a{color: #323232;}
+  .header.dark .lang-select::after{border-bottom: 2px solid #323232; border-right: 2px solid #323232;}
   .header.dark .header-wrap .nav > ul > li > a {color: #323232;}
   .header.dark .header-wrap .menu span{background: #323232;}
   
