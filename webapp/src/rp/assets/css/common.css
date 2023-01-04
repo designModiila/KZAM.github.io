@@ -2,7 +2,8 @@
 .header {position: fixed; width: 100%; z-index: 10;}
 .header-wrap {display: flex; justify-content: space-between; align-items: flex-start; padding:15px 100px;}
 
-.header-wrap .logo a {color:#fff; font-family: 'Arsenal'; font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; }
+.header-wrap .logo a{width: 157px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-size: cover; background-position: 50% 50%;}
+/* .header-wrap .logo a {color:#fff; font-family: 'Arsenal'; font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; } */
 .header-wrap .menu-btn .menu {display: flex; flex-direction: column; gap: 6px; cursor: pointer; padding:16px 0}
 .header-wrap .menu-btn .menu span{display: block; width: 21px; height: 2px; background: #fff;
   -webkit-transition: width 0.2s ease-out;
@@ -52,8 +53,10 @@
   .header-wrap .nav > ul > li > .depth_2 > ul > li.active > a::before {content:''; position: absolute; z-index: 1; left:-1px; top:0; height:100%; width:2px; background:#FF8B23;}
 
 
-  .header.dark .header-wrap .logo a {color: #323232;}
-  .header-wrap .header-wrap .logo.dark a{color: #323232;}
+  .header.dark .header-wrap .logo a {background-image: url(../images/main/logo.svg);}
+  .header-wrap .header-wrap .logo.dark a{background-image: url(../images/main/logo.svg);}
+  /* .header.dark .header-wrap .logo a {color: #323232;}
+  .header-wrap .header-wrap .logo.dark a{color: #323232;} */
   .header.dark .header-wrap .nav > ul > li > a {color: #323232;}
   .header.dark .header-wrap .menu span{background: #323232;}
   
