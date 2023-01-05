@@ -4,14 +4,13 @@
 .content-wrap .title-txt p{font-size: 20px; line-height: 36px;}
 
 .sub-content{overflow: hidden;}
+.overview .con-title{font-family: 'NotoB'; font-size: 40px; letter-spacing: -0.03em; color: #323232; margin-right: 70px;}
 .overview.section01 .main-title-wrap{padding: 160px 0 200px;}
 .overview.section02 .content-wrap{display: flex; margin-bottom: 80px;}
-.overview.section02 .content-wrap .title{margin-right: 70px;}
 .overview.section02 .content-wrap .title-txt{flex: 1; line-height: 34px;}
 .overview.section02 .content-wrap .title-txt p{word-break: keep-all;}
 .overview.section02 .section02-img{display: flex; justify-content: flex-end; overflow: hidden;}
 .overview.section03 .content-wrap{padding-top: 249px; display: flex; margin-bottom: 80px;}
-.overview.section03 .content-wrap .title{margin-right: 70px;}
 .overview.section03 .content-wrap .title-txt{flex: 1; line-height: 34px;}
 .overview.section03 .section03-bg{position: absolute; bottom: 0; background: #f6f6f6; width: 100%; height: 752px;}
 .overview.section03 .section03-img{position: relative; z-index: 1; overflow: hidden;}
@@ -20,7 +19,7 @@
 .overview.section03 .content-wrap.bot-content .item p:first-child{font-family: 'NotoB'; font-size: 24px; letter-spacing: -0.03em; color: #323232; margin-bottom: 20px;}
 .overview.section03 .content-wrap.bot-content .item p:nth-child(2){color: #4e4e4e; font-size: 18px; line-height: 30px; word-break: keep-all;}
 .overview.section04 .content-wrap{padding-top: 249px; display: flex; margin-bottom: 80px;}
-.overview.section04 .content-wrap .title{margin-right: 165px;}
+.overview.section04 .content-wrap .con-title{margin-right: 165px;}
 .overview.section04 .content-wrap .title-txt{flex: 1; line-height: 34px;}
 .overview.section04 .section04-img{display: flex; justify-content: flex-end;}
 .overview.section04 .content-wrap.bot-content{padding-top: 80px; margin-bottom: 0; padding-bottom: 240px; align-items: center;}

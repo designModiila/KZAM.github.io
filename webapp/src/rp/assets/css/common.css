@@ -2,18 +2,18 @@
 .header {position: fixed; width: 100%; z-index: 10;}
 .header-wrap {display: flex; justify-content: space-between; align-items: flex-start; padding:15px 100px;}
 
-.header-wrap .logo a{width: 157px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-size: 300px auto; background-position: 50% 50%;}
+.header-wrap .logo a{width: 140px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
 /* .header-wrap .logo a {color:#fff; font-family: 'Arsenal'; font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; } */
 .header-wrap .utill-box{display: flex; align-items: center;}
 .header-wrap .lang-select{display: flex; position: relative; overflow: hidden; width: 80px; margin-right: 20px;}
-.header-wrap .lang-select::after {content: ""; display: block; position: absolute; right: 24px; top: 50%; width: 9px; height: 9px; margin-top: -7px; border-bottom: 1px solid #fff; border-right: 1px solid #fff; transform-origin: 66% 66%; transform: rotate(45deg); transition: all 0.15s ease-in-out;}
+.header-wrap .lang-select::after {content: ""; display: block; position: absolute; right: 24px; top: 50%; width: 9px; height: 9px; margin-top: -7px; border-bottom: 2px solid #fff; border-right: 2px solid #fff; transform-origin: 66% 66%; transform: rotate(45deg); transition: all 0.15s ease-in-out;}
 .header-wrap .lang-select a {display: flex; color: #fff; align-items: center; justify-content: flex-start; width: 100%; height: 42px; font-size: 14px; font-family: 'NotoB';}
 .header-wrap .lang-select .current {padding-left: 18px; padding-right: 30px; border: 1px solid #d7d7d7;}
 .header-wrap .lang-select .current.active {color: #ff8b23;}
 .header-wrap .lang-select .lang-list {overflow: hidden; position: absolute; top: calc(100% - 1px); left: 0; z-index: -1; width: 100%; padding: 20px 0; background: #fff; border: 1px solid #d7d7d7; opacity: 0; transform-origin: 50% 0; transform: translateY(-21px); transition: all 0.2s ease, opacity 0.15s ease-out;}
 .header-wrap .lang-select .lang-list li a {height: 30px; padding: 0 18px; color: #4e4e4e;}
 .header-wrap .lang-select .lang-list li.active a {color: #ff8b23; font-family: 'NotoB';}
-.header-wrap .lang-select::after {right: 12px; width: 7px; height: 7px; margin-top: -5px; border-width: 2px;}
+.header-wrap .lang-select::after {right: 12px; width: 7px; height: 7px; margin-top: -6px;}
 .header-wrap .lang-select .current {border: 0;}
 .header-wrap .lang-select .lang-list li a {justify-content: center; height: 30px;}
 .header-wrap .lang-select.up .lang-list {top: auto; bottom: calc(100% - 1px); transform-origin: 0 100%; transform: translateY(21px); padding-bottom: 10px;}
@@ -83,7 +83,7 @@
   .header.on .header-wrap .nav > ul > li.on .depth_2 {opacity: 1; height: 190px; display: block;}  
   
   
-  .header.dark.on .header-wrap .logo a {color: #fff;}
+  .header.dark.on .header-wrap .logo a {background-image: url(../images/main/logo_w.svg);}
   .header.dark.on .header-wrap .nav > ul > li > a {color: #fff;}
   .header.dark.on .header-wrap .nav > ul > li.on > a {color:#FF8B23}
   .header.dark.on .header-wrap .menu span{background: #fff;}
@@ -99,7 +99,7 @@
 #gnb {display: none; position: absolute; z-index: 100; left:0; right:0; top:0; width: 100vw; height: 100vh;  background: rgba(0,0,0,.95); transition: top .3s, opacity .3s ease-in-out;}
 #gnb.open {display: block;}
 #gnb .gnb-header {position: fixed; z-index: 100; width: calc(100%); display: flex; justify-content: space-between; align-items: center; padding:24px 100px;}
-#gnb .gnb-header .logo a {width: 157px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-size: 300px auto; background-position: 50% 50%;}
+#gnb .gnb-header .logo a {width: 140px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
 /* #gnb .gnb-header .logo a {color: #fff;  font-family: 'Arsenal'; font-weight: 700;  font-size: 40px;  line-height: 50px;  letter-spacing: -0.03em;} */
 #gnb .gnb-close{width: 30px; height: 30px; line-height: 30px; }
 #gnb .gnb-close .close-btn{width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; transform: rotate(-.25turn); transition: all .2s cubic-bezier(.42,0,.58,1) 10ms; cursor: pointer;}
@@ -147,7 +147,7 @@
 /* .footer-top .logo{color: #909090 !important; font-size: 35px;} */
 .footer-top .f-logo{flex: 0 0 33.3333%;}
 .footer-top .f-logo .logo{width: auto; height: auto; display: block;}
-.footer-top .f-logo .logo a {width: 93px; height: 44px; display: block; background-image: url(../images/main/logo_w.svg); background-size: 200px auto; background-position: 50% 50%;}
+.footer-top .f-logo .logo a {width: 93px; height: 44px; display: block; background-image: url(../images/main/logo_w.svg); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
 .footer-top .f-logo p{font-family: 'NotoR'; font-size: 14px; color: #909090;}
 /* .footer-top .f-logo .logo a {font-family: 'Arsenal';  font-weight: 700; font-size: 35px; line-height: 44px;}
 .footer-top .f-logo p{font-family: 'NotoR'; font-size: 14px; color: #909090;} */
@@ -201,10 +201,11 @@
 .fixed-header{position: fixed; top: 0; left: 0; width: 100%; z-index: 100; margin-top: 0; transition: all 0.3s ease-in-out;}
 .header.fixed-header{background: #fff; border-bottom: 1px solid #d9d9d9;}
 .header.fixed-header.on{background: #323232;}
-.header.fixed-header .logo{color: #323232;}
-.header.fixed-header .logo a {color: #323232;} 
+.header.fixed-header .logo a {background-image: url(../images/main/logo.svg);} 
 .header.fixed-header .nav > ul > li{color: #323232;}
-.header.fixed-header .menu-btn span{background: #323232;}
+.header.fixed-header .lang-select a{color: #323232;}
+.header.fixed-header .lang-select:after{border-bottom: 2px solid #323232; border-right: 2px solid #323232;}
+.header.fixed-header .menu span{background: #323232;}
 .header.fixed-header .nav > ul > li a{color: #323232;}
 .header.fixed-header.on  .nav > ul > li a{color: #fff;}
 .header.fixed-header.on  .nav > ul > li a:hover {color:#FF8B23}
