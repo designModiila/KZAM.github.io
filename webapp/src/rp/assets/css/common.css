@@ -172,6 +172,9 @@
 .footer-bottom .privacy ul{display: flex; gap: 20px;}
 .footer-bottom .privacy ul li a{display: block; font-size: 12px; color: #909090;}
 
+.scroll-top-btn{width: 40px; height: 40px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/mo-scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer;}
+.scroll-top-btn.on{opacity: 1; visibility: visible;}
+
 @keyframes bg-scale { 
   0% {-webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
 	100% {-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); } }
@@ -417,9 +420,6 @@
   .main-title-wrap{text-align: left;}
   .sub-main-title p{font-size: 32px;}
   .content-wrap .title p {font-size: 28px; line-height: 40px;}
-
-  .scroll-top-btn{width: 40px; height: 40px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/mo-scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer;}
-  .scroll-top-btn.on{opacity: 1; visibility: visible;}
   
   /* .mo768 {display: block;}
 
