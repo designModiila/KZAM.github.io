@@ -17,8 +17,6 @@
 .introduction.section02 .company-info table tr{border-bottom: 1px solid #becde2;}
 .introduction.section02 .company-info table th{font-family: 'NotoB'; color: #ffffff; letter-spacing: -0.03em; line-height: 56px; text-align: left;}
 .introduction.section02 .company-info table td{color: #ffffff; line-height: 56px; padding: 0 61px 0 0;}
-
-
 .introduction.section03{padding: 120px 0 200px; background: #fff;}
 .introduction.section03 .content-wrap{display: flex; flex-direction: column; align-items: center;}
 .introduction.section03 .title-wrap{margin-bottom: 77px; text-align: center;}
