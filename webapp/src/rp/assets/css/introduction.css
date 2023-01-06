@@ -87,8 +87,8 @@
 .vision.section02 .slider-wrapper{position:relative; width:100%; margin:0 auto; display:flex; flex-direction: row-reverse;} 
 .vision.section02 .slider-image{position:relative; width: 50%}
 .vision.section02 .slider-text{width: 50%; overflow:hidden; position: relative;}
-.vision.section02 .slider-text-float{position:fixed; width: 427px; height:200px; display:flex; top: 50%; transform: translateY(-50%); justify-content:center; align-items:center; opacity: 0;}
-.vision.section02 .visible.slider-text-float{opacity:1; transition:all .5s ease;}
+.vision.section02 .slider-text-float{position:fixed; width: 427px; height:200px; display:flex; top: 50%; justify-content:center; align-items:center; opacity: 0;}
+.vision.section02 .visible.slider-text-float{opacity:1; transition:all .5s ease; transform: translateY(-50%);}
 .vision.section02 .slider-image-item {transform: translatey(-0%); transition: all .4s ease; margin-bottom: 40px;}
 .vision.section02 .active.slider-image-item {transform: translatey(-0%); transition: all .4s ease; margin-bottom: 50px;}
 .vision.section02 .slider-image img{width:100%;}
