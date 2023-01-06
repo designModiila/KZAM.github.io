@@ -1,7 +1,7 @@
 .main-title-wrap{padding-bottom: 0;}
 .section{width: 100%; height: 100%; position: relative;}
 .sub-bg{background: url(../images/media/media_sub_visual.png) no-repeat; background-size: cover;}
-.content-wrap{max-width: 1280px; margin: 0 auto; padding-bottom: 285px;}
+.content-wrap{max-width: 1280px; margin: 0 auto; padding-bottom: 200px;}
 
 .swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 50px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
@@ -9,7 +9,7 @@
 .swiper-button-prev{background: url('../images/main/controller-arrow-l.png') no-repeat; background-position: center; width: 35px; left: 0;}
 .swiper-button-next{background: url('../images/main/controller-arrow-r.png') no-repeat; background-position: center; width: 35px; right: 0;}
 .swiper-button-next::after, .swiper-button-prev::after{display: none;}
-.con-recent{position: relative; width: 100%; overflow: hidden; padding-bottom: 50px;}
+.con-recent{position: relative; width: 100%; overflow: hidden;}
 .con-recent .list{width: 100%; overflow: hidden; background: #f6f6f6;}
 .con-recent a{display: block;}
 .con-recent .list{display: flex;}
@@ -78,6 +78,22 @@ select option[value=""][disabled]{display: none;}
 
 .pr-list{text-align: center;}
 .pr-list img{width: 100%; object-fit: cover;}
+.pr.section02 .content-wrap{position: relative; z-index: 1; padding-bottom: 236px;;}
+.pr.section02 .main-title-wrap{padding: 120px 0 80px;}
+.pr.section02 .content-wrap:after{position: absolute; content: ''; width: 100vw; left: 50%; top: 0; height: 600px; transform: translateX(-50%); background:#f6f6f6; z-index: -1;}
+.pr.section02 .brochure-wrap{display: flex; flex-direction: row; gap: 60px; max-width: 1145px; margin: 0 auto;}
+.pr.section02 .brochure-thumb{padding: 16px 16px 127px 16px; background: #fff; box-sizing: border-box; box-shadow: 0px 0px 14.876px rgba(0, 0, 0, 0.07); width: 630px;}
+.pr.section02 .brochure-thumb .box{margin-bottom: 33px;}
+.pr.section02 .brochure-thumb .desc{font-size: 14px; color: #303030; font-family: 'playB'; margin-bottom: 6px;}
+.pr.section02 .brochure-thumb .tit{color: #2d2d2d; font-family: 'NotoBl'; font-size: 27px;}
+.pr.section02 .brochure-info{margin-top: 68px;}
+.pr.section02 .brochure-info .title{margin-bottom: 20px;}
+.pr.section02 .brochure-info .title p{font-size: 38px; line-height: 52px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232;}
+.pr.section02 .brochure-info .desc{margin-bottom: 70px;}
+.pr.section02 .brochure-info .desc p{color: #4e4e4e; font-size: 20px; line-height: 34px; letter-spacing: -0.03em;}
+.pr.section02 .download-btn a{display: inline-block; background: #444444;}
+.pr.section02 .download-btn a span{display: inline-block;color: #fff; padding: 15px 76px 15px 50px; font-size: 14px; letter-spacing: -0.03em; font-family: 'NotoB'; position: relative;}
+.pr.section02 .download-btn a span:after{position: absolute; content: ''; background: url(../images/media/download-icon.png) no-repeat; width: 16px; height: 16px; right: 49px;}
 
 @media all and (max-width : 1240px){
   .board-navi{padding: 0 108px;}
