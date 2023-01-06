@@ -37,7 +37,7 @@ function eventTextChange(currentItem, stage) {
 
 var sliderLength = $('.slider-image-wrapper').children().length - 1,
   currentIndex = $('.slider-image-item.active').index(),
-  windowHalfHeight = $(window).height() / 2;
+  windowHalfHeight = $(window).height() / 2.8;
 
 
 $(window).on('scroll', function() {

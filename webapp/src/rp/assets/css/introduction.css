@@ -248,7 +248,7 @@
 
 @media all and (max-width: 1024px){
 
-  .vision.section02 .slider-text-float{justify-content: flex-start;}
+  .vision.section02 .slider-text-float{justify-content: flex-start; width: 45%;}
   .vision.section02 .slider-sub-text{margin-bottom: 75px;}
   .vision.section02 .slider-text .slider-title-text{font-size: 30px;}
   .vision.section02 .slider-text p{font-size: 36px; line-height: 56px;}
@@ -339,11 +339,9 @@
   .vision.section01 .content-wrap .title-txt p{font-size: 14px; line-height: 22px;}
   .vision.section01 .content-wrap .title-txt p br{display: none;}
   .vision.section02 .content-wrap{padding-top: 25px; padding-bottom: 223px;}
-  .vision.section02 .item:nth-child(odd){text-align: center;}
-  .vision.section02 .item:nth-child(even){text-align: center;}
-  .vision.section02 .item:not(:first-child){margin-top: 85px;}
-  .vision.section02 .item .item-wrap:before{font-size: 60px; top: -40px;}
-  .vision.section02 .item-wrap p{margin-top: 20px; font-size: 20px;}
+  .vision.section02 .slider-sub-text{font-size: 14px; margin-bottom: 30px;}
+  .vision.section02 .slider-text .slider-title-text{font-size: 16px; margin-bottom: 10px;}
+  .vision.section02 .slider-text p{font-size: 22px; line-height: 32px;;}
 
   .affiliate.section01 .main-title-wrap{padding: 60px 0 37px;}
   .affiliate.section01 .content-wrap .title{margin-bottom: 20px;}
