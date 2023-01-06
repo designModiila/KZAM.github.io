@@ -43,7 +43,7 @@
 .ecoFriendly.section01 .ecofriendly-box .box:nth-child(2){flex-direction: row-reverse;}
 .ecoFriendly.section01 .ecofriendly-box .box:nth-child(4){flex-direction: row-reverse;}
 .ecoFriendly.section01 .ecofriendly-box .box .img-info{display: flex; flex-direction: column;}
-.ecoFriendly.section01 .ecofriendly-box .box .img-info .point{font-size: 40px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #ff8b23; margin-bottom: 20px;}
+.ecoFriendly.section01 .ecofriendly-box .box .img-info .point{font-size: 40px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; margin-bottom: 20px;}
 .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{font-size: 20px; line-height: 34px;; letter-spacing: -0.03em; color: #323232;}
 
 .ecoFriendly.section02 .content-wrap{padding-bottom: 200px;}

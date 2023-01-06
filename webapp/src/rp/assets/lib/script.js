@@ -518,7 +518,6 @@ $(window).on('scroll', function (e) {
   };
 
 
-
   sections.forEach(section => {
     gsap.to(section, {
       ease: "power1.inOut",
@@ -552,6 +551,44 @@ $(window).on('scroll', function (e) {
       }
     })
   })
+
+  const chartAni = document.querySelectorAll('.chart-wrap');
+
+  chartAni.forEach((element) => {
+    ScrollTrigger.matchMedia({
+      "(min-width: 768px)": function(){
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".section03",
+            start: "+=200px top",
+          }
+        });
+        tl.fromTo('.bar01', {height: "0px"},{height: "60px", ease: Power2.easeInOut})
+          .fromTo('.box01 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.1')
+          .fromTo('.bar02', {height: '0px'},{height: '120px', ease: Power2.easeInOut}, '<0.15')
+          .fromTo('.box02 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.2')
+          .fromTo('.box04 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.25')
+          .fromTo('.bar03', {height: '0px'},{height: '230px', ease: Power2.easeInOut}, '<0.3')
+          .fromTo('.box03 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.35')
+          .fromTo('.redBox',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.4')
+          .fromTo('.bar04', {height: '0px'},{height: '120px', ease: Power2.easeInOut}, '<0.45')
+          .fromTo('.box05 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.5')
+          .fromTo('.box06 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.55')
+          .fromTo('.bar05', {height: '0px'},{height: '260px', ease: Power2.easeInOut}, '<0.6')
+          .fromTo('.box07 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.65')
+      },
+      "(max-width: 767px)": function(){
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".section03",
+            start: "+=200px top",
+          }
+        });
+        tl.fromTo('.chart', {opacity: 0, y: 200},{opacity: 1, y: 0, ease: Power2.easeInOut, duration: 1})
+      }
+    })
+
+  });
 
 
 

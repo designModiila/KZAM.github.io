@@ -28,31 +28,35 @@
 .introduction.section03 .chart .line{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 1200px; height: 1px; background: #4e4e4e; display: flex; justify-content: center; margin: 53px 0 33px;}
 .introduction.section03 .dot-wrap{display: flex; width: 909px; justify-content: space-between; align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .introduction.section03 .dot-wrap:before{position: absolute; content: ''; width: 1200px; height: 1px; background: #4e4e4e; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
-.introduction.section03 .dot-wrap .item{display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 42px;}
+.introduction.section03 .dot-wrap .item{display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 42px; position: relative;}
 .introduction.section03 .dot-wrap .item .years{font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #4e4e4e;}
 .introduction.section03 .dot-wrap .item06 .years{color: #ff8b23;}
+.introduction.section03 .dot-wrap .item07{position: absolute; right: 80px; top: -150px; margin-bottom: 0; gap: unset;}
+.introduction.section03 .dot-wrap .item07 .redBox{background: #be3232; border-radius: 10px;}
+.introduction.section03 .dot-wrap .item07 .redBox span{display: inline-block; color: #fff; padding: 14px 25px; font-size: 22px; letter-spacing: -0.03em; font-family: 'NotoB';}
+.introduction.section03 .dot-wrap .item07 .redBox span br{display: none;}
 .introduction.section03 .dot-wrap .item .dot{width: 14px; height: 14px; border-radius: 100%; background: #4e4e4e;}
 .introduction.section03 .dot-wrap .item03 .dot{background: #fff; position: relative;}
 .introduction.section03 .dot-wrap .item05 .dot{background: #fff; position: relative;}
 .introduction.section03 .dot-wrap .item03 .dot:after, .introduction.section03 .dot-wrap .item05 .dot:after{position: absolute; content: ''; width: 40px; height: 40px; border-radius: 100%; background: #ff8b23; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
 .introduction.section03 .dot-wrap .item06 .dot{background: #ff8b23;}
-.introduction.section03 .chart .box .txt-box{display: inline-block; font-size: 18px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #4e4e4e; background: #fff; padding: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); border-radius: 10px;}
+.introduction.section03 .chart .box .txt-box{width: 160px; display: inline-block; font-size: 18px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #4e4e4e; background: #fff; padding: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); border-radius: 10px; text-align: center;}
 .introduction.section03 .chart .box .txt-box br{display: none;}
 .introduction.section03 .chart .box{position: absolute; display: flex; flex-direction: column; align-items: center; gap: 20px;}
-.introduction.section03 .chart .top .box01{left: 78px; top: 182px;}
-.introduction.section03 .chart .top .box02{left: 248px; top: 122px; }
-.introduction.section03 .chart .top .box03{left: 598px; top: 12px;}
-.introduction.section03 .chart .top .box .bar{background: #4e4e4e; width: 50px;}
-.introduction.section03 .chart .top .box .bar01{height: 60px;}
-.introduction.section03 .chart .top .box .bar02{height: 120px;}
-.introduction.section03 .chart .top .box .bar03{height: 230px;}
-.introduction.section03 .chart .bottom .box .bar04{height: 120px;}
-.introduction.section03 .chart .bottom .box .bar05{height: 260px;}
-.introduction.section03 .chart .bottom .box04{left: 420px; bottom: 274px;}
-.introduction.section03 .chart .bottom .box05{right: 420px; bottom: 148px;}
-.introduction.section03 .chart .bottom .box06{right: 245px; bottom: 274px;}
-.introduction.section03 .chart .bottom .box07{right: 68px; bottom: 8px;}
-.introduction.section03 .chart .bottom .box .bar{background: #ff8b23; width: 50px;}
+.introduction.section03 .chart .box01{top: -144px;}
+.introduction.section03 .chart .box02{top: -204px; }
+.introduction.section03 .chart .box03{top: -314px;}
+.introduction.section03 .chart .box .bar{background: #4e4e4e; width: 50px;}
+.introduction.section03 .chart .box .bar01{height: 60px;}
+.introduction.section03 .chart .box .bar02{height: 120px;}
+.introduction.section03 .chart .box .bar03{height: 230px;}
+.introduction.section03 .chart .box .bar04{height: 120px;}
+.introduction.section03 .chart .box .bar05{height: 260px;}
+.introduction.section03 .chart .box04{bottom: -112px;}
+.introduction.section03 .chart .box05{bottom: -250px;}
+.introduction.section03 .chart .box06{bottom: -112px;}
+.introduction.section03 .chart .box07{bottom: -390px;}
+.introduction.section03 .chart .bottom .bar{background: #ff8b23; width: 50px;}
 
 
 
@@ -89,7 +93,7 @@
 .vision.section02 .active.slider-image-item {transform: translatey(-0%); transition: all .4s ease; margin-bottom: 50px;}
 .vision.section02 .slider-image img{width:100%;}
 .vision.section02 .slider-sub-text {font-family: 'NotoB'; font-size: 20px; letter-spacing: -0.03em; color: #4e4e4e; margin-bottom: 125px;}
-.vision.section02 .slider-text .slider-title-text {margin-bottom: 20px; margin-top:0; display: inline-block; font-size: 20px; color: #323232;}
+.vision.section02 .slider-text .slider-title-text {margin-bottom: 20px; margin-top:0; display: inline-block; font-size: 40px; color: #323232;}
 .vision.section02 .slider-text p{font-size: 46px; letter-spacing: -0.03em; line-height: 66px; font-family: 'NotoB'; color: #323232; word-break: keep-all;}
 
 
@@ -128,25 +132,6 @@
 #affiliate01 .company-wrap .box dt{font-family: 'NotoB'; color: #4e4e4e; letter-spacing: -0.03em; padding-right: 5px;}
 #affiliate01 .company-wrap .box03 dt{font: 0/0 a;}
 #affiliate01 .company-wrap .box dd{color: #4e4e4e; letter-spacing: -0.03em; margin-right: 15px;}
-
-
-
-/* .affiliate-wrap {padding: 96px 0;}
-.affiliate-wrap .list-album {display: flex; height: 100%; gap: 40px 25px; flex-wrap: wrap;}
-.affiliate-wrap .list-album > li {width: 32%; box-sizing: border-box; transition: all 0.4s ease;}
-.affiliate-wrap .box {position: relative; height: 321px; overflow: hidden;}
-.affiliate-wrap .box > a {height: 100%; display: block; border: 1px solid #d9d9d9; box-sizing: border-box;}
-.affiliate-wrap .thumb{box-sizing: border-box; transition: all .4s ease-in-out; margin-top: 25%;}
-.affiliate-wrap .thumb img {display: block; width:100%;}
-.affiliate-wrap .info {position: absolute; padding: 40px; left: 0; top: 0; width: 100%; height: 100%; transition: background 0.4s; box-sizing: border-box;}
-.affiliate-wrap .info-title{margin-bottom: 175px;}
-.affiliate-wrap .info-title strong{color: #323232; font-size: 26px; font-family: 'NotoB'; letter-spacing: -0.03em; transition: color .4s ease-in-out;}
-.affiliate-wrap .info-desc p{font-size: 18px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #fff; opacity: 0; transition: opacity .4s ease-in-out;}
-.affiliate-wrap li:hover{box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.16);}
-.affiliate-wrap li:hover .info {background: #ff8b23cc;}
-.affiliate-wrap li:hover .info-title strong{color: #fff;}
-.affiliate-wrap li:hover .info-desc p{opacity: 1;}
-.affiliate-wrap li:hover .thumb{margin-top: 0;} */
 
 #affiliate01{position: relative;}
 .layer-dimm{display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; background-color: #000; opacity: 0.9;}
@@ -228,48 +213,6 @@
 .location.section01 .company-info .item dl dd{font-size: 20px; color: #4e4e4e; margin-left: 20px;}
 .location.section02 .company-map{padding-bottom: 200px;}
 
-
-/* @media all and (max-width:768px) {
-
-  nav {
-    background: transparent;
-  }
-
-  .affiliate-mo-tab nav ul li.is-active {
-    box-shadow: inset 0 -3px 0 #5098B3;
-  }
-
-  .affiliate-mo-tab nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-  }
-
-  .affiliate-mo-tab nav ul li {
-    display: inline-block;
-    margin: 0 1rem 0 1rem;
-    padding: 0 0 .2rem 0;
-    border: none;
-  }
-
-  .affiliate-mo-tab nav ul li:not(.is-active) {
-    position: relative;
-    top: auto;
-  }
-
-  .affiliate-mo-tab nav ul li.is-active {
-    order: 1;
-  }
-
-  .affiliate-mo-tab nav ul li.is-active:after {
-    display: none;
-  }
-} */
-
 @media all and (max-width: 1680px){
   .ceo.section02 .intro-sign{right: 150px;}
 }
@@ -293,13 +236,7 @@
   .introduction.section03 .dot-wrap:before{width: 100%;}
   .introduction.section03 .chart .box .txt-box{font-size: 16px; text-align: center; padding: 10px;}
   .introduction.section03 .chart .box .txt-box br{display: block;}
-  .introduction.section03 .chart .top .box01{left: 112px; top: 163px;}
-  .introduction.section03 .chart .top .box02{left: 281px; top: 103px;}
-  .introduction.section03 .chart .top .box03{left: 626px; top: -6px;}
-  .introduction.section03 .chart .bottom .box04{left: 450px; bottom: 265px;}
-  .introduction.section03 .chart .bottom .box05{right: 450px; bottom: 138px;}
-  .introduction.section03 .chart .bottom .box06{right: 280px; bottom: 264px;}
-  .introduction.section03 .chart .bottom .box07{right: 103px; bottom: 8px;}
+  .introduction.section03 .chart .box .txt-box{width: 82px;}
 
   .location.section01 .company-info .item{flex-direction: column; gap: 20px;}
   #affiliate01 .company-wrap .item label{width: 225px;}
@@ -310,13 +247,7 @@
 }
 
 @media all and (max-width: 1024px){
-  .introduction.section03 .chart .top .box01{left: 38px;}
-  .introduction.section03 .chart .top .box02{left: 195px;}
-  .introduction.section03 .chart .top .box03{left: 516px;}
-  .introduction.section03 .chart .bottom .box04{left: 353px;}
-  .introduction.section03 .chart .bottom .box05{right: 350px;}
-  .introduction.section03 .chart .bottom .box06{right: 190px;}
-  .introduction.section03 .chart .bottom .box07{right: 25px;}
+
 
   .global-map-wrap .circle-btn{width: 30px; height: 30px;}
   .america-wrap .circle-btn:hover{margin-left: 15%;}
@@ -331,12 +262,7 @@
 }
 
 @media all and (max-width: 864px){
-  .introduction.section03 .chart .top .box01{left: 28px;}
-  .introduction.section03 .chart .top .box02{left: 160px;}
-  .introduction.section03 .chart .top .box03{left: 436px;}
-  .introduction.section03 .chart .bottom .box04{left: 293px;}
-  .introduction.section03 .chart .bottom .box05{right: 292px;}
-  .introduction.section03 .chart .bottom .box06{right: 160px;}
+  .introduction.section03 .dot-wrap .item07{right: 30px;}
   #affiliate01 .company-wrap .content{left: 250px;}
 }
 
@@ -358,9 +284,39 @@
   .introduction.section02 .company-info table tr{border-bottom: 1px solid #d9d9d9;}
   .introduction.section02 .company-info table th{font-size: 15px; color: #666;}
   .introduction.section02 .company-info table td{font-size: 15px; color: #666; padding: 0;}
-  .introduction.section03 .content-wrap{padding-bottom: 60px;}
   .introduction.section03 .content-wrap .title{margin-bottom: 30px;}
   .introduction.section03 .content-wrap .title{text-align: left;}
+  .introduction.section03 .title-wrap .con-txt p{font-size: 16px; text-align: left;}
+  .introduction.section03 .title-wrap .con-txt p br{display: none;}
+  .introduction.section03 .chart-wrap{padding-top: 60px; padding-bottom: 125px; height: 420px}
+  .introduction.section03 .chart-wrap:before{background: url(../images/introduction/introduction-chart-bg-mo.png) no-repeat; background-size: contain; background-position: center bottom;}
+  .introduction.section03 .dot-wrap .item{margin-bottom: 28px; gap: 10px;}
+  .introduction.section03 .dot-wrap .item .dot{width: 8px; height: 8px; background: #c0c0c0;}
+  .introduction.section03 .dot-wrap .item05 .dot{background: #fff;}
+  .introduction.section03 .dot-wrap .item03 .dot{background: #fff;}
+  .introduction.section03 .dot-wrap .item03 .dot:after, .introduction.section03 .dot-wrap .item05 .dot:after{width: 16px; height: 16px;}
+  .introduction.section03 .dot-wrap:before{background: #c0c0c0;}
+  .introduction.section03 .dot-wrap .item .years{font-size: 14px; color: #c0c0c0}
+  .introduction.section03 .dot-wrap .item06 .years{color: #ff8b23;}
+  .introduction.section03 .dot-wrap .item07 .redBox{border-radius: 3px;}
+  .introduction.section03 .dot-wrap .item07{top: -70px;}
+  .introduction.section03 .dot-wrap .item07 .redBox span{font-size: 14px; padding: 5px 7px;}
+  .introduction.section03 .chart .box .bar{width: 25px; background: #535353;}
+  .introduction.section03 .chart .bottom .bar{background: #f9a33d;}
+  .introduction.section03 .chart .box .bar01{height: 20px;}
+  .introduction.section03 .chart .box .bar02{height: 50px;}
+  .introduction.section03 .chart .box .bar03{height: 110px;}
+  .introduction.section03 .chart .box .bar04{height: 50px;}
+  .introduction.section03 .chart .box .bar05{height: 100px;}
+  .introduction.section03 .chart .box{gap: 14px;}
+  .introduction.section03 .chart .box01{top: -81px}
+  .introduction.section03 .chart .box02{top: -111px;}
+  .introduction.section03 .chart .box03{top: -171px;}
+  .introduction.section03 .chart .box07{bottom: -168px;}
+  .introduction.section03 .chart .box06{bottom: -52px;}
+  .introduction.section03 .chart .box05{bottom: -118px;}
+  .introduction.section03 .chart .box04{bottom: -51px;}
+  .introduction.section03 .chart .box .txt-box{font-size: 14px; background: transparent; box-shadow: none; padding: 0;}
 
 
   .ceo.section01 .content-wrap .main-title-wrap{padding: 60px 0 60px;}
@@ -466,6 +422,8 @@
 }
 
 @media all and (max-width:450px){
+  .introduction.section03 .dot-wrap .item07{right: 0; top: -90px; text-align: center;}
+  .introduction.section03 .dot-wrap .item07 .redBox span br{display: block;}
   .ceo.section01 .intro-box{padding: 21px 0 10px;}
   .ceo.section01 .intro-content .intro-title p{word-break: keep-all;}
   .ceo.section01 .intro-content .intro-title p br{display: none;}
