@@ -248,6 +248,10 @@
 
 @media all and (max-width: 1024px){
 
+  .vision.section02 .slider-text-float{justify-content: flex-start;}
+  .vision.section02 .slider-sub-text{margin-bottom: 75px;}
+  .vision.section02 .slider-text .slider-title-text{font-size: 30px;}
+  .vision.section02 .slider-text p{font-size: 36px; line-height: 56px;}
 
   .global-map-wrap .circle-btn{width: 30px; height: 30px;}
   .america-wrap .circle-btn:hover{margin-left: 15%;}
