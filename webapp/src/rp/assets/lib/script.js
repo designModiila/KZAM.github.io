@@ -574,7 +574,7 @@ $(window).on('scroll', function (e) {
           .fromTo('.item04 .years, .item04 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.4')
           .fromTo('.bar03', {height: '0px', y: 230},{height: '230px', y: 0, ease: Power2.easeInOut}, '<0.45')
           .fromTo('.box03 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.5')
-          .fromTo('.redBox',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.55')
+          .fromTo('.redBox',{opacity: 0, scale: 2}, {opacity: 1, scale: 1, ease: Power2.easeInOut},'<0.55')
           .fromTo('.bar04', {height: '0px', y: -120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.6')
           .fromTo('.box05 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.65')
           .fromTo('.item05 .years, .item05 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.7')
