@@ -404,7 +404,7 @@
   #affiliate01 .accordion-wrap .accor-pane dd{font-size: 14px; color: #4e4e4e; letter-spacing: -0.03em;}
   #affiliate01 .accordion-wrap .accor-pane dd span{font-size: 14px; font-family: 'NotoB'; display: inline-block; padding-right: 5px; color: #4e4e4e; letter-spacing: -0.03em;}
   .accordion-wrap .accor-tit{font-size: 18px; letter-spacing: -0.03em; font-family: 'NotoB'; color: #323232; margin-bottom: 5px;}
-  .accordion-wrap .accor-desc{font-size: 14px; letter-spacing: -0.03em; color: #4e4e4e;}
+  .accordion-wrap .accor-desc{font-size: 16px; letter-spacing: -0.03em; color: #4e4e4e;}
   .accordion-wrap .accor-btn{ width: 20px; height: 20px; font: 0/0 a; text-align: center;}
   .accordion-wrap .accor-btn:after{display: inline-block; content: ""; width: 8px; height: 8px; border-top: 2px solid #000000; border-right: 2px solid #000000; transform: rotate(135deg);}
   .accordion-wrap .accor-btn.on:after{transform: rotate(-45deg);}
