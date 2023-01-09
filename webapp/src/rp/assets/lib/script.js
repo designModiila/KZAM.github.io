@@ -442,6 +442,14 @@ $(window).on('scroll', function (e) {
 
 
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+  const subTitle = gsap.utils.toArray('.sub-main-title p');
+
+  subTitle.forEach((element) => {
+    gsap.fromTo(subTitle, {opacity: 0, y: 80}, {opacity: 1, y: 0, ease: Power2.inOut})
+  })
+
+
   const sections = gsap.utils.toArray('.panel');
 
   var scroller = {
