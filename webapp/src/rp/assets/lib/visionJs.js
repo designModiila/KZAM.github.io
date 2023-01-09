@@ -1,64 +1,86 @@
-$(function() {
-  $('.slider-image').removeClass('load');
+var visionScript = (function(){
+  return {
+    scrollTriggerFn: function () {
+      // 우측 이미지 영역 fix
+      if($(".fixed-wrap").width() > 0){
+        ScrollTrigger.matchMedia({
+          "(min-width : 769px)": function(){
+            gsap.to(".fixed-con", {
+              scrollTrigger: {
+                trigger: ".fixed-con .img-con",
+                //trigger: $(this),
+                start:"top "+ "12.5% + 30",
+                endTrigger: $(".fixed-con"),
+                end:"bottom+=400 "+ "87.5% + 30",
+                pin:true,
+                //markers: true,
+                //id: "right_fix",
+                //scrub:1,
+                onEnter: function(){
+                  $(".fixed-con").addClass("on");
+                  $(".fixed-con .txt-con").addClass("on");
+                },
+                onEnterBack: function(){
+                  $(".fixed-con").addClass("on");
+                  $(".fixed-con .txt-con").addClass("on");
+                },
+                onLeave: function(){
+                  $(".fixed-con").removeClass("on");
+                  $(".fixed-con .txt-con").removeClass("on");
+                },
+                onLeaveBack: function(){
+                  $(".fixed-con").removeClass("on");
+                  $(".fixed-con .txt-con").removeClass("on");
+                }
+              },
+            });
+            
+            // 스크롤양에 따라 오른쪽 이미지 교체 모션
+            $(".fixed-con .img-con .img-box .image-list").each(function(q){
+              gsap.to($(this), 1, {
+                scrollTrigger: {
+                  trigger: $(".fixed-con .txt-con .con-list").eq(q),
+                  start:"top "+ "87.5% + 30",
+                  end:"bottom " + "87.5% + 30",
+                  scrub: 1,
+                  //markers: true,
+                  onUpdate: function(self){              
+                    if(q>0){
+                      gsap.to($(".fixed-con .img-con .img-box .image-list").eq(q-1), 0, {top: -100*self.progress.toFixed(4)+"%", ease:Power3.easeOut});
+                    }
+                  }
+                },
+                duration: 1,
+                ease: 'back',
+              });
+            });
+
+
+            // 왼족 글씨 영역 잠깐 fixed 시키기
+            $(".fixed-con .txt-con .con-list").each(function(q){
+              gsap.to($(this), 1, {
+                scrollTrigger: {
+                  trigger: $(this).find(".info-wrap"),
+                  start:"bottom "+ "87.5% + 30",
+                  end:"bottom+=480 "+ "87.5% + 30",
+                  pin:true,
+                  //pinSpacing: false,
+                  scrub: 1,
+                  //markers: true,
+                  //id: "left_txt_fix",
+                },
+
+              });
+            });
+          }
+        });
+      }    
+    },
+
+  }
+})();
+
+$(window).on("load", function(){
+  visionScript.scrollTriggerFn(); // 스크롤 트리거 모션
 });
 
-function eventTextChange(currentItem, stage) {
-
-  if (stage === 'active') {
-    if (currentItem.hasClass('active')) {
-
-    } else  {
-      currentItem.addClass('active');
-      $('.slider-text-float').addClass('visible');
-      $('.slider-title-text span').text(currentItem.attr('data-title'));
-      $('.slider-text-float p').text(currentItem.attr('data-text'));
-    }
-  } else if (stage === 'above-active'){
-    if(currentItem.index() == 0){
-      $('.slider-text-float').removeClass('visible');
-      currentItem.removeClass('active');       
-    } else {
-      currentItem.removeClass('active'); 
-    }
-  } else if (stage === 'below-active'){
-    if(currentItem.index() == sliderLength){
-      $('.slider-text-float').removeClass('visible');
-      currentItem.removeClass('active');       
-    } else {
-      currentItem.removeClass('active'); 
-    }
-  }
-  if($('.slider-image-item').hasClass('active')){
-
-  }else{
-    $('.slider-text-float').removeClass('visible');
-  }
-}
-
-var sliderLength = $('.slider-image-wrapper').children().length - 1,
-  currentIndex = $('.slider-image-item.active').index(),
-  windowHalfHeight = $(window).height() / 2.8;
-
-
-$(window).on('scroll', function() {
-  $('.slider-image-item').each(function() {
-    var scrollTop = $(window).scrollTop(),
-      elementOffsetTop = $(this).offset().top,
-      elementHeight = $(this).height(),
-      elementOffsetBottom = elementOffsetTop + elementHeight,
-      distanceTop = Math.round(elementOffsetTop - (scrollTop + windowHalfHeight)),
-      distanceBottom = Math.round(elementOffsetBottom - scrollTop);
-
-    if ((distanceTop < 0) && (distanceTop > -elementHeight)) {
-      // If the Center of the viewport falls upon a element - Add active class
-      eventTextChange($(this), 'active');
-    } else if (distanceTop < -elementHeight) {
-      //If the Center of the viewport drops below the element - Remove active class
-      eventTextChange($(this), 'below-active');
-    } else if (distanceTop > 0) {
-      //If the Center of the viewport rises above the element - Remove active class
-      eventTextChange($(this), 'above-active');
-    }
-  });
-
-});

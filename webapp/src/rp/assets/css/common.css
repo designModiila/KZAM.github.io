@@ -172,7 +172,7 @@
 .footer-bottom .privacy ul{display: flex; gap: 20px;}
 .footer-bottom .privacy ul li a{display: block; font-size: 12px; color: #909090;}
 
-.scroll-top-btn{width: 64px; height: 64px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer;}
+.scroll-top-btn{width: 64px; height: 64px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer; z-index: 1000;}
 .scroll-top-btn.on{opacity: 1; visibility: visible;}
 
 @keyframes bg-scale { 
