@@ -490,6 +490,7 @@ $(window).on('scroll', function (e) {
 
   const chartAni = document.querySelectorAll('.chart-wrap');
 
+
   chartAni.forEach((element) => {
     ScrollTrigger.matchMedia({
       "(min-width: 768px)": function(){
@@ -499,25 +500,34 @@ $(window).on('scroll', function (e) {
             start: "+=200px top",
           }
         });
-        tl.fromTo('.item01 .years, .item01 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+
+        tl.fromTo('.item .years, .item .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
           .fromTo('.bar01', {height: 0, y: 60},{height: '60px', y: 0, ease: Power2.easeInOut},'<0.05')
-          .fromTo('.box01 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.1')
-          .fromTo('.item02 .years, .item02 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.15')
-          .fromTo('.bar02', {height: '0px', y: 120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.2')
-          .fromTo('.box02 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.25')
-          .fromTo('.item03 .years, .item03 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.3')
-          .fromTo('.box04 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.35')
-          .fromTo('.item04 .years, .item04 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.4')
-          .fromTo('.bar03', {height: '0px', y: 230},{height: '230px', y: 0, ease: Power2.easeInOut}, '<0.45')
-          .fromTo('.box03 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.5')
-          .fromTo('.redBox',{opacity: 0, scale: 2}, {opacity: 1, scale: 1, ease: Power2.easeInOut},'<0.55')
-          .fromTo('.bar04', {height: '0px', y: -120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.6')
-          .fromTo('.box05 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.65')
-          .fromTo('.item05 .years, .item05 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.7')
-          .fromTo('.box06 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.75')
-          .fromTo('.item06 .years, .item06 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.8')
-          .fromTo('.bar05', {height: '0px', y: -260},{height: '260px', y: 0, ease: Power2.easeInOut}, '<0.85')
-          .fromTo('.box07 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.9')
+          .fromTo('.bar02', {height: '0px', y: 120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.15')
+          .fromTo('.bar03', {height: '0px', y: 230},{height: '230px', y: 0, ease: Power2.easeInOut}, '<0.15')
+          .fromTo('.bar04', {height: '0px', y: -120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.15')
+          .fromTo('.bar05', {height: '0px', y: -260},{height: '260px', y: 0, ease: Power2.easeInOut}, '<0.15')
+          .fromTo('.box .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.25')
+          .fromTo('.redBox',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.35')
+        // tl.fromTo('.item01 .years, .item01 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut})
+        //   .fromTo('.bar01', {height: 0, y: 60},{height: '60px', y: 0, ease: Power2.easeInOut},'<0.05')
+        //   .fromTo('.box01 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.1')
+        //   .fromTo('.item02 .years, .item02 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.15')
+        //   .fromTo('.bar02', {height: '0px', y: 120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.2')
+        //   .fromTo('.box02 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.25')
+        //   .fromTo('.item03 .years, .item03 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.3')
+        //   .fromTo('.box04 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.35')
+        //   .fromTo('.item04 .years, .item04 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.4')
+        //   .fromTo('.bar03', {height: '0px', y: 230},{height: '230px', y: 0, ease: Power2.easeInOut}, '<0.45')
+        //   .fromTo('.box03 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.5')
+        //   .fromTo('.redBox',{opacity: 0, scale: 2}, {opacity: 1, scale: 1, ease: Power2.easeInOut},'<0.55')
+        //   .fromTo('.bar04', {height: '0px', y: -120},{height: '120px', y: 0, ease: Power2.easeInOut}, '<0.6')
+        //   .fromTo('.box05 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.65')
+        //   .fromTo('.item05 .years, .item05 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.7')
+        //   .fromTo('.box06 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.75')
+        //   .fromTo('.item06 .years, .item06 .dot',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.8')
+        //   .fromTo('.bar05', {height: '0px', y: -260},{height: '260px', y: 0, ease: Power2.easeInOut}, '<0.85')
+        //   .fromTo('.box07 .txt-box',{opacity: 0}, {opacity: 1, ease: Power2.easeInOut},'<0.9')
       },
       "(max-width: 767px)": function(){
         const tl = gsap.timeline({

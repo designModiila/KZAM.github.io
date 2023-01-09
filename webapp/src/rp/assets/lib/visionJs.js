@@ -4,7 +4,7 @@ var visionScript = (function(){
       // 우측 이미지 영역 fix
       if($(".fixed-wrap").width() > 0){
         ScrollTrigger.matchMedia({
-          "(min-width : 769px)": function(){
+          "(min-width : 768px)": function(){
             gsap.to(".fixed-con", {
               scrollTrigger: {
                 trigger: ".fixed-con .img-con",
@@ -71,6 +71,11 @@ var visionScript = (function(){
                 },
 
               });
+            });
+          },
+          "(man-width : 767px)": function(){
+            $(".fixed-con .txt-con .con-list").each(function(q){
+              gsap.fromTo('$(this)',{opacity: 0, y: -80},{opacity: 1, y: 0, ease: power3.easeOut})
             });
           }
         });
