@@ -177,7 +177,7 @@
 .btn-close:after { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -ms-transform: rotate(40deg); }
 .btn-close.is-black:before, .btn-close.is-black:after { background-color: #000000; }
 
-.no-data{display: none;}
+.no-data{display: none !important;}
 .map-bg{background: url(../images/introduction/global-map-bg.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
 .global-map-wrap .circle-btn{width: 35px; height: 35px; border-radius: 100%; background: #fff url(../images/introduction/icon_global_location.png) no-repeat center; border: 1px solid #d9d9d9; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transition: width .5s;}
 .global-map-wrap .circle-btn span{display: block; display: none; color: #fff; font-size: 14px; font-family: 'NotoB'; padding-left: 20px;}
