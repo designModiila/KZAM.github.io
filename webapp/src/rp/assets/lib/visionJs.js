@@ -73,9 +73,18 @@ var visionScript = (function(){
               });
             });
           },
-          "(man-width : 767px)": function(){
+          "(max-width : 767px)": function(){
             $(".fixed-con .txt-con .con-list").each(function(q){
-              gsap.fromTo('$(this)',{opacity: 0, y: -80},{opacity: 1, y: 0, ease: power3.easeOut})
+              gsap.set($(this),{opacity: 0, y: 80})
+              gsap.to($(this),{
+                opacity: 1, 
+                y: 0, 
+                ease: Power2.inOut,
+                scrollTrigger: {
+                  trigger: '.section02',
+                  start: "top top"
+                }
+              })
             });
           }
         });
