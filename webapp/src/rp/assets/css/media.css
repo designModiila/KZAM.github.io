@@ -3,13 +3,14 @@
 .sub-bg{background: url(../images/media/media_sub_visual.png) no-repeat; background-size: cover;}
 .content-wrap{max-width: 1280px; margin: 0 auto; padding-bottom: 200px;}
 
-.swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 50px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
+.swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: unset;}
 .swiper-button-prev{background: url('../images/main/controller-arrow-l.png') no-repeat; background-position: center; width: 35px; left: 0;}
 .swiper-button-next{background: url('../images/main/controller-arrow-r.png') no-repeat; background-position: center; width: 35px; right: 0;}
 .swiper-button-next::after, .swiper-button-prev::after{display: none;}
 .con-recent{position: relative; width: 100%; overflow: hidden;}
+.news .con-recent{margin-bottom: 60px;}
 .con-recent .list{width: 100%; overflow: hidden; background: #f6f6f6;}
 .con-recent a{display: block;}
 .con-recent .list{display: flex;}
@@ -24,7 +25,7 @@
 .con-recent .txt-box .con-txt p{font-size: 18px; letter-spacing: -0.03em; color: #4e4e4e; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
 /* .txt-box .con-date{padding: 0 40px;} */
 .txt-box .con-date p{font-size: 16px; letter-spacing: -0.03em; color: #bbbbbb; font-family: 'NotoM';}
-.con-list-wrap{border-top: 1px solid #d9d9d9; padding-top: 50px;}
+.con-list-wrap{border-top: 1px solid #d9d9d9; padding-top: 60px;}
 .con-list-wrap .top{display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 15px;}
 .con-list-wrap .top .con-title p{color: #4e4e4e; font-family: 'NotoB'; letter-spacing: -0.03em;}
 .select{width: 200px; height: 61px; padding: 0 8px; border: 1px solid #d9d9d9; background: url(../images/media/select_default.png) no-repeat right 50%; margin-right: 20px;}
