@@ -75,7 +75,7 @@
 .ceo.section02 .ceo-bg .right-txt-box p{font-size: 18px; line-height: 32px; letter-spacing: -0.03em; color: #4e4e4e; word-break: keep-all;}
 
 .vision.section01 .content-wrap{padding-top: 150px;}
-.vision.section01 .content-wrap .main-title-wrap{background: url(../images/introduction/vision-top-bg.png) no-repeat; background-size: cover; background-position: center; padding: 133px 0 373px;}
+.vision.section01 .content-wrap .main-title-wrap{background: url(../images/introduction/vision-top-bg.png) no-repeat; background-size: contain; background-position: center; padding: 133px 0 373px;}
 .vision.section01 .content-wrap .title{margin-bottom: 50px;}
 .vision.section01 .content-wrap .title p{color: #ff8b23;}
 .vision.section01 .content-wrap .title-txt{margin-bottom: 0;}
@@ -103,11 +103,11 @@
 .vision.section02 .fixed-wrap .fixed-con:after {display: none;}
 .vision.section02 .fixed-wrap .fixed-con.on:after {content: ''; display: block; position: fixed; left: 50%; transform: translateX(-50%); bottom:  calc(12.5vh - 30px); width: 100%; height: 50px; z-index: 1; background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); background:-webkit-linear-gradient(top bottom, rgba(255,255,255,0), rgba(255,255,255,1));}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list {position: relative; display: flex; align-items: flex-end; padding-bottom: 80px; height: 75vh;}
-.vision.section02 .fixed-wrap .fixed-con .txt-con .con-list.active {top: 0; opacity: 1;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list.active .mo-img {top: 0; opacity: 1;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list.active .info-wrap {top: 0; opacity: 1;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list.active .info-wrap > * {top: 0; opacity: 1;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list:nth-child(n+2) {margin-top: 400px; top: 0;}
+.vision.section02 .fixed-wrap .fixed-con .txt-con .con-list.active {top: 0; opacity: 1;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list .info-wrap {position: relative; top: 0px; opacity: 0;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list .info-wrap > * {position: relative; top: 0px; opacity: 0; transition: top 1s ease, opacity 1s ease;}
 .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list .info-wrap .con-title{font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #4e4e4e; margin-bottom: 25px;}
@@ -260,7 +260,7 @@
   .introduction.section03 .chart .box .txt-box br{display: block;}
   .introduction.section03 .chart .box .txt-box{width: 82px;}
 
-  .location.section01 .company-info .item{flex-direction: column; gap: 20px;}
+  .location.section01 .company-info .item{flex-direction: column; gap: 30px;}
   #affiliate01 .company-wrap .item label{width: 225px;}
   #affiliate01 .company-wrap .content{left: 300px;}
   .america-wrap .circle-btn:hover{margin-left: 19%;}
@@ -343,7 +343,7 @@
 
 
   .ceo.section01 .content-wrap .main-title-wrap{padding: 60px 0 60px;}
-  .ceo.section02 .intro-image img{margin: 0 auto;}
+  .ceo.section02 .intro-image img{margin: 0 auto; height: 256px; object-fit: cover; object-position: 84%;}
   .ceo.section02 .intro-sign{position: unset; width: 100%; height: 66px; line-height: 66px; text-align: right; padding-right: 37px;}
   .ceo.section02 .intro-sign .intro-text-end{font-size: 16px;}
   .ceo.section02 .intro-sign img{zoom: 0.8;}
@@ -365,7 +365,7 @@
   .vision.section02 .fixed-wrap .fixed-con.on:after{display: none;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list:nth-child(n+2){margin-top: 0px;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list{margin-top: 20px; height: auto; padding-bottom: 100px;}
-  .vision.section02 .fixed-wrap .fixed-con .txt-con .con-title.moOnly{font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #4e4e4e; margin-bottom: 20px;}
+  .vision.section02 .fixed-wrap .fixed-con .con-title.moOnly{font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #4e4e4e; margin-bottom: 20px;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list:last-child{padding-bottom: 0;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list{flex-direction: column; align-items: flex-start;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list .info-wrap .con-num{font-size: 20px; font-family: 'NotoR'; margin-bottom: 10px; margin-top: 20px;}
@@ -399,13 +399,13 @@
 
   /*해외계열사 모바일탭메뉴*/
 
-  .affiliate-mo-con{display: none; padding: 15px;}
+  .affiliate-mo-con{display: none; padding: 0 0 15px 0;}
   #affiliate01 .affiliate-mo-con{padding: 0px;}
   .affiliate-mo-con.current{display: inherit;}
   .affiliate-mo-tab {position: relative; height: 50px; padding: 30px 0 50px;}
   .affiliate-mo-tab nav {position: absolute; width: 100%; background: #ffffff;}
   .affiliate-mo-tab nav ul {border: 1px solid #d9d9d9; display: flex; flex-direction: column; height: 50px; line-height: 50px;}
-  .affiliate-mo-tab nav ul.expanded{height: 134px; overflow-y: scroll;}
+  .affiliate-mo-tab nav ul.expanded{height: 145px; overflow-y: scroll;}
   .affiliate-mo-tab nav ul li {padding: 0px 0 0px 20px; cursor: pointer; color: #bbbbbb; order: 1;}
   .affiliate-mo-tab nav ul li:hover {color: #323232;}
   .affiliate-mo-tab nav ul li.is-active {color: #323232; font-family: 'NotoB'; border-top: none; order: 0;}

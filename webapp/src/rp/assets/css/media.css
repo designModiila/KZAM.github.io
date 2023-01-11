@@ -116,6 +116,7 @@ select option[value=""][disabled]{display: none;}
 }
 
 @media all and (max-width : 768px) {
+  .sub-bg{background: url(../images/media/media_sub_visual_mo.png) no-repeat; background-size: cover;}
   .con-recent .list{flex-direction: column;}
   .con-recent .img-box{width: 100%; height: 350px;}
   .con-recent .txt-box{width: 100%; padding: 20px;}

@@ -144,6 +144,12 @@ $('.lang-select li a').on("click", function (e) {
       if((anchorLink == 4) && direction == 'up'){
         // counterUp();
       }
+      if((anchorLink == 4) && direction == 'down'){
+        $("#fp-nav").css('display','none')
+      }
+      if((anchorLink == 5) && direction == 'up'){
+        $("#fp-nav").css('display','block')
+      }
     },
     
   });
@@ -259,7 +265,7 @@ $(window).on('scroll', function (e) {
       delay: 10000,
       disableOnInteraction: false,
     },
-    // autoplay: false,
+    //autoplay: false,
     loop: true,
     effect : 'fade', 
     fadeEffect: { 

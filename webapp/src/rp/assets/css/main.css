@@ -31,7 +31,9 @@
 .section .content-wrap .title{font-family: 'NotoD'; font-size: 48px; letter-spacing: -0.03em; color: #323232; line-height: 70px; position: relative;}
 
 .section.full2{background: url('../images/main/full2_bg.png') no-repeat; background-size: cover; width: 100%; height: 100vh; overflow: hidden;}
-.section.full2 .con-box ul{display: flex; gap: 100px;}
+/* .section.full2 .con-box ul{display: flex; gap: 100px;} */
+.section.full2 .con-box ul{display: flex; justify-content: space-between;}
+.section.full2 .con-box ul li{width: calc(100% / 3 - 20px);}
 .section.full2 .con-box ul li .icon{margin-bottom: 20px;}
 .section.full2 .con-box ul li .box-title{margin-bottom: 45px;}
 .section.full2 .con-box ul li .box-title p{font-size: 24px; color: #323232; display: inline-block; position: relative;}

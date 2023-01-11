@@ -77,14 +77,39 @@
 .layer-alert .btn-box{padding: 18px 0; color: #323232; font-family: 'NotoM'; letter-spacing: -0.03em; background: #fff; transition: background 0.5s ease-in-out;}
 .layer-alert .btn-box:hover{background: #ff8b23; color: #fff;}
 
+.email .content-wrap{padding: 150px 0 200px;}
+.email .top-content{padding-bottom: 60px; margin-bottom: 60px; border-bottom: 1px solid #c5c5c5;}
+.email .top-content p{font-size: 20px; line-height: 34px; letter-spacing: -0.03em; color: #323232;}
+.email .bottom-content > p{font-family: 'NotoB'; font-size: 20px; letter-spacing: -0.03em; color: #323232; margin-bottom: 60px;}
+.email .bottom-content li{margin-bottom: 60px;}
+.email .bottom-content dt{font-size: 20px; letter-spacing: -0.03em; color: #323232; font-family: 'NotoB'; margin-bottom: 20px; padding-left: 25px; position: relative;}
+.email .bottom-content dt:before{position: absolute; content: ''; width: 6px; height: 6px; border-radius: 100%; background: #323232; left: 10px; top: 50%; transform: translateY(-50%);}
+.email .bottom-content .email-notice-item{padding: 20px 20px; background: #f6f6f6;}
+.email .bottom-content .email-notice-item > dt{font: 0/0 a; margin-bottom: 0;}
+.email .bottom-content .email-notice-item > dt:before{display: none;}
+.email .bottom-content .email-notice-item > dd{color: #4e4e4e; letter-spacing: -0.03em; line-height: 28px;}
+.email .bottom-content .email-notice-item .text-indent{padding-left: 20px;}
+.privacy .top-content{padding-bottom: 60px; margin-bottom: 60px; border-bottom: 1px solid #c5c5c5;}
+.privacy .content-wrap{padding: 150px 0 200px;}
+.privacy .content-wrap .top-content .con-title{font-size: 20px; letter-spacing: -0.03.em; font-family: 'NotoB'; color: #323232; margin-bottom: 20px;}
+.privacy .content-wrap .top-content .con-desc{color: #323232; line-height: 28px; letter-spacing: -0.03em;}
+.privacy .content-wrap .bottom-content .item{margin-bottom: 60px;}
+.privacy .content-wrap .bottom-content .item:last-child{margin-bottom: 0px;}
+.privacy .item .item-title{font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; margin-bottom: 20px;}
+.privacy .item .mb{margin-bottom: 20px;}
+.privacy .item .item-desc{letter-spacing: -0.03em; color: #323232; line-height: 28px;}
+.privacy .item .item-bg{padding: 20px 30px; background: #f5f5f5; margin-top: 20px;}
+.privacy .item .item-bg li{color: #4e4e4e; line-height: 28px; padding-left: 15px; position: relative;}
+.privacy .item .item-bg li.bullet:after{position: absolute; content: ''; width: 5px; height: 5px; border-radius: 100%; background: #4e4e4e; top: 0; left: 0px; margin-top: 12px;}
+.privacy .item .box p{color: #4e4e4e; line-height: 28px;}
+
 
 @media all and (max-width : 1280px){
   .privacy-agree-box{padding: 100px 50px 0;}
 }
 
-
 @media all and (max-width : 1024px) {
-
+  .email .top-content p br{display: none;}
 }
 
 @media all and (max-width : 768px) {
@@ -103,6 +128,7 @@
   .privacy-agree-box .top > div{display: block;}
   .btn-toggle.toggle-text{margin: 15px 0 0 0;}
   .attr-box .btn-attr{width: 115px;}
+  .privacy .item .item-bg{padding: 20px 15px;}
 
 }
 

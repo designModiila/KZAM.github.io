@@ -172,7 +172,7 @@
 .footer-bottom .privacy ul{display: flex; gap: 20px;}
 .footer-bottom .privacy ul li a{display: block; font-size: 12px; color: #909090;}
 
-.scroll-top-btn{width: 64px; height: 64px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer; z-index: 1000;}
+.scroll-top-btn{width: 64px; height: 64px; position: fixed; opacity: 0; visibility: hidden; bottom: 50px; right: 50px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer; z-index: 1000;}
 .scroll-top-btn.on{opacity: 1; visibility: visible;}
 
 @keyframes bg-scale { 
@@ -197,7 +197,7 @@
 .sub-visual{width: 100%; height: 600px; position: relative; overflow: hidden; z-index: -1;}
 .sub-bg{width: 100%; height: 600px; position: absolute; top: 0; left: 0; /*animation: bg-scale 5s forwards;*/ transition: transform 0.5s ease-in-out;}
 .sub-visual.ani .sub-bg{transform: scale(1.1);}
-.sub-main-title{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: hidden;}
+.sub-main-title{position: absolute; width: 100%; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: hidden;}
 .sub-main-title p{font-family: 'NotoB'; font-size: 60px; letter-spacing: -0.03em; color: #fff; opacity: 0;}
 .content-tab-box{width: 100%; height: 66px; border-bottom: 1px solid #d9d9d9; background: #fff; box-sizing: border-box;}
 
@@ -366,7 +366,7 @@
 
   #fp-nav{display: none !important;}
 
-  .header-wrap {padding:24px 24px; align-items: center}
+  .header-wrap {padding:16px 24px; align-items: center}
   .header .header-wrap .logo a {font-size: 24px; line-height: normal;} 
   .header .header-wrap .menu-btn .menu {padding: 0 0;}
   .header.on .header-wrap {background: transparent;}
