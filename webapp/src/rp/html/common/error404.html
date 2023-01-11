@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>error404</title>
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <style type="text/css">
+    *{margin: 0; padding: 0; border: 0;}
+    div{box-sizing: border-box;}
+    a{text-decoration: none;}
+    img{display: block; margin: 0 auto; height: 360px; object-fit: contain;}
+    #wrap{width: 100%; height: 100vh; display: flex; align-items: center;}
+    .inner{max-width:580px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
+    .error-icon-wrap{margin-bottom: 30px;}
+    .error-desc-wrap{margin-bottom: 50px; text-align: center;}
+    .error-title{color: #323232; font-family: 'NotoB', Arial, Helvetica, sans-serif; font-size: 40px; letter-spacing: -0.03em; margin-bottom: 30px;}
+    .error-txt{font-size: 16px; letter-spacing: -0.03em; line-height: 28px; color: #4e4e4e; font-family: 'NotoR', Arial, Helvetica, sans-serif;}
+    .error-btn-wrap{text-align: center;}
+    .error-btn-wrap a{display: inline-block; background: #ff8b23; border: 1px solid #ff8b23; padding: 15px 50px; box-sizing: border-box; text-align: center; transition: background .5s ease-in-out;}
+    .error-btn-wrap a span{display: block; color: #ffffff; font-family: 'NotoB', Arial, Helvetica, sans-serif; font-size: 18px; letter-spacing: -0.03em;}
+    .error-btn-wrap a:hover{background: #ffffff; border: 1px solid #ff8b23}
+    .error-btn-wrap a:hover span{color: #ff8b23;}
+    @media all and (max-width:768px) {
+      .inner{max-width: 100%; padding: 0 24px; margin: 0 auto;}
+      img{height: 260px;}
+      .error-title{font-size: 22px;}
+      .error-txt{font-size: 14px; line-height: 24px;}
+      .error-btn-wrap a span{font-size: 14px;}
+
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="inner">
+      <div class="error-icon-wrap">
+        <img src="../../assets/images/common/error404_icon.png" alt="404아이콘">
+      </div>
+      <div class="error-desc-wrap">
+        <p class="error-title">요청하신 페이지를 찾을 수 없습니다.</p>
+        <p class="error-txt">페이지의 주소가 잘못 입력되었거나, <br>
+          방문하시려는 페이지의 주소가 변경 또는 <br class="moOnly">삭제되어 연결할 수 없습니다. <br>
+          입력하신 주소가 정확한지 다시 한번 확인해 주시기 바랍니다.</p>
+      </div>
+      <div class="error-btn-wrap">
+        <a href="https://www.kzam.co.kr/" target="_blank">
+          <span>메인으로 가기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

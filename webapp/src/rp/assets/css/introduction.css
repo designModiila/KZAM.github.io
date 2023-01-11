@@ -372,7 +372,7 @@
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list .info-wrap .con-desc{padding-bottom: 0; font-size: 22px; line-height: 32px;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con .con-list .info-wrap .con-desc br{display: none;}
 
-
+  .affiliate .content-wrap .title p br{display: none}
   .affiliate.section01 .main-title-wrap{padding: 60px 0 37px;}
   .affiliate.section01 .content-wrap .title{margin-bottom: 20px;}
   .affiliate-tabs > ul > li{padding: 15px 0; font-size: 16px;}
