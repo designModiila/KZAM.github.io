@@ -2,7 +2,7 @@
 .header {position: fixed; width: 100%; z-index: 10;}
 .header-wrap {display: flex; justify-content: space-between; align-items: flex-start; padding:15px 100px;}
 
-.header-wrap .logo a{width: 120px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
+.header-wrap .logo a{width: 100px; height: 50px; display: block; background-image: url(../images/main/logo_w.svg); background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;}
 /* .header-wrap .logo a {color:#fff; font-family: 'Arsenal'; font-weight: 700;  font-size: 40px;  line-height: 50px; letter-spacing: -0.03em; } */
 .header-wrap .utill-box{display: flex; align-items: center;}
 .header-wrap .lang-select{display: flex; position: relative; overflow: hidden; width: 80px; margin-right: 20px;}
