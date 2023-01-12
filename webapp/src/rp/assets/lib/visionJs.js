@@ -79,10 +79,11 @@ var visionScript = (function(){
               gsap.to($(this),{
                 opacity: 1, 
                 y: 0, 
+                duration: 1,
                 ease: Power2.inOut,
                 scrollTrigger: {
-                  trigger: '.section02',
-                  start: "top top"
+                  trigger: $(this),
+                  start: "-=300px top"
                 }
               })
             });

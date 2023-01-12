@@ -97,8 +97,8 @@
 .section.full3 .con-box dl:nth-child(2){opacity: 0;}
 .section.full3 .con-box dl:nth-child(3){opacity: 0;}
 
+/* .section.full3.ani .bg{opacity: 1; z-index: -1; transform: scale(1.1,1.1) rotate(0.0001deg); transition: all 14s cubic-bezier(0, 1, 0.34, 0.99);} */
 .section.full3.ani .bg{opacity: 1; z-index: -1; transform: scale(1.1,1.1) rotate(0.0001deg); transition: all 14s cubic-bezier(0, 1, 0.34, 0.99);}
-.section.full3.ani .bg{opacity: 1; z-index: -1; transform: scale(1.1,1.1) rotate(0.0001deg); transition: all 14s cubic-bezier(0, 1, 0.34, 0.99), opacity 2s;}
 .section.full3.ani .con-title-wrap .sub-title{animation:fadeUp 1s 0.3s both}
 .section.full3.ani .con-title-wrap .title{animation:fadeUp 1s 0.6s both}
 .section.full3.ani .content-wrap .line span{animation:separator-width 1s 0.9s both;}
