@@ -133,6 +133,7 @@
   .product.section02 .content-wrap > div + div{margin-left: 0; margin-top: 50px;}
   .product.section02 .content-wrap .item .title{margin-bottom: 10px;}
   .product.section03 .content-wrap{padding-bottom: 120px;}
+  .overview.section02 .section02-img{transform: scale(1);}
   .product.section03 .main-title-wrap{padding: 0px 0px 40px;}
   .overview.section03 .content-wrap.bot-content{gap: 40px; padding-bottom: 80px;}
   .overview.section03 .bot-content:before{top: -70px; height: 903px;}
@@ -150,10 +151,11 @@
   .overview.go-product-btn a span{margin-left: -13px;}
   .overview.go-product-btn a span:before{top: 0;}
   .overview.go-product-btn a span:after{bottom: 0;}
-
+  .overview.section03 .section03-img{transform: scale(1);}
   .product.section03 .box{flex-direction: column;}
   .product.section03 .box .box-title{font-size: 20px;}
   .product.section03 .box .desc{font-size: 14px; padding-bottom: 20px; line-height: 22px;}
+  .overview.section04 .section04-img{transform: scale(1);}
   .product.section04 .thumb-top img{width: 100%; height: 200px; object-fit: cover;}
   .product.section04 .thumb-btn{bottom: -38px;}
   .product.section04 .thumb-btn a{font-size: 12px; padding: 10px 30px;}

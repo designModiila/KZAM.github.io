@@ -488,28 +488,16 @@ $(window).on('scroll', function (e) {
   const fullImg = gsap.utils.toArray('.full-img');
 
   fullImg.forEach(fullImg => {
-    gsap.to(fullImg, {
-      ease: "power1.inOut",
-      scale: 1,
-      y: 0,
-      scrollTrigger: {
-        trigger: fullImg,
-        scrub: true,
-        start: "-=200% top",
-        end: "+=100 bottom",
-        toggleActions: "play pause resume reset"
-      }
-    })
     ScrollTrigger.matchMedia({
-      "(max-width: 768px)":function(){
-        gsap.to(fullImg,{
+      "(min-width: 769px)":function(){
+        gsap.to(fullImg, {
           ease: "power1.inOut",
           scale: 1,
           y: 0,
           scrollTrigger: {
             trigger: fullImg,
             scrub: true,
-            start: "-=300% top",
+            start: "-=200% top",
             end: "+=100 bottom",
             toggleActions: "play pause resume reset"
           }
