@@ -299,6 +299,7 @@
   .introduction.aniline{display: none;}
   .introduction.section01 .main-title-wrap{padding: 60px 0 60px;}
   .introduction.section01 .content-wrap .title p br{display: none;}
+  .introduction.section01 .content-wrap .title-txt{margin-bottom: 0;}
   .introduction.section01 .content-wrap .title-txt p br{display: none;}
   .introduction.section02 .company-image{height: 175px; margin-bottom: 30px;}
   .introduction.section02 .company-image img{width: 100%;}
@@ -353,7 +354,7 @@
   .ceo.section02 .ceo-bg .content-wrap{padding-bottom: 156px;}
 
   .vision.section01 .content-wrap{padding-top: 92px;}
-  .vision.section01 .content-wrap .main-title-wrap{background: none; padding: 0px 0px 50px; text-align: left;}
+  .vision.section01 .content-wrap .main-title-wrap{background: none; padding: 0px 0px 120px; text-align: left;}
   .vision.section01 .content-wrap .title{margin-bottom: 20px;}
   .vision.section01 .content-wrap .title-txt p{font-size: 16px; line-height: 26px;}
   .vision.section01 .content-wrap .title-txt p br{display: none;}
