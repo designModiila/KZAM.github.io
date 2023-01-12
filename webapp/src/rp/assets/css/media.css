@@ -174,7 +174,7 @@ select option[value=""][disabled]{display: none;}
   .pr.section01 .download-btn a span{padding: 10px 60px 10px 34px;}
   .pr.section01 .download-btn a span:after{right: 30px;}
   .pr.section02 .content-wrap{padding-bottom: 239px;}
-  .pr.section02 .main-title-wrap{padding: 0 0 60px;}
+  .pr.section02 .main-title-wrap{padding: 0 0 30px;}
   .pr-list .prvideo{height: 400px;}
 }
 @media all and (max-width: 450px){
