@@ -44,7 +44,7 @@
 .product.section02 .content-wrap .item .title span{display: inline-block; font-size: 50px; font-family: 'NotoB'; letter-spacing: -0.03em; padding-left: 40px;}
 .product.section02 .content-wrap .item .title span > span{font-size: 22px; font-family: 'NotoB'; letter-spacing: -0.03em; padding-left: 0;}
 .product.section02 .content-wrap .item .title{margin-bottom: 21px;}
-.product.section02 .content-wrap .item .desc{font-size: 16px; color: #4e4e4e; letter-spacing: -0.03em;}
+.product.section02 .content-wrap .item .desc{font-size: 16px; color: #4e4e4e; letter-spacing: -0.03em; line-height: 26px;}
 
 .product.section03 .content-wrap{padding-bottom: 240px;}
 .product.section03 .main-title-wrap{padding: 0px 0px 60px;}
@@ -56,7 +56,7 @@
 
 
 
-.product.section04 .content-wrap{padding-bottom: 155px;}
+.product.section04 .content-wrap{padding-bottom: 240px;}
 .product.section04 .main-title-wrap{padding: 0px 0px 60px;}
 .product.section04 .product-tab-menu{margin-bottom: 50px;}
 .product.section04 .product-tab-menu ul{display: flex; overflow: hidden; overflow-x: auto;}
@@ -115,8 +115,10 @@
 @media all and (max-width:768px) {
   .sub-bg{background: url(../images/business/business_sub_visual_mo.png) no-repeat; background-size: cover;}
   .content-wrap .title{margin-bottom: 20px;}
-  .content-wrap .title-txt p{font-size: 16px; line-height: 28px;}
+  .content-wrap .title-txt p{font-size: 16px; line-height: 26px;}
 
+  .overview .con-title{font-size: 24px;}
+  .overview.section01 .content-wrap .title{margin-bottom: 0px;}
   .overview.section01 .main-title-wrap{padding: 60px 0 120px;}
   .overview.section01 .content-wrap .title p{font-size: 28px; line-height: 40px;}
   .overview.section02 .content-wrap{flex-direction: column; gap: 20px; margin-bottom: 50px;}
@@ -126,6 +128,9 @@
 
 
   .product.section01 .main-title-wrap{padding-bottom: 30px;}
+  .product.section02 .content-wrap .item .title{font-size: 18px; font-family: 'NotoM';}
+  .product.section02 .content-wrap .item .title span{font-size: 30px;}
+  .product.section02 .content-wrap .item .title span > span{font-size: 16px;}
   .product.section02 .section02-top-bg{margin-bottom: 30px;}
   .product.section02 .section02-top-bg img{height: 200px; object-fit: cover;}
   .product.section02 .content-wrap{flex-direction: column; align-items: center; padding-bottom: 120px;}
@@ -143,7 +148,7 @@
   .overview.section03 .content-wrap.bot-content .item p:nth-child(2){font-size: 16px; line-height: 26px;}
   .overview.section04 .content-wrap{padding-top: 120px; flex-direction: column; gap: 20px; margin-bottom: 50px;}
   .overview.section04 .content-wrap .con-title{margin-right: 0;}
-  .overview.section04 .content-wrap.bot-content{padding-top: 50px; gap: 60px; padding-bottom: 143px;}
+  .overview.section04 .content-wrap.bot-content{padding-top: 50px; gap: 60px; padding-bottom: 180px;}
   .overview.section04 .content-wrap.bot-content .box .logo-box{margin-bottom: 20px;}
   .overview.section04 .content-wrap.bot-content .box .logo-desc p:first-child{font-size: 18px;}
   .overview.section04 .content-wrap.bot-content .box .logo-desc p:nth-child(2){font-size: 16px;}
@@ -154,16 +159,19 @@
   .overview.section03 .section03-img{transform: scale(1);}
   .product.section03 .box{flex-direction: column;}
   .product.section03 .box .box-title{font-size: 20px;}
-  .product.section03 .box .desc{font-size: 14px; padding-bottom: 20px; line-height: 22px;}
+  .product.section03 .box .desc{font-size: 16px; padding-bottom: 20px; line-height: 26px;}
+  .product.section04 .content-wrap{padding-bottom: 180px;}
   .overview.section04 .section04-img{transform: scale(1);}
   .product.section04 .thumb-top img{width: 100%; height: 200px; object-fit: cover;}
-  .product.section04 .thumb-btn{bottom: -38px;}
+  .product.section04 .thumb-btn{bottom: -39px;}
   .product.section04 .thumb-btn a{font-size: 12px; padding: 10px 30px;}
   .product.section04 .thumb-bottom{align-items: flex-start;}
   .product.section04 .thumb-title{margin-bottom: 10px;}
   .product.section04 .thumb-title p{font-size: 28px;}
-  .product.section04 .thumb-info > ul li{font-size: 14px; line-height: 30px;}
+  .product.section04 .thumb-info > ul li{font-size: 16px; line-height: 26px;}
+  .product.section04 .thumb-info > ul li + li{margin-top: 10px;}
   .product.section04 .thumb-info > ul li:before{top: 15px;}
+  .product.section04 .thumb-info-img p{font-size: 18px;}
   .product.section04 .thumb-info-img ul li + li{margin-left: 10px;}
   .product.section04 .thumb-info-img ul li span{margin-top: 10px; font-size: 12px;}
 }

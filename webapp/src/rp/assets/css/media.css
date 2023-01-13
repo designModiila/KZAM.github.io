@@ -1,7 +1,7 @@
 .main-title-wrap{padding-bottom: 0;}
 .section{width: 100%; height: 100%; position: relative;}
 .sub-bg{background: url(../images/media/media_sub_visual.png) no-repeat; background-size: cover;}
-.content-wrap{max-width: 1280px; margin: 0 auto; padding-bottom: 200px;}
+.content-wrap{max-width: 1280px; margin: 0 auto; padding-bottom: 240px;}
 
 .swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
@@ -101,7 +101,7 @@ select option[value=""][disabled]{display: none;}
 .pr.section01 .download-btn a:hover span:after{background: url(../images/media/download-iconB.png) no-repeat;}
 
 
-.pr.section02 .content-wrap{padding-bottom: 320px;}
+.pr.section02 .content-wrap{padding-bottom: 240px;}
 .pr.section02 .main-title-wrap{padding: 0 0 104px;}
 .pr.section02 .content-wrap .title-txt{margin-bottom: 0;}
 
@@ -118,8 +118,8 @@ select option[value=""][disabled]{display: none;}
 @media all and (max-width : 1084px) {
   .swiper-controller-wrap{width: 185px; height: 60px;}
   .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: -10px;}
-  .swiper-button-prev{background-position: center left; width: 20px;}
-  .swiper-button-next{background-position: center right; width: 20px;}
+  .swiper-button-prev{background-position: center left; width: 20px; left: -16px;}
+  .swiper-button-next{background-position: center right; width: 20px; right: -16px;}
   .pr.section01 .brochure-wrap{gap: 30px;}
   .pr.section01 .brochure-thumb{width: auto; flex: 0 0 55%;}
   .pr.section01 .brochure-info{margin-top: 0;}
@@ -131,17 +131,23 @@ select option[value=""][disabled]{display: none;}
 
 @media all and (max-width : 768px) {
   .sub-bg{background: url(../images/media/media_sub_visual_mo.png) no-repeat; background-size: cover;}
+  .news.section01 .main-title-wrap{padding-top: 60px;}
+  .news.section01 .content-wrap{padding-bottom: 180px;}
+  .news.section01 .content-wrap .title{margin-bottom: 20px;}
+  .news.section01 .content-wrap .title-txt{margin-bottom: 60px;}
   .con-recent .list{flex-direction: column;}
   .con-recent .img-box{width: 100%; height: 350px;}
   .con-recent .txt-box{width: 100%; padding: 20px;}
   .con-recent .txt-box .con-title p{font-size: 20px; line-height: 34px;}
   .con-recent .txt-box .category{margin-bottom: 10px;}
   .con-recent .txt-box .con-txt p{font-size: 14px; line-height: 24px;}
+  .con-list{margin-bottom: 60px;}
   .txt-box .con-date{padding: 0 0 15px;}
   .con-list-wrap .top{display: block; width: 100%; padding: 0px; box-sizing: border-box; overflow: hidden;}
   .top .search-box{display: flex;}
   .select{width: 120px; margin-right: 15px; background: url(../images/media/select_default.png) no-repeat 98% 50%; font-size: 14px;}
-  .input{width: 100%; background: url(../images/media/search-icon.png) no-repeat 98% 50%;}
+  .input{width: 100%; background: url(../images/media/search-icon.png) no-repeat 95% 50%;}
+  .input::placeholder{font-size: 14px;}
   .con-list li{width: 100%; padding: 15px 0 0;}
   .con-list li .box .box-title{font-size: 20px; margin-bottom: 20px; line-height: 32px;}
   .txt-box.top{width: 100%; padding: 30px 0 0; text-align: left;}
@@ -173,7 +179,7 @@ select option[value=""][disabled]{display: none;}
   .pr.section01 .brochure-info .desc{margin-bottom: 30px;}
   .pr.section01 .download-btn a span{padding: 10px 60px 10px 34px;}
   .pr.section01 .download-btn a span:after{right: 30px;}
-  .pr.section02 .content-wrap{padding-bottom: 239px;}
+  .pr.section02 .content-wrap{padding-bottom: 180px;}
   .pr.section02 .main-title-wrap{padding: 0 0 30px;}
   .pr-list .prvideo{height: 400px;}
 }

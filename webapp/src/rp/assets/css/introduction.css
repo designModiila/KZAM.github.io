@@ -22,7 +22,7 @@
 .introduction.section03 .title-wrap{text-align: center;}
 .introduction.section03 .title-wrap .con-txt p{font-size: 18px; letter-spacing: -0.03em; line-height: 30px; color: #4e4e4e;}
 
-.introduction.section03 .chart-wrap{position: relative; width: 100%; height: 740px; padding: 80px 0 236px;}
+.introduction.section03 .chart-wrap{position: relative; width: 100%; height: 740px; padding: 80px 0 240px;}
 .introduction.section03 .chart-wrap:before{position: absolute; content: ''; top: 0; left: 50%; width: 100vw; height: 100%; transform: translateX(-50%); background: url(../images/introduction/introduction-chart-bg.png); background-size: cover; background-position: 50% 50%;}
 .introduction.section03 .chart{position: relative; max-width: 1200px; margin: 0 auto; height: 100%;}
 .introduction.section03 .chart .line{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 1200px; height: 1px; background: #4e4e4e; display: flex; justify-content: center; margin: 53px 0 33px;}
@@ -68,7 +68,7 @@
 .ceo.section02 .intro-sign .intro-text-end{display: inline-block; text-align: right; font-family: 'NotoB'; font-size: 18px; color: #dadada; margin-right: 40px; letter-spacing: -0.03em;}
 .ceo.section02 .intro-sign img {display: inline-block;}
 .ceo.section02 .ceo-bg{background: #f4f4f4; margin-top: -200px; padding-top: 274px;}
-.ceo.section02 .ceo-bg .content-wrap{padding-bottom: 197px; display: flex; gap: 90px;}
+.ceo.section02 .ceo-bg .content-wrap{padding-bottom: 240px; display: flex; gap: 90px;}
 .ceo.section02 .ceo-bg .left-txt-box{flex: 0 0 45%;}
 .ceo.section02 .ceo-bg .right-txt-box{flex: 0 0 40%;}
 .ceo.section02 .ceo-bg .left-txt-box p{font-family: 'NotoB'; font-size: 24px; line-height: 42px; letter-spacing: -0.03em; color: #323232; word-break: keep-all;}
@@ -81,7 +81,7 @@
 .vision.section01 .content-wrap .title-txt{margin-bottom: 0;}
 .vision.section01 .content-wrap .title-txt p{font-size: 20px; line-height: 36px;}
 
-.vision.section02{padding-bottom: 343px;}
+.vision.section02{padding-bottom: 240px;}
 .vision.section02 .fixed-wrap {padding-bottom: 400px;}
 .vision.section02 .fixed-wrap.active .fixed-con .img-con .img-box{top:0; opacity:1;}
 
@@ -208,7 +208,7 @@
 
 
 
-#affiliate02 .affiliate-wrap{padding: 96px 0 233px;}
+#affiliate02 .affiliate-wrap{padding: 96px 0 240px;}
 #affiliate02 .wrap-layer .item .box .title{font-size: 38px; line-height: 52px; font-family: 'NotoB';}
 #affiliate02 .wrap-layer .item .box .desc{margin-bottom: 0;}
 #affiliate02 .wrap-layer .top{display: flex; margin-bottom: 40px;}
@@ -233,7 +233,7 @@
 .location.section01 .company-info .item dl:nth-child(2) dt:before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
 .location.section01 .company-info .item dl:nth-child(3) dt:before{background: url(../images/introduction/icon_sms.png) no-repeat center;}
 .location.section01 .company-info .item dl dd{font-size: 20px; color: #4e4e4e; margin-left: 20px;}
-.location.section02 .company-map{padding-bottom: 200px;}
+.location.section02 .company-map{padding-bottom: 240px;}
 
 @media all and (max-width: 1680px){
   .ceo.section02 .intro-sign{right: 150px;}
@@ -310,9 +310,9 @@
   .introduction.section02 .company-info table td{font-size: 15px; color: #666; padding: 0;}
   .introduction.section03 .content-wrap .title{margin-bottom: 30px;}
   .introduction.section03 .content-wrap .title{text-align: left;}
-  .introduction.section03 .title-wrap .con-txt p{font-size: 16px; text-align: left;}
+  .introduction.section03 .title-wrap .con-txt p{font-size: 16px; line-height: 26px; text-align: left;}
   .introduction.section03 .title-wrap .con-txt p br{display: none;}
-  .introduction.section03 .chart-wrap{padding-top: 60px; padding-bottom: 125px; height: 420px}
+  .introduction.section03 .chart-wrap{padding-top: 60px; padding-bottom: 180px; height: 420px}
   .introduction.section03 .chart-wrap:before{background: url(../images/introduction/introduction-chart-bg-mo.png) no-repeat; background-size: contain; background-position: center bottom;}
   .introduction.section03 .dot-wrap .item{margin-bottom: 28px; gap: 10px;}
   .introduction.section03 .dot-wrap .item .dot{width: 8px; height: 8px; background: #c0c0c0;}
@@ -349,9 +349,9 @@
   .ceo.section02 .intro-sign .intro-text-end{font-size: 16px;}
   .ceo.section02 .intro-sign img{zoom: 0.8;}
   .ceo.section02 .ceo-bg .content-wrap{flex-direction: column; gap: 20px;}
-  .ceo.section02 .ceo-bg .left-txt-box p{font-size: 18px; line-height: 30px;}
-  .ceo.section02 .ceo-bg .right-txt-box p{font-size: 16px; line-height: 28px;}
-  .ceo.section02 .ceo-bg .content-wrap{padding-bottom: 156px;}
+  .ceo.section02 .ceo-bg .left-txt-box p{font-size: 18px; line-height: 28px;}
+  .ceo.section02 .ceo-bg .right-txt-box p{font-size: 16px; line-height: 26px;}
+  .ceo.section02 .ceo-bg .content-wrap{padding-bottom: 180px;}
 
   .vision.section01 .content-wrap{padding-top: 92px;}
   .vision.section01 .content-wrap .main-title-wrap{background: none; padding: 0px 0px 120px; text-align: left;}
@@ -359,7 +359,7 @@
   .vision.section01 .content-wrap .title-txt p{font-size: 16px; line-height: 26px;}
   .vision.section01 .content-wrap .title-txt p br{display: none;}
   .vision.section02{padding-bottom: 0;}
-  .vision.section02 .fixed-wrap{padding-bottom: 166px;}
+  .vision.section02 .fixed-wrap{padding-bottom: 180px;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con{width: 100%; padding-right: 0;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con.on:before{display: none;}
   .vision.section02 .fixed-wrap .fixed-con .txt-con.on:after{display: none;}
@@ -377,7 +377,7 @@
   .affiliate.section01 .main-title-wrap{padding: 60px 0 37px;}
   .affiliate.section01 .content-wrap .title{margin-bottom: 20px;}
   .affiliate-tabs > ul > li{padding: 15px 0; font-size: 16px;}
-  .affiliate-wrap{padding: 20px 0 87px;}
+  .affiliate-wrap{padding: 20px 0 180px;}
   .affiliate-wrap .list-album > li{width: 100%;}
   .affiliate-wrap .info-title{margin-bottom: -70px;}
   .affiliate-wrap .box{height: 154px;}
@@ -420,7 +420,7 @@
 
   #affiliate01 .affiliate-mo-con, #affiliate02 .affiliate-mo-con{border-top: 1px solid #323232;}
   #affiliate02 .affiliate-mo .map-bg{background: url(../images/introduction/global-map-bg-mo.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
-  #affiliate02 .affiliate-mo .affiliate-wrap{padding: 30px 0 172px;}
+  #affiliate02 .affiliate-mo .affiliate-wrap{padding: 30px 0 180px;}
 
   .accordion-wrap{border-bottom: 1px solid #d9d9d9;}
   .accordion-wrap .accor-top{padding: 15px 0; display: flex; align-items: center; justify-content: space-between;}
@@ -449,7 +449,7 @@
   .accordion-wrap .accor-pane .item{margin-bottom: 10px;}
 
 
-  .location.section02 .company-map{padding-bottom: 120px;}
+  .location.section02 .company-map{padding-bottom: 180px;}
   .location.section01 .main-title-wrap{padding: 60px 0;}
   .location.section01 .company-info .item dl{flex-direction: column; gap: 10px;}
   .location.section01 .company-info .item dl dt{font-size: 16px;}
