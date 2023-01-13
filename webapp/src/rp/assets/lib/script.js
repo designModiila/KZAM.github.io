@@ -560,6 +560,10 @@ $(window).on('scroll', function (e) {
 
   });
 
+  $('.privacy .item').on('click',function(){
+    $(this).toggleClass('current');
+  });
+
 
 
 });
