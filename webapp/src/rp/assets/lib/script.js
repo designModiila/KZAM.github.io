@@ -561,6 +561,7 @@ $(window).on('scroll', function (e) {
   });
 
   $('.privacy .item').on('click',function(){
+    $('.privacy .item').removeClass('current')
     $(this).toggleClass('current');
   });
 
