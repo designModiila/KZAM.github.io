@@ -118,9 +118,10 @@
 
 @media all and (max-width : 768px) {
   .sub-bg{background: url(../images/customerSupport/customerSupport_sub_visual_mo.png) no-repeat; background-size: cover;}
+  .input{height: 52px; padding: 0 7px;}
+  .select{height: 52px;}
   .voc.section01 .content-wrap{padding-bottom: 180px;}
   .voc.section01 .content-wrap .main-title-wrap{padding-top: 60px;}
-  .voc.section01 .content-wrap {margin-top: 60px;}
   .table td, .table th{padding: 0;}
   .table.type-write th, .table.type-write td{width: 100%; display: block;}
   .table.type-write tr th{padding-top: 20px; padding-bottom: 0;}
