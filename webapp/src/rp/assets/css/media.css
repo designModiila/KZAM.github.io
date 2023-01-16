@@ -28,7 +28,7 @@
 .con-list-wrap{border-top: 1px solid #d9d9d9; padding-top: 60px;}
 .con-list-wrap .top{display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 0 15px;}
 .con-list-wrap .top .con-title p{color: #4e4e4e; font-family: 'NotoB'; letter-spacing: -0.03em;}
-.select{width: 200px; height: 61px; padding: 0 8px; border: 1px solid #d9d9d9; background: url(../images/media/select_default.png) no-repeat right 50%; margin-right: 20px;}
+.select{width: 200px; height: 61px; padding: 0 8px; border: 1px solid #d9d9d9; background: url(../images/media/select_default.png) no-repeat; background-size: 10% auto; background-position: 170px center; margin-right: 20px;}
 select option[value=""][disabled]{display: none;}
 .input{width: 320px; padding: 19px 7px; border: 1px solid #d9d9d9; color: #323232; font-size: 16px; box-sizing: border-box; background: url(../images/media/search-icon2.png) no-repeat 280px 50%; background-size: auto 35%;}
 .con-list{margin-bottom: 120px;}
@@ -145,8 +145,8 @@ select option[value=""][disabled]{display: none;}
   .txt-box .con-date{padding: 0 0 15px;}
   .con-list-wrap .top{display: block; width: 100%; padding: 0px; box-sizing: border-box; overflow: hidden;}
   .top .search-box{display: flex;}
-  .select{width: 120px; height: 52px; margin-right: 15px; background: url(../images/media/select_default.png) no-repeat 98% 50%; font-size: 14px;}
-  .input{width: 100%; height: 52px; background: url(../images/media/search-icon.png) no-repeat 95% 50%;}
+  .select{width: 120px; height: 52px; background: url(../images/media/select_default.png) no-repeat 95% 50%; background-size: auto 37%; font-size: 14px;}
+  .input{width: 100%; height: 52px; background: url(../images/media/search-icon2.png) no-repeat 95% 50%; background-size: auto 37%;}
   .input::placeholder{font-size: 14px;}
   .con-list li{width: 100%; padding: 15px 0 0;}
   .con-list li .box .box-title{font-size: 20px; margin-bottom: 20px; line-height: 32px;}
@@ -188,6 +188,6 @@ select option[value=""][disabled]{display: none;}
   .news.section01 .content-wrap .title-txt p br{display: none;}
   .swiper-controller-wrap{width: 165px;}
   .top .search-box{flex-direction: column;}
-  .select{width: 100%; background: url(../images/media/select_default.png) no-repeat 98% 50%; margin-bottom: 5px;}
+  .select{width: 100%; margin-bottom: 5px; }
   .pr-list .prvideo{height: 200px;}
 }
