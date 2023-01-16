@@ -415,6 +415,7 @@
   .content-tab-box ul li{width: 100%; display: none;}
   .content-tab-box.active ul li{display: block;}
   .content-tab-box > ul > li{line-height: unset;}
+  .content-tab-box > ul > li:last-child{border-bottom: 1px solid #d9d9d9;}
   .content-tab-box ul li a.active:after{content: none;}
   .content-tab-box ul li.active{display: block;}
   .content-tab-box ul li a{display: block; font-weight: 400; font-size: 18px; text-align: left; padding: 0 20px; height: 65px; line-height: 65px; box-sizing: border-box;}

@@ -138,9 +138,13 @@
   .product.section02 .content-wrap > div + div{margin-left: 0; margin-top: 50px;}
   .product.section02 .content-wrap .item .title{margin-bottom: 10px;}
   .product.section03 .content-wrap{padding-bottom: 120px;}
-  .overview.section02 .section02-img{transform: scale(1);}
+  .overview.section02 .section02-img{transform: scale(1); height: 200px;}
+  .overview.section02 .section02-img img{height: 200px; object-fit: cover; object-position: center;}
   .product.section03 .main-title-wrap{padding: 0px 0px 40px;}
   .overview.section03 .content-wrap.bot-content{gap: 40px; padding-bottom: 80px;}
+  .overview.section03 .section03-img{transform: scale(1); height: 200px;}
+  .overview.section03 .section03-img img{height: 200px; object-fit: cover; object-position: -65px;}
+
   .overview.section03 .bot-content:before{top: -70px; height: 903px;}
   .overview.section03 .content-wrap .title-txt p br{display: block;}
   .overview.section03 .content-wrap.bot-content{padding-top: 50px;}
@@ -148,6 +152,9 @@
   .overview.section03 .content-wrap.bot-content .item p:nth-child(2){font-size: 16px; line-height: 26px;}
   .overview.section04 .content-wrap{padding-top: 120px; flex-direction: column; gap: 20px; margin-bottom: 50px;}
   .overview.section04 .content-wrap .con-title{margin-right: 0;}
+  .product.section04 .content-wrap{padding-bottom: 180px;}
+  .overview.section04 .section04-img{transform: scale(1); height: 200px;}
+  .overview.section04 .section04-img img{height: 200px; object-fit: cover; object-position: -65px;}
   .overview.section04 .content-wrap.bot-content{padding-top: 50px; gap: 40px; padding-bottom: 180px;}
   .overview.section04 .content-wrap.bot-content .box .logo-box{margin-bottom: 20px;}
   .overview.section04 .content-wrap.bot-content .box .logo-desc p:first-child{font-size: 16px;}
@@ -156,12 +163,10 @@
   .overview.go-product-btn a span{margin-left: -13px;}
   .overview.go-product-btn a span:before{top: 0;}
   .overview.go-product-btn a span:after{bottom: 0;}
-  .overview.section03 .section03-img{transform: scale(1);}
+
   .product.section03 .box{flex-direction: column;}
   .product.section03 .box .box-title{font-size: 20px;}
   .product.section03 .box .desc{font-size: 16px; padding-bottom: 20px; line-height: 26px;}
-  .product.section04 .content-wrap{padding-bottom: 180px;}
-  .overview.section04 .section04-img{transform: scale(1);}
   .product.section04 .thumb-top img{width: 100%; height: 200px; object-fit: cover;}
   .product.section04 .thumb-btn{bottom: -39px;}
   .product.section04 .thumb-btn a{font-size: 12px; padding: 10px 30px;}
