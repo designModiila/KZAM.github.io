@@ -6,8 +6,8 @@
 .swiper-controller-wrap{position:  absolute; width: 260px; height: 90px; bottom: 0px; right: 0; background: #fff; z-index: 1; box-sizing: border-box; padding: 32px 47px;}
 .swiper-controller{position: relative; width: 100%; height: 100%;}
 .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: unset;}
-.swiper-button-prev{background: url('../images/main/controller-arrow-l.png') no-repeat; background-position: center; width: 35px; left: 0;}
-.swiper-button-next{background: url('../images/main/controller-arrow-r.png') no-repeat; background-position: center; width: 35px; right: 0;}
+.swiper-button-prev{background: url('../images/main/controller-arrow-l2.png') no-repeat; background-position: left center; background-size: 60% auto; width: 66px; left: 0;}
+.swiper-button-next{background: url('../images/main/controller-arrow-r2.png') no-repeat; background-position: right center; background-size: 60% auto; width: 66px; right: 0;}
 .swiper-button-next::after, .swiper-button-prev::after{display: none;}
 .con-recent{position: relative; width: 100%; overflow: hidden;}
 .news .con-recent{margin-bottom: 60px;}
@@ -118,8 +118,8 @@ select option[value=""][disabled]{display: none;}
 @media all and (max-width : 1084px) {
   .swiper-controller-wrap{width: 185px; height: 60px;}
   .swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal{bottom: -10px;}
-  .swiper-button-prev{background-position: center left; width: 20px; left: -16px;}
-  .swiper-button-next{background-position: center right; width: 20px; right: -16px;}
+  .swiper-button-prev{left: -30px; width: 30px; background-size: auto 20%;}
+  .swiper-button-next{right: -30px; width: 30px; background-size: auto 20%;}
   .pr.section01 .brochure-wrap{gap: 30px;}
   .pr.section01 .brochure-thumb{width: auto; flex: 0 0 55%;}
   .pr.section01 .brochure-info{margin-top: 0;}
