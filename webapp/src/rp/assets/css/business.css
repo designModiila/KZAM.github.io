@@ -65,7 +65,7 @@
 .product.section04 .product-tab-menu ul li a{display: block; padding: 15px 0; color: #8f8f8f;}
 .product.section04 .product-tab-menu ul li.active a{color: #323232; font-family: 'NotoB';}
 .product.section04 .thumb-top{position: relative; margin-bottom: 76px;}
-.product.section04 .thumb-btn{position: absolute; right: 0; bottom: -49px; background: #ff8b23; border: 1px solid #ff8b23; transition: background .5s, color .3s ease-in-out;}
+.product.section04 .thumb-btn{position: absolute; right: 0; bottom: -49px; background: #ff8b23; border: 1px solid #ff8b23; transition: background .5s, color .3s ease-in-out; box-sizing: border-box;}
 .product.section04 .thumb-btn a{display: block; padding: 13px 40px; color: #fff; font-family: 'NotoM';}
 .product.section04 .thumb-btn:hover{background: #fff; border: 1px solid #ff8b23;}
 .product.section04 .thumb-btn:hover a{color: #ff8b23}
@@ -168,8 +168,8 @@
   .product.section03 .box .box-title{font-size: 20px;}
   .product.section03 .box .desc{font-size: 16px; padding-bottom: 20px; line-height: 26px;}
   .product.section04 .thumb-top img{width: 100%; height: 200px; object-fit: cover;}
-  .product.section04 .thumb-btn{bottom: -39px;}
-  .product.section04 .thumb-btn a{font-size: 12px; padding: 10px 30px;}
+  .product.section04 .thumb-btn{bottom: -41px;}
+  .product.section04 .thumb-btn a{font-size: 14px; padding: 10px 30px;}
   .product.section04 .thumb-bottom{align-items: flex-start;}
   .product.section04 .thumb-title{margin-bottom: 10px;}
   .product.section04 .thumb-title p{font-size: 28px;}

@@ -141,7 +141,8 @@
   .agree{font-size: 14px;}
   .privacy-agree-box .top > div{display: block;}
   .btn-toggle.toggle-text{margin: 15px 0 0 0;}
-  .attr-box .btn-attr{width: 115px; height: 52px;}
+  .submit-btn{font-size: 14px;}
+  .attr-box .btn-attr{width: 115px; height: 52px; font-size: 14px;}
   .privacy .item .item-bg{padding: 20px 15px;}
   .btn-toggle.toggle-text:before{font-size: 14px;}
 

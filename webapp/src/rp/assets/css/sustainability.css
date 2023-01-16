@@ -257,7 +257,7 @@
   .ecoFriendly.section01 .ecofriendly-box .box .img-box img{display: block; margin: 0 auto; width: 100%;}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info{padding-top: 20px;}
   .ecoFriendly.section01 .ecofriendly-box .box .img-info .txt{line-height: 26px; width: calc(100% - 22%);}
-  .ecoFriendly.section01 .ecofriendly-box .box .img-info .point{margin-bottom: 0;}
+  .ecoFriendly.section01 .ecofriendly-box .box .img-info .point{margin-bottom: 0; font-size: 24px;}
 
   .ecoFriendly.section02 .content-wrap{padding-bottom: 180px;}
   .ecoFriendly.section02 .content-wrap .title p{text-align: left}
