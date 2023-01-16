@@ -167,7 +167,7 @@
   .privacy .item:after{position: absolute; content: ''; width: 8px; height: 8px; border: 2px solid #292d32; border-top: transparent; border-right: transparent; right: 8px; top: 38px; transform: rotate(-45deg); transition: transform .5s ease-in;}
   .privacy .item .desc-wrap{display: none; padding-top: 30px;}
   .privacy .item.current .desc-wrap{display: block;}
-  .privacy .item.current:after{transform: rotate(135deg);}
+  .privacy .item.current:after{transform: rotate(135deg); top: 41px;}
   .privacy .content-wrap .bottom-content .item{margin-bottom: 0;}
   .privacy .item {padding-bottom: 30px; border-bottom: 1px solid #d9d9d9;}
   .privacy .item .item-title{margin-bottom: 0; padding: 30px 28px 0 0;}
