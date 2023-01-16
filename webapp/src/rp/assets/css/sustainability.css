@@ -97,8 +97,8 @@
 .safetyHealth.section02 .purpose-box .item04 p{background-color: #ff8b23; border: 0; color: #fff}
 .safetyHealth.section02 .purpose-box .arrow-box{text-align: center; line-height: 250px;}
 .safetyHealth.section02 .purpose-box .arrow-box span{display: inline-block; width: 119px; height: 2px; background: #666666; position: relative; margin-right: 40px;}
-.safetyHealth.section02 .purpose-box .arrow-box span:after{position: absolute; content: ''; width: 20px; height: 2px; background: #666666; right: -2px; top: -7px; transform: rotate(45deg);}
-.safetyHealth.section02 .purpose-box .arrow-box span:before{position: absolute; content: ''; width: 20px; height: 2px; background: #666666; right: -2px; top: 7px; transform: rotate(-45deg);}
+.safetyHealth.section02 .purpose-box .arrow-box span:after{position: absolute; content: ''; width: 13px; height: 2px; background: #666666; right: -1px; top: -5px; transform: rotate(45deg);}
+.safetyHealth.section02 .purpose-box .arrow-box span:before{position: absolute; content: ''; width: 13px; height: 2px; background: #666666; right: -1px; top: 5px; transform: rotate(-45deg);}
 .safetyHealth.section02 .purpose-box .item .info{text-align: center; padding-top: 40px;}
 .safetyHealth.section02 .purpose-box .item03 .info li{font-size: 14px; font-family: 'NotoR'; padding-left: 50px;}
 .safetyHealth.section02 .purpose-box .item03 .info > ul > li{padding-left: 0;}
@@ -300,7 +300,7 @@
   .safetyHealth.section02 .purpose-box > div{margin-left: 0; margin-top: -20px;}
   .safetyHealth.section02 .purpose-box .item03 .info ul{display: flex; flex-direction: column; gap: 20px;}
   .safetyHealth.section02 .purpose-box .item03 .info li{padding-left: 0; display: flex; flex-direction: column;}
-  .safetyHealth.section02 .purpose-box .arrow-box span{transform: rotate(90deg); width: 80px; padding-left: 20px;}
+  .safetyHealth.section02 .purpose-box .arrow-box span{transform: rotate(90deg); width: 80px; padding-left: 20px; box-sizing: border-box; margin-left: 20px;}
   .safetyHealth.section02 .purpose-box .arrow-box{height: 200px;}
   .safetyHealth.section02 .purpose-box .item03 .info > ul{padding-top: 20px;}
 
