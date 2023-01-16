@@ -402,7 +402,7 @@
   .footer-top .f-nav {flex: 0 0 54%;}
   .footer-top .f-nav dd a {line-height: 32px;;}
 
-  .scroll-top-btn{width: 40px; height: 40px; position: fixed; opacity: 0; visibility: hidden; bottom: 20px; right: 20px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/mo-scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer;}
+  .scroll-top-btn{width: 40px; height: 40px; position: fixed; opacity: 0; visibility: hidden; bottom: 25px; right: 25px; box-shadow: 5px 5px 5px rgb(0 0 0 / 10%); background: #ff8b23 url(../images/main/mo-scroll-top-btn.png) no-repeat center; transition: opacity 0.5s, visibility 0.5s; cursor: pointer;}
   .scroll-top-btn.on{opacity: 1; visibility: visible;}
 
   .content-tab-box{display: flex; position: relative; overflow: hidden; width: 100%; border: 0;}
