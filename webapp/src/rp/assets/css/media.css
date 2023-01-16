@@ -30,7 +30,7 @@
 .con-list-wrap .top .con-title p{color: #4e4e4e; font-family: 'NotoB'; letter-spacing: -0.03em;}
 .select{width: 200px; height: 61px; padding: 0 8px; border: 1px solid #d9d9d9; background: url(../images/media/select_default.png) no-repeat right 50%; margin-right: 20px;}
 select option[value=""][disabled]{display: none;}
-.input{width: 320px; padding: 19px 7px; border: 1px solid #d9d9d9; color: #323232; font-size: 16px; box-sizing: border-box; background: url(../images/media/search-icon.png) no-repeat 290px 50%;}
+.input{width: 320px; padding: 19px 7px; border: 1px solid #d9d9d9; color: #323232; font-size: 16px; box-sizing: border-box; background: url(../images/media/search-icon2.png) no-repeat 280px 50%; background-size: auto 35%;}
 .con-list{margin-bottom: 120px;}
 .con-list ul{overflow: hidden; max-width: 1280px; margin: 0 auto; display: block;}
 .con-list li{width: 33.3333%; float: left; box-sizing: border-box; padding: 15px 10px 0;}
