@@ -409,6 +409,7 @@
   .content-tab-box > a{display: block;}
   .content-tab-box::after {content: ""; display: block; position: absolute; right: 24px; top: 50%; width: 9px; height: 9px; margin-top: -7px; border-bottom: 2px solid #323232; border-right: 2px solid #323232; transform-origin: 66% 66%; transform: rotate(45deg); transition: all 0.15s ease-in-out;}
   .content-tab-box >ul >li{width: 100%; text-align: left;line-height: unset;}
+  .content-tab-box ul li.active:after{display: none;}
   .content-tab-box a{display: flex; color: #323232; font-family: 'NotoB'; align-items: center; justify-content: flex-start; width: 100%; font-size: 18px;}
   .content-tab-box .current {padding-left: 24px; padding-right: 50px; border-bottom: 1px solid #d9d9d9;}
   .content-tab-box .tab-list {flex-direction: column; overflow: hidden; position: absolute; top: 100%; left: 0; z-index: -1; width: 100%; height: auto; background: #fff; box-shadow: 0px 3px 10px #f5f5f5; opacity: 0; transform-origin: 50% 0; transform: translateY(-21px); transition: all 0.2s ease, opacity 0.15s ease-out;}
