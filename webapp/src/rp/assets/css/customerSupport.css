@@ -63,7 +63,7 @@
 .privacy-agree p{color: #4e4e4e; font-size: 16px; letter-spacing: -0.03em; line-height: 32px;}
 .agree-btn-box{padding-left: 25px;}
 .agree{color: #4e4e4e; letter-spacing: -0.03em; padding: 3px 0; padding-left: 36px;}
-
+.icheckbox[type=checkbox]{display: none;}
 .icheckbox[type=checkbox] + label {display: inline-block; background: url(../images/customerSupport/icheck-square.png) no-repeat;}
 .btn-box{width: 100%; text-align: center;}
 .icheckbox[type=checkbox]:checked + label {background: url(../images/customerSupport/icheck-square-color.png) no-repeat;}
@@ -141,7 +141,7 @@
   .agree{font-size: 14px;}
   .privacy-agree-box .top > div{display: block;}
   .btn-toggle.toggle-text{margin: 15px 0 0 0;}
-  .attr-box .btn-attr{width: 115px;}
+  .attr-box .btn-attr{width: 115px; height: 52px;}
   .privacy .item .item-bg{padding: 20px 15px;}
   .btn-toggle.toggle-text:before{font-size: 14px;}
 
