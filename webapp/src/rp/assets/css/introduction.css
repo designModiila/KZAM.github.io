@@ -420,7 +420,7 @@
 
 
   #affiliate01 .affiliate-mo-con, #affiliate02 .affiliate-mo-con{border-top: 1px solid #323232;}
-  #affiliate02 .affiliate-mo .map-bg{background: url(../images/introduction/global-map-bg-mo.png) no-repeat; position: relative; padding-top: 54.2%; background-size: auto 100%;}
+  #affiliate02 .affiliate-mo .map-bg{background: url(../images/introduction/global-map-bg-mo.png) no-repeat; position: relative; padding-top: 54.2%; background-size: 100% auto;}
   #affiliate02 .affiliate-mo .affiliate-wrap{padding: 30px 0 180px;}
 
   .accordion-wrap{border-bottom: 1px solid #d9d9d9;}
