@@ -109,6 +109,12 @@ $('.lang-select li a').on("click", function (e) {
   $(this).parents('.lang-select').find('.current').text($(this).text());
 });
 
+$('.lang-select .eng').on("click", function () {
+  selectHide();
+  alert('준비중입니다');
+});
+
+
 function tabHide() {
   $('.content-tab-box').removeClass('active');
 }
