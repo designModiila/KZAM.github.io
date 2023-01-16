@@ -145,8 +145,8 @@ select option[value=""][disabled]{display: none;}
   .txt-box .con-date{padding: 0 0 15px;}
   .con-list-wrap .top{display: block; width: 100%; padding: 0px; box-sizing: border-box; overflow: hidden;}
   .top .search-box{display: flex;}
-  .select{width: 120px; margin-right: 15px; background: url(../images/media/select_default.png) no-repeat 98% 50%; font-size: 14px;}
-  .input{width: 100%; background: url(../images/media/search-icon.png) no-repeat 95% 50%;}
+  .select{width: 120px; height: 52px; margin-right: 15px; background: url(../images/media/select_default.png) no-repeat 98% 50%; font-size: 14px;}
+  .input{width: 100%; height: 52px; background: url(../images/media/search-icon.png) no-repeat 95% 50%;}
   .input::placeholder{font-size: 14px;}
   .con-list li{width: 100%; padding: 15px 0 0;}
   .con-list li .box .box-title{font-size: 20px; margin-bottom: 20px; line-height: 32px;}
