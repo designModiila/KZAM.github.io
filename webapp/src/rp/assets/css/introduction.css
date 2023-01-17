@@ -229,9 +229,9 @@
 .location.section01 .company-info .item{display: flex; gap: 40px; justify-content: center;}
 .location.section01 .company-info .item dl{display: flex;}
 .location.section01 .company-info .item dl dt{position: relative; font-size: 20px; font-family: 'NotoB'; color: #323232; padding-left: 44px;}
-.location.section01 .company-info .item dl dt:before{position: absolute; content: ''; width: 24px; height: 24px; left: 0; background: url(../images/introduction/icon_map.png) no-repeat center;}
-.location.section01 .company-info .item dl:nth-child(2) dt:before{background: url(../images/introduction/icon_global_tel.png) no-repeat center;}
-.location.section01 .company-info .item dl:nth-child(3) dt:before{background: url(../images/introduction/icon_sms.png) no-repeat center;}
+.location.section01 .company-info .item dl dt:before{position: absolute; content: ''; width: 24px; height: 24px; left: 0; background: url(../images/introduction/icon_map.png) no-repeat center; background-size: auto 100%;}
+.location.section01 .company-info .item dl:nth-child(2) dt:before{background: url(../images/introduction/icon_global_tel.png) no-repeat center; background-size: auto 100%;}
+.location.section01 .company-info .item dl:nth-child(3) dt:before{background: url(../images/introduction/icon_sms.png) no-repeat center; background-size: auto 100%;}
 .location.section01 .company-info .item dl dd{font-size: 20px; color: #4e4e4e; margin-left: 20px;}
 .location.section02 .company-map{padding-bottom: 240px;}
 

@@ -99,10 +99,11 @@
 .safetyHealth.section02 .purpose-box .arrow-box span{display: inline-block; width: 119px; height: 2px; background: #666666; position: relative; margin-right: 40px;}
 .safetyHealth.section02 .purpose-box .arrow-box span:after{position: absolute; content: ''; width: 13px; height: 2px; background: #666666; right: -1px; top: -5px; transform: rotate(45deg);}
 .safetyHealth.section02 .purpose-box .arrow-box span:before{position: absolute; content: ''; width: 13px; height: 2px; background: #666666; right: -1px; top: 5px; transform: rotate(-45deg);}
-.safetyHealth.section02 .purpose-box .item .info{text-align: center; padding-top: 40px;}
-.safetyHealth.section02 .purpose-box .item03 .info li{font-size: 14px; font-family: 'NotoR'; padding-left: 50px;}
+.safetyHealth.section02 .purpose-box .item .info{display: flex; justify-content: center; margin-left: -25px; padding-top: 40px;}
+.safetyHealth.section02 .purpose-box .item03 .info li{font-size: 14px; font-family: 'NotoR';}
 .safetyHealth.section02 .purpose-box .item03 .info > ul > li{padding-left: 0;}
 .safetyHealth.section02 .purpose-box .item .info > ul > li{color: #4e4e4e; font-family: 'NotoB'; line-height: 30px; letter-spacing: -0.03em;}
+.safetyHealth.section02 .purpose-box .item02 .info li .tablet-br{display: none;}
 
 .society.section01 .content-wrap{padding: 150px 0 240px;}
 .society.section01 .content-wrap .title{text-align: center; margin-bottom: 80px;}
@@ -202,13 +203,16 @@
   .ecoFriendly.section01 .content-wrap{padding-bottom: 120px;}
   .ecoFriendly.section02 .circle-box-wrap{transform: scale(0.8);}
 
+  .safetyHealth.section02 .purpose-box .item02 .info li .tablet-br{display: block;}
+  .safetyHealth.section02 .purpose-box .item02 .info li br{display: block;}
+  .safetyHealth.section02 .purpose-box .item .info > ul > li{line-height: 28px;}
+
 }
 
 @media all and (max-width: 900px){
   .safetyHealth.section02 .purpose-box .item p{width: 180px; height: 180px;}
   .safetyHealth.section02 .purpose-box .arrow-box{line-height: 180px;}
   .safetyHealth.section02 .purpose-box .arrow-box span{width: 100px;}
-  .safetyHealth.section02 .purpose-box .item02 .info li br{display: none;}
 }
 
 
@@ -305,6 +309,7 @@
   .safetyHealth.section02 .purpose-box .arrow-box span{transform: rotate(90deg); width: 80px; padding-left: 20px; box-sizing: border-box; margin-left: 20px;}
   .safetyHealth.section02 .purpose-box .arrow-box{height: 200px;}
   .safetyHealth.section02 .purpose-box .item03 .info > ul{padding-top: 20px;}
+  .safetyHealth.section02 .purpose-box .item02 .info li .tablet-br{display: none;}
 
   .society.section01 .content-wrap{padding: 60px 0 120px;}
   .society.section01 .content-wrap .title{text-align: left; margin-bottom: 60px;}
