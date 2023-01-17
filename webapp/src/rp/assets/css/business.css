@@ -120,7 +120,7 @@
   .overview .con-title{font-size: 24px;}
   .overview.section01 .content-wrap .title{margin-bottom: 0px;}
   .overview.section01 .main-title-wrap{padding: 60px 0 120px;}
-  .overview.section01 .content-wrap .title p{font-size: 28px; line-height: 40px;}
+  .overview.section01 .content-wrap .title p{font-size: 26px; line-height: 38px;}
   .overview.section02 .content-wrap{flex-direction: column; gap: 20px; margin-bottom: 50px;}
   .overview.section02 .content-wrap .title-txt p{word-break: break-all;}
   .overview.section03 .content-wrap{padding-top: 120px; flex-direction: column; gap: 20px; margin-bottom: 50px;}
@@ -171,14 +171,14 @@
   .product.section04 .thumb-btn{bottom: -41px;}
   .product.section04 .thumb-btn a{font-size: 14px; padding: 10px 30px;}
   .product.section04 .thumb-bottom{align-items: flex-start;}
-  .product.section04 .thumb-title{margin-bottom: 10px;}
-  .product.section04 .thumb-title p{font-size: 28px;}
+  .product.section04 .thumb-title{margin-bottom: 15px;}
+  .product.section04 .thumb-title p{font-size: 24px;}
   .product.section04 .thumb-info > ul li{font-size: 16px; line-height: 26px;}
   .product.section04 .thumb-info > ul li + li{margin-top: 10px;}
   .product.section04 .thumb-info > ul li:before{top: 15px;}
   .product.section04 .thumb-info-img p{font-size: 18px;}
   .product.section04 .thumb-info-img ul li + li{margin-left: 10px;}
-  .product.section04 .thumb-info-img ul li span{margin-top: 10px; font-size: 12px;}
+  .product.section04 .thumb-info-img ul li span{margin-top: 10px; font-size: 13px;}
   .overview.section04 .content-wrap.bot-content .box{display: flex; flex: unset;}
   .overview.section04 .content-wrap.bot-content .box .logo-box{width: 78px; margin-right: 45px; margin-bottom: 0;}
   .overview.section04 .content-wrap.bot-content .box03 .logo-box{width: 45px; margin-right: 78px;}
