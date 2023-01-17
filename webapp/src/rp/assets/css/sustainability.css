@@ -233,8 +233,8 @@
   .overview.section02 .right-circle-box{right: 190px; bottom: -40px;}
   .overview.section02 .left-circle-box{left: 190px; bottom: -40px;}
   .overview.section02 .mo-strategy-info{margin-top: 0; padding-top: 80px;}
-  .overview.section02 .mo-strategy-info dl{gap: 30px; justify-content: space-between;}
-  .overview.section02 .mo-strategy-info dt{font-size: 20px; width: auto; flex: 0 0 26%; padding-right: 0px;}
+  .overview.section02 .mo-strategy-info dl{justify-content: space-between;}
+  .overview.section02 .mo-strategy-info dt{font-size: 20px; width: auto; flex: 0 0 30%; padding-right: 0px;}
   .overview.section02 .mo-strategy-info dt span{font-size: 14px;}
   .overview.section02 .mo-strategy-info dd{flex: 1;}
   .overview.section02 .mo-strategy-info dd p{font-size: 14px; line-height: 30px;}
