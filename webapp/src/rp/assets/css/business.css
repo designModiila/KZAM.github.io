@@ -25,7 +25,7 @@
 .overview.section04 .section04-img{display: flex; justify-content: flex-end; transform: scale(0.9);}
 .overview.section04 .content-wrap.bot-content{padding-top: 80px; margin-bottom: 0; padding-bottom: 240px; justify-content: space-between;}
 .overview.section04 .content-wrap.bot-content .box{flex: 0 0 32%;}
-/* .overview.section04 .content-wrap.bot-content .box .logo-box{height: 75px; margin-bottom: 42px;} */
+.overview.section04 .content-wrap.bot-content .box .logo-box{margin-bottom: 30px;}
 .overview.section04 .content-wrap.bot-content .box .logo-desc p:first-child{font-size: 20px; font-family: 'NotoB'; letter-spacing: -0.03em; color: #323232; margin-bottom: 10px;}
 .overview.section04 .content-wrap.bot-content .box .logo-desc p:nth-child(2){font-size: 18px; letter-spacing: -0.03em; color: #4e4e4e;}
 
