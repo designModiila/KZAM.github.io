@@ -288,6 +288,16 @@ $(window).on('scroll', function (e) {
   // });
 
 
+  function subTitleChange(){
+    var subTitle = $('.sub-main-title');
+    var tabBox = $('.tab-list li.active');
+
+    subTitle.find('p').append(function(){
+      $(this).text(tabBox.text())
+    });
+  }
+  subTitleChange();
+
   var swiper = new Swiper(".main-slide-wrap", {
     speed: 1000,
     autoplay: {
