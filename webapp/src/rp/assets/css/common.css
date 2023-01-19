@@ -234,8 +234,13 @@
 
 
 .mo768 {display: none;} 
+@media all and (max-width : 1680px){
+  .footer-wrap{width: calc(100% - 20rem);} 
+ 
+}
 
 @media all and (max-width : 1440px){
+ 
   /* .content-wrap{width: calc(100% - 4.8rem);}
   .footer-wrap{width: calc(100% - 23rem);} */
   .footer-wrap{width: calc(100% - 20rem);} 
