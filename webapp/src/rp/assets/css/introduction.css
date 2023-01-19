@@ -407,7 +407,7 @@
   .affiliate-mo-tab {position: relative; height: 50px; padding: 30px 0 50px;}
   .affiliate-mo-tab nav {position: absolute; width: 100%; background: #ffffff; z-index: 10;}
   .affiliate-mo-tab nav ul {border: 1px solid #d9d9d9; display: flex; flex-direction: column; height: 50px; line-height: 50px;}
-  .affiliate-mo-tab nav ul.expanded{height: 145px; overflow-y: scroll;}
+  .affiliate-mo-tab nav ul.expanded{height: 350px; overflow-y: scroll;}
   .affiliate-mo-tab nav ul li {padding: 0px 0 0px 20px; cursor: pointer; color: #bbbbbb; order: 1;}
   .affiliate-mo-tab nav ul li:hover {color: #323232;}
   .affiliate-mo-tab nav ul li.is-active {color: #323232; font-family: 'NotoB'; border-top: none; order: 0;}
