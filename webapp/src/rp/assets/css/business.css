@@ -62,6 +62,7 @@
 .product-top-graph .graph-left p span{display: block; text-align: right;}
 .product-top-graph .graph-left .graph-y{top: 0; left: -90px;}
 .product-top-graph .graph-left .graph-x{bottom: -50px; right: 0;}
+.product-top-graph .product-chart-bg{width: 100%; max-width: 825px;}
 .product-top-graph .graph-left .item{width: 100px; height: 100px; border-radius: 100%; display: flex; align-items: center; justify-content: center; text-align: center; background: #fff; border: 1px solid #ff8c04; box-sizing: border-box; position: absolute; z-index: 5;}
 .product-top-graph .graph-left .item p{color: #323232; font-family: 'NotoB'; letter-spacing: -0.03em;}
 .product-top-graph .graph-left .item01{width: 130px; height: 130px; top: 2%; left: 9%;}
@@ -71,8 +72,8 @@
 .product-top-graph .graph-left .item03{top: 47%; left: 26%;}
 .product-top-graph .graph-left .item04{top: 65%; left: 42%;}
 .product-top-graph .graph-left .item05{width: 86px; height: 86px; top: 65%; right: 31%; z-index: 10;}
-.product-top-graph .graph-left .item06{width: 120px; height: 120px; bottom: 15%; right: 26%;}
-.product-top-graph .graph-left .item07{width: 120px; height: 120px; bottom: 15%; right: 7%;}
+.product-top-graph .graph-left .item06{width: 120px; height: 120px; bottom: 12%; right: 23%;}
+.product-top-graph .graph-left .item07{width: 120px; height: 120px; bottom: 12%; right: 5%;}
 
 .product-top-graph .graph-right{display: flex; width: 290px; align-items: center; padding-left: 50px;}
 .product-top-graph .graph-right .box-wrap{display: flex; flex-direction: column; gap: 15px; }
@@ -96,8 +97,8 @@
 
 
 @media all and (max-width: 1200px){
-  .product-top-graph .graph-left .item06{bottom: 10%; right: 23%;}
-  .product-top-graph .graph-left .item07{bottom: 10%; right: 4%;}
+  .product-top-graph .graph-left .item06{bottom: 10%; right: 20%;}
+  .product-top-graph .graph-left .item07{bottom: 10%; right: 2%;}
 } 
 
 @media all and (max-width: 1080px){
@@ -129,8 +130,8 @@
   .product-top-graph .graph-left .item03{width: 60px; height: 60px;}
   .product-top-graph .graph-left .item04{width: 60px; height: 60px;}
   .product-top-graph .graph-left .item05{width: 50px; height: 50px;}
-  .product-top-graph .graph-left .item06{width: 70px; height: 70px;}
-  .product-top-graph .graph-left .item07{width: 70px; height: 70px;}
+  .product-top-graph .graph-left .item06{width: 70px; height: 70px; right: 24%; bottom: 14%;}
+  .product-top-graph .graph-left .item07{width: 70px; height: 70px; bottom: 14%; right: 6%;}
 }
 
 
@@ -201,9 +202,9 @@
   .product-top-graph .graph-left .item02{width: 42px; height: 42px;}
   .product-top-graph .graph-left .item03{width: 42px; height: 42px;}
   .product-top-graph .graph-left .item04{width: 43px; height: 43px;}
-  .product-top-graph .graph-left .item05{width: 36px; height: 36px;}
-  .product-top-graph .graph-left .item06{width: 50px; height: 50px; bottom: 14%; right: 18%;}
-  .product-top-graph .graph-left .item07{width: 50px; height: 50px; bottom: 14%; right: 2%;}
+  .product-top-graph .graph-left .item05{width: 36px; height: 36px; right: 33%;}
+  .product-top-graph .graph-left .item06{width: 50px; height: 50px; bottom: 21%; right: 27%;}
+  .product-top-graph .graph-left .item07{width: 50px; height: 50px; bottom: 21%; right: 10%;}
   .product-bottom-table{width: 100%; overflow: hidden;}
   .product-bottom-table > div{overflow-x: scroll;}
   .product-bottom-table > div table{width: 100%; min-width: 550px;}
@@ -211,6 +212,12 @@
   .product-bottom-table table th span{font-size: 12px; display: block;}
   .product-bottom-table table td{font-size: 14px; padding: 15px 0; line-height: 22px;}
 
+}
+@media all and (max-width: 500px){
+  .product-top-graph .graph-left .item04{top: 62%;}
+  .product-top-graph .graph-left .item05{top: 62%; right: 30%;}
+  .product-top-graph .graph-left .item06{bottom: 14%; right: 20%;}
+  .product-top-graph .graph-left .item07{bottom: 14%; right: 2%;}
 }
 
 @media all and (max-width: 450px){
