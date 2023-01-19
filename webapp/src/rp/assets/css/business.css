@@ -75,7 +75,7 @@
 .product-top-graph .graph-left .item06{width: 120px; height: 120px; bottom: 12%; right: 23%;}
 .product-top-graph .graph-left .item07{width: 120px; height: 120px; bottom: 12%; right: 5%;}
 
-.product-top-graph .graph-right{display: flex; width: 290px; align-items: center; padding-left: 50px;}
+.product-top-graph .graph-right{display: flex; width: 290px; align-items: center; padding-left: 50px; padding-right: 50px;}
 .product-top-graph .graph-right .box-wrap{display: flex; flex-direction: column; gap: 15px; }
 .product-top-graph .graph-right .box-wrap .box{width: 240px; height: 49px; line-height: 49px; background: #fff; filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.03)); text-align: center;}
 .product-top-graph .graph-right .box-wrap .box p{color: #323232; letter-spacing: -0.03em;}
@@ -192,7 +192,7 @@
 
   .product.section04 .main-title-wrap{padding: 80px 0 50px;}
   .product-top-graph{flex-direction: column-reverse;}
-  .product-top-graph .graph-right{padding-left: 0; padding-bottom: 71px; width: 100%;}
+  .product-top-graph .graph-right{padding-left: 0; padding-right: 0; padding-bottom: 71px; width: 100%;}
   .product-top-graph .graph-right .box-wrap{width: 100%; flex-direction: row; gap: unset; flex-wrap: wrap; background: #fff;}
   .product-top-graph .graph-right .box-wrap .box{width: 33.3333%; height: auto; line-height: 37px; background: transparent; filter: unset;}
   .product-top-graph .graph-right .box-wrap .box p{font-size: 12px;}
