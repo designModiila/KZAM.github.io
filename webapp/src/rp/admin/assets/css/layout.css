@@ -112,7 +112,7 @@ body.nav-x nav.open {width:0; transition: 0.5s;}
 body.nav-x nav.open p {display: none;}
 body.nav-x nav.open ul {display: none;}
 
-body.nav-x section { width:calc(100% - 260px;); transition: 0.5s;}
+body.nav-x section { width:calc(100% - 260px); transition: 0.5s;}
 
 
 .content-header {display: flex; justify-content: space-between; margin-bottom:24px;}
@@ -242,14 +242,15 @@ body.nav-x section { width:calc(100% - 260px;); transition: 0.5s;}
 .overlay div.overlay-wrap {margin: 0 auto; width: 80%; max-width: 1030px;  padding: 0;  background: rgba(255,255,255, .95);  border-radius: 6px;  overflow:hidden;  position: absolute;  top:50%;  left:50%;  -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .overlay-header { background: #fff; padding: 30px 40px 25px 40px; border-bottom:1px solid #E4E4E4; position: relative;}
-.overlay-header h2 {font-weight: 500;  font-size: 24px; line-height: 38px; margin-bottom:30px;}
+.overlay-header h2 {font-weight: 500;  font-size: 24px; line-height: 38px; margin-bottom:30px; padding-right:100px;}
 .overlay-header .label {position: absolute; right:40px; top:30px; background: #EDF7FF; border-radius: 4px; padding:5px 20px; font-size: 13px; line-height: 19px; color: #123859;}
 .overlay-header .overlay-content-info {display: flex;  gap: 40px;}
 .overlay-header .overlay-content-info dl {display: flex;  gap: 24px; align-items: center}
 .overlay-header .overlay-content-info dl dt {color: #546178; font-size: 12px; line-height: 17px;}
 .overlay-header .overlay-content-info dl dd,
 .overlay-header .overlay-content-info dl dd a {color: #3A4962; font-weight: 400;  font-size: 14px; line-height: 20px;}
-.overlay-content {background: #fff; padding: 30px 40px 30px 40px; font-size: 15px; line-height: 26px; color: #666666; border-bottom: 1px solid #E4E4E4;}
+.overlay-header .overlay-content-info dl dd a:hover {text-decoration: underline;}
+.overlay-content {background: #fff; padding: 30px 40px 30px 40px; font-size: 15px; line-height: 26px; color: #666666; border-bottom: 1px solid #E4E4E4; height: calc(100vh - 580px); overflow: auto;}
 .overlay-reply {background: #F7F7F7; padding: 30px 40px 0 40px; }
 .overlay-reply p {font-size: 12px; line-height: 17px; color: #546178; margin-bottom:12px;}
 .overlay-reply .textarea-wrap {background: #FFFFFF; border: 1px solid #EBEBEB; padding:20px; border-radius: 4px; }

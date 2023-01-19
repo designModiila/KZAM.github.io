@@ -10,7 +10,10 @@ $(function() {
         }
     });
 
-	$('li.nav-item-title').on('click', function() {
+	// $('li.nav-item-title a').on('click', function() {
+
+	// })
+	$('li.nav-item-title a').on('click', function() {
 		$('.nav-item-title').click(function () {
 			$(".nav-item-title").removeClass("open");
 			$(this).addClass("open");
