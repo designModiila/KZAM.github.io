@@ -67,8 +67,7 @@
   .header-wrap .nav > ul > li > .depth_2 > ul > li.active > a:hover {color:#FFFFFF;}
   .header-wrap .nav > ul > li > .depth_2 > ul > li > a:hover::before,
   .header-wrap .nav > ul > li > .depth_2 > ul > li.active > a::before {content:''; position: absolute; z-index: 1; left:-1px; top:0; height:100%; width:2px; background:#FF8B23;}
-  .header-wrap .nav ul li .outside-link{position: relative; display: inline-block; width: 12px; height: 12px; top: 50%; right: -3px; opacity: 0; transform: translate(-50%, 0px); background: url(../images/main/link-btn-icon.png) no-repeat; background-size: auto 100%; transition: transform .3s ease-in-out, opacity .3s ease-in-out;}
-  .header-wrap .nav ul li a:hover .outside-link{ opacity: 1; transform: translate(0px, 0);}
+
 
 
 
@@ -120,6 +119,8 @@
 #gnb .gnb-menu > li>.gnb-depth2 > li a {display: block; position: relative;  font-family: 'NotoR'; font-size: 18px; font-weight: normal; color:#fff; padding:0 0 0 20px; display: block; color:#838383}
 #gnb .gnb-menu > li>.gnb-depth2 > li a:hover {color:#fff;}
 #gnb .gnb-menu > li>.gnb-depth2 > li a:hover::before {content:''; position: absolute; left:-1px; top:0; height:100%; width:2px; background-color: #ff8b23;}
+li .outside-link{position: relative; display: inline-block; width: 12px; height: 12px; top: 50%; right: -3px; opacity: 0; transform: translate(-50%, 0px); background: url(../images/main/link-btn-icon.png) no-repeat; background-size: auto 100%; transition: transform .3s ease-in-out, opacity .3s ease-in-out;}
+li a:hover .outside-link{ opacity: 1; transform: translate(0px, 0);}
 
 #gnb .gnb-bottom{position: absolute; bottom: 70px; right: 290px;}
 #gnb .gnb-bottom ul{display: flex; justify-content: flex-end; gap: 20px;}
