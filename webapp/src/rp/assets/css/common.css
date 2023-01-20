@@ -172,7 +172,7 @@
 .footer-bottom .f-info-wrap .copy p{font-size: 12px; color: #909090;}
 .footer-bottom .f-site-wrap{text-align: right;}
 .footer-bottom .f-site{margin-bottom: 16px;}
-.footer-bottom .f-site select{width: 197px; height: 40px; border: 1px solid #909090; padding-left: 9px; color: #909090; background: url('../images/main/foot-site-icon.png') no-repeat 95% center;}
+.footer-bottom .f-site select{width: 197px; height: 40px; border: 1px solid #909090; padding-left: 9px; color: #909090; background: url('../images/main/foot-site-icon.png') no-repeat 95% center; line-height: 40px;}
 .footer-bottom .privacy ul{display: flex; gap: 20px;}
 .footer-bottom .privacy ul li a{display: block; font-size: 12px; color: #909090;}
 
