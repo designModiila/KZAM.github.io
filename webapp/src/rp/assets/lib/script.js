@@ -299,9 +299,9 @@ $(window).on('scroll', function (e) {
   subTitleChange();
 
   var swiper = new Swiper(".main-slide-wrap", {
-    speed: 800,
+    speed: 1000,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     //autoplay: false,
