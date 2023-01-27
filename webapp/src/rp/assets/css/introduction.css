@@ -64,6 +64,8 @@
 .ceo.section01 .content-wrap .title{margin-bottom: 30px;}
 .ceo.section01 .content-wrap .title-txt{margin-bottom: 0px;}
 .ceo.section02 .intro-box{position: relative;}
+.ceo.section02 .intro-box .intro-image-ceo {position: absolute; bottom: -18px; left:-320px; /*margin-left:-549px;  margin-top: -287px;*/ z-index: 100;}
+
 .ceo.section02 .intro-sign{background: #252525; display: inline-block; width: 400px; height: 100px; box-sizing: border-box; line-height: 100px; text-align: center; position: absolute; bottom: 0; right: 390px;}
 .ceo.section02 .intro-sign .intro-text-end{display: inline-block; text-align: right; font-family: 'NotoB'; font-size: 18px; color: #dadada; margin-right: 40px; letter-spacing: -0.03em;}
 .ceo.section02 .intro-sign img {display: inline-block;}
@@ -250,7 +252,9 @@
 @media all and (max-width: 1313px){
 
 }
+@media all and (max-width: 1260px){
 
+}
 @media all and (max-width: 1240px){
 
   .introduction.section03 .chart{width: 100%; max-width: 100%;}
@@ -283,6 +287,12 @@
 @media all and (max-width:1100px){
 
 }
+@media all and (max-width:960px){
+
+
+  .ceo.section02 .intro-box .intro-image-ceo {position: absolute; left:20%;right:50%; transform: translateX(-100%); z-index: 100; height:300px; }
+
+}
 
 @media all and (max-width: 864px){
   .introduction.section03 .dot-wrap .item07{right: 30px;}
@@ -292,6 +302,10 @@
 @media all and (max-width:821px){
   .wrap-layer{width: 800px;}
   
+}
+
+@media all and (max-width:810px){
+
 }
 
 @media all and (max-width:768px) {
@@ -348,6 +362,8 @@
   .ceo.section02 .intro-sign{position: unset; width: 100%; height: 66px; line-height: 66px; text-align: right; padding-right: 37px;}
   .ceo.section02 .intro-sign .intro-text-end{font-size: 16px;}
   .ceo.section02 .intro-sign img{zoom: 0.8;}
+  .ceo.section02 .intro-box .intro-image-ceo {position: absolute; bottom: 70px; left:5%;right:0%; transform: translateX(0); z-index: 100; height:300px; }
+
   .ceo.section02 .ceo-bg .content-wrap{flex-direction: column; gap: 20px;}
   .ceo.section02 .ceo-bg .left-txt-box p{font-size: 18px; line-height: 28px;}
   .ceo.section02 .ceo-bg .right-txt-box p{font-size: 16px; line-height: 26px;}
