@@ -172,8 +172,14 @@ li a:hover .outside-link{ opacity: 1; transform: translate(0px, 0);}
 .footer-bottom .f-info-wrap .info address span{display: inline-block; padding-right: 5px;}
 .footer-bottom .f-info-wrap .copy p{font-size: 12px; color: #909090;}
 .footer-bottom .f-site-wrap{text-align: right;}
-.footer-bottom .f-site{margin-bottom: 16px;}
-.footer-bottom .f-site select{width: 197px; height: 40px; border: 1px solid #909090; padding-left: 9px; color: #909090; background: url('../images/main/foot-site-icon.png') no-repeat 95% center; line-height: 40px;}
+.footer-bottom .f-site{margin-bottom: 16px; position: relative;}
+.footer-bottom .f-site .family-select{position: relative; width: 300px; line-height: 40px; border: 1px solid #909090; color: #909090; text-align: left; padding-left: 20px;}
+.footer-bottom .f-site .family-select:after{position: absolute; content: ''; width: 13px; height: 7px; background: url('../images/main/foot-site-icon.png') no-repeat; top: 50%; right: 9px; transform: translateY(-50%);}
+.footer-bottom .f-site .family-list{display: none; position: absolute; left: 0; right: 0; top: auto; bottom: 60px; background-color: #363636; border: 1px solid #909090; text-align: left; padding: 18px 0px;}
+.footer-bottom .f-site .family-list.active{display: block;}
+.footer-bottom .f-site .family-list li a{display: block; overflow: hidden; color: #ececec; line-height: 34px; padding: 0 20px;}
+.footer-bottom .f-site .family-list li a:hover{background: #ff8b23; color: #fff;}
+/* .footer-bottom .f-site select{width: 197px; height: 40px; border: 1px solid #909090; padding-left: 9px; color: #909090; background: url('../images/main/foot-site-icon.png') no-repeat 95% center; line-height: 40px;} */
 .footer-bottom .privacy ul{display: flex; gap: 20px;}
 .footer-bottom .privacy ul li a{display: block; font-size: 12px; color: #909090;}
 
@@ -490,7 +496,7 @@ li a:hover .outside-link{ opacity: 1; transform: translate(0px, 0);}
 
   .footer-bottom {flex-direction: column-reverse;  align-items: flex-start; border-top:none; padding-top:0;}
   .footer-bottom .f-site-wrap,
-  .footer-bottom .f-site select {width:100%;}
+  .footer-bottom .f-site .family-select {width:100%;}
   .footer-bottom .f-info-wrap .info dl{display: block;}
   .footer-bottom .f-info-wrap .info dl dt{float: left; width: 42px; padding-right: 17px; font-size: 12px;}
   .footer-bottom .f-info-wrap .info dl dd{font-size: 12px;}

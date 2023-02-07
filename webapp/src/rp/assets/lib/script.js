@@ -114,11 +114,28 @@ $('.lang-select .eng').on("click", function () {
   alert('준비중입니다');
 });
 
+function familySelectHide() {
+  $('.family-list').removeClass('active');
+}
+var familySelect = setTimeout(familySelectHide, 3000);
+$('.family-select').on("click", function (e) {
+  e.preventDefault();
+  clearTimeout(familySelect);
+  if ($(this).siblings('.family-list').hasClass('active')) {
+      $('.family-list').removeClass('active');
+  } else {
+      $('.family-list').addClass('active');
+  }
+});
+$('.family-list').on("mouseleave", function (e) {
+  familySelect = setTimeout(familySelectHide, 2000);
+});
+
 
 function tabHide() {
   $('.content-tab-box').removeClass('active');
 }
-var tabHide = setTimeout(selectHide, 3000);
+var tabHide = setTimeout(tabHide, 3000);
 $('.content-tab-box .current').on("click", function (e) {
   e.preventDefault();
   clearTimeout(tabHide);
@@ -131,7 +148,7 @@ $('.content-tab-box .current').on("click", function (e) {
 });
 
 $('.content-tab-box').on("mouseleave", function (e) {
-  tabHide = setTimeout(selectHide, 2000);
+  tabHide = setTimeout(tabHide, 2000);
 });
 
 $('.content-tab-box li a').on("click", function (e) {
