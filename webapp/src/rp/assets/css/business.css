@@ -90,6 +90,20 @@
 .product-bottom-table table tbody tr:last-child{border-bottom: 0;}
 .product-bottom-table table td{padding: 30px 0; color: #323232; text-align: center; line-height: 28px; vertical-align: middle;}
 
+.process.section .content-wrap{padding: 150px 0 200px;}
+.process.section .inner{max-width:580px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
+.process.section .error-icon-wrap{margin-bottom: 30px; text-align: center;}
+.process.section .error-desc-wrap{margin-bottom: 50px; text-align: center;}
+.process.section .error-title{color: #323232; font-family: 'NotoB', Arial, Helvetica, sans-serif; font-size: 40px; letter-spacing: -0.03em; margin-bottom: 30px;}
+.process.section .error-txt{font-size: 16px; letter-spacing: -0.03em; line-height: 28px; color: #4e4e4e; font-family: 'NotoR', Arial, Helvetica, sans-serif;}
+
+@media all and (max-width:768px) {
+  .process.section .content-wrap{padding: 60px 0 180px;}
+  .process.section .inner{max-width: 100%; padding: 0 24px; margin: 0 auto;}
+  .process.section .error-title{font-size: 22px;}
+  .process.section .error-txt{font-size: 14px; line-height: 24px;}
+}
+
 
 @media all and (max-width: 1500px){
   .product-top-graph .graph-left .graph-y{top: -40px; left: 0;}
