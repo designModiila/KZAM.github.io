@@ -115,16 +115,16 @@ $('.lang-select .eng').on("click", function () {
 });
 
 function familySelectHide() {
-  $('.family-list').removeClass('active');
+  $('.f-site').removeClass('active');
 }
 var familySelect = setTimeout(familySelectHide, 3000);
-$('.family-select').on("click", function (e) {
+$('.f-site').on("click", function (e) {
   e.preventDefault();
   clearTimeout(familySelect);
-  if ($(this).siblings('.family-list').hasClass('active')) {
-      $('.family-list').removeClass('active');
+  if ($('.f-site').hasClass('active')) {
+      $(this).removeClass('active');
   } else {
-      $('.family-list').addClass('active');
+      $(this).addClass('active');
   }
 });
 $('.family-list').on("mouseleave", function (e) {

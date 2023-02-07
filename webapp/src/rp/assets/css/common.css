@@ -174,9 +174,10 @@ li a:hover .outside-link{ opacity: 1; transform: translate(0px, 0);}
 .footer-bottom .f-site-wrap{text-align: right;}
 .footer-bottom .f-site{margin-bottom: 16px; position: relative;}
 .footer-bottom .f-site .family-select{position: relative; width: 300px; line-height: 40px; border: 1px solid #909090; color: #909090; text-align: left; padding-left: 20px;}
-.footer-bottom .f-site .family-select:after{position: absolute; content: ''; width: 13px; height: 7px; background: url('../images/main/foot-site-icon.png') no-repeat; top: 50%; right: 9px; transform: translateY(-50%);}
+.footer-bottom .f-site .family-select:after{position: absolute; content: ''; width: 13px; height: 7px; background: url('../images/main/foot-site-icon.png') no-repeat; top: 50%; right: 9px; transform: translateY(-50%); transition: all 0.15s ease-in-out;}
 .footer-bottom .f-site .family-list{display: none; position: absolute; left: 0; right: 0; top: auto; bottom: 60px; background-color: #363636; border: 1px solid #909090; text-align: left; padding: 18px 0px;}
-.footer-bottom .f-site .family-list.active{display: block;}
+.footer-bottom .f-site.active .family-list{display: block;}
+.footer-bottom .f-site.active .family-select:after{transform: translateY(-50%) rotate(180deg);}
 .footer-bottom .f-site .family-list li a{display: block; overflow: hidden; color: #ececec; line-height: 34px; padding: 0 20px;}
 .footer-bottom .f-site .family-list li a:hover{background: #ff8b23; color: #fff;}
 /* .footer-bottom .f-site select{width: 197px; height: 40px; border: 1px solid #909090; padding-left: 9px; color: #909090; background: url('../images/main/foot-site-icon.png') no-repeat 95% center; line-height: 40px;} */
